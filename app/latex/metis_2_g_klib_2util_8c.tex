@@ -1,0 +1,89 @@
+\hypertarget{metis_2_g_klib_2util_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/util.c File Reference}
+\label{metis_2_g_klib_2util_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/util.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/util.\+c}}
+{\ttfamily \#include $<$G\+Klib.\+h$>$}\newline
+Include dependency graph for util.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{metis_2_g_klib_2util_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{metis_2_g_klib_2util_8c_a3f23c758d814c21be0a0a840234c6429}{gk\+\_\+\+Random\+Permute} (size\+\_\+t \hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}, int $\ast$\hyperlink{threed__to__vtu_8m_a1e0420801cd5156c14e085b87a4945f5}{p}, int flag)
+\item 
+void \hyperlink{metis_2_g_klib_2util_8c_ab6b93b50df474335a0f8700e3f56e689}{gk\+\_\+array2csr} (size\+\_\+t \hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}, size\+\_\+t range, int $\ast$array, int $\ast$ptr, int $\ast$ind)
+\begin{DoxyCompactList}\small\item\em Converts an element-\/based set membership into a C\+S\+R-\/format set-\/based membership. \end{DoxyCompactList}\item 
+int \hyperlink{metis_2_g_klib_2util_8c_abd15453cc17729704313317fd612fc6b}{gk\+\_\+log2} (int a)
+\item 
+int \hyperlink{metis_2_g_klib_2util_8c_a3c34c6c0ef65d5d47a8daed527cf6a43}{gk\+\_\+ispow2} (int a)
+\item 
+float \hyperlink{metis_2_g_klib_2util_8c_a4a0bad246051d659ac5f78db3498e891}{gk\+\_\+flog2} (float a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{metis_2_g_klib_2util_8c_ab6b93b50df474335a0f8700e3f56e689}\label{metis_2_g_klib_2util_8c_ab6b93b50df474335a0f8700e3f56e689}} 
+\index{metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}!gk\+\_\+array2csr@{gk\+\_\+array2csr}}
+\index{gk\+\_\+array2csr@{gk\+\_\+array2csr}!metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+array2csr()}{gk\_array2csr()}}
+{\footnotesize\ttfamily void gk\+\_\+array2csr (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n,  }\item[{size\+\_\+t}]{range,  }\item[{int $\ast$}]{array,  }\item[{int $\ast$}]{ptr,  }\item[{int $\ast$}]{ind }\end{DoxyParamCaption})}
+
+
+
+Converts an element-\/based set membership into a C\+S\+R-\/format set-\/based membership. 
+
+For example, it takes an array such as part\mbox{[}\mbox{]} that stores where each element belongs to and returns a pair of arrays (pptr\mbox{[}\mbox{]}, pind\mbox{[}\mbox{]}) that store in C\+SF format the list of elements belonging in each partition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the number of elements in the array (e.\+g., \# of vertices) \\
+\hline
+{\em range} & the cardinality of the set (e.\+g., \# of partitions) \\
+\hline
+{\em array} & the array that stores the per-\/element set membership \\
+\hline
+{\em ptr} & the array that will store the starting indices in ind for the elements of each set. This is filled by the routine and its size should be at least range+1. \\
+\hline
+{\em ind} & the array that stores consecutively which elements belong to each set. The size of this array should be n. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{metis_2_g_klib_2util_8c_a4a0bad246051d659ac5f78db3498e891}\label{metis_2_g_klib_2util_8c_a4a0bad246051d659ac5f78db3498e891}} 
+\index{metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}!gk\+\_\+flog2@{gk\+\_\+flog2}}
+\index{gk\+\_\+flog2@{gk\+\_\+flog2}!metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+flog2()}{gk\_flog2()}}
+{\footnotesize\ttfamily float gk\+\_\+flog2 (\begin{DoxyParamCaption}\item[{float}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{metis_2_g_klib_2util_8c_a3c34c6c0ef65d5d47a8daed527cf6a43}\label{metis_2_g_klib_2util_8c_a3c34c6c0ef65d5d47a8daed527cf6a43}} 
+\index{metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}!gk\+\_\+ispow2@{gk\+\_\+ispow2}}
+\index{gk\+\_\+ispow2@{gk\+\_\+ispow2}!metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+ispow2()}{gk\_ispow2()}}
+{\footnotesize\ttfamily int gk\+\_\+ispow2 (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{metis_2_g_klib_2util_8c_a3c34c6c0ef65d5d47a8daed527cf6a43_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{metis_2_g_klib_2util_8c_abd15453cc17729704313317fd612fc6b}\label{metis_2_g_klib_2util_8c_abd15453cc17729704313317fd612fc6b}} 
+\index{metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}!gk\+\_\+log2@{gk\+\_\+log2}}
+\index{gk\+\_\+log2@{gk\+\_\+log2}!metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+log2()}{gk\_log2()}}
+{\footnotesize\ttfamily int gk\+\_\+log2 (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{metis_2_g_klib_2util_8c_abd15453cc17729704313317fd612fc6b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{metis_2_g_klib_2util_8c_a3f23c758d814c21be0a0a840234c6429}\label{metis_2_g_klib_2util_8c_a3f23c758d814c21be0a0a840234c6429}} 
+\index{metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}!gk\+\_\+\+Random\+Permute@{gk\+\_\+\+Random\+Permute}}
+\index{gk\+\_\+\+Random\+Permute@{gk\+\_\+\+Random\+Permute}!metis/\+G\+Klib/util.\+c@{metis/\+G\+Klib/util.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+\+Random\+Permute()}{gk\_RandomPermute()}}
+{\footnotesize\ttfamily void gk\+\_\+\+Random\+Permute (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n,  }\item[{int $\ast$}]{p,  }\item[{int}]{flag }\end{DoxyParamCaption})}
+

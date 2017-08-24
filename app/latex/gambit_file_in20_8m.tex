@@ -1,0 +1,348 @@
+\hypertarget{gambit_file_in20_8m}{}\section{src/write\+\_\+algs/gambit\+File\+In20.m File Reference}
+\label{gambit_file_in20_8m}\index{src/write\+\_\+algs/gambit\+File\+In20.\+m@{src/write\+\_\+algs/gambit\+File\+In20.\+m}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gambit_file_in20_8m_a6339563199f1df5b474ae537cd435e9b}{VX} (\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i})
+\item 
+\hyperlink{gambit_file_in20_8m_a2f2925c90dcdcd0458fa06a0d2fc2fc4}{VY} (\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i})
+\item 
+\hyperlink{gambit_file_in20_8m_a19fb6d0c72728c85075e94ea04a60a66}{VZ} (\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i})
+\item 
+\hyperlink{gambit_file_in20_8m_a279fc4bc04d1e6cb4941402ba6e29874}{VW} (\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i})
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} read \hyperlink{make_v_t_k_file_8m_a4998e7f4989562d1ed06579e07265c30}{element} to \hyperlink{make_v_t_k_file_8m_adf51fe9945b6ca147057cc27ff639d0f}{node} connectivity Preallocated with \hyperlink{gambit_file_in20_8m_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} (cubic hex)
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} Saving to I\+EN array \hyperlink{gambit_file_in20_8m_ada37e689768b959686f183a3d534464b}{I\+EN} (\hyperlink{cubic2linear_8m_a6086917dfee54d84abe1838505c8cf69}{k}, 1\+:\hyperlink{gambit_file_in20_8m_af770575536260d1af58b8fddaaefb98d}{nloc})
+\item 
+Also saving curve info \hyperlink{threed__to__vtu_8m_a96c738d3e2120c4273f9d4390761d99e}{if} \hyperlink{gambit_file_in20_8m_ac90fbb5b14a3c144a13164ba8eff726a}{tmpcon} (2)$<$ 0 \hyperlink{gambit_file_in20_8m_a10675f132896e92909100dff33d2eca1}{C\+F\+L\+AG}(\hyperlink{cubic2linear_8m_a6086917dfee54d84abe1838505c8cf69}{k})
+\item 
+while \hyperlink{gambit_file_in20_8m_ad2a182e2e8932167c056732723f13e1c}{isempty} (intersect(\hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line}, \textquotesingle{}E\+N\+D\+O\+F\+S\+E\+C\+T\+I\+ON\textquotesingle{})) \hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line}
+\item 
+\hyperlink{gambit_file_in20_8m_a2631e3df74fb2c7ff87a8ab5c4dabd4b}{B\+F\+L\+AG} (\hyperlink{gambit_file_in20_8m_a7a8898e9362126201efe22332c961613}{ctr},\+:)
+\item 
+\hyperlink{gambit_file_in20_8m_a66be333d3079c1ecfec40ed090608507}{temp} (\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i})
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} Close file \hyperlink{gambit_file_in20_8m_a0493b72e01e669899778919fed741667}{fclose} (Fid)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gambit_file_in20_8m_ad05f120037604fa1d266099279d850da}{function} \mbox{[}\hyperlink{cubic2linear_8m_a28010846a3742b3c2c07f00b1f1536ff}{N\+O\+DE}, \hyperlink{gambit_file_in20_8m_ada37e689768b959686f183a3d534464b}{I\+EN}, \hyperlink{gambit_file_in20_8m_a2631e3df74fb2c7ff87a8ab5c4dabd4b}{B\+F\+L\+AG}, \hyperlink{gambit_file_in20_8m_a10675f132896e92909100dff33d2eca1}{C\+F\+L\+AG}, \hyperlink{gambit_file_in20_8m_a66be333d3079c1ecfec40ed090608507}{temp}\mbox{]}
+\item 
+read intro \hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} Find number of \hyperlink{gambit_file_in20_8m_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} and number of \hyperlink{threed__to__vtu__test_8m_aa9aaa650bacb9b91c82437c2ce48f50c}{elements} \hyperlink{gambit_file_in20_8m_a3c9228983ba1c014121246254d146e96}{dims} = fscanf(Fid, \textquotesingle{}\%d\textquotesingle{})
+\item 
+\hyperlink{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}{Nv} = \hyperlink{gambit_file_in20_8m_a3c9228983ba1c014121246254d146e96}{dims}(1)
+\item 
+\hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K} = \hyperlink{gambit_file_in20_8m_a3c9228983ba1c014121246254d146e96}{dims}(2)
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} read \hyperlink{make_v_t_k_file_8m_adf51fe9945b6ca147057cc27ff639d0f}{node} coordinates \hyperlink{gambit_file_in20_8m_aa139eddff8cde21c2eaac5bb334c2ace}{VX} = (1\+:\hyperlink{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}{Nv})
+\item 
+\hyperlink{gambit_file_in20_8m_a2bd58f70e255b7ce76fae8d4c8359b5d}{VY} = (1\+:\hyperlink{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}{Nv})
+\item 
+\hyperlink{gambit_file_in20_8m_a862812783fd5a84e41cd43ab6ffab8dc}{VZ} = (1\+:\hyperlink{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}{Nv})
+\item 
+\hyperlink{gambit_file_in20_8m_aad94953c669725e25ac55b2c00f7a400}{VW} = (1\+:\hyperlink{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}{Nv})
+\item 
+\hyperlink{gambit_file_in20_8m_ad5e51b5cb1c4e21e4a0fce198aee3879}{tmpx} = sscanf(\hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line}, \textquotesingle{}\%lf\textquotesingle{})
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{gambit_file_in20_8m_a5b72722269640873d2b15c2b7fa0ae25}{N\+O\+DE} = \mbox{[}\hyperlink{gambit_file_in20_8m_a6339563199f1df5b474ae537cd435e9b}{VX}\textquotesingle{},\hyperlink{gambit_file_in20_8m_a2f2925c90dcdcd0458fa06a0d2fc2fc4}{VY}\textquotesingle{},\hyperlink{gambit_file_in20_8m_a19fb6d0c72728c85075e94ea04a60a66}{VZ}\textquotesingle{},\hyperlink{gambit_file_in20_8m_a279fc4bc04d1e6cb4941402ba6e29874}{VW}\textquotesingle{}\mbox{]}
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} read \hyperlink{make_v_t_k_file_8m_a4998e7f4989562d1ed06579e07265c30}{element} to \hyperlink{make_v_t_k_file_8m_adf51fe9945b6ca147057cc27ff639d0f}{node} connectivity Preallocated with and trim later \hyperlink{threed__to__vtu_8m_a96c738d3e2120c4273f9d4390761d99e}{if} needed \hyperlink{gambit_file_in20_8m_ab08108f8909c2d9138c9e93413f7b6b9}{I\+EN} = zeros(\hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K}, 64)
+\item 
+\hyperlink{gambit_file_in20_8m_a10675f132896e92909100dff33d2eca1}{C\+F\+L\+AG} = false(\hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K},1)
+\item 
+\hyperlink{gambit_file_in20_8m_a61dd2deb1d38e8c3ab02d6c21f123827}{maxloc} = 0
+\item 
+\hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{gambit_file_in20_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}
+\item 
+\hyperlink{gambit_file_in20_8m_a5045c084f6326df32321bc89975fc314}{tmpcon} = sscanf(\hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line}, \textquotesingle{}\%lf\textquotesingle{})
+\item 
+Finding the number of local \hyperlink{gambit_file_in20_8m_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} \hyperlink{gambit_file_in20_8m_af770575536260d1af58b8fddaaefb98d}{nloc} = \hyperlink{gambit_file_in20_8m_ac90fbb5b14a3c144a13164ba8eff726a}{tmpcon}(3)
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end}
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line} = fgetl(Fid)
+\item 
+\hyperlink{gambit_file_in20_8m_a3ae52850c5599fbb0af6b0dbf49b63a1}{B\+F\+L\+AG} = zeros(\hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K},4)
+\item 
+Read all the boundary conditions \hyperlink{v_interp_matrix2_d_8m_a887f3ec6f2ead88f5c878fe6223927ea}{at} the \hyperlink{gambit_file_in20_8m_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} \hyperlink{gambit_file_in20_8m_a13dcc74bebe8895ff73eeb1234135704}{group} =1
+\item 
+\hyperlink{gambit_file_in20_8m_a7a8898e9362126201efe22332c961613}{ctr} = 1
+\item 
+\hyperlink{gambit_file_in20_8m_aeb3bba3f2a1cac40e67dcec5c4faf3d8}{bcprop} = bcprop(\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end}-\/3\+:\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end})
+\item 
+\hyperlink{gambit_file_in20_8m_a20507c612303aa48d9e49883e863fa60}{N\+B\+E\+L\+EM} = \hyperlink{gambit_file_in20_8m_aeb3bba3f2a1cac40e67dcec5c4faf3d8}{bcprop}(2)
+\item 
+\hyperlink{gambit_file_in20_8m_a0bc6723d5d4776ab7cdc646728b775f7}{T\+Y\+PE} = \hyperlink{gambit_file_in20_8m_aeb3bba3f2a1cac40e67dcec5c4faf3d8}{bcprop}(4)
+\item 
+\hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{gambit_file_in20_8m_af10d0cbe849959834570568849bc2290}{bb}
+\item 
+\hyperlink{gambit_file_in20_8m_abb20825a1a6ea12717847b56b3231c6a}{belem} = sscanf(\hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line},\textquotesingle{}\%\hyperlink{cubic2linear_8m_a6277e2a7446059985dc9bcf0a4ac1a8f}{u}\textquotesingle{})
+\item 
+\hyperlink{gambit_file_in20_8m_a905c521e05ec8042631a912b71d0454e}{temp} = zeros(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{cubic2linear_8m_a28010846a3742b3c2c07f00b1f1536ff}{N\+O\+DE},1),1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{gambit_file_in20_8m_a2631e3df74fb2c7ff87a8ab5c4dabd4b}\label{gambit_file_in20_8m_a2631e3df74fb2c7ff87a8ab5c4dabd4b}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!B\+F\+L\+AG@{B\+F\+L\+AG}}
+\index{B\+F\+L\+AG@{B\+F\+L\+AG}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{B\+F\+L\+A\+G()}{BFLAG()}}
+{\footnotesize\ttfamily B\+F\+L\+AG (\begin{DoxyParamCaption}\item[{\hyperlink{gambit_file_in20_8m_a7a8898e9362126201efe22332c961613}{ctr}}]{,  }\item[{\+:}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a0493b72e01e669899778919fed741667}\label{gambit_file_in20_8m_a0493b72e01e669899778919fed741667}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!fclose@{fclose}}
+\index{fclose@{fclose}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{fclose()}{fclose()}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} Close file fclose (\begin{DoxyParamCaption}\item[{Fid}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_ada37e689768b959686f183a3d534464b}\label{gambit_file_in20_8m_ada37e689768b959686f183a3d534464b}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!I\+EN@{I\+EN}}
+\index{I\+EN@{I\+EN}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{I\+E\+N()}{IEN()}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} Saving to I\+EN array I\+EN (\begin{DoxyParamCaption}\item[{\hyperlink{cubic2linear_8m_a6086917dfee54d84abe1838505c8cf69}{k}}]{,  }\item[{1\+:\hyperlink{gambit_file_in20_8m_af770575536260d1af58b8fddaaefb98d}{nloc}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_ad2a182e2e8932167c056732723f13e1c}\label{gambit_file_in20_8m_ad2a182e2e8932167c056732723f13e1c}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!isempty@{isempty}}
+\index{isempty@{isempty}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{isempty()}{isempty()}}
+{\footnotesize\ttfamily while isempty (\begin{DoxyParamCaption}\item[{intersect(\hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line}, \textquotesingle{}E\+N\+D\+O\+F\+S\+E\+C\+T\+I\+ON\textquotesingle{})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a9fd973fb7dcbed4123ae5eb2f3868e61}\label{gambit_file_in20_8m_a9fd973fb7dcbed4123ae5eb2f3868e61}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!nodes@{nodes}}
+\index{nodes@{nodes}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{nodes()}{nodes()}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} read \hyperlink{make_v_t_k_file_8m_a4998e7f4989562d1ed06579e07265c30}{element} to \hyperlink{make_v_t_k_file_8m_adf51fe9945b6ca147057cc27ff639d0f}{node} connectivity Preallocated with nodes (\begin{DoxyParamCaption}\item[{cubic}]{hex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a66be333d3079c1ecfec40ed090608507}\label{gambit_file_in20_8m_a66be333d3079c1ecfec40ed090608507}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!temp@{temp}}
+\index{temp@{temp}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{temp()}{temp()}}
+{\footnotesize\ttfamily temp (\begin{DoxyParamCaption}\item[{\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_ac90fbb5b14a3c144a13164ba8eff726a}\label{gambit_file_in20_8m_ac90fbb5b14a3c144a13164ba8eff726a}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!tmpcon@{tmpcon}}
+\index{tmpcon@{tmpcon}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{tmpcon()}{tmpcon()}}
+{\footnotesize\ttfamily Also saving curve info \hyperlink{threed__to__vtu_8m_a96c738d3e2120c4273f9d4390761d99e}{if} tmpcon (\begin{DoxyParamCaption}\item[{2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a279fc4bc04d1e6cb4941402ba6e29874}\label{gambit_file_in20_8m_a279fc4bc04d1e6cb4941402ba6e29874}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!VW@{VW}}
+\index{VW@{VW}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{V\+W()}{VW()}}
+{\footnotesize\ttfamily VW (\begin{DoxyParamCaption}\item[{\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a6339563199f1df5b474ae537cd435e9b}\label{gambit_file_in20_8m_a6339563199f1df5b474ae537cd435e9b}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!VX@{VX}}
+\index{VX@{VX}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{V\+X()}{VX()}}
+{\footnotesize\ttfamily VX (\begin{DoxyParamCaption}\item[{\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a2f2925c90dcdcd0458fa06a0d2fc2fc4}\label{gambit_file_in20_8m_a2f2925c90dcdcd0458fa06a0d2fc2fc4}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!VY@{VY}}
+\index{VY@{VY}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{V\+Y()}{VY()}}
+{\footnotesize\ttfamily VY (\begin{DoxyParamCaption}\item[{\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a19fb6d0c72728c85075e94ea04a60a66}\label{gambit_file_in20_8m_a19fb6d0c72728c85075e94ea04a60a66}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!VZ@{VZ}}
+\index{VZ@{VZ}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{V\+Z()}{VZ()}}
+{\footnotesize\ttfamily VZ (\begin{DoxyParamCaption}\item[{\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{gambit_file_in20_8m_af10d0cbe849959834570568849bc2290}\label{gambit_file_in20_8m_af10d0cbe849959834570568849bc2290}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!bb@{bb}}
+\index{bb@{bb}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{bb}{bb}}
+{\footnotesize\ttfamily \hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} bb}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 1:\hyperlink{gambit_file_in20_8m_a20507c612303aa48d9e49883e863fa60}{NBELEM}
+        \hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line} = fgetl(Fid)
+\end{DoxyCode}
+\mbox{\Hypertarget{gambit_file_in20_8m_aeb3bba3f2a1cac40e67dcec5c4faf3d8}\label{gambit_file_in20_8m_aeb3bba3f2a1cac40e67dcec5c4faf3d8}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!bcprop@{bcprop}}
+\index{bcprop@{bcprop}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{bcprop}{bcprop}}
+{\footnotesize\ttfamily bcprop = bcprop(\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end}-\/3\+:\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_abb20825a1a6ea12717847b56b3231c6a}\label{gambit_file_in20_8m_abb20825a1a6ea12717847b56b3231c6a}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!belem@{belem}}
+\index{belem@{belem}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{belem}{belem}}
+{\footnotesize\ttfamily belem = sscanf(\hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line},\textquotesingle{}\%\hyperlink{cubic2linear_8m_a6277e2a7446059985dc9bcf0a4ac1a8f}{u}\textquotesingle{})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a3ae52850c5599fbb0af6b0dbf49b63a1}\label{gambit_file_in20_8m_a3ae52850c5599fbb0af6b0dbf49b63a1}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!B\+F\+L\+AG@{B\+F\+L\+AG}}
+\index{B\+F\+L\+AG@{B\+F\+L\+AG}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{B\+F\+L\+AG}{BFLAG}}
+{\footnotesize\ttfamily B\+F\+L\+AG = zeros(\hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K},4)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a10675f132896e92909100dff33d2eca1}\label{gambit_file_in20_8m_a10675f132896e92909100dff33d2eca1}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!C\+F\+L\+AG@{C\+F\+L\+AG}}
+\index{C\+F\+L\+AG@{C\+F\+L\+AG}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{C\+F\+L\+AG}{CFLAG}}
+{\footnotesize\ttfamily C\+F\+L\+AG = false(\hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K},1)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a7a8898e9362126201efe22332c961613}\label{gambit_file_in20_8m_a7a8898e9362126201efe22332c961613}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!ctr@{ctr}}
+\index{ctr@{ctr}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{ctr}{ctr}}
+{\footnotesize\ttfamily ctr = 1}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a3c9228983ba1c014121246254d146e96}\label{gambit_file_in20_8m_a3c9228983ba1c014121246254d146e96}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!dims@{dims}}
+\index{dims@{dims}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{dims}{dims}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} Find number of \hyperlink{gambit_file_in20_8m_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} and number of \hyperlink{threed__to__vtu__test_8m_aa9aaa650bacb9b91c82437c2ce48f50c}{elements} dims = fscanf(Fid, \textquotesingle{}\%d\textquotesingle{})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}\label{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!end@{end}}
+\index{end@{end}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily end}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_ad05f120037604fa1d266099279d850da}\label{gambit_file_in20_8m_ad05f120037604fa1d266099279d850da}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!function@{function}}
+\index{function@{function}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{function}{function}}
+{\footnotesize\ttfamily function\mbox{[}\hyperlink{cubic2linear_8m_a28010846a3742b3c2c07f00b1f1536ff}{N\+O\+DE}, \hyperlink{gambit_file_in20_8m_ada37e689768b959686f183a3d534464b}{I\+EN}, \hyperlink{gambit_file_in20_8m_a2631e3df74fb2c7ff87a8ab5c4dabd4b}{B\+F\+L\+AG}, \hyperlink{gambit_file_in20_8m_a10675f132896e92909100dff33d2eca1}{C\+F\+L\+AG}, \hyperlink{gambit_file_in20_8m_a66be333d3079c1ecfec40ed090608507}{temp}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= gambitFileIn20(FileName)
+
+Fid = fopen([FileName,\textcolor{stringliteral}{'.neu'}], \textcolor{stringliteral}{'rt'})
+\end{DoxyCode}
+\mbox{\Hypertarget{gambit_file_in20_8m_a13dcc74bebe8895ff73eeb1234135704}\label{gambit_file_in20_8m_a13dcc74bebe8895ff73eeb1234135704}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!group@{group}}
+\index{group@{group}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{group}{group}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} group =1}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}\label{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!i@{i}}
+\index{i@{i}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily skip through material property section \hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} i}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=1:6
+    \hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line} = fgetl(Fid)
+\end{DoxyCode}
+\mbox{\Hypertarget{gambit_file_in20_8m_ab08108f8909c2d9138c9e93413f7b6b9}\label{gambit_file_in20_8m_ab08108f8909c2d9138c9e93413f7b6b9}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!I\+EN@{I\+EN}}
+\index{I\+EN@{I\+EN}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{I\+EN}{IEN}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} I\+EN = zeros(\hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K}, 64)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}\label{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!K@{K}}
+\index{K@{K}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily K = \hyperlink{gambit_file_in20_8m_a3c9228983ba1c014121246254d146e96}{dims}(2)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a1c73327b2882639bc9f5e416bb3cc7ac}\label{gambit_file_in20_8m_a1c73327b2882639bc9f5e416bb3cc7ac}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!k@{k}}
+\index{k@{k}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily \hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} k}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 1:\hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K}
+    % Getting the current \hyperlink{make_v_t_k_file_8m_a4998e7f4989562d1ed06579e07265c30}{element} info.
+    \hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line}   = fgetl(Fid)
+\end{DoxyCode}
+\mbox{\Hypertarget{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}\label{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!line@{line}}
+\index{line@{line}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{line}{line}}
+{\footnotesize\ttfamily \hyperlink{threed__to__vtu_8m_a96c738d3e2120c4273f9d4390761d99e}{if} line = fgetl(Fid)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a61dd2deb1d38e8c3ab02d6c21f123827}\label{gambit_file_in20_8m_a61dd2deb1d38e8c3ab02d6c21f123827}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!maxloc@{maxloc}}
+\index{maxloc@{maxloc}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{maxloc}{maxloc}}
+{\footnotesize\ttfamily \hyperlink{threed__to__vtu_8m_a96c738d3e2120c4273f9d4390761d99e}{if} \hyperlink{gambit_file_in20_8m_af770575536260d1af58b8fddaaefb98d}{nloc} maxloc maxloc = 0}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a20507c612303aa48d9e49883e863fa60}\label{gambit_file_in20_8m_a20507c612303aa48d9e49883e863fa60}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!N\+B\+E\+L\+EM@{N\+B\+E\+L\+EM}}
+\index{N\+B\+E\+L\+EM@{N\+B\+E\+L\+EM}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{N\+B\+E\+L\+EM}{NBELEM}}
+{\footnotesize\ttfamily N\+B\+E\+L\+EM = \hyperlink{gambit_file_in20_8m_aeb3bba3f2a1cac40e67dcec5c4faf3d8}{bcprop}(2)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_af770575536260d1af58b8fddaaefb98d}\label{gambit_file_in20_8m_af770575536260d1af58b8fddaaefb98d}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!nloc@{nloc}}
+\index{nloc@{nloc}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{nloc}{nloc}}
+{\footnotesize\ttfamily Finding the number of local \hyperlink{gambit_file_in20_8m_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} nloc = \hyperlink{gambit_file_in20_8m_ac90fbb5b14a3c144a13164ba8eff726a}{tmpcon}(3)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a5b72722269640873d2b15c2b7fa0ae25}\label{gambit_file_in20_8m_a5b72722269640873d2b15c2b7fa0ae25}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!N\+O\+DE@{N\+O\+DE}}
+\index{N\+O\+DE@{N\+O\+DE}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{N\+O\+DE}{NODE}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} N\+O\+DE = \mbox{[}\hyperlink{gambit_file_in20_8m_a6339563199f1df5b474ae537cd435e9b}{VX}\textquotesingle{},\hyperlink{gambit_file_in20_8m_a2f2925c90dcdcd0458fa06a0d2fc2fc4}{VY}\textquotesingle{},\hyperlink{gambit_file_in20_8m_a19fb6d0c72728c85075e94ea04a60a66}{VZ}\textquotesingle{},\hyperlink{gambit_file_in20_8m_a279fc4bc04d1e6cb4941402ba6e29874}{VW}\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}\label{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!Nv@{Nv}}
+\index{Nv@{Nv}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{Nv}{Nv}}
+{\footnotesize\ttfamily Nv = \hyperlink{gambit_file_in20_8m_a3c9228983ba1c014121246254d146e96}{dims}(1)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a905c521e05ec8042631a912b71d0454e}\label{gambit_file_in20_8m_a905c521e05ec8042631a912b71d0454e}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!temp@{temp}}
+\index{temp@{temp}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{temp}{temp}}
+{\footnotesize\ttfamily temp = zeros(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{cubic2linear_8m_a28010846a3742b3c2c07f00b1f1536ff}{N\+O\+DE},1),1)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a5045c084f6326df32321bc89975fc314}\label{gambit_file_in20_8m_a5045c084f6326df32321bc89975fc314}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!tmpcon@{tmpcon}}
+\index{tmpcon@{tmpcon}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{tmpcon}{tmpcon}}
+{\footnotesize\ttfamily tmpcon = sscanf(\hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line}, \textquotesingle{}\%lf\textquotesingle{})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_ad5e51b5cb1c4e21e4a0fce198aee3879}\label{gambit_file_in20_8m_ad5e51b5cb1c4e21e4a0fce198aee3879}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!tmpx@{tmpx}}
+\index{tmpx@{tmpx}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{tmpx}{tmpx}}
+{\footnotesize\ttfamily tmpx = sscanf(\hyperlink{gambit_file_in20_8m_a1d1b0d42391bd99b4214d9216b163807}{line}, \textquotesingle{}\%lf\textquotesingle{})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a0bc6723d5d4776ab7cdc646728b775f7}\label{gambit_file_in20_8m_a0bc6723d5d4776ab7cdc646728b775f7}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!T\+Y\+PE@{T\+Y\+PE}}
+\index{T\+Y\+PE@{T\+Y\+PE}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{T\+Y\+PE}{TYPE}}
+{\footnotesize\ttfamily T\+Y\+PE = \hyperlink{gambit_file_in20_8m_aeb3bba3f2a1cac40e67dcec5c4faf3d8}{bcprop}(4)}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_aad94953c669725e25ac55b2c00f7a400}\label{gambit_file_in20_8m_aad94953c669725e25ac55b2c00f7a400}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!VW@{VW}}
+\index{VW@{VW}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{VW}{VW}}
+{\footnotesize\ttfamily VW = (1\+:\hyperlink{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}{Nv})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_aa139eddff8cde21c2eaac5bb334c2ace}\label{gambit_file_in20_8m_aa139eddff8cde21c2eaac5bb334c2ace}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!VX@{VX}}
+\index{VX@{VX}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{VX}{VX}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} read \hyperlink{make_v_t_k_file_8m_adf51fe9945b6ca147057cc27ff639d0f}{node} coordinates VX = (1\+:\hyperlink{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}{Nv})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a2bd58f70e255b7ce76fae8d4c8359b5d}\label{gambit_file_in20_8m_a2bd58f70e255b7ce76fae8d4c8359b5d}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!VY@{VY}}
+\index{VY@{VY}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{VY}{VY}}
+{\footnotesize\ttfamily VY = (1\+:\hyperlink{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}{Nv})}
+
+\mbox{\Hypertarget{gambit_file_in20_8m_a862812783fd5a84e41cd43ab6ffab8dc}\label{gambit_file_in20_8m_a862812783fd5a84e41cd43ab6ffab8dc}} 
+\index{gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}!VZ@{VZ}}
+\index{VZ@{VZ}!gambit\+File\+In20.\+m@{gambit\+File\+In20.\+m}}
+\subsubsection{\texorpdfstring{VZ}{VZ}}
+{\footnotesize\ttfamily VZ = (1\+:\hyperlink{gambit_file_in20_8m_a664a2a7a8ba4f45899cfc3b5a7cbab06}{Nv})}
+

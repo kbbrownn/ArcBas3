@@ -1,0 +1,239 @@
+\hypertarget{fis_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/test/fis.c File Reference}
+\label{fis_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/test/fis.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/test/fis.\+c}}
+
+
+A simple frequent itemset discovery program to test G\+Klib\textquotesingle{}s routines.  
+
+
+{\ttfamily \#include $<$G\+Klib.\+h$>$}\newline
+Include dependency graph for fis.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fis_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structparams__t}{params\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{fis_8c_aacf04ecfd59a1c65ac2d0837c6797418}{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN}~1
+\item 
+\#define \hyperlink{fis_8c_a07a54a5f6fc8e52b89e9c2e0244d4cc1}{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN}~2
+\item 
+\#define \hyperlink{fis_8c_a08e5c69995fd8e73505890ac8e4949cc}{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ}~3
+\item 
+\#define \hyperlink{fis_8c_a034dfcbea3f5be5b2c6922b2c95caedb}{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ}~4
+\item 
+\#define \hyperlink{fis_8c_a2e65376b8a4d8bfb10fed749904bbfa2}{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT}~5
+\item 
+\#define \hyperlink{fis_8c_a431c4dd9dfee6eda132e882f0d19bdc7}{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE}~6
+\item 
+\#define \hyperlink{fis_8c_a42553adbbb23a03ca876697c00ea44b1}{C\+M\+D\+\_\+\+H\+E\+LP}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fis_8c_a2270624f104a1d261314dd112e4a1d1d}{print\+\_\+init\+\_\+info} (\hyperlink{structparams__t}{params\+\_\+t} $\ast$params, \hyperlink{structgk__csr__t}{gk\+\_\+csr\+\_\+t} $\ast$mat)
+\item 
+void \hyperlink{fis_8c_a702976a4c55992ddbfc1918ec1b70943}{print\+\_\+final\+\_\+info} (\hyperlink{structparams__t}{params\+\_\+t} $\ast$params)
+\item 
+\hyperlink{structparams__t}{params\+\_\+t} $\ast$ \hyperlink{fis_8c_aea2aa8c9b5bb7c64a3f316d7760f0341}{parse\+\_\+cmdline} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{fis_8c_a3b3cc293672156bbc5026fd567f52462}{print\+\_\+an\+\_\+itemset} (void $\ast$stateptr, int nitems, int $\ast$itemind, int ntrans, int $\ast$tranind)
+\item 
+int \hyperlink{fis_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static struct \hyperlink{structgk__option}{gk\+\_\+option} \hyperlink{fis_8c_a0aa714b167e81fa52da2f3a82194e728}{long\+\_\+options} \mbox{[}$\,$\mbox{]}
+\item 
+static char \hyperlink{fis_8c_ac1bd0a287d08bdf8010626f37dcc780e}{helpstr} \mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}
+\item 
+static char \hyperlink{fis_8c_aa1230fd364b294a06bba778b7c0419f5}{shorthelpstr} \mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple frequent itemset discovery program to test G\+Klib\textquotesingle{}s routines. 
+
+\begin{DoxyDate}{Date}
+6/12/2008 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: fis.c 11075 2011-11-11 22:31:52Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{fis_8c_a431c4dd9dfee6eda132e882f0d19bdc7}\label{fis_8c_a431c4dd9dfee6eda132e882f0d19bdc7}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE@{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE}}
+\index{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE@{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE}{CMD\_CLABELFILE}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE~6}
+
+\mbox{\Hypertarget{fis_8c_a42553adbbb23a03ca876697c00ea44b1}\label{fis_8c_a42553adbbb23a03ca876697c00ea44b1}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+H\+E\+LP@{C\+M\+D\+\_\+\+H\+E\+LP}}
+\index{C\+M\+D\+\_\+\+H\+E\+LP@{C\+M\+D\+\_\+\+H\+E\+LP}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+H\+E\+LP}{CMD\_HELP}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+H\+E\+LP~10}
+
+\mbox{\Hypertarget{fis_8c_a034dfcbea3f5be5b2c6922b2c95caedb}\label{fis_8c_a034dfcbea3f5be5b2c6922b2c95caedb}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ@{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ}}
+\index{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ@{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ}{CMD\_MAXFREQ}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ~4}
+
+\mbox{\Hypertarget{fis_8c_a07a54a5f6fc8e52b89e9c2e0244d4cc1}\label{fis_8c_a07a54a5f6fc8e52b89e9c2e0244d4cc1}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+M\+A\+X\+L\+EN@{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN}}
+\index{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN@{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN}{CMD\_MAXLEN}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+M\+A\+X\+L\+EN~2}
+
+\mbox{\Hypertarget{fis_8c_a08e5c69995fd8e73505890ac8e4949cc}\label{fis_8c_a08e5c69995fd8e73505890ac8e4949cc}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ@{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ}}
+\index{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ@{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ}{CMD\_MINFREQ}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ~3}
+
+\mbox{\Hypertarget{fis_8c_aacf04ecfd59a1c65ac2d0837c6797418}\label{fis_8c_aacf04ecfd59a1c65ac2d0837c6797418}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+M\+I\+N\+L\+EN@{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN}}
+\index{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN@{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN}{CMD\_MINLEN}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+M\+I\+N\+L\+EN~1}
+
+Constants \mbox{\Hypertarget{fis_8c_a2e65376b8a4d8bfb10fed749904bbfa2}\label{fis_8c_a2e65376b8a4d8bfb10fed749904bbfa2}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+S\+I\+L\+E\+NT@{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT}}
+\index{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT@{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT}{CMD\_SILENT}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+S\+I\+L\+E\+NT~5}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{fis_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{fis_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{fis.\+c@{fis.\+c}!main@{main}}
+\index{main@{main}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+the entry point Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fis_8c_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fis_8c_aea2aa8c9b5bb7c64a3f316d7760f0341}\label{fis_8c_aea2aa8c9b5bb7c64a3f316d7760f0341}} 
+\index{fis.\+c@{fis.\+c}!parse\+\_\+cmdline@{parse\+\_\+cmdline}}
+\index{parse\+\_\+cmdline@{parse\+\_\+cmdline}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{parse\+\_\+cmdline()}{parse\_cmdline()}}
+{\footnotesize\ttfamily \hyperlink{structparams__t}{params\+\_\+t} $\ast$ parse\+\_\+cmdline (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+This is the entry point of the command-\/line argument parser Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{fis_8c_aea2aa8c9b5bb7c64a3f316d7760f0341_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fis_8c_a3b3cc293672156bbc5026fd567f52462}\label{fis_8c_a3b3cc293672156bbc5026fd567f52462}} 
+\index{fis.\+c@{fis.\+c}!print\+\_\+an\+\_\+itemset@{print\+\_\+an\+\_\+itemset}}
+\index{print\+\_\+an\+\_\+itemset@{print\+\_\+an\+\_\+itemset}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+an\+\_\+itemset()}{print\_an\_itemset()}}
+{\footnotesize\ttfamily void print\+\_\+an\+\_\+itemset (\begin{DoxyParamCaption}\item[{void $\ast$}]{stateptr,  }\item[{int}]{nitems,  }\item[{int $\ast$}]{itemids,  }\item[{int}]{ntrans,  }\item[{int $\ast$}]{transids }\end{DoxyParamCaption})}
+
+This is the callback function for the itemset discovery routine Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{fis_8c_a3b3cc293672156bbc5026fd567f52462_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fis_8c_a702976a4c55992ddbfc1918ec1b70943}\label{fis_8c_a702976a4c55992ddbfc1918ec1b70943}} 
+\index{fis.\+c@{fis.\+c}!print\+\_\+final\+\_\+info@{print\+\_\+final\+\_\+info}}
+\index{print\+\_\+final\+\_\+info@{print\+\_\+final\+\_\+info}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+final\+\_\+info()}{print\_final\_info()}}
+{\footnotesize\ttfamily void print\+\_\+final\+\_\+info (\begin{DoxyParamCaption}\item[{\hyperlink{structparams__t}{params\+\_\+t} $\ast$}]{params }\end{DoxyParamCaption})}
+
+This function prints final statistics Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{fis_8c_a702976a4c55992ddbfc1918ec1b70943_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{fis_8c_a702976a4c55992ddbfc1918ec1b70943_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fis_8c_a2270624f104a1d261314dd112e4a1d1d}\label{fis_8c_a2270624f104a1d261314dd112e4a1d1d}} 
+\index{fis.\+c@{fis.\+c}!print\+\_\+init\+\_\+info@{print\+\_\+init\+\_\+info}}
+\index{print\+\_\+init\+\_\+info@{print\+\_\+init\+\_\+info}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+init\+\_\+info()}{print\_init\_info()}}
+{\footnotesize\ttfamily void print\+\_\+init\+\_\+info (\begin{DoxyParamCaption}\item[{\hyperlink{structparams__t}{params\+\_\+t} $\ast$}]{params,  }\item[{\hyperlink{structgk__csr__t}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+Function prototypes
+
+This function prints run parameters Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{fis_8c_a2270624f104a1d261314dd112e4a1d1d_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{fis_8c_ac1bd0a287d08bdf8010626f37dcc780e}\label{fis_8c_ac1bd0a287d08bdf8010626f37dcc780e}} 
+\index{fis.\+c@{fis.\+c}!helpstr@{helpstr}}
+\index{helpstr@{helpstr}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{helpstr}{helpstr}}
+{\footnotesize\ttfamily char helpstr\mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{fis_8c_a0aa714b167e81fa52da2f3a82194e728}\label{fis_8c_a0aa714b167e81fa52da2f3a82194e728}} 
+\index{fis.\+c@{fis.\+c}!long\+\_\+options@{long\+\_\+options}}
+\index{long\+\_\+options@{long\+\_\+options}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{long\+\_\+options}{long\_options}}
+{\footnotesize\ttfamily struct \hyperlink{structgk__option}{gk\+\_\+option} long\+\_\+options\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  \{\textcolor{stringliteral}{"minlen"},        1,      0,      \hyperlink{fis_8c_aacf04ecfd59a1c65ac2d0837c6797418}{CMD\_MINLEN}\},
+  \{\textcolor{stringliteral}{"maxlen"},        1,      0,      \hyperlink{fis_8c_a07a54a5f6fc8e52b89e9c2e0244d4cc1}{CMD\_MAXLEN}\},
+  \{\textcolor{stringliteral}{"minfreq"},       1,      0,      \hyperlink{fis_8c_a08e5c69995fd8e73505890ac8e4949cc}{CMD\_MINFREQ}\},
+  \{\textcolor{stringliteral}{"maxfreq"},       1,      0,      \hyperlink{fis_8c_a034dfcbea3f5be5b2c6922b2c95caedb}{CMD\_MAXFREQ}\},
+  \{\textcolor{stringliteral}{"silent"},        0,      0,      \hyperlink{fis_8c_a2e65376b8a4d8bfb10fed749904bbfa2}{CMD\_SILENT}\},
+  \{\textcolor{stringliteral}{"clabels"},       1,      0,      \hyperlink{fis_8c_a431c4dd9dfee6eda132e882f0d19bdc7}{CMD\_CLABELFILE}\},
+  \{\textcolor{stringliteral}{"help"},          0,      0,      \hyperlink{fis_8c_a42553adbbb23a03ca876697c00ea44b1}{CMD\_HELP}\},
+  \{0,               0,      0,      0\}
+\}
+\end{DoxyCode}
+Local variables \mbox{\Hypertarget{fis_8c_aa1230fd364b294a06bba778b7c0419f5}\label{fis_8c_aa1230fd364b294a06bba778b7c0419f5}} 
+\index{fis.\+c@{fis.\+c}!shorthelpstr@{shorthelpstr}}
+\index{shorthelpstr@{shorthelpstr}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{shorthelpstr}{shorthelpstr}}
+{\footnotesize\ttfamily char shorthelpstr\mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+\textcolor{stringliteral}{" "},
+\textcolor{stringliteral}{"   Usage: fis [options] <mat-file>"},
+\textcolor{stringliteral}{"          use 'fis -help' for a summary of the options."},
+\textcolor{stringliteral}{""}
+\}
+\end{DoxyCode}

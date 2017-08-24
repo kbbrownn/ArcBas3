@@ -1,0 +1,82 @@
+\hypertarget{auxapi_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/libmetis/auxapi.c File Reference}
+\label{auxapi_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/auxapi.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/auxapi.\+c}}
+
+
+This file contains various helper A\+PI routines for using M\+E\+T\+IS.  
+
+
+{\ttfamily \#include \char`\"{}metislib.\+h\char`\"{}}\newline
+Include dependency graph for auxapi.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{auxapi_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{auxapi_8c_a8b3f46b67d6ec9fccaa8c72b9ad10b71}{M\+E\+T\+I\+S\+\_\+\+Free} (void $\ast$ptr)
+\item 
+int \hyperlink{auxapi_8c_abea67bb0c6286795ac5fc9bee605dc5d}{M\+E\+T\+I\+S\+\_\+\+Set\+Default\+Options} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a68c032ed4161802775c6847d4cb39adf}{options})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains various helper A\+PI routines for using M\+E\+T\+IS. 
+
+\begin{DoxyDate}{Date}
+Started 5/12/2011 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+
+Copyright 1997-\/2009, Regents of the University of Minnesota 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: auxapi.c 10409 2011-06-25 16:58:34Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{auxapi_8c_a8b3f46b67d6ec9fccaa8c72b9ad10b71}\label{auxapi_8c_a8b3f46b67d6ec9fccaa8c72b9ad10b71}} 
+\index{auxapi.\+c@{auxapi.\+c}!M\+E\+T\+I\+S\+\_\+\+Free@{M\+E\+T\+I\+S\+\_\+\+Free}}
+\index{M\+E\+T\+I\+S\+\_\+\+Free@{M\+E\+T\+I\+S\+\_\+\+Free}!auxapi.\+c@{auxapi.\+c}}
+\subsubsection{\texorpdfstring{M\+E\+T\+I\+S\+\_\+\+Free()}{METIS\_Free()}}
+{\footnotesize\ttfamily int M\+E\+T\+I\+S\+\_\+\+Free (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+This function free memory that was allocated by M\+E\+T\+IS and retuned to the application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & points to the memory that was previously allocated by M\+E\+T\+IS. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{auxapi_8c_a8b3f46b67d6ec9fccaa8c72b9ad10b71_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{auxapi_8c_abea67bb0c6286795ac5fc9bee605dc5d}\label{auxapi_8c_abea67bb0c6286795ac5fc9bee605dc5d}} 
+\index{auxapi.\+c@{auxapi.\+c}!M\+E\+T\+I\+S\+\_\+\+Set\+Default\+Options@{M\+E\+T\+I\+S\+\_\+\+Set\+Default\+Options}}
+\index{M\+E\+T\+I\+S\+\_\+\+Set\+Default\+Options@{M\+E\+T\+I\+S\+\_\+\+Set\+Default\+Options}!auxapi.\+c@{auxapi.\+c}}
+\subsubsection{\texorpdfstring{M\+E\+T\+I\+S\+\_\+\+Set\+Default\+Options()}{METIS\_SetDefaultOptions()}}
+{\footnotesize\ttfamily int M\+E\+T\+I\+S\+\_\+\+Set\+Default\+Options (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{options }\end{DoxyParamCaption})}
+
+This function sets the default values for the options.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & points to an array of size at least M\+E\+T\+I\+S\+\_\+\+N\+O\+P\+T\+I\+O\+NS. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{auxapi_8c_abea67bb0c6286795ac5fc9bee605dc5d_icgraph}
+\end{center}
+\end{figure}

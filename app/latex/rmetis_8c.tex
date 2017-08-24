@@ -1,0 +1,38 @@
+\hypertarget{rmetis_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/libparmetis/rmetis.c File Reference}
+\label{rmetis_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/rmetis.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/rmetis.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for rmetis.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rmetis_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{rmetis_8c_aa7893816f7a7e65287e850bea2794388}{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Refine\+Kway} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a34203f1160d94eca83e95f2718ea3504}{vwgt}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a2be4719baa820cfa5c06fd070796e0d3}{adjwgt}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$wgtflag, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa48ecaf34ec788199c3aedb2b1558eb7}{numflag}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{include_2metis_8h_af48bb348bc8440a61f90f137de83f203}{ubvec}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a68c032ed4161802775c6847d4cb39adf}{options}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a8e62a902298dd5fd88ef554d5277b1dc}{edgecut}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, M\+P\+I\+\_\+\+Comm $\ast$comm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{rmetis_8c_aa7893816f7a7e65287e850bea2794388}\label{rmetis_8c_aa7893816f7a7e65287e850bea2794388}} 
+\index{rmetis.\+c@{rmetis.\+c}!Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Refine\+Kway@{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Refine\+Kway}}
+\index{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Refine\+Kway@{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Refine\+Kway}!rmetis.\+c@{rmetis.\+c}}
+\subsubsection{\texorpdfstring{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Refine\+Kway()}{ParMETIS\_V3\_RefineKway()}}
+{\footnotesize\ttfamily int Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Refine\+Kway (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vwgt,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjwgt,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{wgtflag,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{numflag,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{ncon,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{nparts,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ubvec,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{options,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{edgecut,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{M\+P\+I\+\_\+\+Comm $\ast$}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rmetis_8c_aa7893816f7a7e65287e850bea2794388_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rmetis_8c_aa7893816f7a7e65287e850bea2794388_icgraph}
+\end{center}
+\end{figure}

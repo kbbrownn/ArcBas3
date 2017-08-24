@@ -1,0 +1,59 @@
+\hypertarget{gk__mkrandom_8h}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/gk\+\_\+mkrandom.h File Reference}
+\label{gk__mkrandom_8h}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/gk\+\_\+mkrandom.\+h@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/gk\+\_\+mkrandom.\+h}}
+
+
+Templates for portable random number generation.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gk__mkrandom_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gk__mkrandom_8h_aea34b11226c16f61ff23b0487f2756e5}{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+OM}(F\+P\+R\+FX,  R\+N\+GT,  V\+A\+LT)
+\item 
+\#define \hyperlink{gk__mkrandom_8h_a0a53a46698857b540420db848936c6ac}{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+O\+M\+\_\+\+P\+R\+O\+TO}(F\+P\+R\+FX,  R\+N\+GT,  V\+A\+LT)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Templates for portable random number generation. 
+
+\begin{DoxyDate}{Date}
+Started 5/17/07 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: gk_mkrandom.h 10711 2011-08-31 22:23:04Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gk__mkrandom_8h_aea34b11226c16f61ff23b0487f2756e5}\label{gk__mkrandom_8h_aea34b11226c16f61ff23b0487f2756e5}} 
+\index{gk\+\_\+mkrandom.\+h@{gk\+\_\+mkrandom.\+h}!G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+OM@{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+OM}}
+\index{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+OM@{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+OM}!gk\+\_\+mkrandom.\+h@{gk\+\_\+mkrandom.\+h}}
+\subsubsection{\texorpdfstring{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+OM}{GK\_MKRANDOM}}
+{\footnotesize\ttfamily \#define G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+OM(\begin{DoxyParamCaption}\item[{}]{F\+P\+R\+FX,  }\item[{}]{R\+N\+GT,  }\item[{}]{V\+A\+LT }\end{DoxyParamCaption})}
+
+The generator for the rand() related routines. \textbackslash{}  R\+N\+GT the datatype that defines the range of values over which\textbackslash{} random numbers will be generated\textbackslash{}  V\+A\+LT the datatype that defines the contents of the array to \textbackslash{} be permuted by rand\+Array\+Permute() \textbackslash{}  F\+P\+R\+FX the function prefix \textbackslash{} \mbox{\Hypertarget{gk__mkrandom_8h_a0a53a46698857b540420db848936c6ac}\label{gk__mkrandom_8h_a0a53a46698857b540420db848936c6ac}} 
+\index{gk\+\_\+mkrandom.\+h@{gk\+\_\+mkrandom.\+h}!G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+O\+M\+\_\+\+P\+R\+O\+TO@{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+O\+M\+\_\+\+P\+R\+O\+TO}}
+\index{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+O\+M\+\_\+\+P\+R\+O\+TO@{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+O\+M\+\_\+\+P\+R\+O\+TO}!gk\+\_\+mkrandom.\+h@{gk\+\_\+mkrandom.\+h}}
+\subsubsection{\texorpdfstring{G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+O\+M\+\_\+\+P\+R\+O\+TO}{GK\_MKRANDOM\_PROTO}}
+{\footnotesize\ttfamily \#define G\+K\+\_\+\+M\+K\+R\+A\+N\+D\+O\+M\+\_\+\+P\+R\+O\+TO(\begin{DoxyParamCaption}\item[{}]{F\+P\+R\+FX,  }\item[{}]{R\+N\+GT,  }\item[{}]{V\+A\+LT }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} FPRFX ## srand(RNGT seed); \(\backslash\)
+  RNGT FPRFX ## rand(); \(\backslash\)
+  RNGT FPRFX ## randInRange(RNGT \hyperlink{_parallel_pairs_8cpp_affe776513b24d84b39af8ab0930fef7f}{max}); \(\backslash\)
+  void FPRFX ## randArrayPermute(RNGT \hyperlink{v_plot_field2_d_8m_a4c2d80ab32fc3a598413ae25e9f2bdce}{n}, VALT *\hyperlink{make_v_t_k_file_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}, RNGT nshuffles, \textcolor{keywordtype}{int} flag);\(\backslash\)
+  void FPRFX ## randArrayPermuteFine(RNGT \hyperlink{v_plot_field2_d_8m_a4c2d80ab32fc3a598413ae25e9f2bdce}{n}, VALT *\hyperlink{make_v_t_k_file_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}, \textcolor{keywordtype}{int} flag);\(\backslash\)
+\end{DoxyCode}

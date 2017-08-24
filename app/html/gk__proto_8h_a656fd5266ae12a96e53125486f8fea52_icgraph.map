@@ -1,0 +1,51 @@
+<map id="gk_GetMaxMemoryUsed" name="gk_GetMaxMemoryUsed">
+<area shape="rect" id="node2" href="$memory_8c.html#aba6f76f5c67b9b7e9c2e45988d3d3e9d" title="gk_malloc" alt="" coords="237,1004,320,1031"/>
+<area shape="rect" id="node45" href="$memory_8c.html#ab76a07ccd25288dd9acc99f5f24a7600" title="gk_realloc" alt="" coords="237,264,320,291"/>
+<area shape="rect" id="node49" href="$test_2rw_8c.html#a702976a4c55992ddbfc1918ec1b70943" title="print_final_info" alt="" coords="224,543,333,569"/>
+<area shape="rect" id="node50" href="$gpmetis_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="253,1055,304,1081"/>
+<area shape="rect" id="node3" href="$libparmetis_2proto_8h.html#aa24ead3c2c8fb3e58110f1f79453ce29" title="Balance_Partition" alt="" coords="422,1080,549,1107"/>
+<area shape="rect" id="node4" href="$libparmetis_2proto_8h.html#a5a01a370c18ddee7517dbbf9e5827f89" title="Mc_Diffusion" alt="" coords="436,1131,535,1157"/>
+<area shape="rect" id="node5" href="$msetup_8c.html#aec1a4bd83e832be7befbf6b03e9513ad" title="CreateMesh" alt="" coords="438,316,533,343"/>
+<area shape="rect" id="node7" href="$libparmetis_2proto_8h.html#afedcf14063f4d8678a3746a1152dd71c" title="AllocateNodePartitionParams" alt="" coords="387,1232,583,1259"/>
+<area shape="rect" id="node8" href="$wave_8c.html#a82c7423dfb045f99c1ef26e9fd09976a" title="WavefrontDiffusion" alt="" coords="418,1283,553,1309"/>
+<area shape="rect" id="node9" href="$gk__proto_8h.html#a82b885bbed5bd18c26629c35ce5d37e4" title="gk_csr_Create" alt="" coords="431,371,540,397"/>
+<area shape="rect" id="node14" href="$gk__proto_8h.html#ac438fca404c3f1ff6989aa68f83ed241" title="gk_csr_Split" alt="" coords="697,649,791,676"/>
+<area shape="rect" id="node19" href="$metis_2_g_klib_2graph_8c.html#a0d092a371d797437de53ae1a64bd78f4" title="gk_graph_Create" alt="" coords="423,264,548,291"/>
+<area shape="rect" id="node20" href="$metis_2_g_klib_2graph_8c.html#a4726366ef9bb2ef6a202d0fae0b60b3f" title="gk_graph_SingleSourceShortest\lPaths" alt="" coords="637,178,851,219"/>
+<area shape="rect" id="node21" href="$libparmetis_2proto_8h.html#a01903fa912de9fc7f01dace993a3fc85" title="CreateGraph" alt="" coords="436,573,535,600"/>
+<area shape="rect" id="node22" href="$htable_8c.html#a8dc2b324b10c45883dacbf58ac0b7efd" title="HTable_Create" alt="" coords="429,675,541,701"/>
+<area shape="rect" id="node23" href="$metis_2_g_klib_2io_8c.html#ad8263f64108434d7ebab9799b5ab9632" title="gk_getline" alt="" coords="444,472,527,499"/>
+<area shape="rect" id="node24" href="$metis_2_g_klib_2io_8c.html#ad13e689608e193482a6f30b1ade87814" title="gk_readfile" alt="" coords="701,751,787,777"/>
+<area shape="rect" id="node25" href="$mcore_8c.html#aba5df0f5155d88c0331fd6c996b483ed" title="gk_mcoreCreate" alt="" coords="425,776,545,803"/>
+<area shape="rect" id="node26" href="$mcore_8c.html#ab7a380f0696a0d5421653fad336bcae0" title="gk_mcoreMalloc" alt="" coords="426,827,545,853"/>
+<area shape="rect" id="node27" href="$memory_8c.html#af59ba46496f920cc424b8088f4cd7818" title="gk_AllocMatrix" alt="" coords="431,877,540,904"/>
+<area shape="rect" id="node28" href="$pdb_8c.html#a297ec0561d579a1772f424fce8886d96" title="Reads a pdb file into a pdbf structure. " alt="" coords="689,1477,799,1504"/>
+<area shape="rect" id="node29" href="$test_2rw_8c.html#a0e7ce196a2f8882777957bf898739f6f" title="parse_cmdline" alt="" coords="689,801,799,828"/>
+<area shape="rect" id="node30" href="$seq_8c.html#a8b9f1e33d58df397a7f0f923a25ec256" title="This function creates the localizations for the various sequences. " alt="" coords="654,1232,834,1259"/>
+<area shape="rect" id="node31" href="$seq_8c.html#ad44124c9b40b8ffda2276f877526a261" title="This function reads a pssm in the format of gkmod pssm. " alt="" coords="899,1380,1091,1407"/>
+<area shape="rect" id="node32" href="$string_8c.html#af62038e97ca55f14ec2557a01bd85ca2" title="Duplicates a string. " alt="" coords="445,1333,525,1360"/>
+<area shape="rect" id="node34" href="$fis_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="719,1713,769,1740"/>
+<area shape="rect" id="node35" href="$tokenizer_8c.html#a551670b0d23e97d4655a827762c6bacd" title="gk_strtokenize" alt="" coords="690,1380,798,1407"/>
+<area shape="rect" id="node36" href="$metis_2libmetis_2proto_8h.html#a681b2f4a615da39347c928c127760d07" title="FixGraph" alt="" coords="447,928,524,955"/>
+<area shape="rect" id="node37" href="$metis_2libmetis_2proto_8h.html#a5882ab0f565a5e97581ad5c4847effbc" title="GrowBisectionNode" alt="" coords="415,979,555,1005"/>
+<area shape="rect" id="node38" href="$metis_2libmetis_2proto_8h.html#a3668b93d256689991e65a85536f533c5" title="GrowBisectionNode2" alt="" coords="412,1029,559,1056"/>
+<area shape="rect" id="node39" href="$metis_2libmetis_2proto_8h.html#a22a23a687ef7ed0d4f66ab58e3a81d12" title="AllocateKWayPartitionMemory" alt="" coords="384,1384,587,1411"/>
+<area shape="rect" id="node40" href="$libparmetis_2proto_8h.html#ad1ea0dae24c2f47fd0813124bff0b66e" title="ComputePartitionParams" alt="" coords="400,1435,571,1461"/>
+<area shape="rect" id="node41" href="$metis_2libmetis_2proto_8h.html#a52a083cfb474124f22728e79cfba695f" title="SplitGraphOrderCC" alt="" coords="416,1485,555,1512"/>
+<area shape="rect" id="node42" href="$metis_2libmetis_2proto_8h.html#a1420c4ffbe28e4c3349678037adcb918" title="SetupCtrl" alt="" coords="447,1536,524,1563"/>
+<area shape="rect" id="node43" href="$srefine_8c.html#a843a5692564dc695b281647dc690c887" title="Allocate2WayNodePartition\lMemory" alt="" coords="393,1587,577,1629"/>
+<area shape="rect" id="node44" href="$libparmetis_2proto_8h.html#a2b337cc68be55b7e8b6d2218fcea855d" title="AllocateRefinementWorkSpace" alt="" coords="382,1653,589,1680"/>
+<area shape="rect" id="node6" href="$libparmetis_2proto_8h.html#a9f9b575b1270719a1d7ae34f89ed2dc5" title="SetUpMesh" alt="" coords="698,244,790,271"/>
+<area shape="rect" id="node10" href="$gk__proto_8h.html#a24144cf4c30d5ec4ed8b488d371476b3" title="gk_csr_Dup" alt="" coords="697,497,791,524"/>
+<area shape="rect" id="node11" href="$gk__proto_8h.html#a0b106b838c4dc370c32a47aaaf990375" title="gk_csr_ExtractSubmatrix" alt="" coords="659,548,829,575"/>
+<area shape="rect" id="node12" href="$gk__proto_8h.html#aaa2391cce5eb8291e65f6dc4d8e252fd" title="gk_csr_ExtractRows" alt="" coords="672,295,816,321"/>
+<area shape="rect" id="node13" href="$gk__proto_8h.html#ac59047c4a89fa4680d746fcdce4aa1a7" title="gk_csr_ExtractPartition" alt="" coords="665,345,823,372"/>
+<area shape="rect" id="node15" href="$gk__proto_8h.html#a8ebc19fe9a291bdf67677ebdaae56592" title="gk_csr_Read" alt="" coords="694,599,794,625"/>
+<area shape="rect" id="node17" href="$gk__proto_8h.html#a06edc174c5986841b589900ffce6600f" title="gk_csr_Prune" alt="" coords="692,396,796,423"/>
+<area shape="rect" id="node18" href="$gk__proto_8h.html#a66729af11e7dee3585d6191661757c37" title="gk_csr_LowFilter" alt="" coords="683,447,805,473"/>
+<area shape="rect" id="node16" href="$test_2rw_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="969,599,1020,625"/>
+<area shape="rect" id="node33" href="$string_8c.html#a46e5cf8f76a1ece74adf1b8b9dfcb275" title="Regex&#45;based search&#45;and&#45;replace function. " alt="" coords="682,700,806,727"/>
+<area shape="rect" id="node46" href="$libparmetis_2proto_8h.html#a245110080c4fe1712c5cac4a52e61e69" title="CommUpdateNnbrs" alt="" coords="415,56,555,83"/>
+<area shape="rect" id="node47" href="$libparmetis_2proto_8h.html#a5c7982f300512c943ce53a0531529ae8" title="cnbrpoolGetNext" alt="" coords="424,107,547,133"/>
+<area shape="rect" id="node48" href="$metis_2libmetis_2wspace_8c.html#a371b41152c6e40d6866b357a4ffee5f1" title="vnbrpoolGetNext" alt="" coords="424,5,547,32"/>
+</map>

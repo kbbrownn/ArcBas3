@@ -1,0 +1,112 @@
+\hypertarget{match_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/libparmetis/match.c File Reference}
+\label{match_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/match.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/match.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for match.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{match_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{match_8c_a5beea06370d4f56022dd890e2a1ab444}{L\+H\+T\+S\+I\+ZE}~8192 /$\ast$ This should be a power of two $\ast$/
+\item 
+\#define \hyperlink{match_8c_ae7520c5477c11965aabeedc033c9862b}{M\+A\+SK}~8191 /$\ast$ This should be equal to \hyperlink{match_8c_a5beea06370d4f56022dd890e2a1ab444}{L\+H\+T\+S\+I\+ZE}-\/1 $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{match_8c_ad37d00e4c0b7fb71a6778c5bf86d4d02}{Match\+\_\+\+Global} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{match_8c_a46eecf02147d0406cc05ec7e3839169b}{Match\+\_\+\+Local} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{match_8c_afe6fa9bdcdc3b227b06b992caf2aaec4}{Create\+Coarse\+Graph\+\_\+\+Global} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} cnvtxs)
+\item 
+void \hyperlink{match_8c_a5070c68f093e9635e0f2bc1c8630ba27}{Create\+Coarse\+Graph\+\_\+\+Local} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} cnvtxs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{match_8c_a5beea06370d4f56022dd890e2a1ab444}\label{match_8c_a5beea06370d4f56022dd890e2a1ab444}} 
+\index{match.\+c@{match.\+c}!L\+H\+T\+S\+I\+ZE@{L\+H\+T\+S\+I\+ZE}}
+\index{L\+H\+T\+S\+I\+ZE@{L\+H\+T\+S\+I\+ZE}!match.\+c@{match.\+c}}
+\subsubsection{\texorpdfstring{L\+H\+T\+S\+I\+ZE}{LHTSIZE}}
+{\footnotesize\ttfamily \#define L\+H\+T\+S\+I\+ZE~8192 /$\ast$ This should be a power of two $\ast$/}
+
+\mbox{\Hypertarget{match_8c_ae7520c5477c11965aabeedc033c9862b}\label{match_8c_ae7520c5477c11965aabeedc033c9862b}} 
+\index{match.\+c@{match.\+c}!M\+A\+SK@{M\+A\+SK}}
+\index{M\+A\+SK@{M\+A\+SK}!match.\+c@{match.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+SK}{MASK}}
+{\footnotesize\ttfamily \#define M\+A\+SK~8191 /$\ast$ This should be equal to \hyperlink{match_8c_a5beea06370d4f56022dd890e2a1ab444}{L\+H\+T\+S\+I\+ZE}-\/1 $\ast$/}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{match_8c_afe6fa9bdcdc3b227b06b992caf2aaec4}\label{match_8c_afe6fa9bdcdc3b227b06b992caf2aaec4}} 
+\index{match.\+c@{match.\+c}!Create\+Coarse\+Graph\+\_\+\+Global@{Create\+Coarse\+Graph\+\_\+\+Global}}
+\index{Create\+Coarse\+Graph\+\_\+\+Global@{Create\+Coarse\+Graph\+\_\+\+Global}!match.\+c@{match.\+c}}
+\subsubsection{\texorpdfstring{Create\+Coarse\+Graph\+\_\+\+Global()}{CreateCoarseGraph\_Global()}}
+{\footnotesize\ttfamily void Create\+Coarse\+Graph\+\_\+\+Global (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{cnvtxs }\end{DoxyParamCaption})}
+
+This function creates the coarser graph after a global matching Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{match_8c_afe6fa9bdcdc3b227b06b992caf2aaec4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{match_8c_afe6fa9bdcdc3b227b06b992caf2aaec4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{match_8c_a5070c68f093e9635e0f2bc1c8630ba27}\label{match_8c_a5070c68f093e9635e0f2bc1c8630ba27}} 
+\index{match.\+c@{match.\+c}!Create\+Coarse\+Graph\+\_\+\+Local@{Create\+Coarse\+Graph\+\_\+\+Local}}
+\index{Create\+Coarse\+Graph\+\_\+\+Local@{Create\+Coarse\+Graph\+\_\+\+Local}!match.\+c@{match.\+c}}
+\subsubsection{\texorpdfstring{Create\+Coarse\+Graph\+\_\+\+Local()}{CreateCoarseGraph\_Local()}}
+{\footnotesize\ttfamily void Create\+Coarse\+Graph\+\_\+\+Local (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{cnvtxs }\end{DoxyParamCaption})}
+
+This function creates the coarser graph after a local matching Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{match_8c_a5070c68f093e9635e0f2bc1c8630ba27_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{match_8c_a5070c68f093e9635e0f2bc1c8630ba27_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{match_8c_ad37d00e4c0b7fb71a6778c5bf86d4d02}\label{match_8c_ad37d00e4c0b7fb71a6778c5bf86d4d02}} 
+\index{match.\+c@{match.\+c}!Match\+\_\+\+Global@{Match\+\_\+\+Global}}
+\index{Match\+\_\+\+Global@{Match\+\_\+\+Global}!match.\+c@{match.\+c}}
+\subsubsection{\texorpdfstring{Match\+\_\+\+Global()}{Match\_Global()}}
+{\footnotesize\ttfamily void Match\+\_\+\+Global (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+Finds a H\+EM matching involving both local and remote vertices Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{match_8c_ad37d00e4c0b7fb71a6778c5bf86d4d02_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{match_8c_a46eecf02147d0406cc05ec7e3839169b}\label{match_8c_a46eecf02147d0406cc05ec7e3839169b}} 
+\index{match.\+c@{match.\+c}!Match\+\_\+\+Local@{Match\+\_\+\+Local}}
+\index{Match\+\_\+\+Local@{Match\+\_\+\+Local}!match.\+c@{match.\+c}}
+\subsubsection{\texorpdfstring{Match\+\_\+\+Local()}{Match\_Local()}}
+{\footnotesize\ttfamily void Match\+\_\+\+Local (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+Finds a H\+EM matching involving only local vertices Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{match_8c_a46eecf02147d0406cc05ec7e3839169b_cgraph}
+\end{center}
+\end{figure}

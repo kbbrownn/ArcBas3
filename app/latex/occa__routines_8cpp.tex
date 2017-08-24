@@ -1,0 +1,277 @@
+\hypertarget{occa__routines_8cpp}{}\section{src/occa\+\_\+routines.cpp File Reference}
+\label{occa__routines_8cpp}\index{src/occa\+\_\+routines.\+cpp@{src/occa\+\_\+routines.\+cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$mpi.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}fem.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$occa.\+hpp$>$}\newline
+Include dependency graph for occa\+\_\+routines.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{occa__routines_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{occa__routines_8cpp_a799a7d00720c00822259c59c686fc672}{print\+\_\+array} (const char $\ast$name, occa\+::memory \&o\+\_\+a, int \hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N})
+\item 
+void \hyperlink{occa__routines_8cpp_a0dee5ebc8cec6627fc23083e47b4ca11}{Init\+O\+C\+C\+A2D} (\hyperlink{_mesh_8h_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, std\+::vector$<$ double $\ast$$>$ \&U0)
+\item 
+void \hyperlink{occa__routines_8cpp_a21a02761bc746f8e6205d02f662aee16}{rk\+\_\+run\+\_\+2d} (\hyperlink{_mesh_8h_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, double Final\+Time, double dt)
+\item 
+void \hyperlink{occa__routines_8cpp_a9b253cfe04029e084b403542b0d7a64b}{rk\+\_\+step\+\_\+2d} (\hyperlink{_mesh_8h_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, \hyperlink{_mesh_8h_aa484d27c864c1a224505d8a302c0a4a4}{datafloat} a, \hyperlink{_mesh_8h_aa484d27c864c1a224505d8a302c0a4a4}{datafloat} b, \hyperlink{_mesh_8h_aa484d27c864c1a224505d8a302c0a4a4}{datafloat} dt)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+occa\+::device \hyperlink{occa__routines_8cpp_a66c14c55458e7125832150ab8c8550b2}{device}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a74d4c3ecd0438f93bdc521321bdfff36}{o\+\_\+\+L\+I\+FT}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a3b234d10fa55cd79b2978baf108ca7fd}{o\+\_\+\+Dr}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_ae59f75e43fa65382679bdc102e564695}{o\+\_\+\+Ds}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a6ff240e44730731028f22e84f6ba0a65}{o\+\_\+vgeo}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a425812a4124c44847aaee017366a427d}{o\+\_\+\+Dx\+\_\+geo}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a34bf7b64db70dce2401558d1247e5c03}{o\+\_\+\+Dy\+\_\+geo}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a1f254fb20580ce3c095d9165d3c89ec6}{o\+\_\+sgeo}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_ac5a74fa03cd8a2842231ba4436f236e1}{o\+\_\+sgeo\+\_\+bidg}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a234747b8c9e6a5e60df840a718dcad95}{o\+\_\+g\+V\+M\+\_\+bidg}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a711820ff8510c079abe706a29166591a}{o\+\_\+g\+V\+P\+\_\+bidg}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_aa916c51112f7004c170363a041d2faa2}{o\+\_\+lift\+\_\+bidg}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a9f42c84b93fc4d5fa04a65572eae2722}{o\+\_\+\+Fmask}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_ab25761c380a4c542ca6ee3d5f3c948c8}{o\+\_\+vmap\+MP}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a6ea20e88b56c849c6d97eedf1190ca68}{o\+\_\+Q}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_ac6b4ba2e1df712f72f4a76cab59ae7de}{o\+\_\+fQ}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_ab44a93f06b3b241504e11713f1d17746}{o\+\_\+rhsQ}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a50104d52cbc8123125e30538c9d5af30}{o\+\_\+resQ}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_a243a7539f4c5cce1e6768e8f04eedbe5}{o\+\_\+\+E\+ToE}
+\item 
+occa\+::memory \hyperlink{occa__routines_8cpp_aa4e74c1ffb437923b5543a100bd74542}{o\+\_\+flag\+\_\+blended}
+\item 
+occa\+::kernel \hyperlink{occa__routines_8cpp_ad7aaa8472c4cbeb7f80bbee508869a84}{update\+\_\+kernel}
+\item 
+occa\+::kernel \hyperlink{occa__routines_8cpp_ac6d0fe63aa1a53fb7640c58003789abe}{volume\+\_\+kernel}
+\item 
+occa\+::kernel \hyperlink{occa__routines_8cpp_a626bf2a5a88dd7dd5a62a7aa4b215740}{surface\+\_\+kernel}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{occa__routines_8cpp_a0dee5ebc8cec6627fc23083e47b4ca11}\label{occa__routines_8cpp_a0dee5ebc8cec6627fc23083e47b4ca11}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!Init\+O\+C\+C\+A2D@{Init\+O\+C\+C\+A2D}}
+\index{Init\+O\+C\+C\+A2D@{Init\+O\+C\+C\+A2D}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{Init\+O\+C\+C\+A2\+D()}{InitOCCA2D()}}
+{\footnotesize\ttfamily void Init\+O\+C\+C\+A2D (\begin{DoxyParamCaption}\item[{\hyperlink{_mesh_8h_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{std\+::vector$<$ double $\ast$$>$ \&}]{U0 }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{occa__routines_8cpp_a0dee5ebc8cec6627fc23083e47b4ca11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{occa__routines_8cpp_a0dee5ebc8cec6627fc23083e47b4ca11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{occa__routines_8cpp_a799a7d00720c00822259c59c686fc672}\label{occa__routines_8cpp_a799a7d00720c00822259c59c686fc672}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!print\+\_\+array@{print\+\_\+array}}
+\index{print\+\_\+array@{print\+\_\+array}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{print\+\_\+array()}{print\_array()}}
+{\footnotesize\ttfamily void print\+\_\+array (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{occa\+::memory \&}]{o\+\_\+a,  }\item[{int}]{N }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a21a02761bc746f8e6205d02f662aee16}\label{occa__routines_8cpp_a21a02761bc746f8e6205d02f662aee16}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!rk\+\_\+run\+\_\+2d@{rk\+\_\+run\+\_\+2d}}
+\index{rk\+\_\+run\+\_\+2d@{rk\+\_\+run\+\_\+2d}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{rk\+\_\+run\+\_\+2d()}{rk\_run\_2d()}}
+{\footnotesize\ttfamily void rk\+\_\+run\+\_\+2d (\begin{DoxyParamCaption}\item[{\hyperlink{_mesh_8h_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{double}]{Final\+Time,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{occa__routines_8cpp_a21a02761bc746f8e6205d02f662aee16_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{occa__routines_8cpp_a21a02761bc746f8e6205d02f662aee16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{occa__routines_8cpp_a9b253cfe04029e084b403542b0d7a64b}\label{occa__routines_8cpp_a9b253cfe04029e084b403542b0d7a64b}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!rk\+\_\+step\+\_\+2d@{rk\+\_\+step\+\_\+2d}}
+\index{rk\+\_\+step\+\_\+2d@{rk\+\_\+step\+\_\+2d}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{rk\+\_\+step\+\_\+2d()}{rk\_step\_2d()}}
+{\footnotesize\ttfamily void rk\+\_\+step\+\_\+2d (\begin{DoxyParamCaption}\item[{\hyperlink{_mesh_8h_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{\hyperlink{_mesh_8h_aa484d27c864c1a224505d8a302c0a4a4}{datafloat}}]{a,  }\item[{\hyperlink{_mesh_8h_aa484d27c864c1a224505d8a302c0a4a4}{datafloat}}]{b,  }\item[{\hyperlink{_mesh_8h_aa484d27c864c1a224505d8a302c0a4a4}{datafloat}}]{dt }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{occa__routines_8cpp_a9b253cfe04029e084b403542b0d7a64b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{occa__routines_8cpp_a66c14c55458e7125832150ab8c8550b2}\label{occa__routines_8cpp_a66c14c55458e7125832150ab8c8550b2}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!device@{device}}
+\index{device@{device}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily occa\+::device device}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a3b234d10fa55cd79b2978baf108ca7fd}\label{occa__routines_8cpp_a3b234d10fa55cd79b2978baf108ca7fd}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+\+Dr@{o\+\_\+\+Dr}}
+\index{o\+\_\+\+Dr@{o\+\_\+\+Dr}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+\+Dr}{o\_Dr}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+\+Dr}
+
+\mbox{\Hypertarget{occa__routines_8cpp_ae59f75e43fa65382679bdc102e564695}\label{occa__routines_8cpp_ae59f75e43fa65382679bdc102e564695}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+\+Ds@{o\+\_\+\+Ds}}
+\index{o\+\_\+\+Ds@{o\+\_\+\+Ds}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+\+Ds}{o\_Ds}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+\+Ds}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a425812a4124c44847aaee017366a427d}\label{occa__routines_8cpp_a425812a4124c44847aaee017366a427d}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+\+Dx\+\_\+geo@{o\+\_\+\+Dx\+\_\+geo}}
+\index{o\+\_\+\+Dx\+\_\+geo@{o\+\_\+\+Dx\+\_\+geo}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+\+Dx\+\_\+geo}{o\_Dx\_geo}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+\+Dx\+\_\+geo}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a34bf7b64db70dce2401558d1247e5c03}\label{occa__routines_8cpp_a34bf7b64db70dce2401558d1247e5c03}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+\+Dy\+\_\+geo@{o\+\_\+\+Dy\+\_\+geo}}
+\index{o\+\_\+\+Dy\+\_\+geo@{o\+\_\+\+Dy\+\_\+geo}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+\+Dy\+\_\+geo}{o\_Dy\_geo}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+\+Dy\+\_\+geo}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a243a7539f4c5cce1e6768e8f04eedbe5}\label{occa__routines_8cpp_a243a7539f4c5cce1e6768e8f04eedbe5}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+\+E\+ToE@{o\+\_\+\+E\+ToE}}
+\index{o\+\_\+\+E\+ToE@{o\+\_\+\+E\+ToE}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+\+E\+ToE}{o\_EToE}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+\+E\+ToE}
+
+\mbox{\Hypertarget{occa__routines_8cpp_aa4e74c1ffb437923b5543a100bd74542}\label{occa__routines_8cpp_aa4e74c1ffb437923b5543a100bd74542}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+flag\+\_\+blended@{o\+\_\+flag\+\_\+blended}}
+\index{o\+\_\+flag\+\_\+blended@{o\+\_\+flag\+\_\+blended}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+flag\+\_\+blended}{o\_flag\_blended}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+flag\+\_\+blended}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a9f42c84b93fc4d5fa04a65572eae2722}\label{occa__routines_8cpp_a9f42c84b93fc4d5fa04a65572eae2722}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+\+Fmask@{o\+\_\+\+Fmask}}
+\index{o\+\_\+\+Fmask@{o\+\_\+\+Fmask}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+\+Fmask}{o\_Fmask}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+\+Fmask}
+
+\mbox{\Hypertarget{occa__routines_8cpp_ac6b4ba2e1df712f72f4a76cab59ae7de}\label{occa__routines_8cpp_ac6b4ba2e1df712f72f4a76cab59ae7de}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+fQ@{o\+\_\+fQ}}
+\index{o\+\_\+fQ@{o\+\_\+fQ}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+fQ}{o\_fQ}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+fQ}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a234747b8c9e6a5e60df840a718dcad95}\label{occa__routines_8cpp_a234747b8c9e6a5e60df840a718dcad95}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+g\+V\+M\+\_\+bidg@{o\+\_\+g\+V\+M\+\_\+bidg}}
+\index{o\+\_\+g\+V\+M\+\_\+bidg@{o\+\_\+g\+V\+M\+\_\+bidg}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+g\+V\+M\+\_\+bidg}{o\_gVM\_bidg}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+g\+V\+M\+\_\+bidg}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a711820ff8510c079abe706a29166591a}\label{occa__routines_8cpp_a711820ff8510c079abe706a29166591a}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+g\+V\+P\+\_\+bidg@{o\+\_\+g\+V\+P\+\_\+bidg}}
+\index{o\+\_\+g\+V\+P\+\_\+bidg@{o\+\_\+g\+V\+P\+\_\+bidg}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+g\+V\+P\+\_\+bidg}{o\_gVP\_bidg}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+g\+V\+P\+\_\+bidg}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a74d4c3ecd0438f93bdc521321bdfff36}\label{occa__routines_8cpp_a74d4c3ecd0438f93bdc521321bdfff36}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+\+L\+I\+FT@{o\+\_\+\+L\+I\+FT}}
+\index{o\+\_\+\+L\+I\+FT@{o\+\_\+\+L\+I\+FT}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+\+L\+I\+FT}{o\_LIFT}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+\+L\+I\+FT}
+
+\mbox{\Hypertarget{occa__routines_8cpp_aa916c51112f7004c170363a041d2faa2}\label{occa__routines_8cpp_aa916c51112f7004c170363a041d2faa2}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+lift\+\_\+bidg@{o\+\_\+lift\+\_\+bidg}}
+\index{o\+\_\+lift\+\_\+bidg@{o\+\_\+lift\+\_\+bidg}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+lift\+\_\+bidg}{o\_lift\_bidg}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+lift\+\_\+bidg}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a6ea20e88b56c849c6d97eedf1190ca68}\label{occa__routines_8cpp_a6ea20e88b56c849c6d97eedf1190ca68}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+Q@{o\+\_\+Q}}
+\index{o\+\_\+Q@{o\+\_\+Q}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+Q}{o\_Q}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+Q}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a50104d52cbc8123125e30538c9d5af30}\label{occa__routines_8cpp_a50104d52cbc8123125e30538c9d5af30}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+resQ@{o\+\_\+resQ}}
+\index{o\+\_\+resQ@{o\+\_\+resQ}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+resQ}{o\_resQ}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+resQ}
+
+\mbox{\Hypertarget{occa__routines_8cpp_ab44a93f06b3b241504e11713f1d17746}\label{occa__routines_8cpp_ab44a93f06b3b241504e11713f1d17746}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+rhsQ@{o\+\_\+rhsQ}}
+\index{o\+\_\+rhsQ@{o\+\_\+rhsQ}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+rhsQ}{o\_rhsQ}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+rhsQ}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a1f254fb20580ce3c095d9165d3c89ec6}\label{occa__routines_8cpp_a1f254fb20580ce3c095d9165d3c89ec6}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+sgeo@{o\+\_\+sgeo}}
+\index{o\+\_\+sgeo@{o\+\_\+sgeo}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+sgeo}{o\_sgeo}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+sgeo}
+
+\mbox{\Hypertarget{occa__routines_8cpp_ac5a74fa03cd8a2842231ba4436f236e1}\label{occa__routines_8cpp_ac5a74fa03cd8a2842231ba4436f236e1}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+sgeo\+\_\+bidg@{o\+\_\+sgeo\+\_\+bidg}}
+\index{o\+\_\+sgeo\+\_\+bidg@{o\+\_\+sgeo\+\_\+bidg}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+sgeo\+\_\+bidg}{o\_sgeo\_bidg}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+sgeo\+\_\+bidg}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a6ff240e44730731028f22e84f6ba0a65}\label{occa__routines_8cpp_a6ff240e44730731028f22e84f6ba0a65}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+vgeo@{o\+\_\+vgeo}}
+\index{o\+\_\+vgeo@{o\+\_\+vgeo}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+vgeo}{o\_vgeo}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+vgeo}
+
+\mbox{\Hypertarget{occa__routines_8cpp_ab25761c380a4c542ca6ee3d5f3c948c8}\label{occa__routines_8cpp_ab25761c380a4c542ca6ee3d5f3c948c8}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!o\+\_\+vmap\+MP@{o\+\_\+vmap\+MP}}
+\index{o\+\_\+vmap\+MP@{o\+\_\+vmap\+MP}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{o\+\_\+vmap\+MP}{o\_vmapMP}}
+{\footnotesize\ttfamily occa\+::memory o\+\_\+vmap\+MP}
+
+\mbox{\Hypertarget{occa__routines_8cpp_a626bf2a5a88dd7dd5a62a7aa4b215740}\label{occa__routines_8cpp_a626bf2a5a88dd7dd5a62a7aa4b215740}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!surface\+\_\+kernel@{surface\+\_\+kernel}}
+\index{surface\+\_\+kernel@{surface\+\_\+kernel}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{surface\+\_\+kernel}{surface\_kernel}}
+{\footnotesize\ttfamily occa\+::kernel surface\+\_\+kernel}
+
+\mbox{\Hypertarget{occa__routines_8cpp_ad7aaa8472c4cbeb7f80bbee508869a84}\label{occa__routines_8cpp_ad7aaa8472c4cbeb7f80bbee508869a84}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!update\+\_\+kernel@{update\+\_\+kernel}}
+\index{update\+\_\+kernel@{update\+\_\+kernel}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{update\+\_\+kernel}{update\_kernel}}
+{\footnotesize\ttfamily occa\+::kernel update\+\_\+kernel}
+
+\mbox{\Hypertarget{occa__routines_8cpp_ac6d0fe63aa1a53fb7640c58003789abe}\label{occa__routines_8cpp_ac6d0fe63aa1a53fb7640c58003789abe}} 
+\index{occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}!volume\+\_\+kernel@{volume\+\_\+kernel}}
+\index{volume\+\_\+kernel@{volume\+\_\+kernel}!occa\+\_\+routines.\+cpp@{occa\+\_\+routines.\+cpp}}
+\subsubsection{\texorpdfstring{volume\+\_\+kernel}{volume\_kernel}}
+{\footnotesize\ttfamily occa\+::kernel volume\+\_\+kernel}
+

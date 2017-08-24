@@ -1,0 +1,166 @@
+\hypertarget{minconn_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/libmetis/minconn.c File Reference}
+\label{minconn_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/minconn.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/minconn.\+c}}
+
+
+Functions that deal with prunning the number of adjacent subdomains in kmetis.  
+
+
+{\ttfamily \#include \char`\"{}metislib.\+h\char`\"{}}\newline
+Include dependency graph for minconn.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{minconn_8c_a78c50bcdffefbd90914a77c4add573cc}{Compute\+Sub\+Domain\+Graph} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{minconn_8c_a004451dc6b5a9ebe36a063f7bcd6495a}{Update\+Edge\+Sub\+Domain\+Graph} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{cubic2linear_8m_a6277e2a7446059985dc9bcf0a4ac1a8f}{u}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{cubic2linear_8m_ac4055e3a20b6b3af3d10590ea446ef6c}{v}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} ewgt, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$r\+\_\+maxndoms)
+\item 
+void \hyperlink{minconn_8c_a6dab60a85abb88ada807831e84cb84fc}{Eliminate\+Sub\+Domain\+Edges} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{minconn_8c_a39d997df18cf07ea8609a66db133a8b6}{Move\+Group\+Min\+Conn\+For\+Cut} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} to, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} nind, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$ind)
+\item 
+void \hyperlink{minconn_8c_acab0293e31c438218cd4b37b608466c6}{Move\+Group\+Min\+Conn\+For\+Vol} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} to, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} nind, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$ind, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vmarker, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$pmarker, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$modind)
+\item 
+void \hyperlink{minconn_8c_a9723ce68d6093abc3aca1086e672cde9}{Print\+Sub\+Domain\+Graph} (\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{include_2metis_8h_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a7a355801f721e9d8d4ae03590a3a56b0}{where})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions that deal with prunning the number of adjacent subdomains in kmetis. 
+
+\begin{DoxyDate}{Date}
+Started 7/15/98 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+
+Copyright 1997-\/2009, Regents of the University of Minnesota 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{minconn_8c}{minconn.\+c} 10513 2011-\/07-\/07 22\+:06\+:03Z karypis 
+\end{DoxyParagraph}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{minconn_8c_a78c50bcdffefbd90914a77c4add573cc}\label{minconn_8c_a78c50bcdffefbd90914a77c4add573cc}} 
+\index{minconn.\+c@{minconn.\+c}!Compute\+Sub\+Domain\+Graph@{Compute\+Sub\+Domain\+Graph}}
+\index{Compute\+Sub\+Domain\+Graph@{Compute\+Sub\+Domain\+Graph}!minconn.\+c@{minconn.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Sub\+Domain\+Graph()}{ComputeSubDomainGraph()}}
+{\footnotesize\ttfamily void Compute\+Sub\+Domain\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function computes the subdomain graph storing the result in the pre-\/allocated worspace arrays Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c_a78c50bcdffefbd90914a77c4add573cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c_a78c50bcdffefbd90914a77c4add573cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{minconn_8c_a6dab60a85abb88ada807831e84cb84fc}\label{minconn_8c_a6dab60a85abb88ada807831e84cb84fc}} 
+\index{minconn.\+c@{minconn.\+c}!Eliminate\+Sub\+Domain\+Edges@{Eliminate\+Sub\+Domain\+Edges}}
+\index{Eliminate\+Sub\+Domain\+Edges@{Eliminate\+Sub\+Domain\+Edges}!minconn.\+c@{minconn.\+c}}
+\subsubsection{\texorpdfstring{Eliminate\+Sub\+Domain\+Edges()}{EliminateSubDomainEdges()}}
+{\footnotesize\ttfamily void Eliminate\+Sub\+Domain\+Edges (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function computes the subdomain graph Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c_a6dab60a85abb88ada807831e84cb84fc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{minconn_8c_a39d997df18cf07ea8609a66db133a8b6}\label{minconn_8c_a39d997df18cf07ea8609a66db133a8b6}} 
+\index{minconn.\+c@{minconn.\+c}!Move\+Group\+Min\+Conn\+For\+Cut@{Move\+Group\+Min\+Conn\+For\+Cut}}
+\index{Move\+Group\+Min\+Conn\+For\+Cut@{Move\+Group\+Min\+Conn\+For\+Cut}!minconn.\+c@{minconn.\+c}}
+\subsubsection{\texorpdfstring{Move\+Group\+Min\+Conn\+For\+Cut()}{MoveGroupMinConnForCut()}}
+{\footnotesize\ttfamily void Move\+Group\+Min\+Conn\+For\+Cut (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{to,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nind,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{ind }\end{DoxyParamCaption})}
+
+This function moves a collection of vertices and updates their rinfo Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c_a39d997df18cf07ea8609a66db133a8b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c_a39d997df18cf07ea8609a66db133a8b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{minconn_8c_acab0293e31c438218cd4b37b608466c6}\label{minconn_8c_acab0293e31c438218cd4b37b608466c6}} 
+\index{minconn.\+c@{minconn.\+c}!Move\+Group\+Min\+Conn\+For\+Vol@{Move\+Group\+Min\+Conn\+For\+Vol}}
+\index{Move\+Group\+Min\+Conn\+For\+Vol@{Move\+Group\+Min\+Conn\+For\+Vol}!minconn.\+c@{minconn.\+c}}
+\subsubsection{\texorpdfstring{Move\+Group\+Min\+Conn\+For\+Vol()}{MoveGroupMinConnForVol()}}
+{\footnotesize\ttfamily void Move\+Group\+Min\+Conn\+For\+Vol (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{to,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nind,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{ind,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vmarker,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{pmarker,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{modind }\end{DoxyParamCaption})}
+
+This function moves a collection of vertices and updates their rinfo Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c_acab0293e31c438218cd4b37b608466c6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c_acab0293e31c438218cd4b37b608466c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{minconn_8c_a9723ce68d6093abc3aca1086e672cde9}\label{minconn_8c_a9723ce68d6093abc3aca1086e672cde9}} 
+\index{minconn.\+c@{minconn.\+c}!Print\+Sub\+Domain\+Graph@{Print\+Sub\+Domain\+Graph}}
+\index{Print\+Sub\+Domain\+Graph@{Print\+Sub\+Domain\+Graph}!minconn.\+c@{minconn.\+c}}
+\subsubsection{\texorpdfstring{Print\+Sub\+Domain\+Graph()}{PrintSubDomainGraph()}}
+{\footnotesize\ttfamily void Print\+Sub\+Domain\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nparts,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{where }\end{DoxyParamCaption})}
+
+This function computes the subdomain graph. For deubuging purposes. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c_a9723ce68d6093abc3aca1086e672cde9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{minconn_8c_a004451dc6b5a9ebe36a063f7bcd6495a}\label{minconn_8c_a004451dc6b5a9ebe36a063f7bcd6495a}} 
+\index{minconn.\+c@{minconn.\+c}!Update\+Edge\+Sub\+Domain\+Graph@{Update\+Edge\+Sub\+Domain\+Graph}}
+\index{Update\+Edge\+Sub\+Domain\+Graph@{Update\+Edge\+Sub\+Domain\+Graph}!minconn.\+c@{minconn.\+c}}
+\subsubsection{\texorpdfstring{Update\+Edge\+Sub\+Domain\+Graph()}{UpdateEdgeSubDomainGraph()}}
+{\footnotesize\ttfamily void Update\+Edge\+Sub\+Domain\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{u,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{v,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ewgt,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{r\+\_\+maxndoms }\end{DoxyParamCaption})}
+
+This function updates the weight of an edge in the subdomain graph by adding to it the value of ewgt. The update can either increase or decrease the weight of the subdomain edge based on the value of ewgt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & is the ID of one of the incident subdomains to the edge \\
+\hline
+{\em v} & is the ID of the other incident subdomains to the edge \\
+\hline
+{\em ewgt} & is the weight to be added to the subdomain edge \\
+\hline
+{\em nparts} & is the number of subdomains \\
+\hline
+{\em r\+\_\+maxndoms} & is the maximum number of adjacent subdomains and is updated as necessary. The update is skipped if a N\+U\+LL value is supplied. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minconn_8c_a004451dc6b5a9ebe36a063f7bcd6495a_icgraph}
+\end{center}
+\end{figure}

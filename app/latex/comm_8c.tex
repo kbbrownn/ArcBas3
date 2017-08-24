@@ -1,0 +1,159 @@
+\hypertarget{comm_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/libparmetis/comm.c File Reference}
+\label{comm_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/comm.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/comm.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for comm.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{comm_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{comm_8c_ab7b157ae46e347049d624027324316a0}{Comm\+Setup} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{comm_8c_a245110080c4fe1712c5cac4a52e61e69}{Comm\+Update\+Nnbrs} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} nnbrs)
+\item 
+void \hyperlink{comm_8c_a4ea1863ed9e161bc82ff3c6f0ff431c9}{Comm\+Interface\+Data} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$data, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$recvvector)
+\item 
+void \hyperlink{comm_8c_adc12fed8c165f50572b6704789b0a962}{Comm\+Changed\+Interface\+Data} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} nchanged, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$changed, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$data, ikv\+\_\+t $\ast$sendpairs, ikv\+\_\+t $\ast$recvpairs)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{comm_8c_a51be32add0e43ecdac3f0b982a0733b4}{Global\+S\+E\+Max} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} value)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{comm_8c_aa31576794c6d7b00495b4402a1a4814a}{Global\+S\+E\+Max\+Comm} (M\+P\+I\+\_\+\+Comm comm, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} value)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{comm_8c_a7cffea998f35ba1b59fe0726bee38fc9}{Global\+S\+E\+Min} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} value)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{comm_8c_a44bc5168b7fcc675e4e07293a712f12b}{Global\+S\+E\+Min\+Comm} (M\+P\+I\+\_\+\+Comm comm, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} value)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{comm_8c_a3436cdd78aad4086a1df7cd254a7f2f9}{Global\+S\+E\+Sum} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} value)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{comm_8c_a10c4011516ef455e5c128a4112cf2cea}{Global\+S\+E\+Sum\+Comm} (M\+P\+I\+\_\+\+Comm comm, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} value)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} \hyperlink{comm_8c_ad62cb5f0c141a2535d0f6eca6588a1c5}{Global\+S\+E\+Max\+Float} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} value)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} \hyperlink{comm_8c_ab1ebf8b04ebb66e2a28e603f249d9ca8}{Global\+S\+E\+Min\+Float} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} value)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} \hyperlink{comm_8c_a6cd212bae78535674c941b90373d6b0b}{Global\+S\+E\+Sum\+Float} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{comm_8c_adc12fed8c165f50572b6704789b0a962}\label{comm_8c_adc12fed8c165f50572b6704789b0a962}} 
+\index{comm.\+c@{comm.\+c}!Comm\+Changed\+Interface\+Data@{Comm\+Changed\+Interface\+Data}}
+\index{Comm\+Changed\+Interface\+Data@{Comm\+Changed\+Interface\+Data}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Comm\+Changed\+Interface\+Data()}{CommChangedInterfaceData()}}
+{\footnotesize\ttfamily void Comm\+Changed\+Interface\+Data (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nchanged,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{changed,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{data,  }\item[{ikv\+\_\+t $\ast$}]{sendpairs,  }\item[{ikv\+\_\+t $\ast$}]{recvpairs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{comm_8c_a4ea1863ed9e161bc82ff3c6f0ff431c9}\label{comm_8c_a4ea1863ed9e161bc82ff3c6f0ff431c9}} 
+\index{comm.\+c@{comm.\+c}!Comm\+Interface\+Data@{Comm\+Interface\+Data}}
+\index{Comm\+Interface\+Data@{Comm\+Interface\+Data}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Comm\+Interface\+Data()}{CommInterfaceData()}}
+{\footnotesize\ttfamily void Comm\+Interface\+Data (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{data,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{recvvector }\end{DoxyParamCaption})}
+
+This function performs the gather/scatter for the boundary vertices \mbox{\Hypertarget{comm_8c_ab7b157ae46e347049d624027324316a0}\label{comm_8c_ab7b157ae46e347049d624027324316a0}} 
+\index{comm.\+c@{comm.\+c}!Comm\+Setup@{Comm\+Setup}}
+\index{Comm\+Setup@{Comm\+Setup}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Comm\+Setup()}{CommSetup()}}
+{\footnotesize\ttfamily void Comm\+Setup (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function performs the following functions\+:
+\begin{DoxyItemize}
+\item determines the processors that contain adjacent vertices and setup the infrastructure for efficient communication.
+\item localizes the numbering of the adjancency lists. 
+\end{DoxyItemize}Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{comm_8c_ab7b157ae46e347049d624027324316a0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{comm_8c_a245110080c4fe1712c5cac4a52e61e69}\label{comm_8c_a245110080c4fe1712c5cac4a52e61e69}} 
+\index{comm.\+c@{comm.\+c}!Comm\+Update\+Nnbrs@{Comm\+Update\+Nnbrs}}
+\index{Comm\+Update\+Nnbrs@{Comm\+Update\+Nnbrs}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Comm\+Update\+Nnbrs()}{CommUpdateNnbrs()}}
+{\footnotesize\ttfamily void Comm\+Update\+Nnbrs (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nnbrs }\end{DoxyParamCaption})}
+
+This function updates the sreq/rreq/statuses arrays in ctrl based on the new number of neighbors. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{comm_8c_a245110080c4fe1712c5cac4a52e61e69_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{comm_8c_a245110080c4fe1712c5cac4a52e61e69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{comm_8c_a51be32add0e43ecdac3f0b982a0733b4}\label{comm_8c_a51be32add0e43ecdac3f0b982a0733b4}} 
+\index{comm.\+c@{comm.\+c}!Global\+S\+E\+Max@{Global\+S\+E\+Max}}
+\index{Global\+S\+E\+Max@{Global\+S\+E\+Max}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Global\+S\+E\+Max()}{GlobalSEMax()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Global\+S\+E\+Max (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{value }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{comm_8c_a51be32add0e43ecdac3f0b982a0733b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{comm_8c_aa31576794c6d7b00495b4402a1a4814a}\label{comm_8c_aa31576794c6d7b00495b4402a1a4814a}} 
+\index{comm.\+c@{comm.\+c}!Global\+S\+E\+Max\+Comm@{Global\+S\+E\+Max\+Comm}}
+\index{Global\+S\+E\+Max\+Comm@{Global\+S\+E\+Max\+Comm}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Global\+S\+E\+Max\+Comm()}{GlobalSEMaxComm()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Global\+S\+E\+Max\+Comm (\begin{DoxyParamCaption}\item[{M\+P\+I\+\_\+\+Comm}]{comm,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{comm_8c_ad62cb5f0c141a2535d0f6eca6588a1c5}\label{comm_8c_ad62cb5f0c141a2535d0f6eca6588a1c5}} 
+\index{comm.\+c@{comm.\+c}!Global\+S\+E\+Max\+Float@{Global\+S\+E\+Max\+Float}}
+\index{Global\+S\+E\+Max\+Float@{Global\+S\+E\+Max\+Float}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Global\+S\+E\+Max\+Float()}{GlobalSEMaxFloat()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} Global\+S\+E\+Max\+Float (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{comm_8c_a7cffea998f35ba1b59fe0726bee38fc9}\label{comm_8c_a7cffea998f35ba1b59fe0726bee38fc9}} 
+\index{comm.\+c@{comm.\+c}!Global\+S\+E\+Min@{Global\+S\+E\+Min}}
+\index{Global\+S\+E\+Min@{Global\+S\+E\+Min}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Global\+S\+E\+Min()}{GlobalSEMin()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Global\+S\+E\+Min (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{value }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{comm_8c_a7cffea998f35ba1b59fe0726bee38fc9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{comm_8c_a44bc5168b7fcc675e4e07293a712f12b}\label{comm_8c_a44bc5168b7fcc675e4e07293a712f12b}} 
+\index{comm.\+c@{comm.\+c}!Global\+S\+E\+Min\+Comm@{Global\+S\+E\+Min\+Comm}}
+\index{Global\+S\+E\+Min\+Comm@{Global\+S\+E\+Min\+Comm}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Global\+S\+E\+Min\+Comm()}{GlobalSEMinComm()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Global\+S\+E\+Min\+Comm (\begin{DoxyParamCaption}\item[{M\+P\+I\+\_\+\+Comm}]{comm,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{comm_8c_ab1ebf8b04ebb66e2a28e603f249d9ca8}\label{comm_8c_ab1ebf8b04ebb66e2a28e603f249d9ca8}} 
+\index{comm.\+c@{comm.\+c}!Global\+S\+E\+Min\+Float@{Global\+S\+E\+Min\+Float}}
+\index{Global\+S\+E\+Min\+Float@{Global\+S\+E\+Min\+Float}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Global\+S\+E\+Min\+Float()}{GlobalSEMinFloat()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} Global\+S\+E\+Min\+Float (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{comm_8c_a3436cdd78aad4086a1df7cd254a7f2f9}\label{comm_8c_a3436cdd78aad4086a1df7cd254a7f2f9}} 
+\index{comm.\+c@{comm.\+c}!Global\+S\+E\+Sum@{Global\+S\+E\+Sum}}
+\index{Global\+S\+E\+Sum@{Global\+S\+E\+Sum}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Global\+S\+E\+Sum()}{GlobalSESum()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Global\+S\+E\+Sum (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{comm_8c_a10c4011516ef455e5c128a4112cf2cea}\label{comm_8c_a10c4011516ef455e5c128a4112cf2cea}} 
+\index{comm.\+c@{comm.\+c}!Global\+S\+E\+Sum\+Comm@{Global\+S\+E\+Sum\+Comm}}
+\index{Global\+S\+E\+Sum\+Comm@{Global\+S\+E\+Sum\+Comm}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Global\+S\+E\+Sum\+Comm()}{GlobalSESumComm()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Global\+S\+E\+Sum\+Comm (\begin{DoxyParamCaption}\item[{M\+P\+I\+\_\+\+Comm}]{comm,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{comm_8c_a6cd212bae78535674c941b90373d6b0b}\label{comm_8c_a6cd212bae78535674c941b90373d6b0b}} 
+\index{comm.\+c@{comm.\+c}!Global\+S\+E\+Sum\+Float@{Global\+S\+E\+Sum\+Float}}
+\index{Global\+S\+E\+Sum\+Float@{Global\+S\+E\+Sum\+Float}!comm.\+c@{comm.\+c}}
+\subsubsection{\texorpdfstring{Global\+S\+E\+Sum\+Float()}{GlobalSESumFloat()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} Global\+S\+E\+Sum\+Float (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{value }\end{DoxyParamCaption})}
+

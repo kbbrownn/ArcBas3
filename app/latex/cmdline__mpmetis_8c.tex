@@ -1,0 +1,200 @@
+\hypertarget{cmdline__mpmetis_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/programs/cmdline\+\_\+mpmetis.c File Reference}
+\label{cmdline__mpmetis_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/programs/cmdline\+\_\+mpmetis.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/programs/cmdline\+\_\+mpmetis.\+c}}
+
+
+Command-\/line argument parsing for mpmetis.  
+
+
+{\ttfamily \#include \char`\"{}metisbin.\+h\char`\"{}}\newline
+Include dependency graph for cmdline\+\_\+mpmetis.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cmdline__mpmetis_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structparams__t}{params\+\_\+t} $\ast$ \hyperlink{cmdline__mpmetis_8c_a0e7ce196a2f8882777957bf898739f6f}{parse\+\_\+cmdline} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static struct \hyperlink{structgk__option}{gk\+\_\+option} \hyperlink{cmdline__mpmetis_8c_a0aa714b167e81fa52da2f3a82194e728}{long\+\_\+options} \mbox{[}$\,$\mbox{]}
+\item 
+static \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} \hyperlink{cmdline__mpmetis_8c_a65e443512ba9a22dcad61bf03836befd}{gtype\+\_\+options} \mbox{[}$\,$\mbox{]}
+\item 
+static \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} \hyperlink{cmdline__mpmetis_8c_af4fac02417827cee396dc566ebaedf49}{ptype\+\_\+options} \mbox{[}$\,$\mbox{]}
+\item 
+static \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} \hyperlink{cmdline__mpmetis_8c_a36e75039e9c8c0e25a75f518d543cc81}{objtype\+\_\+options} \mbox{[}$\,$\mbox{]}
+\item 
+static \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} \hyperlink{cmdline__mpmetis_8c_a32fe290c989acab0acbbc35a5c12bf47}{ctype\+\_\+options} \mbox{[}$\,$\mbox{]}
+\item 
+static \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} \hyperlink{cmdline__mpmetis_8c_a0320a0b5f4c0c5ee7fde00165aee34af}{iptype\+\_\+options} \mbox{[}$\,$\mbox{]}
+\item 
+static char \hyperlink{cmdline__mpmetis_8c_ac1bd0a287d08bdf8010626f37dcc780e}{helpstr} \mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}
+\item 
+static char \hyperlink{cmdline__mpmetis_8c_aa1230fd364b294a06bba778b7c0419f5}{shorthelpstr} \mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Command-\/line argument parsing for mpmetis. 
+
+\begin{DoxyDate}{Date}
+12/24/2008 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: cmdline_mpmetis.c 13905 2013-03-25 13:21:20Z karypis $\end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{cmdline__mpmetis_8c_a0e7ce196a2f8882777957bf898739f6f}\label{cmdline__mpmetis_8c_a0e7ce196a2f8882777957bf898739f6f}} 
+\index{cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}!parse\+\_\+cmdline@{parse\+\_\+cmdline}}
+\index{parse\+\_\+cmdline@{parse\+\_\+cmdline}!cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}}
+\subsubsection{\texorpdfstring{parse\+\_\+cmdline()}{parse\_cmdline()}}
+{\footnotesize\ttfamily \hyperlink{structparams__t}{params\+\_\+t}$\ast$ parse\+\_\+cmdline (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+This is the entry point of the command-\/line argument parser Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cmdline__mpmetis_8c_a0e7ce196a2f8882777957bf898739f6f_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{cmdline__mpmetis_8c_a32fe290c989acab0acbbc35a5c12bf47}\label{cmdline__mpmetis_8c_a32fe290c989acab0acbbc35a5c12bf47}} 
+\index{cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}!ctype\+\_\+options@{ctype\+\_\+options}}
+\index{ctype\+\_\+options@{ctype\+\_\+options}!cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}}
+\subsubsection{\texorpdfstring{ctype\+\_\+options}{ctype\_options}}
+{\footnotesize\ttfamily \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} ctype\+\_\+options\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+ \{\textcolor{stringliteral}{"rm"},                 \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a51d3bfb2bd8dc4a84636b2b489f575bca228eaa13dfc0fe760fb9bed33ed59cc4}{METIS\_CTYPE\_RM}\},
+ \{\textcolor{stringliteral}{"shem"},               \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a51d3bfb2bd8dc4a84636b2b489f575bca62adda94f9dddd23c6d29671402d5ba8}{METIS\_CTYPE\_SHEM}\},
+ \{NULL,                 0\}
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{cmdline__mpmetis_8c_a65e443512ba9a22dcad61bf03836befd}\label{cmdline__mpmetis_8c_a65e443512ba9a22dcad61bf03836befd}} 
+\index{cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}!gtype\+\_\+options@{gtype\+\_\+options}}
+\index{gtype\+\_\+options@{gtype\+\_\+options}!cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}}
+\subsubsection{\texorpdfstring{gtype\+\_\+options}{gtype\_options}}
+{\footnotesize\ttfamily \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} gtype\+\_\+options\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+ \{\textcolor{stringliteral}{"dual"},               \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a7633063ed0e31371242a2e798d20f891ad5612e297f13d7dfac74db949184c666}{METIS\_GTYPE\_DUAL}\},
+ \{\textcolor{stringliteral}{"nodal"},              \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a7633063ed0e31371242a2e798d20f891a3491b54a9f4bd7fc73ec3a4082ce868d}{METIS\_GTYPE\_NODAL}\},
+ \{NULL,                 0\}
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{cmdline__mpmetis_8c_ac1bd0a287d08bdf8010626f37dcc780e}\label{cmdline__mpmetis_8c_ac1bd0a287d08bdf8010626f37dcc780e}} 
+\index{cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}!helpstr@{helpstr}}
+\index{helpstr@{helpstr}!cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}}
+\subsubsection{\texorpdfstring{helpstr}{helpstr}}
+{\footnotesize\ttfamily char helpstr\mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{cmdline__mpmetis_8c_a0320a0b5f4c0c5ee7fde00165aee34af}\label{cmdline__mpmetis_8c_a0320a0b5f4c0c5ee7fde00165aee34af}} 
+\index{cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}!iptype\+\_\+options@{iptype\+\_\+options}}
+\index{iptype\+\_\+options@{iptype\+\_\+options}!cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}}
+\subsubsection{\texorpdfstring{iptype\+\_\+options}{iptype\_options}}
+{\footnotesize\ttfamily \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} iptype\+\_\+options\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+ \{\textcolor{stringliteral}{"grow"},               \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a7f13d793623003e25bbbcd5dd7dead89a7ac447359c427fd6b4267d3abe46274e}{METIS\_IPTYPE\_GROW}\},
+ \{\textcolor{stringliteral}{"random"},             \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a7f13d793623003e25bbbcd5dd7dead89a99234608df75dabdf386b5234096f6d3}{METIS\_IPTYPE\_RANDOM}\},
+ \{NULL,                 0\}
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{cmdline__mpmetis_8c_a0aa714b167e81fa52da2f3a82194e728}\label{cmdline__mpmetis_8c_a0aa714b167e81fa52da2f3a82194e728}} 
+\index{cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}!long\+\_\+options@{long\+\_\+options}}
+\index{long\+\_\+options@{long\+\_\+options}!cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}}
+\subsubsection{\texorpdfstring{long\+\_\+options}{long\_options}}
+{\footnotesize\ttfamily struct \hyperlink{structgk__option}{gk\+\_\+option} long\+\_\+options\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  \{\textcolor{stringliteral}{"gtype"},          1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812ad97058d1a182d69267c5464e530c9804}{METIS\_OPTION\_GTYPE}\},
+  \{\textcolor{stringliteral}{"ptype"},          1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812aa1ed761ba55dca53de38ad6223f8e743}{METIS\_OPTION\_PTYPE}\},
+  \{\textcolor{stringliteral}{"objtype"},        1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812af8abd001fac3e4b5d22e38bcb2b4f44a}{METIS\_OPTION\_OBJTYPE}\},
+
+  \{\textcolor{stringliteral}{"ctype"},          1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812a005eecf5059bf82ea04c231a2250f8ce}{METIS\_OPTION\_CTYPE}\},
+  \{\textcolor{stringliteral}{"iptype"},         1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812a305d9812ccc23ea311e7d85e92ed506c}{METIS\_OPTION\_IPTYPE}\},
+
+  \{\textcolor{stringliteral}{"minconn"},        0,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812afaeaf0f6d655f45babe63ee273fb4113}{METIS\_OPTION\_MINCONN}\},
+  \{\textcolor{stringliteral}{"contig"},         0,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812acd8621d4b1c5882de29a52bf87f7bbcf}{METIS\_OPTION\_CONTIG}\},
+
+  \{\textcolor{stringliteral}{"nooutput"},       0,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812ad909ca987348cb382f8d3ac7a768f04a}{METIS\_OPTION\_NOOUTPUT}\},
+
+  \{\textcolor{stringliteral}{"ufactor"},        1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812a12f26c2fc90d1b9e9babb1e6e61171f2}{METIS\_OPTION\_UFACTOR}\},
+  \{\textcolor{stringliteral}{"niter"},          1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812a4e8982b912d46a98a5033acc9508b55b}{METIS\_OPTION\_NITER}\},
+  \{\textcolor{stringliteral}{"ncuts"},          1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812af57cc76a562258a6b26725833d31856b}{METIS\_OPTION\_NCUTS}\},
+  \{\textcolor{stringliteral}{"ncommon"},        1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812aa47f16c90131000db29452195cbe7d52}{METIS\_OPTION\_NCOMMON}\},
+
+  \{\textcolor{stringliteral}{"tpwgts"},         1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812adbb0f2f34a3e51729d745115a3008fa1}{METIS\_OPTION\_TPWGTS}\},
+
+  \{\textcolor{stringliteral}{"seed"},           1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812ad7b9161a5761eae5f49c2a858870e1eb}{METIS\_OPTION\_SEED}\},
+
+  \{\textcolor{stringliteral}{"dbglvl"},         1,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812a26576f71f2f7afa10c407cd68ebee8d1}{METIS\_OPTION\_DBGLVL}\},
+
+  \{\textcolor{stringliteral}{"help"},           0,      0,      \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a25f2f86771b268567d2b948b32961812ad997144cc0ba0b28a9c763fbc005bd2b}{METIS\_OPTION\_HELP}\},
+  \{0,                0,      0,      0\}
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{cmdline__mpmetis_8c_a36e75039e9c8c0e25a75f518d543cc81}\label{cmdline__mpmetis_8c_a36e75039e9c8c0e25a75f518d543cc81}} 
+\index{cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}!objtype\+\_\+options@{objtype\+\_\+options}}
+\index{objtype\+\_\+options@{objtype\+\_\+options}!cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}}
+\subsubsection{\texorpdfstring{objtype\+\_\+options}{objtype\_options}}
+{\footnotesize\ttfamily \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} objtype\+\_\+options\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+ \{\textcolor{stringliteral}{"cut"},                \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_ad8332705ea18c63b06801b0630db9bb8a573335f3178103a5f6989eb71f6d6408}{METIS\_OBJTYPE\_CUT}\},
+ \{\textcolor{stringliteral}{"vol"},                \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_ad8332705ea18c63b06801b0630db9bb8ac3b12f1f07abe8b2e370eec53c54b99e}{METIS\_OBJTYPE\_VOL}\},
+ \{NULL,                 0\}
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{cmdline__mpmetis_8c_af4fac02417827cee396dc566ebaedf49}\label{cmdline__mpmetis_8c_af4fac02417827cee396dc566ebaedf49}} 
+\index{cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}!ptype\+\_\+options@{ptype\+\_\+options}}
+\index{ptype\+\_\+options@{ptype\+\_\+options}!cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}}
+\subsubsection{\texorpdfstring{ptype\+\_\+options}{ptype\_options}}
+{\footnotesize\ttfamily \hyperlink{structgk___string_map__t}{gk\+\_\+\+String\+Map\+\_\+t} ptype\+\_\+options\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+ \{\textcolor{stringliteral}{"rb"},                 \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_abf75050507696b8fe82fdb5ecccf58c7a292cc44a018412a8d74e046466dc1568}{METIS\_PTYPE\_RB}\},
+ \{\textcolor{stringliteral}{"kway"},               \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_abf75050507696b8fe82fdb5ecccf58c7af95ee0a4bd8366c89acccdfb6d1b4b32}{METIS\_PTYPE\_KWAY}\},
+ \{NULL,                 0\}
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{cmdline__mpmetis_8c_aa1230fd364b294a06bba778b7c0419f5}\label{cmdline__mpmetis_8c_aa1230fd364b294a06bba778b7c0419f5}} 
+\index{cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}!shorthelpstr@{shorthelpstr}}
+\index{shorthelpstr@{shorthelpstr}!cmdline\+\_\+mpmetis.\+c@{cmdline\+\_\+mpmetis.\+c}}
+\subsubsection{\texorpdfstring{shorthelpstr}{shorthelpstr}}
+{\footnotesize\ttfamily char shorthelpstr\mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+\textcolor{stringliteral}{" "},
+\textcolor{stringliteral}{"   Usage: mpmetis [options] <filename> <nparts>"},
+\textcolor{stringliteral}{"          use 'mpmetis -help' for a summary of the options."},
+\textcolor{stringliteral}{""}
+\}
+\end{DoxyCode}

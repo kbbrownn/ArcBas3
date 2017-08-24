@@ -1,0 +1,11 @@
+<map id="Mc_Diffusion" name="Mc_Diffusion">
+<area shape="rect" id="node2" href="$gk__proto_8h.html#aba6f76f5c67b9b7e9c2e45988d3d3e9d" title="gk_malloc" alt="" coords="161,92,244,119"/>
+<area shape="rect" id="node8" href="$mdiffusion_8c.html#a78ca75095aef9df3b79518a334846184" title="ExtractGraph" alt="" coords="153,149,253,176"/>
+<area shape="rect" id="node9" href="$gk__proto_8h.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="169,212,236,239"/>
+<area shape="rect" id="node3" href="$adjustments_2make__bidg__headers_8m.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="648,60,704,87"/>
+<area shape="rect" id="node4" href="$memory_8c.html#ad2327b94227019b6753b6b09400c0522" title="gk_GetCurMemoryUsed" alt="" coords="304,35,469,61"/>
+<area shape="rect" id="node5" href="$memory_8c.html#a656fd5266ae12a96e53125486f8fea52" title="gk_GetMaxMemoryUsed" alt="" coords="302,85,471,112"/>
+<area shape="rect" id="node6" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="520,161,600,188"/>
+<area shape="rect" id="node7" href="$gk__proto_8h.html#a3777d3929aad6ae5e17b76656cd6797b" title="gk_gkmcoreAdd" alt="" coords="327,187,446,213"/>
+<area shape="rect" id="node10" href="$gk__proto_8h.html#a6b0166aa10e35fb252f8561cac8f3bbb" title="gk_gkmcoreDel" alt="" coords="329,237,444,264"/>
+</map>

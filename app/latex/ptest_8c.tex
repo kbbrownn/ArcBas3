@@ -1,0 +1,148 @@
+\hypertarget{ptest_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/programs/ptest.c File Reference}
+\label{ptest_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/programs/ptest.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/programs/ptest.\+c}}
+{\ttfamily \#include $<$parmetisbin.\+h$>$}\newline
+Include dependency graph for ptest.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ptest_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ptest_8c_a9214dfc9b3f48a9499d9db889783b938}{N\+C\+ON}~5
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ptest_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{ptest_8c_adb0c2dc0c5138f35c71739328c702074}{Test\+Par\+Metis\+\_\+\+G\+Part} (char $\ast$\hyperlink{write__vtu__template_8cpp_a42a21beb8018ac623f4d09db1343b9cf}{filename}, char $\ast$xyzfile, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{ptest_8c_a725d56a999dc467b3f7883eea465bab2}{Compute\+Real\+Cut} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, char $\ast$\hyperlink{write__vtu__template_8cpp_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{ptest_8c_a8003a74d9258bf251cc16e3b964c4b69}{Compute\+Real\+Cut\+From\+Moved} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mvtxdist, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mpart, char $\ast$\hyperlink{write__vtu__template_8cpp_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+void \hyperlink{ptest_8c_a136ad3b21ef4f877c3100a997814e8ce}{Test\+Move\+Graph} (\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$ograph, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$omgraph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$ \hyperlink{ptest_8c_aff9e935a0b03f0424e9c241573bb437b}{Test\+Set\+Up\+Graph} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a34203f1160d94eca83e95f2718ea3504}{vwgt}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a2be4719baa820cfa5c06fd070796e0d3}{adjwgt}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} wgtflag)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ptest_8c_a9214dfc9b3f48a9499d9db889783b938}\label{ptest_8c_a9214dfc9b3f48a9499d9db889783b938}} 
+\index{ptest.\+c@{ptest.\+c}!N\+C\+ON@{N\+C\+ON}}
+\index{N\+C\+ON@{N\+C\+ON}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{N\+C\+ON}{NCON}}
+{\footnotesize\ttfamily \#define N\+C\+ON~5}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ptest_8c_a725d56a999dc467b3f7883eea465bab2}\label{ptest_8c_a725d56a999dc467b3f7883eea465bab2}} 
+\index{ptest.\+c@{ptest.\+c}!Compute\+Real\+Cut@{Compute\+Real\+Cut}}
+\index{Compute\+Real\+Cut@{Compute\+Real\+Cut}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Real\+Cut()}{ComputeRealCut()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Compute\+Real\+Cut (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+This function takes a partition vector that is distributed and reads in the original graph and computes the edgecut Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ptest_8c_a725d56a999dc467b3f7883eea465bab2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ptest_8c_a725d56a999dc467b3f7883eea465bab2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ptest_8c_a8003a74d9258bf251cc16e3b964c4b69}\label{ptest_8c_a8003a74d9258bf251cc16e3b964c4b69}} 
+\index{ptest.\+c@{ptest.\+c}!Compute\+Real\+Cut\+From\+Moved@{Compute\+Real\+Cut\+From\+Moved}}
+\index{Compute\+Real\+Cut\+From\+Moved@{Compute\+Real\+Cut\+From\+Moved}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Real\+Cut\+From\+Moved()}{ComputeRealCutFromMoved()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Compute\+Real\+Cut\+From\+Moved (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mvtxdist,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mpart,  }\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+This function takes a partition vector of the original graph and that of the moved graph and computes the cut of the original graph based on the moved graph Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ptest_8c_a8003a74d9258bf251cc16e3b964c4b69_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ptest_8c_a8003a74d9258bf251cc16e3b964c4b69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ptest_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{ptest_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{ptest.\+c@{ptest.\+c}!main@{main}}
+\index{main@{main}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Entry point of the testing routine Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ptest_8c_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ptest_8c_a136ad3b21ef4f877c3100a997814e8ce}\label{ptest_8c_a136ad3b21ef4f877c3100a997814e8ce}} 
+\index{ptest.\+c@{ptest.\+c}!Test\+Move\+Graph@{Test\+Move\+Graph}}
+\index{Test\+Move\+Graph@{Test\+Move\+Graph}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Test\+Move\+Graph()}{TestMoveGraph()}}
+{\footnotesize\ttfamily void Test\+Move\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{ograph,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{omgraph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{ptest_8c_a136ad3b21ef4f877c3100a997814e8ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ptest_8c_a136ad3b21ef4f877c3100a997814e8ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ptest_8c_adb0c2dc0c5138f35c71739328c702074}\label{ptest_8c_adb0c2dc0c5138f35c71739328c702074}} 
+\index{ptest.\+c@{ptest.\+c}!Test\+Par\+Metis\+\_\+\+G\+Part@{Test\+Par\+Metis\+\_\+\+G\+Part}}
+\index{Test\+Par\+Metis\+\_\+\+G\+Part@{Test\+Par\+Metis\+\_\+\+G\+Part}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Test\+Par\+Metis\+\_\+\+G\+Part()}{TestParMetis\_GPart()}}
+{\footnotesize\ttfamily void Test\+Par\+Metis\+\_\+\+G\+Part (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{char $\ast$}]{xyzfile,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+This function tests the various graph partitioning and ordering routines Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ptest_8c_adb0c2dc0c5138f35c71739328c702074_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{ptest_8c_adb0c2dc0c5138f35c71739328c702074_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ptest_8c_aff9e935a0b03f0424e9c241573bb437b}\label{ptest_8c_aff9e935a0b03f0424e9c241573bb437b}} 
+\index{ptest.\+c@{ptest.\+c}!Test\+Set\+Up\+Graph@{Test\+Set\+Up\+Graph}}
+\index{Test\+Set\+Up\+Graph@{Test\+Set\+Up\+Graph}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Test\+Set\+Up\+Graph()}{TestSetUpGraph()}}
+{\footnotesize\ttfamily \hyperlink{structgraph__t}{graph\+\_\+t}$\ast$ Test\+Set\+Up\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vwgt,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjwgt,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{wgtflag }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ptest_8c_aff9e935a0b03f0424e9c241573bb437b_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,350 @@
+\hypertarget{gk__macros_8h}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/gk\+\_\+macros.h File Reference}
+\label{gk__macros_8h}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/gk\+\_\+macros.\+h@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/gk\+\_\+macros.\+h}}
+
+
+This file contains various macros.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gk__macros_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gk__macros_8h_ae65283b4fbbdd7bcfc1e681dd649532f}{gk\+\_\+max}(a,  b)~((a) $>$= (b) ? (a) \+: (b))
+\item 
+\#define \hyperlink{gk__macros_8h_ae94627fa347c3b7d3f49bccbd01db40a}{gk\+\_\+min}(a,  b)~((a) $>$= (b) ? (b) \+: (a))
+\item 
+\#define \hyperlink{gk__macros_8h_a59d917b880bd999d33f0eb00d01c929e}{gk\+\_\+max3}(a,  b,  c)~((a) $>$= (b) \&\& (a) $>$= (c) ? (a) \+: ((b) $>$= (a) \&\& (b) $>$= (c) ? (b) \+: (c)))
+\item 
+\#define \hyperlink{gk__macros_8h_ab9902a1b34cd7bb990d209a8235d8ebe}{gk\+\_\+\+S\+W\+AP}(a,  b,  tmp)~do \{(tmp) = (a); (a) = (b); (b) = (tmp);\} while(0)
+\item 
+\#define \hyperlink{gk__macros_8h_a204beac01a28654b3ddd7eea0d6597fa}{I\+N\+C\+\_\+\+D\+EC}(a,  b,  val)~do \{(a) += (val); (b) -\/= (val);\} while(0)
+\item 
+\#define \hyperlink{gk__macros_8h_a4ddfa141f8142902738a2e1683a95a71}{sign}(a,  b)~((a $>$= 0 ? b \+: -\/b))
+\item 
+\#define \hyperlink{gk__macros_8h_a0d67a57499e3f48596b2f83d8c1f9129}{O\+N\+E\+O\+V\+E\+R\+R\+A\+N\+D\+M\+AX}~(1.\+0/(R\+A\+N\+D\+\_\+\+M\+AX+1.\+0))
+\item 
+\#define \hyperlink{gk__macros_8h_afaa28aba2e28c516143145a22176039f}{Random\+In\+Range}(\hyperlink{cubic2linear_8m_a6277e2a7446059985dc9bcf0a4ac1a8f}{u})~((int) (\hyperlink{gk__macros_8h_a0d67a57499e3f48596b2f83d8c1f9129}{O\+N\+E\+O\+V\+E\+R\+R\+A\+N\+D\+M\+AX}$\ast$(\hyperlink{cubic2linear_8m_a6277e2a7446059985dc9bcf0a4ac1a8f}{u})$\ast$rand()))
+\item 
+\#define \hyperlink{gk__macros_8h_acb1e6d47e55366b53979ecedfa821ab7}{gk\+\_\+abs}(\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x})~((\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}) $>$= 0 ? (\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}) \+: -\/(\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}))
+\item 
+\#define \hyperlink{gk__macros_8h_ad61826bab6f07c5945ee4d2b46acfbcc}{gk\+\_\+clearcputimer}(tmr)~(tmr = 0.\+0)
+\item 
+\#define \hyperlink{gk__macros_8h_a8fd4c35dbcc4dce28ea11c88ea326f2c}{gk\+\_\+startcputimer}(tmr)~(tmr -\/= \hyperlink{timers_8c_a3e9b43a695411f5f0b3396083fe688d6}{gk\+\_\+\+C\+P\+U\+Seconds}())
+\item 
+\#define \hyperlink{gk__macros_8h_acc9b1a073612fb69a4b4adef68c51439}{gk\+\_\+stopcputimer}(tmr)~(tmr += \hyperlink{timers_8c_a3e9b43a695411f5f0b3396083fe688d6}{gk\+\_\+\+C\+P\+U\+Seconds}())
+\item 
+\#define \hyperlink{gk__macros_8h_a370b22ba2cf70cf3f550722e182262d0}{gk\+\_\+getcputimer}(tmr)~(tmr)
+\item 
+\#define \hyperlink{gk__macros_8h_a9d358a26c5d49a19c6e188f4a2da3372}{gk\+\_\+clearwctimer}(tmr)~(tmr = 0.\+0)
+\item 
+\#define \hyperlink{gk__macros_8h_a62391ec1e07912f942d70c2015756c62}{gk\+\_\+startwctimer}(tmr)~(tmr -\/= \hyperlink{timers_8c_abc56539a50e81723bb4f80b5529708d0}{gk\+\_\+\+W\+Clock\+Seconds}())
+\item 
+\#define \hyperlink{gk__macros_8h_a58435b46c1a70f7bf3f40e8c6adfdf46}{gk\+\_\+stopwctimer}(tmr)~(tmr += \hyperlink{timers_8c_abc56539a50e81723bb4f80b5529708d0}{gk\+\_\+\+W\+Clock\+Seconds}())
+\item 
+\#define \hyperlink{gk__macros_8h_a856bc6009a6980a37711be6d8d80663f}{gk\+\_\+getwctimer}(tmr)~(tmr)
+\item 
+\#define \hyperlink{gk__macros_8h_ad41a4aa918730bbed6aa9471adb8fdb2}{I\+F\+S\+ET}(a,  flag,  cmd)~\hyperlink{threed__to__vtu_8m_a96c738d3e2120c4273f9d4390761d99e}{if} ((a)\&(flag)) (cmd);
+\item 
+\#define \hyperlink{gk__macros_8h_a2d2c0f535e4a92f5dfe0420c159045ab}{G\+K\+S\+E\+T\+J\+MP}()~(setjmp(gk\+\_\+return\+\_\+to\+\_\+entry))
+\item 
+\#define \hyperlink{gk__macros_8h_a59a6c75b539b1e491180612cc74063c1}{gk\+\_\+sigcatch}()~(setjmp(\hyperlink{gk__externs_8h_ab371a33f6ef660f6c8192c47a5acb5f0}{gk\+\_\+jbufs}\mbox{[}\hyperlink{gk__externs_8h_a4977ceba83d44d803185a470184ce54c}{gk\+\_\+cur\+\_\+jbufs}\mbox{]}))
+\item 
+\#define \hyperlink{gk__macros_8h_a095506946a5862a37905e2014ea97f4e}{M\+A\+L\+L\+O\+C\+\_\+\+C\+H\+E\+CK}(ptr)~;
+\item 
+\#define \hyperlink{gk__macros_8h_a475f3191b01ce1b1cbce5d4fba41f3e7}{M\+A\+K\+E\+C\+SR}(\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i},  \hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n},  a)
+\item 
+\#define \hyperlink{gk__macros_8h_a65e175a83f3bbb4a4b15a01d2a055e61}{S\+H\+I\+F\+T\+C\+SR}(\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i},  \hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n},  a)
+\item 
+\#define \hyperlink{gk__macros_8h_ab1ae193a061163eee387ad2f36fe98dd}{G\+K\+A\+S\+S\+E\+RT}(expr)
+\item 
+\#define \hyperlink{gk__macros_8h_a248806723b770fadba36a99fbea64af1}{G\+K\+A\+S\+S\+E\+R\+TP}(expr,  msg)
+\item 
+\#define \hyperlink{gk__macros_8h_a5587b7fac80cfb26c76899eb2aa32c97}{G\+K\+C\+U\+A\+S\+S\+E\+RT}(expr)
+\item 
+\#define \hyperlink{gk__macros_8h_ad513556baf4c676ebcf2e7f1890f4902}{G\+K\+C\+U\+A\+S\+S\+E\+R\+TP}(expr,  msg)
+\item 
+\#define \hyperlink{gk__macros_8h_a28301f76c53b643912da7c538f74e2c6}{A\+S\+S\+E\+RT}(expr)
+\item 
+\#define \hyperlink{gk__macros_8h_a4debd5b68733bb78770eb49bfd059744}{A\+S\+S\+E\+R\+TP}(expr,  msg)
+\item 
+\#define \hyperlink{gk__macros_8h_a7e1dd78e319657b8d5d4d70e9dda108d}{A\+S\+S\+E\+R\+T2}~\hyperlink{gk__macros_8h_a28301f76c53b643912da7c538f74e2c6}{A\+S\+S\+E\+RT}
+\item 
+\#define \hyperlink{gk__macros_8h_af17c469dea88cdca6f53f9ae726670f2}{A\+S\+S\+E\+R\+T\+P2}~\hyperlink{gk__macros_8h_a4debd5b68733bb78770eb49bfd059744}{A\+S\+S\+E\+R\+TP}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains various macros. 
+
+\begin{DoxyDate}{Date}
+Started 3/27/2007 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: gk_macros.h 10711 2011-08-31 22:23:04Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gk__macros_8h_a28301f76c53b643912da7c538f74e2c6}\label{gk__macros_8h_a28301f76c53b643912da7c538f74e2c6}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!A\+S\+S\+E\+RT@{A\+S\+S\+E\+RT}}
+\index{A\+S\+S\+E\+RT@{A\+S\+S\+E\+RT}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+RT}{ASSERT}}
+{\footnotesize\ttfamily \#define A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{expr }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!(expr)) \{                                               \(\backslash\)
+        printf(\textcolor{stringliteral}{"***ASSERTION failed on line %d of file %s: "} #expr \textcolor{stringliteral}{"\(\backslash\)n"}, \(\backslash\)
+              \_\_LINE\_\_, \_\_FILE\_\_);                               \(\backslash\)
+        assert(expr);                                                \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{gk__macros_8h_a7e1dd78e319657b8d5d4d70e9dda108d}\label{gk__macros_8h_a7e1dd78e319657b8d5d4d70e9dda108d}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!A\+S\+S\+E\+R\+T2@{A\+S\+S\+E\+R\+T2}}
+\index{A\+S\+S\+E\+R\+T2@{A\+S\+S\+E\+R\+T2}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T2}{ASSERT2}}
+{\footnotesize\ttfamily \#define A\+S\+S\+E\+R\+T2~\hyperlink{gk__macros_8h_a28301f76c53b643912da7c538f74e2c6}{A\+S\+S\+E\+RT}}
+
+\mbox{\Hypertarget{gk__macros_8h_a4debd5b68733bb78770eb49bfd059744}\label{gk__macros_8h_a4debd5b68733bb78770eb49bfd059744}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!A\+S\+S\+E\+R\+TP@{A\+S\+S\+E\+R\+TP}}
+\index{A\+S\+S\+E\+R\+TP@{A\+S\+S\+E\+R\+TP}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+TP}{ASSERTP}}
+{\footnotesize\ttfamily \#define A\+S\+S\+E\+R\+TP(\begin{DoxyParamCaption}\item[{}]{expr,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!(expr)) \{                                               \(\backslash\)
+        printf(\textcolor{stringliteral}{"***ASSERTION failed on line %d of file %s: "} #expr \textcolor{stringliteral}{"\(\backslash\)n"}, \(\backslash\)
+              \_\_LINE\_\_, \_\_FILE\_\_);                               \(\backslash\)
+        printf msg ; \(\backslash\)
+        printf(\textcolor{stringliteral}{"\(\backslash\)n"}); \(\backslash\)
+        assert(expr);                                                \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{gk__macros_8h_af17c469dea88cdca6f53f9ae726670f2}\label{gk__macros_8h_af17c469dea88cdca6f53f9ae726670f2}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!A\+S\+S\+E\+R\+T\+P2@{A\+S\+S\+E\+R\+T\+P2}}
+\index{A\+S\+S\+E\+R\+T\+P2@{A\+S\+S\+E\+R\+T\+P2}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+P2}{ASSERTP2}}
+{\footnotesize\ttfamily \#define A\+S\+S\+E\+R\+T\+P2~\hyperlink{gk__macros_8h_a4debd5b68733bb78770eb49bfd059744}{A\+S\+S\+E\+R\+TP}}
+
+\mbox{\Hypertarget{gk__macros_8h_acb1e6d47e55366b53979ecedfa821ab7}\label{gk__macros_8h_acb1e6d47e55366b53979ecedfa821ab7}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+abs@{gk\+\_\+abs}}
+\index{gk\+\_\+abs@{gk\+\_\+abs}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+abs}{gk\_abs}}
+{\footnotesize\ttfamily \#define gk\+\_\+abs(\begin{DoxyParamCaption}\item[{}]{\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x} }\end{DoxyParamCaption})~((\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}) $>$= 0 ? (\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}) \+: -\/(\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}))}
+
+\mbox{\Hypertarget{gk__macros_8h_ad61826bab6f07c5945ee4d2b46acfbcc}\label{gk__macros_8h_ad61826bab6f07c5945ee4d2b46acfbcc}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+clearcputimer@{gk\+\_\+clearcputimer}}
+\index{gk\+\_\+clearcputimer@{gk\+\_\+clearcputimer}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+clearcputimer}{gk\_clearcputimer}}
+{\footnotesize\ttfamily \#define gk\+\_\+clearcputimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr = 0.\+0)}
+
+\mbox{\Hypertarget{gk__macros_8h_a9d358a26c5d49a19c6e188f4a2da3372}\label{gk__macros_8h_a9d358a26c5d49a19c6e188f4a2da3372}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+clearwctimer@{gk\+\_\+clearwctimer}}
+\index{gk\+\_\+clearwctimer@{gk\+\_\+clearwctimer}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+clearwctimer}{gk\_clearwctimer}}
+{\footnotesize\ttfamily \#define gk\+\_\+clearwctimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr = 0.\+0)}
+
+\mbox{\Hypertarget{gk__macros_8h_a370b22ba2cf70cf3f550722e182262d0}\label{gk__macros_8h_a370b22ba2cf70cf3f550722e182262d0}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+getcputimer@{gk\+\_\+getcputimer}}
+\index{gk\+\_\+getcputimer@{gk\+\_\+getcputimer}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+getcputimer}{gk\_getcputimer}}
+{\footnotesize\ttfamily \#define gk\+\_\+getcputimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr)}
+
+\mbox{\Hypertarget{gk__macros_8h_a856bc6009a6980a37711be6d8d80663f}\label{gk__macros_8h_a856bc6009a6980a37711be6d8d80663f}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+getwctimer@{gk\+\_\+getwctimer}}
+\index{gk\+\_\+getwctimer@{gk\+\_\+getwctimer}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+getwctimer}{gk\_getwctimer}}
+{\footnotesize\ttfamily \#define gk\+\_\+getwctimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr)}
+
+\mbox{\Hypertarget{gk__macros_8h_ae65283b4fbbdd7bcfc1e681dd649532f}\label{gk__macros_8h_ae65283b4fbbdd7bcfc1e681dd649532f}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+max@{gk\+\_\+max}}
+\index{gk\+\_\+max@{gk\+\_\+max}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+max}{gk\_max}}
+{\footnotesize\ttfamily \#define gk\+\_\+max(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a) $>$= (b) ? (a) \+: (b))}
+
+\mbox{\Hypertarget{gk__macros_8h_a59d917b880bd999d33f0eb00d01c929e}\label{gk__macros_8h_a59d917b880bd999d33f0eb00d01c929e}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+max3@{gk\+\_\+max3}}
+\index{gk\+\_\+max3@{gk\+\_\+max3}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+max3}{gk\_max3}}
+{\footnotesize\ttfamily \#define gk\+\_\+max3(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c }\end{DoxyParamCaption})~((a) $>$= (b) \&\& (a) $>$= (c) ? (a) \+: ((b) $>$= (a) \&\& (b) $>$= (c) ? (b) \+: (c)))}
+
+\mbox{\Hypertarget{gk__macros_8h_ae94627fa347c3b7d3f49bccbd01db40a}\label{gk__macros_8h_ae94627fa347c3b7d3f49bccbd01db40a}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+min@{gk\+\_\+min}}
+\index{gk\+\_\+min@{gk\+\_\+min}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+min}{gk\_min}}
+{\footnotesize\ttfamily \#define gk\+\_\+min(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a) $>$= (b) ? (b) \+: (a))}
+
+\mbox{\Hypertarget{gk__macros_8h_a59a6c75b539b1e491180612cc74063c1}\label{gk__macros_8h_a59a6c75b539b1e491180612cc74063c1}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+sigcatch@{gk\+\_\+sigcatch}}
+\index{gk\+\_\+sigcatch@{gk\+\_\+sigcatch}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+sigcatch}{gk\_sigcatch}}
+{\footnotesize\ttfamily \#define gk\+\_\+sigcatch(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(setjmp(\hyperlink{gk__externs_8h_ab371a33f6ef660f6c8192c47a5acb5f0}{gk\+\_\+jbufs}\mbox{[}\hyperlink{gk__externs_8h_a4977ceba83d44d803185a470184ce54c}{gk\+\_\+cur\+\_\+jbufs}\mbox{]}))}
+
+\mbox{\Hypertarget{gk__macros_8h_a8fd4c35dbcc4dce28ea11c88ea326f2c}\label{gk__macros_8h_a8fd4c35dbcc4dce28ea11c88ea326f2c}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+startcputimer@{gk\+\_\+startcputimer}}
+\index{gk\+\_\+startcputimer@{gk\+\_\+startcputimer}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+startcputimer}{gk\_startcputimer}}
+{\footnotesize\ttfamily \#define gk\+\_\+startcputimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr -\/= \hyperlink{timers_8c_a3e9b43a695411f5f0b3396083fe688d6}{gk\+\_\+\+C\+P\+U\+Seconds}())}
+
+\mbox{\Hypertarget{gk__macros_8h_a62391ec1e07912f942d70c2015756c62}\label{gk__macros_8h_a62391ec1e07912f942d70c2015756c62}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+startwctimer@{gk\+\_\+startwctimer}}
+\index{gk\+\_\+startwctimer@{gk\+\_\+startwctimer}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+startwctimer}{gk\_startwctimer}}
+{\footnotesize\ttfamily \#define gk\+\_\+startwctimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr -\/= \hyperlink{timers_8c_abc56539a50e81723bb4f80b5529708d0}{gk\+\_\+\+W\+Clock\+Seconds}())}
+
+\mbox{\Hypertarget{gk__macros_8h_acc9b1a073612fb69a4b4adef68c51439}\label{gk__macros_8h_acc9b1a073612fb69a4b4adef68c51439}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+stopcputimer@{gk\+\_\+stopcputimer}}
+\index{gk\+\_\+stopcputimer@{gk\+\_\+stopcputimer}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+stopcputimer}{gk\_stopcputimer}}
+{\footnotesize\ttfamily \#define gk\+\_\+stopcputimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr += \hyperlink{timers_8c_a3e9b43a695411f5f0b3396083fe688d6}{gk\+\_\+\+C\+P\+U\+Seconds}())}
+
+\mbox{\Hypertarget{gk__macros_8h_a58435b46c1a70f7bf3f40e8c6adfdf46}\label{gk__macros_8h_a58435b46c1a70f7bf3f40e8c6adfdf46}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+stopwctimer@{gk\+\_\+stopwctimer}}
+\index{gk\+\_\+stopwctimer@{gk\+\_\+stopwctimer}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+stopwctimer}{gk\_stopwctimer}}
+{\footnotesize\ttfamily \#define gk\+\_\+stopwctimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr += \hyperlink{timers_8c_abc56539a50e81723bb4f80b5529708d0}{gk\+\_\+\+W\+Clock\+Seconds}())}
+
+\mbox{\Hypertarget{gk__macros_8h_ab9902a1b34cd7bb990d209a8235d8ebe}\label{gk__macros_8h_ab9902a1b34cd7bb990d209a8235d8ebe}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!gk\+\_\+\+S\+W\+AP@{gk\+\_\+\+S\+W\+AP}}
+\index{gk\+\_\+\+S\+W\+AP@{gk\+\_\+\+S\+W\+AP}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{gk\+\_\+\+S\+W\+AP}{gk\_SWAP}}
+{\footnotesize\ttfamily \#define gk\+\_\+\+S\+W\+AP(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{tmp }\end{DoxyParamCaption})~do \{(tmp) = (a); (a) = (b); (b) = (tmp);\} while(0)}
+
+\mbox{\Hypertarget{gk__macros_8h_ab1ae193a061163eee387ad2f36fe98dd}\label{gk__macros_8h_ab1ae193a061163eee387ad2f36fe98dd}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!G\+K\+A\+S\+S\+E\+RT@{G\+K\+A\+S\+S\+E\+RT}}
+\index{G\+K\+A\+S\+S\+E\+RT@{G\+K\+A\+S\+S\+E\+RT}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G\+K\+A\+S\+S\+E\+RT}{GKASSERT}}
+{\footnotesize\ttfamily \#define G\+K\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{expr }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!(expr)) \{                                               \(\backslash\)
+        printf(\textcolor{stringliteral}{"***ASSERTION failed on line %d of file %s: "} #expr \textcolor{stringliteral}{"\(\backslash\)n"}, \(\backslash\)
+              \_\_LINE\_\_, \_\_FILE\_\_);                               \(\backslash\)
+        abort();                                                \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{gk__macros_8h_a248806723b770fadba36a99fbea64af1}\label{gk__macros_8h_a248806723b770fadba36a99fbea64af1}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!G\+K\+A\+S\+S\+E\+R\+TP@{G\+K\+A\+S\+S\+E\+R\+TP}}
+\index{G\+K\+A\+S\+S\+E\+R\+TP@{G\+K\+A\+S\+S\+E\+R\+TP}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G\+K\+A\+S\+S\+E\+R\+TP}{GKASSERTP}}
+{\footnotesize\ttfamily \#define G\+K\+A\+S\+S\+E\+R\+TP(\begin{DoxyParamCaption}\item[{}]{expr,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!(expr)) \{                                               \(\backslash\)
+        printf(\textcolor{stringliteral}{"***ASSERTION failed on line %d of file %s: "} #expr \textcolor{stringliteral}{"\(\backslash\)n"}, \(\backslash\)
+              \_\_LINE\_\_, \_\_FILE\_\_);                               \(\backslash\)
+        printf msg ; \(\backslash\)
+        printf(\textcolor{stringliteral}{"\(\backslash\)n"}); \(\backslash\)
+        abort();                                                \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{gk__macros_8h_a5587b7fac80cfb26c76899eb2aa32c97}\label{gk__macros_8h_a5587b7fac80cfb26c76899eb2aa32c97}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!G\+K\+C\+U\+A\+S\+S\+E\+RT@{G\+K\+C\+U\+A\+S\+S\+E\+RT}}
+\index{G\+K\+C\+U\+A\+S\+S\+E\+RT@{G\+K\+C\+U\+A\+S\+S\+E\+RT}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G\+K\+C\+U\+A\+S\+S\+E\+RT}{GKCUASSERT}}
+{\footnotesize\ttfamily \#define G\+K\+C\+U\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{expr }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!(expr)) \{                                               \(\backslash\)
+        printf(\textcolor{stringliteral}{"***ASSERTION failed on line %d of file %s: "} #expr \textcolor{stringliteral}{"\(\backslash\)n"}, \(\backslash\)
+              \_\_LINE\_\_, \_\_FILE\_\_);                               \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{gk__macros_8h_ad513556baf4c676ebcf2e7f1890f4902}\label{gk__macros_8h_ad513556baf4c676ebcf2e7f1890f4902}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!G\+K\+C\+U\+A\+S\+S\+E\+R\+TP@{G\+K\+C\+U\+A\+S\+S\+E\+R\+TP}}
+\index{G\+K\+C\+U\+A\+S\+S\+E\+R\+TP@{G\+K\+C\+U\+A\+S\+S\+E\+R\+TP}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G\+K\+C\+U\+A\+S\+S\+E\+R\+TP}{GKCUASSERTP}}
+{\footnotesize\ttfamily \#define G\+K\+C\+U\+A\+S\+S\+E\+R\+TP(\begin{DoxyParamCaption}\item[{}]{expr,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!(expr)) \{                                               \(\backslash\)
+        printf(\textcolor{stringliteral}{"***ASSERTION failed on line %d of file %s: "} #expr \textcolor{stringliteral}{"\(\backslash\)n"}, \(\backslash\)
+              \_\_LINE\_\_, \_\_FILE\_\_);                               \(\backslash\)
+        printf msg ; \(\backslash\)
+        printf(\textcolor{stringliteral}{"\(\backslash\)n"}); \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{gk__macros_8h_a2d2c0f535e4a92f5dfe0420c159045ab}\label{gk__macros_8h_a2d2c0f535e4a92f5dfe0420c159045ab}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!G\+K\+S\+E\+T\+J\+MP@{G\+K\+S\+E\+T\+J\+MP}}
+\index{G\+K\+S\+E\+T\+J\+MP@{G\+K\+S\+E\+T\+J\+MP}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G\+K\+S\+E\+T\+J\+MP}{GKSETJMP}}
+{\footnotesize\ttfamily \#define G\+K\+S\+E\+T\+J\+MP(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(setjmp(gk\+\_\+return\+\_\+to\+\_\+entry))}
+
+\mbox{\Hypertarget{gk__macros_8h_ad41a4aa918730bbed6aa9471adb8fdb2}\label{gk__macros_8h_ad41a4aa918730bbed6aa9471adb8fdb2}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!I\+F\+S\+ET@{I\+F\+S\+ET}}
+\index{I\+F\+S\+ET@{I\+F\+S\+ET}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{I\+F\+S\+ET}{IFSET}}
+{\footnotesize\ttfamily \#define I\+F\+S\+ET(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{flag,  }\item[{}]{cmd }\end{DoxyParamCaption})~\hyperlink{threed__to__vtu_8m_a96c738d3e2120c4273f9d4390761d99e}{if} ((a)\&(flag)) (cmd);}
+
+\mbox{\Hypertarget{gk__macros_8h_a204beac01a28654b3ddd7eea0d6597fa}\label{gk__macros_8h_a204beac01a28654b3ddd7eea0d6597fa}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!I\+N\+C\+\_\+\+D\+EC@{I\+N\+C\+\_\+\+D\+EC}}
+\index{I\+N\+C\+\_\+\+D\+EC@{I\+N\+C\+\_\+\+D\+EC}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+\_\+\+D\+EC}{INC\_DEC}}
+{\footnotesize\ttfamily \#define I\+N\+C\+\_\+\+D\+EC(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{val }\end{DoxyParamCaption})~do \{(a) += (val); (b) -\/= (val);\} while(0)}
+
+\mbox{\Hypertarget{gk__macros_8h_a475f3191b01ce1b1cbce5d4fba41f3e7}\label{gk__macros_8h_a475f3191b01ce1b1cbce5d4fba41f3e7}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!M\+A\+K\+E\+C\+SR@{M\+A\+K\+E\+C\+SR}}
+\index{M\+A\+K\+E\+C\+SR@{M\+A\+K\+E\+C\+SR}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+K\+E\+C\+SR}{MAKECSR}}
+{\footnotesize\ttfamily \#define M\+A\+K\+E\+C\+SR(\begin{DoxyParamCaption}\item[{}]{\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i},  }\item[{}]{\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n},  }\item[{}]{a }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+     for (\hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}=1; \hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}<\hyperlink{v_plot_field2_d_8m_a4c2d80ab32fc3a598413ae25e9f2bdce}{n}; \hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}++) a[\hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}] += a[\hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}-1]; \(\backslash\)
+     for (\hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}=n; \hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}>0; i--) a[i] = a[i-1]; \(\backslash\)
+     a[0] = 0; \(\backslash\)
+   \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+\mbox{\Hypertarget{gk__macros_8h_a095506946a5862a37905e2014ea97f4e}\label{gk__macros_8h_a095506946a5862a37905e2014ea97f4e}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!M\+A\+L\+L\+O\+C\+\_\+\+C\+H\+E\+CK@{M\+A\+L\+L\+O\+C\+\_\+\+C\+H\+E\+CK}}
+\index{M\+A\+L\+L\+O\+C\+\_\+\+C\+H\+E\+CK@{M\+A\+L\+L\+O\+C\+\_\+\+C\+H\+E\+CK}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+L\+L\+O\+C\+\_\+\+C\+H\+E\+CK}{MALLOC\_CHECK}}
+{\footnotesize\ttfamily \#define M\+A\+L\+L\+O\+C\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{ptr }\end{DoxyParamCaption})~;}
+
+\mbox{\Hypertarget{gk__macros_8h_a0d67a57499e3f48596b2f83d8c1f9129}\label{gk__macros_8h_a0d67a57499e3f48596b2f83d8c1f9129}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!O\+N\+E\+O\+V\+E\+R\+R\+A\+N\+D\+M\+AX@{O\+N\+E\+O\+V\+E\+R\+R\+A\+N\+D\+M\+AX}}
+\index{O\+N\+E\+O\+V\+E\+R\+R\+A\+N\+D\+M\+AX@{O\+N\+E\+O\+V\+E\+R\+R\+A\+N\+D\+M\+AX}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{O\+N\+E\+O\+V\+E\+R\+R\+A\+N\+D\+M\+AX}{ONEOVERRANDMAX}}
+{\footnotesize\ttfamily \#define O\+N\+E\+O\+V\+E\+R\+R\+A\+N\+D\+M\+AX~(1.\+0/(R\+A\+N\+D\+\_\+\+M\+AX+1.\+0))}
+
+\mbox{\Hypertarget{gk__macros_8h_afaa28aba2e28c516143145a22176039f}\label{gk__macros_8h_afaa28aba2e28c516143145a22176039f}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!Random\+In\+Range@{Random\+In\+Range}}
+\index{Random\+In\+Range@{Random\+In\+Range}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{Random\+In\+Range}{RandomInRange}}
+{\footnotesize\ttfamily \#define Random\+In\+Range(\begin{DoxyParamCaption}\item[{}]{\hyperlink{cubic2linear_8m_a6277e2a7446059985dc9bcf0a4ac1a8f}{u} }\end{DoxyParamCaption})~((int) (\hyperlink{gk__macros_8h_a0d67a57499e3f48596b2f83d8c1f9129}{O\+N\+E\+O\+V\+E\+R\+R\+A\+N\+D\+M\+AX}$\ast$(\hyperlink{cubic2linear_8m_a6277e2a7446059985dc9bcf0a4ac1a8f}{u})$\ast$rand()))}
+
+\mbox{\Hypertarget{gk__macros_8h_a65e175a83f3bbb4a4b15a01d2a055e61}\label{gk__macros_8h_a65e175a83f3bbb4a4b15a01d2a055e61}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!S\+H\+I\+F\+T\+C\+SR@{S\+H\+I\+F\+T\+C\+SR}}
+\index{S\+H\+I\+F\+T\+C\+SR@{S\+H\+I\+F\+T\+C\+SR}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+I\+F\+T\+C\+SR}{SHIFTCSR}}
+{\footnotesize\ttfamily \#define S\+H\+I\+F\+T\+C\+SR(\begin{DoxyParamCaption}\item[{}]{\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i},  }\item[{}]{\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n},  }\item[{}]{a }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+     for (\hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}=\hyperlink{v_plot_field2_d_8m_a4c2d80ab32fc3a598413ae25e9f2bdce}{n}; \hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}>0; i--) a[i] = a[i-1]; \(\backslash\)
+     a[0] = 0; \(\backslash\)
+   \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+\mbox{\Hypertarget{gk__macros_8h_a4ddfa141f8142902738a2e1683a95a71}\label{gk__macros_8h_a4ddfa141f8142902738a2e1683a95a71}} 
+\index{gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}!sign@{sign}}
+\index{sign@{sign}!gk\+\_\+macros.\+h@{gk\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{sign}{sign}}
+{\footnotesize\ttfamily \#define sign(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a $>$= 0 ? b \+: -\/b))}
+

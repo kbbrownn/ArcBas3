@@ -1,0 +1,849 @@
+\hypertarget{make__bidg__headers_8m}{}\section{include/make\+\_\+bidg\+\_\+headers.m File Reference}
+\label{make__bidg__headers_8m}\index{include/make\+\_\+bidg\+\_\+headers.\+m@{include/make\+\_\+bidg\+\_\+headers.\+m}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{make__bidg__headers_8m_a48bce0fe5ec77a5530854f31d096cf97}{nodes. Nfq} = length(rfq)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{make__bidg__headers_8m_a897368b80c690bb1d86a139b2e32f062}{Emat} (\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:, 1), 1\+:\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp})
+\item 
+\hyperlink{make__bidg__headers_8m_a60824f742b56f2e7937c971600df7da0}{Emat} (\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:, 2), \hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp}+1\+:2 $\ast$\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp})
+\item 
+\hyperlink{make__bidg__headers_8m_a1afcdf2927c1ba1a2c01991ac8791bab}{Emat} (\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:, 3), 2 $\ast$\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp}+1\+:3 $\ast$\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp})
+\item 
+\hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv} (mass \hyperlink{adjustments_2make__bidg__headers_8m_af07ff1035f34d77764ff516f110e6832}{matrix}) $\ast$\textbackslash{}I\+\_\+n(L\+\_\+i
+\item 
+3 $\ast$\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}+1 \hyperlink{make__bidg__headers_8m_ad944bbd4c17e82aa32dbac520e9a4d6b}{Cubature2D} ()
+\item 
+aim to integrate \hyperlink{make_v_t_k_file_8m_aab21ede0c02820806e77fd7890ee6bd7}{order} $\ast$ \hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N} (isoparam) rfq
+\item 
+id \hyperlink{make__bidg__headers_8m_a79d685dcbb9027705142b2a8b912aa1e}{r1\+Dq} ()
+\item 
+\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{make__bidg__headers_8m_a79d685dcbb9027705142b2a8b912aa1e}{r1\+Dq} \hyperlink{make__bidg__headers_8m_a6d4fbbd46e46569dab2b0ad8372e0220}{ones} ()
+\item 
+\hyperlink{make__bidg__headers_8m_a1e95c512464cc7b20598dcb3f6eaffe3}{gV} (\+:,\+:, 2)
+\item 
+\hyperlink{make__bidg__headers_8m_ab16464170b2d4f6a6b117aae1d91f963}{gV} (\+:,\+:, 3)\mbox{]}
+\item 
+\hyperlink{make__bidg__headers_8m_a1c26c3e6fd09ad3f614fd2a28762dfe8}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID},\textquotesingle{}\#ifndef D\+A\+T\+A\+\_\+\%\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{s\textbackslash{}n}\textquotesingle{}, \hyperlink{make__bidg__headers_8m_a9e84386471d07238c03b10507f58eba9}{elem\+\_\+type})
+\item 
+\hyperlink{make__bidg__headers_8m_a1bb04a6273aae6e9af3378600ca9fcb3}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID},\textquotesingle{}\#define D\+A\+T\+A\+\_\+\%\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{s\textbackslash{}n}\textquotesingle{}, \hyperlink{make__bidg__headers_8m_a9e84386471d07238c03b10507f58eba9}{elem\+\_\+type})
+\item 
+\hyperlink{make__bidg__headers_8m_a89175b0a01179bd8d075b207eaaf16ec}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \textquotesingle{}int p\+\_\+\+Np=\%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}, \hyperlink{buildsource_8m_abe50207e56666a60c81e2a58f522eea3}{Np})
+\item 
+\hyperlink{make__bidg__headers_8m_a2eecf0c8edd588da497178bfa5e2e9ef}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \textquotesingle{}int p\+\_\+\+Nfp=\%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}, \hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp})
+\item 
+\hyperlink{make__bidg__headers_8m_aedea3baecefc078faa4617252341d966}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \textquotesingle{}int \hyperlink{data___t_r_i___n9_8h_a207fd9268dfef5bf1505928a4f4c774a}{p\+\_\+\+Nq}=\%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}, \hyperlink{make__bidg__headers_8m_a5613c6c6f438049d9d5464468692715a}{Nq})
+\item 
+\hyperlink{make__bidg__headers_8m_a50f739880486111367f2d202e55bb640}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \textquotesingle{}int \hyperlink{data___t_r_i___n9_8h_aa030b0a9fe619a48647119bacea600e0}{p\+\_\+\+Nfq}=\%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}, \hyperlink{adjustments_2make__bidg__headers_8m_a8e84225359762b34b0c20c9e75fc53b1}{Nfq})
+\item 
+\hyperlink{make__bidg__headers_8m_ab98676c94e28f304e12b6c2d9300cad7}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \textquotesingle{}int \hyperlink{v_plot_field2_d_8m_a08a5429e87fabfe926dd685750b12894}{p\+\_\+interp}=\%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}, \hyperlink{v_plot_field2_d_8m_a08a5429e87fabfe926dd685750b12894}{p\+\_\+interp})
+\item 
+nodal data \hyperlink{make__bidg__headers_8m_a0f9b9f932d6e12011a79fc7338bdfde2}{write\+\_\+vector} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, r, \textquotesingle{}r\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a132152a8f02d9072e23cd6ac6a07b73f}{write\+\_\+vector} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, s, \textquotesingle{}s\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a751ee954a2531b19a620ad987fd05dd6}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}, \textquotesingle{}\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a97f7b9cebc02dbd6b131915f1c0dfb0f}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_ae5b77eaf0930991d3654aae29f0fbb39}{Vt}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_ae5b77eaf0930991d3654aae29f0fbb39}{Vt}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a8b52e7b8cedac997705bcdcd7f7ac868}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_abd7de77b28c16984ff83548fd0cd74be}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_aa20acbefa603cd69ea23ad09880d6bd8}{MM}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_aa20acbefa603cd69ea23ad09880d6bd8}{MM}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_aa5d14bb9a4ba5ce2bea8625d05b0cd39}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_aa3f5ebfc6bdc8e458334129d39b52461}{Dr}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_aa3f5ebfc6bdc8e458334129d39b52461}{Dr}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a61ba2b0ad4f335d43016119b8139e7da}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_ad9a5661d9c2ea85b3143c8ecb7127d5d}{Ds}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_ad9a5661d9c2ea85b3143c8ecb7127d5d}{Ds}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a30e0c8956141cd77f6fd8ec4c5e9c80e}{write\+\_\+int\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}\textquotesingle{}-\/1, \textquotesingle{}\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}\textquotesingle{})
+\item 
+index from \hyperlink{make__bidg__headers_8m_af123a350ed3e0629d9b60113f0c810c2}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{buildsource_8m_a14c594ef4287da2ed00e98012e0356d9}{L\+I\+FT}, \textquotesingle{}\hyperlink{buildsource_8m_a14c594ef4287da2ed00e98012e0356d9}{L\+I\+FT}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_ac3595844f3ad3881eaa91da23069d5eb}{quadrature} data \hyperlink{make__bidg__headers_8m_ac21efe0e68f68168e2ddacde77fa8715}{write\+\_\+vector} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, rq, \textquotesingle{}rq\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a97b63d67ee37fc31143a4908c76526d2}{write\+\_\+vector} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, sq, \textquotesingle{}sq\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_ad305cfa7c575f18621c9cebf4215805d}{write\+\_\+vector} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{cubic2linear_8m_aad57484016654da87125db86f4227ea3}{w}, \textquotesingle{}\hyperlink{cubic2linear_8m_aad57484016654da87125db86f4227ea3}{w}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_ae04a93a1d451776db6be5c023eea26f5}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_a6d762c2c00824e501e0b1336e38cd878}{Vq}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_a6d762c2c00824e501e0b1336e38cd878}{Vq}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a533e2ddf4cca17141204e32648f7d694}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_a0860e58b8f4010af9aa55717745c4b9d}{Drq}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_a0860e58b8f4010af9aa55717745c4b9d}{Drq}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a0cf70cba53a01ceb0d7754d119c7b6d2}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_a90f04ab0b3b4b834efda241ab283fc57}{Dsq}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_a90f04ab0b3b4b834efda241ab283fc57}{Dsq}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a40e36d8f254d698a6110cf987316b162}{write\+\_\+vector} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, rfq, \textquotesingle{}rfq\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a0de2f719e45e6139ac618cecb970c4e4}{write\+\_\+vector} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_af5555ce3d578203ae1f6d0731e4f1170}{sfq}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_af5555ce3d578203ae1f6d0731e4f1170}{sfq}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a440aca7095ed6ac602d8b22d073c8ea1}{write\+\_\+vector} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{make__bidg__headers_8m_a7bb9d681a4df47c616b79d82759cd0e6}{wf}, \textquotesingle{}\hyperlink{make__bidg__headers_8m_a7bb9d681a4df47c616b79d82759cd0e6}{wf}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_af2772e6d0019ffff1bf440639d17973e}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{adjustments_2make__bidg__headers_8m_ad06233c3cbd809b83fb292471e66fc78}{Vfq}, \textquotesingle{}\hyperlink{adjustments_2make__bidg__headers_8m_ad06233c3cbd809b83fb292471e66fc78}{Vfq}\textquotesingle{})
+\item 
+interpolate to \hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} Output Data \hyperlink{make__bidg__headers_8m_a32c9d67ce55e7858a1ba2291b2898bc4}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{v_plot_field2_d_8m_aa43b7c30923e8fcf939fe12082a19359}{xout}, \textquotesingle{}\hyperlink{v_plot_field2_d_8m_aa43b7c30923e8fcf939fe12082a19359}{xout}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a93bcb19dec37a557bc6b7feb115833c4}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \hyperlink{v_plot_field2_d_8m_a440aa7a05dec25dc6fe586eaa162395b}{yout}, \textquotesingle{}\hyperlink{v_plot_field2_d_8m_a440aa7a05dec25dc6fe586eaa162395b}{yout}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_aba4b4623e6db21e03b1f72fc7537e647}{write\+\_\+int\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, Triout, \textquotesingle{}Triout\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a9fe9cf0c49c7ea4fd2c704cd134715f4}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, Interpout, \textquotesingle{}Interpout\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a206264bfbe00bdb5d1b0daee718ae846}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID},\textquotesingle{}\#endif\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a355ed4cdac2a27aa04a6689ac2d7e86e}{fclose} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID})
+\item 
+\hyperlink{make__bidg__headers_8m_a7b5a959e1fa05b85090f4f729b0f9784}{disp} (\hyperlink{buildsource_8m_ae6aab5c308faac0fc539cc9c6da9fbd0}{sprintf}(\textquotesingle{}done with \hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}=\%\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{d\textbackslash{}n}\textquotesingle{}, \hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N})) \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{make_v_t_k_file_8m_a2420833d971716e9bab41cc9fb3abba1}{function} \hyperlink{make__bidg__headers_8m_a440aca7095ed6ac602d8b22d073c8ea1}{write\+\_\+vector}(\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}
+\item 
+\hyperlink{make__bidg__headers_8m_a9a48c28a28fb3ac51e7a0f832b5755b1}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, \textquotesingle{}double p\+\_\+\%s\mbox{[}\%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}\mbox{]}=\{\textquotesingle{}, name, \hyperlink{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc})
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{make__bidg__headers_8m_ab9c11faa448b8130a21b9f44680aa08f}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID},\textquotesingle{}\%.\+25f\};\textbackslash{}n\textquotesingle{}, v(\+Nc))
+\item 
+\hyperlink{make_v_t_k_file_8m_a2420833d971716e9bab41cc9fb3abba1}{function} \hyperlink{make__bidg__headers_8m_ad22794c697c5c5c9841157f6851a087c}{write\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, A, name) \mbox{[}Nr \hyperlink{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc}\mbox{]}
+\item 
+else \hyperlink{make__bidg__headers_8m_a8a33ca9e810134d91665fb815b64161b}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID},\textquotesingle{}\%.\+25f\},\textbackslash{}n\textquotesingle{}, A(i, Nc))
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{make__bidg__headers_8m_a2d07cc6f67beaf39a1f061268b1a4636}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID},\textquotesingle{}\};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{})
+\item 
+\hyperlink{make_v_t_k_file_8m_a2420833d971716e9bab41cc9fb3abba1}{function} \hyperlink{make__bidg__headers_8m_af8d48bee9b0665b9de55de22c6fd4a2b}{write\+\_\+int\+\_\+matrix} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}, A, name) \mbox{[}Nr \hyperlink{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc}\mbox{]}
+\item 
+else \hyperlink{make__bidg__headers_8m_a7a0c1e4c9417f368cc034d3529b8462f}{fprintf} (\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID},\textquotesingle{}\%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}\},\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}, A(\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}, \hyperlink{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc}))
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{make_v_t_k_file_8m_a2420833d971716e9bab41cc9fb3abba1}{function} make\+\_\+bidg\+\_\+headers \hyperlink{make__bidg__headers_8m_a459274f44c959d3b6466dbf5c40c6931}{N\+O\+D\+E\+T\+OL} = 1e-\/13
+\item 
+\hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{make__bidg__headers_8m_a8a9fa6faadbf3c485ecdc832c0f78989}{N}
+\item 
+Number of \hyperlink{threed__to__vtu__test_8m_aa9aaa650bacb9b91c82437c2ce48f50c}{elements} \hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{make__bidg__headers_8m_a5913da243070c054a1a9a79e0bdc2bf5}{output} \mbox{[}\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x} y\mbox{]} = Nodes2D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N})
+\item 
+\hyperlink{make__bidg__headers_8m_abe50207e56666a60c81e2a58f522eea3}{Np} = length(r)
+\item 
+\hyperlink{make__bidg__headers_8m_ac0055fa4cdc19a2690bfee3643413a7d}{V} = Vandermonde2D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N},r,s)
+\item 
+used to assemble mass \hyperlink{adjustments_2make__bidg__headers_8m_af07ff1035f34d77764ff516f110e6832}{matrix} \hyperlink{make__bidg__headers_8m_ae5b77eaf0930991d3654aae29f0fbb39}{Vt} = \hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}\textquotesingle{}
+\item 
+\hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV} = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V})
+\item 
+\hyperlink{make__bidg__headers_8m_aa20acbefa603cd69ea23ad09880d6bd8}{MM} = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}$\ast$\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_aa3f5ebfc6bdc8e458334129d39b52461}{Dr} = Vr/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}
+\item 
+\hyperlink{make__bidg__headers_8m_ad9a5661d9c2ea85b3143c8ecb7127d5d}{Ds} = Vs/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}
+\item 
+derivatives of nodal basis nodal \hyperlink{make__bidg__headers_8m_a7d2fb616b76863109aa80a7ffdfad72b}{pts} \hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} stuff \hyperlink{make__bidg__headers_8m_a1a1dec21df6e8b9d02462f97b957473d}{fmask1} = find( abs(s+1) $<$ \hyperlink{buildsource_8m_a409781c62c346e9048df00ae7d289582}{N\+O\+D\+E\+T\+OL})\textquotesingle{}
+\item 
+\hyperlink{make__bidg__headers_8m_a2db7941f6935f48a7799d8214a5da8e7}{fmask2} = find( abs(r+s) $<$ \hyperlink{buildsource_8m_a409781c62c346e9048df00ae7d289582}{N\+O\+D\+E\+T\+OL})\textquotesingle{}
+\item 
+\hyperlink{make__bidg__headers_8m_afa6c03554970806d170ae51e45e92765}{fmask3} = find( abs(r+1) $<$ \hyperlink{buildsource_8m_a409781c62c346e9048df00ae7d289582}{N\+O\+D\+E\+T\+OL})\textquotesingle{}
+\item 
+\hyperlink{make__bidg__headers_8m_a9d248ff3c701af57ed3e241d735bd034}{Fmask} = \mbox{[}\hyperlink{buildsource_8m_a94fc3ab9217cab318ada4ca502b10620}{fmask1}
+\item 
+copied from L\+I\+F\+T2D \hyperlink{buildsource_8m_ab780b65adc28bca17f186bf3eebfb21d}{m} \hyperlink{make__bidg__headers_8m_a65426726e39e9a3bb90febe7f32febdb}{Nfaces} = 3
+\item 
+\hyperlink{make__bidg__headers_8m_a20f422f104b7455cf2904b755786b44f}{Nfp} = \hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}+1
+\item 
+\hyperlink{make__bidg__headers_8m_a2e8c475217f58955f41f40d84bd99568}{Emat} = zeros(\hyperlink{buildsource_8m_abe50207e56666a60c81e2a58f522eea3}{Np}, \hyperlink{buildsource_8m_aac4846947deeade1c4227c400ab38c13}{Nfaces}$\ast$\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp})
+\item 
+\hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} \hyperlink{make__bidg__headers_8m_af856be392aaad7451879584235d70695}{faceR} = r(\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:,1))
+\item 
+\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D} = Vandermonde1D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}, \hyperlink{make__bidg__headers_8m_af856be392aaad7451879584235d70695}{faceR})
+\item 
+\hyperlink{make__bidg__headers_8m_a0fba24154a4caea0aafcad5ebe222fd8}{mass\+Edge1} = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}$\ast$\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_a368aa65f00289fa5bef3ec6e0645499d}{mass\+Edge2} = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}$\ast$\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}\textquotesingle{})
+\item 
+\hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} \hyperlink{make__bidg__headers_8m_ae20e10128affda41891e85c4eaf851be}{faceS} = s(\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:,3))
+\item 
+\hyperlink{make__bidg__headers_8m_af00cee47bb233fdc11ecc42cf3eff646}{mass\+Edge3} = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}$\ast$\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}\textquotesingle{})
+\item 
+L\+\_\+j \hyperlink{make__bidg__headers_8m_a7d15a4f6e76dff66c5b4314123b32e0d}{\+\_\+}
+\item 
+\hyperlink{make__bidg__headers_8m_a5613c6c6f438049d9d5464468692715a}{Nq} = length(rq)
+\item 
+\hyperlink{make__bidg__headers_8m_a6d762c2c00824e501e0b1336e38cd878}{Vq} = Vandermonde2D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N},rq,sq)/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}
+\item 
+evaluates nodal basis quad \hyperlink{make__bidg__headers_8m_a7d2fb616b76863109aa80a7ffdfad72b}{pts} \mbox{[}Vrq Vsq\mbox{]} = Grad\+Vandermonde2D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N},rq,sq)
+\item 
+\hyperlink{make__bidg__headers_8m_a0860e58b8f4010af9aa55717745c4b9d}{Drq} = Vrq/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}
+\item 
+\hyperlink{make__bidg__headers_8m_a90f04ab0b3b4b834efda241ab283fc57}{Dsq} = Vsq/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}
+\item 
+derivatives of nodal basis quad \hyperlink{make__bidg__headers_8m_a7d2fb616b76863109aa80a7ffdfad72b}{pts} \hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} \hyperlink{make__bidg__headers_8m_ac3595844f3ad3881eaa91da23069d5eb}{quadrature} \mbox{[}\hyperlink{make__bidg__headers_8m_a79d685dcbb9027705142b2a8b912aa1e}{r1\+Dq} \hyperlink{make__bidg__headers_8m_aa7de090b80d0a88d7d94e7763da3fe7e}{w1D}\mbox{]} = Jacobi\+GQ(0,0,ceil(3$\ast$\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}+1))
+\item 
+\hyperlink{make__bidg__headers_8m_af5555ce3d578203ae1f6d0731e4f1170}{sfq} = \mbox{[}-\/\hyperlink{make__bidg__headers_8m_a6d4fbbd46e46569dab2b0ad8372e0220}{ones}(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{make__bidg__headers_8m_a79d685dcbb9027705142b2a8b912aa1e}{r1\+Dq}))
+\item 
+\hyperlink{make__bidg__headers_8m_aed0fb0ce4332da27d943a566abf0bdb7}{r1\+Dq}
+\item 
+\hyperlink{make__bidg__headers_8m_a7bb9d681a4df47c616b79d82759cd0e6}{wf} = \mbox{[}\hyperlink{make__bidg__headers_8m_aa7de090b80d0a88d7d94e7763da3fe7e}{w1D}
+\item 
+\hyperlink{make__bidg__headers_8m_aa7de090b80d0a88d7d94e7763da3fe7e}{w1D}
+\item 
+\hyperlink{make__bidg__headers_8m_acbf1a23eea93c85cd113589566865e49}{gR} = \mbox{[}gz, -\/gz, -\/\hyperlink{make__bidg__headers_8m_a6d4fbbd46e46569dab2b0ad8372e0220}{ones}(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(gz))\mbox{]}
+\item 
+\hyperlink{make__bidg__headers_8m_a51eed178703fb32c103fbb5565b564f1}{gS} = \mbox{[}-\/\hyperlink{make__bidg__headers_8m_a6d4fbbd46e46569dab2b0ad8372e0220}{ones}(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(gz)), gz, -\/gz\mbox{]}
+\item 
+\hyperlink{make__bidg__headers_8m_a2a3aaeecb452e864ff43bf3a5050191a}{gV} = zeros(length(\hyperlink{make__bidg__headers_8m_acbf1a23eea93c85cd113589566865e49}{gR}),length(\hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}),\hyperlink{buildsource_8m_aac4846947deeade1c4227c400ab38c13}{Nfaces})
+\item 
+\hyperlink{make__bidg__headers_8m_ab1f1cc1af4dcd6977ad6edb607b3d704}{Nah} =\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}
+\item 
+\hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{make__bidg__headers_8m_a47dc4ee2bceaf5a9f6d47cb10353a96f}{f1}
+\item 
+\hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{make__bidg__headers_8m_ad06233c3cbd809b83fb292471e66fc78}{Vfq} = \mbox{[} \hyperlink{make__bidg__headers_8m_ab16464170b2d4f6a6b117aae1d91f963}{gV}(\+:,\+:,1)
+\item 
+faces \hyperlink{make__bidg__headers_8m_ab528855467ba0360924bbd0dd81edb35}{uin} = zeros(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}))
+\item 
+For \hyperlink{write__vtu__template_8cpp_a934120182a1459d17613528940e2bc61}{output} to \hyperlink{make__bidg__headers_8m_af4c53a4aa4d5d3e1700b6e53de79a026}{vtu} \mbox{[}Triout, \hyperlink{v_plot_field2_d_8m_aa43b7c30923e8fcf939fe12082a19359}{xout}, \hyperlink{v_plot_field2_d_8m_a440aa7a05dec25dc6fe586eaa162395b}{yout}, \hyperlink{v_plot_field2_d_8m_a5c8d8342682becd112eb9de226d6053f}{uout}, Interpout, \hyperlink{v_plot_field2_d_8m_a08a5429e87fabfe926dd685750b12894}{p\+\_\+interp}\mbox{]} = v\+Plot\+Field2D(2$\ast$\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}, \hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}, y, \hyperlink{make__bidg__headers_8m_ab528855467ba0360924bbd0dd81edb35}{uin}, \hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}, \hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K})
+\item 
+write to file \hyperlink{make__bidg__headers_8m_a9e84386471d07238c03b10507f58eba9}{elem\+\_\+type} = \mbox{[}\textquotesingle{}T\+R\+I\+\_\+N\textquotesingle{} num2str(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N})\mbox{]}
+\item 
+\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID} = fopen(\hyperlink{buildsource_8m_ae6aab5c308faac0fc539cc9c6da9fbd0}{sprintf}(\textquotesingle{}data\+\_\+\%s.\+h\textquotesingle{},\hyperlink{make__bidg__headers_8m_a9e84386471d07238c03b10507f58eba9}{elem\+\_\+type}),\textquotesingle{}\hyperlink{cubic2linear_8m_aad57484016654da87125db86f4227ea3}{w}\textquotesingle{})
+\item 
+\hyperlink{make__bidg__headers_8m_ac4055e3a20b6b3af3d10590ea446ef6c}{v}
+\item 
+name \hyperlink{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc} = length(\hyperlink{cubic2linear_8m_ac4055e3a20b6b3af3d10590ea446ef6c}{v})
+\item 
+\hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{make__bidg__headers_8m_a2e4ce9aeeb12bfcdb92dae2a4692c8fb}{i}
+\item 
+\hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{make__bidg__headers_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{make__bidg__headers_8m_a48bce0fe5ec77a5530854f31d096cf97}\label{make__bidg__headers_8m_a48bce0fe5ec77a5530854f31d096cf97}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!nodes. Nfq@{nodes. Nfq}}
+\index{nodes. Nfq@{nodes. Nfq}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{nodes. Nfq}{nodes. Nfq}}
+{\footnotesize\ttfamily using nodes.
+    \hyperlink{adjustments_2make__bidg__headers_8m_a8e84225359762b34b0c20c9e75fc53b1}{Nfq} =  length(rfq)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{make__bidg__headers_8m_ad944bbd4c17e82aa32dbac520e9a4d6b}\label{make__bidg__headers_8m_ad944bbd4c17e82aa32dbac520e9a4d6b}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Cubature2D@{Cubature2D}}
+\index{Cubature2D@{Cubature2D}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Cubature2\+D()}{Cubature2D()}}
+{\footnotesize\ttfamily 3$\ast$\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}+1 Cubature2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a7b5a959e1fa05b85090f4f729b0f9784}\label{make__bidg__headers_8m_a7b5a959e1fa05b85090f4f729b0f9784}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!disp@{disp}}
+\index{disp@{disp}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{disp()}{disp()}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\hyperlink{buildsource_8m_ae6aab5c308faac0fc539cc9c6da9fbd0}{sprintf}( \textquotesingle{}done with \hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}=\%\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{d\textbackslash{}n}\textquotesingle{}, \hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a897368b80c690bb1d86a139b2e32f062}\label{make__bidg__headers_8m_a897368b80c690bb1d86a139b2e32f062}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Emat@{Emat}}
+\index{Emat@{Emat}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Emat()}{Emat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Emat (\begin{DoxyParamCaption}\item[{\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:, 1)}]{,  }\item[{1\+:\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a60824f742b56f2e7937c971600df7da0}\label{make__bidg__headers_8m_a60824f742b56f2e7937c971600df7da0}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Emat@{Emat}}
+\index{Emat@{Emat}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Emat()}{Emat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Emat (\begin{DoxyParamCaption}\item[{\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:, 2)}]{,  }\item[{\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp}+1\+:2 $\ast$}]{Nfp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a1afcdf2927c1ba1a2c01991ac8791bab}\label{make__bidg__headers_8m_a1afcdf2927c1ba1a2c01991ac8791bab}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Emat@{Emat}}
+\index{Emat@{Emat}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Emat()}{Emat()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Emat (\begin{DoxyParamCaption}\item[{\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:, 3)}]{,  }\item[{2 $\ast$\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp}+1\+:3 $\ast$}]{Nfp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a355ed4cdac2a27aa04a6689ac2d7e86e}\label{make__bidg__headers_8m_a355ed4cdac2a27aa04a6689ac2d7e86e}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fclose@{fclose}}
+\index{fclose@{fclose}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fclose()}{fclose()}}
+{\footnotesize\ttfamily fclose (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a1c26c3e6fd09ad3f614fd2a28762dfe8}\label{make__bidg__headers_8m_a1c26c3e6fd09ad3f614fd2a28762dfe8}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/13]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}\#ifndef D\+A\+T\+A\+\_\+\%\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{s\textbackslash{}n}\textquotesingle{}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_a9e84386471d07238c03b10507f58eba9}{elem\+\_\+type}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a1bb04a6273aae6e9af3378600ca9fcb3}\label{make__bidg__headers_8m_a1bb04a6273aae6e9af3378600ca9fcb3}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/13]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}\#define D\+A\+T\+A\+\_\+\%\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{s\textbackslash{}n}\textquotesingle{}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_a9e84386471d07238c03b10507f58eba9}{elem\+\_\+type}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a89175b0a01179bd8d075b207eaaf16ec}\label{make__bidg__headers_8m_a89175b0a01179bd8d075b207eaaf16ec}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/13]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}int}]{p\+\_\+\+Np = {\ttfamily \%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}},  }\item[{\hyperlink{buildsource_8m_abe50207e56666a60c81e2a58f522eea3}{Np}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a2eecf0c8edd588da497178bfa5e2e9ef}\label{make__bidg__headers_8m_a2eecf0c8edd588da497178bfa5e2e9ef}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/13]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}int}]{p\+\_\+\+Nfp = {\ttfamily \%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}},  }\item[{\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_aedea3baecefc078faa4617252341d966}\label{make__bidg__headers_8m_aedea3baecefc078faa4617252341d966}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/13]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}int}]{p\+\_\+\+Nq = {\ttfamily \%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}},  }\item[{\hyperlink{make__bidg__headers_8m_a5613c6c6f438049d9d5464468692715a}{Nq}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a50f739880486111367f2d202e55bb640}\label{make__bidg__headers_8m_a50f739880486111367f2d202e55bb640}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [6/13]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}int}]{p\+\_\+\+Nfq = {\ttfamily \%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}},  }\item[{\hyperlink{adjustments_2make__bidg__headers_8m_a8e84225359762b34b0c20c9e75fc53b1}{Nfq}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ab98676c94e28f304e12b6c2d9300cad7}\label{make__bidg__headers_8m_ab98676c94e28f304e12b6c2d9300cad7}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [7/13]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}int}]{p\+\_\+interp = {\ttfamily \%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}},  }\item[{\hyperlink{v_plot_field2_d_8m_a08a5429e87fabfe926dd685750b12894}{p\+\_\+interp}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a206264bfbe00bdb5d1b0daee718ae846}\label{make__bidg__headers_8m_a206264bfbe00bdb5d1b0daee718ae846}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [8/13]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}\#endif\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a9a48c28a28fb3ac51e7a0f832b5755b1}\label{make__bidg__headers_8m_a9a48c28a28fb3ac51e7a0f832b5755b1}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [9/13]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ab9c11faa448b8130a21b9f44680aa08f}\label{make__bidg__headers_8m_ab9c11faa448b8130a21b9f44680aa08f}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [10/13]}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}\%.\+25f\};\textbackslash{}n\textquotesingle{}}]{,  }\item[{\hyperlink{cubic2linear_8m_ac4055e3a20b6b3af3d10590ea446ef6c}{v}(\hyperlink{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a8a33ca9e810134d91665fb815b64161b}\label{make__bidg__headers_8m_a8a33ca9e810134d91665fb815b64161b}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [11/13]}}
+{\footnotesize\ttfamily else fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}\%.\+25f\}}]{,  }\item[{\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}}]{,  }\item[{A(\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}, \hyperlink{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a2d07cc6f67beaf39a1f061268b1a4636}\label{make__bidg__headers_8m_a2d07cc6f67beaf39a1f061268b1a4636}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [12/13]}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}\};\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a7a0c1e4c9417f368cc034d3529b8462f}\label{make__bidg__headers_8m_a7a0c1e4c9417f368cc034d3529b8462f}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [13/13]}}
+{\footnotesize\ttfamily else fprintf (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\textquotesingle{}\%\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}\}}]{,  }\item[{\textbackslash{}\hyperlink{write__vtu__template_8cpp_a781a04ab095280f838ff3eb0e51312e0}{n}\textquotesingle{}}]{,  }\item[{A(\hyperlink{gambit_file_in20_8m_afb6aca53df96564f2adf086c942453ec}{i}, \hyperlink{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a1e95c512464cc7b20598dcb3f6eaffe3}\label{make__bidg__headers_8m_a1e95c512464cc7b20598dcb3f6eaffe3}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!gV@{gV}}
+\index{gV@{gV}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{g\+V()}{gV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gV (\begin{DoxyParamCaption}\item[{\+:}]{,  }\item[{\+:}]{,  }\item[{2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ab16464170b2d4f6a6b117aae1d91f963}\label{make__bidg__headers_8m_ab16464170b2d4f6a6b117aae1d91f963}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!gV@{gV}}
+\index{gV@{gV}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{g\+V()}{gV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily gV (\begin{DoxyParamCaption}\item[{\+:}]{,  }\item[{\+:}]{,  }\item[{3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}\label{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!inv@{inv}}
+\index{inv@{inv}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{inv()}{inv()}}
+{\footnotesize\ttfamily inv (\begin{DoxyParamCaption}\item[{mass}]{matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}\label{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!N@{N}}
+\index{N@{N}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{N()}{N()}}
+{\footnotesize\ttfamily aim to integrate \hyperlink{make_v_t_k_file_8m_aab21ede0c02820806e77fd7890ee6bd7}{order}$\ast$ N (\begin{DoxyParamCaption}\item[{isoparam}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a6d4fbbd46e46569dab2b0ad8372e0220}\label{make__bidg__headers_8m_a6d4fbbd46e46569dab2b0ad8372e0220}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!ones@{ones}}
+\index{ones@{ones}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{ones()}{ones()}}
+{\footnotesize\ttfamily \hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{make__bidg__headers_8m_a79d685dcbb9027705142b2a8b912aa1e}{r1\+Dq} ones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a79d685dcbb9027705142b2a8b912aa1e}\label{make__bidg__headers_8m_a79d685dcbb9027705142b2a8b912aa1e}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!r1\+Dq@{r1\+Dq}}
+\index{r1\+Dq@{r1\+Dq}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{r1\+Dq()}{r1Dq()}}
+{\footnotesize\ttfamily id r1\+Dq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a30e0c8956141cd77f6fd8ec4c5e9c80e}\label{make__bidg__headers_8m_a30e0c8956141cd77f6fd8ec4c5e9c80e}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+int\+\_\+matrix@{write\+\_\+int\+\_\+matrix}}
+\index{write\+\_\+int\+\_\+matrix@{write\+\_\+int\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+int\+\_\+matrix()}{write\_int\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily write\+\_\+int\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}\textquotesingle{}-\/}]{1,  }\item[{\textquotesingle{}\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_aba4b4623e6db21e03b1f72fc7537e647}\label{make__bidg__headers_8m_aba4b4623e6db21e03b1f72fc7537e647}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+int\+\_\+matrix@{write\+\_\+int\+\_\+matrix}}
+\index{write\+\_\+int\+\_\+matrix@{write\+\_\+int\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+int\+\_\+matrix()}{write\_int\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily write\+\_\+int\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{Triout}]{,  }\item[{\textquotesingle{}Triout\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_af8d48bee9b0665b9de55de22c6fd4a2b}\label{make__bidg__headers_8m_af8d48bee9b0665b9de55de22c6fd4a2b}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+int\+\_\+matrix@{write\+\_\+int\+\_\+matrix}}
+\index{write\+\_\+int\+\_\+matrix@{write\+\_\+int\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+int\+\_\+matrix()}{write\_int\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \hyperlink{make_v_t_k_file_8m_a2420833d971716e9bab41cc9fb3abba1}{function} write\+\_\+int\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{A}]{,  }\item[{name}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a751ee954a2531b19a620ad987fd05dd6}\label{make__bidg__headers_8m_a751ee954a2531b19a620ad987fd05dd6}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}}]{,  }\item[{\textquotesingle{}\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a97f7b9cebc02dbd6b131915f1c0dfb0f}\label{make__bidg__headers_8m_a97f7b9cebc02dbd6b131915f1c0dfb0f}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_ae5b77eaf0930991d3654aae29f0fbb39}{Vt}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_ae5b77eaf0930991d3654aae29f0fbb39}{Vt}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a8b52e7b8cedac997705bcdcd7f7ac868}\label{make__bidg__headers_8m_a8b52e7b8cedac997705bcdcd7f7ac868}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_abd7de77b28c16984ff83548fd0cd74be}\label{make__bidg__headers_8m_abd7de77b28c16984ff83548fd0cd74be}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [4/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_aa20acbefa603cd69ea23ad09880d6bd8}{MM}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_aa20acbefa603cd69ea23ad09880d6bd8}{MM}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_aa5d14bb9a4ba5ce2bea8625d05b0cd39}\label{make__bidg__headers_8m_aa5d14bb9a4ba5ce2bea8625d05b0cd39}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [5/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_aa3f5ebfc6bdc8e458334129d39b52461}{Dr}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_aa3f5ebfc6bdc8e458334129d39b52461}{Dr}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a61ba2b0ad4f335d43016119b8139e7da}\label{make__bidg__headers_8m_a61ba2b0ad4f335d43016119b8139e7da}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [6/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_ad9a5661d9c2ea85b3143c8ecb7127d5d}{Ds}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_ad9a5661d9c2ea85b3143c8ecb7127d5d}{Ds}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_af123a350ed3e0629d9b60113f0c810c2}\label{make__bidg__headers_8m_af123a350ed3e0629d9b60113f0c810c2}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [7/15]}}
+{\footnotesize\ttfamily index from write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{buildsource_8m_a14c594ef4287da2ed00e98012e0356d9}{L\+I\+FT}}]{,  }\item[{\textquotesingle{}\hyperlink{buildsource_8m_a14c594ef4287da2ed00e98012e0356d9}{L\+I\+FT}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ae04a93a1d451776db6be5c023eea26f5}\label{make__bidg__headers_8m_ae04a93a1d451776db6be5c023eea26f5}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [8/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_a6d762c2c00824e501e0b1336e38cd878}{Vq}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_a6d762c2c00824e501e0b1336e38cd878}{Vq}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a533e2ddf4cca17141204e32648f7d694}\label{make__bidg__headers_8m_a533e2ddf4cca17141204e32648f7d694}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [9/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_a0860e58b8f4010af9aa55717745c4b9d}{Drq}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_a0860e58b8f4010af9aa55717745c4b9d}{Drq}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a0cf70cba53a01ceb0d7754d119c7b6d2}\label{make__bidg__headers_8m_a0cf70cba53a01ceb0d7754d119c7b6d2}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [10/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_a90f04ab0b3b4b834efda241ab283fc57}{Dsq}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_a90f04ab0b3b4b834efda241ab283fc57}{Dsq}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_af2772e6d0019ffff1bf440639d17973e}\label{make__bidg__headers_8m_af2772e6d0019ffff1bf440639d17973e}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [11/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{adjustments_2make__bidg__headers_8m_ad06233c3cbd809b83fb292471e66fc78}{Vfq}}]{,  }\item[{\textquotesingle{}\hyperlink{adjustments_2make__bidg__headers_8m_ad06233c3cbd809b83fb292471e66fc78}{Vfq}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a32c9d67ce55e7858a1ba2291b2898bc4}\label{make__bidg__headers_8m_a32c9d67ce55e7858a1ba2291b2898bc4}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [12/15]}}
+{\footnotesize\ttfamily interpolate to \hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} Output Data write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{v_plot_field2_d_8m_aa43b7c30923e8fcf939fe12082a19359}{xout}}]{,  }\item[{\textquotesingle{}\hyperlink{v_plot_field2_d_8m_aa43b7c30923e8fcf939fe12082a19359}{xout}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a93bcb19dec37a557bc6b7feb115833c4}\label{make__bidg__headers_8m_a93bcb19dec37a557bc6b7feb115833c4}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [13/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{v_plot_field2_d_8m_a440aa7a05dec25dc6fe586eaa162395b}{yout}}]{,  }\item[{\textquotesingle{}\hyperlink{v_plot_field2_d_8m_a440aa7a05dec25dc6fe586eaa162395b}{yout}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a9fe9cf0c49c7ea4fd2c704cd134715f4}\label{make__bidg__headers_8m_a9fe9cf0c49c7ea4fd2c704cd134715f4}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [14/15]}}
+{\footnotesize\ttfamily write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{Interpout}]{,  }\item[{\textquotesingle{}Interpout\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ad22794c697c5c5c9841157f6851a087c}\label{make__bidg__headers_8m_ad22794c697c5c5c9841157f6851a087c}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [15/15]}}
+{\footnotesize\ttfamily \hyperlink{make_v_t_k_file_8m_a2420833d971716e9bab41cc9fb3abba1}{function} write\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{A}]{,  }\item[{name}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a0f9b9f932d6e12011a79fc7338bdfde2}\label{make__bidg__headers_8m_a0f9b9f932d6e12011a79fc7338bdfde2}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily nodal data write\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{r}]{,  }\item[{\textquotesingle{}r\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a132152a8f02d9072e23cd6ac6a07b73f}\label{make__bidg__headers_8m_a132152a8f02d9072e23cd6ac6a07b73f}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily write\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{s}]{,  }\item[{\textquotesingle{}s\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ac21efe0e68f68168e2ddacde77fa8715}\label{make__bidg__headers_8m_ac21efe0e68f68168e2ddacde77fa8715}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \hyperlink{make__bidg__headers_8m_ac3595844f3ad3881eaa91da23069d5eb}{quadrature} data write\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{rq}]{,  }\item[{\textquotesingle{}rq\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a97b63d67ee37fc31143a4908c76526d2}\label{make__bidg__headers_8m_a97b63d67ee37fc31143a4908c76526d2}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily write\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{sq}]{,  }\item[{\textquotesingle{}sq\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ad305cfa7c575f18621c9cebf4215805d}\label{make__bidg__headers_8m_ad305cfa7c575f18621c9cebf4215805d}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily write\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{cubic2linear_8m_aad57484016654da87125db86f4227ea3}{w}}]{,  }\item[{\textquotesingle{}\hyperlink{cubic2linear_8m_aad57484016654da87125db86f4227ea3}{w}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a40e36d8f254d698a6110cf987316b162}\label{make__bidg__headers_8m_a40e36d8f254d698a6110cf987316b162}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily write\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{rfq}]{,  }\item[{\textquotesingle{}rfq\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a0de2f719e45e6139ac618cecb970c4e4}\label{make__bidg__headers_8m_a0de2f719e45e6139ac618cecb970c4e4}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily write\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_af5555ce3d578203ae1f6d0731e4f1170}{sfq}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_af5555ce3d578203ae1f6d0731e4f1170}{sfq}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a440aca7095ed6ac602d8b22d073c8ea1}\label{make__bidg__headers_8m_a440aca7095ed6ac602d8b22d073c8ea1}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily write\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{f\+ID}}]{,  }\item[{\hyperlink{make__bidg__headers_8m_a7bb9d681a4df47c616b79d82759cd0e6}{wf}}]{,  }\item[{\textquotesingle{}\hyperlink{make__bidg__headers_8m_a7bb9d681a4df47c616b79d82759cd0e6}{wf}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{make__bidg__headers_8m_a7d15a4f6e76dff66c5b4314123b32e0d}\label{make__bidg__headers_8m_a7d15a4f6e76dff66c5b4314123b32e0d}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!\+\_\+@{\+\_\+}}
+\index{\+\_\+@{\+\_\+}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{\+\_\+}{\_}}
+{\footnotesize\ttfamily L\+\_\+j \+\_\+}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{edge\_n\}
+    \hyperlink{buildsource_8m_a14c594ef4287da2ed00e98012e0356d9}{LIFT} = \hyperlink{adjustments_2make__bidg__headers_8m_ac0055fa4cdc19a2690bfee3643413a7d}{V}*(\hyperlink{adjustments_2make__bidg__headers_8m_ac0055fa4cdc19a2690bfee3643413a7d}{V}\textcolor{stringliteral}{'*Emat)}
+\end{DoxyCode}
+\mbox{\Hypertarget{make__bidg__headers_8m_aa3f5ebfc6bdc8e458334129d39b52461}\label{make__bidg__headers_8m_aa3f5ebfc6bdc8e458334129d39b52461}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Dr@{Dr}}
+\index{Dr@{Dr}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Dr}{Dr}}
+{\footnotesize\ttfamily Dr = Vr/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a0860e58b8f4010af9aa55717745c4b9d}\label{make__bidg__headers_8m_a0860e58b8f4010af9aa55717745c4b9d}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Drq@{Drq}}
+\index{Drq@{Drq}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Drq}{Drq}}
+{\footnotesize\ttfamily Drq = Vrq/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ad9a5661d9c2ea85b3143c8ecb7127d5d}\label{make__bidg__headers_8m_ad9a5661d9c2ea85b3143c8ecb7127d5d}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Ds@{Ds}}
+\index{Ds@{Ds}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Ds}{Ds}}
+{\footnotesize\ttfamily Ds = Vs/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a90f04ab0b3b4b834efda241ab283fc57}\label{make__bidg__headers_8m_a90f04ab0b3b4b834efda241ab283fc57}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Dsq@{Dsq}}
+\index{Dsq@{Dsq}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Dsq}{Dsq}}
+{\footnotesize\ttfamily Dsq = Vsq/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a9e84386471d07238c03b10507f58eba9}\label{make__bidg__headers_8m_a9e84386471d07238c03b10507f58eba9}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!elem\+\_\+type@{elem\+\_\+type}}
+\index{elem\+\_\+type@{elem\+\_\+type}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{elem\+\_\+type}{elem\_type}}
+{\footnotesize\ttfamily write to file elem\+\_\+type = \mbox{[}\textquotesingle{}T\+R\+I\+\_\+N\textquotesingle{} num2str(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N})\mbox{]}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a2e8c475217f58955f41f40d84bd99568}\label{make__bidg__headers_8m_a2e8c475217f58955f41f40d84bd99568}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Emat@{Emat}}
+\index{Emat@{Emat}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Emat}{Emat}}
+{\footnotesize\ttfamily Emat = zeros(\hyperlink{buildsource_8m_abe50207e56666a60c81e2a58f522eea3}{Np}, \hyperlink{buildsource_8m_aac4846947deeade1c4227c400ab38c13}{Nfaces}$\ast$\hyperlink{buildsource_8m_a20f422f104b7455cf2904b755786b44f}{Nfp})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a47dc4ee2bceaf5a9f6d47cb10353a96f}\label{make__bidg__headers_8m_a47dc4ee2bceaf5a9f6d47cb10353a96f}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!f1@{f1}}
+\index{f1@{f1}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{f1}{f1}}
+{\footnotesize\ttfamily \hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} f1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=1:\hyperlink{adjustments_2make__bidg__headers_8m_a65426726e39e9a3bb90febe7f32febdb}{Nfaces}
+        % 2.3.1 build \hyperlink{threed__to__vtu__test_8m_ada591513d233d88048edf5b661293d3f}{nodes}->Gauss \hyperlink{adjustments_2make__bidg__headers_8m_ac3595844f3ad3881eaa91da23069d5eb}{quadrature} interpolation and differentiation 
+      \hyperlink{buildsource_8m_aa1d11ae751a4c689ad724854c407be92}{matrices}
+        \hyperlink{make__bidg__headers_8m_a2a3aaeecb452e864ff43bf3a5050191a}{gV}(:,:,\hyperlink{make__bidg__headers_8m_a47dc4ee2bceaf5a9f6d47cb10353a96f}{f1}) = vInterpMatrix2D(\hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}, \hyperlink{adjustments_2make__bidg__headers_8m_a8a9fa6faadbf3c485ecdc832c0f78989}{N}, \hyperlink{make__bidg__headers_8m_acbf1a23eea93c85cd113589566865e49}{gR}(:,\hyperlink{make__bidg__headers_8m_a47dc4ee2bceaf5a9f6d47cb10353a96f}{f1}), \hyperlink{make__bidg__headers_8m_a51eed178703fb32c103fbb5565b564f1}{gS}(:,\hyperlink{make__bidg__headers_8m_a47dc4ee2bceaf5a9f6d47cb10353a96f}{f1}))
+\end{DoxyCode}
+\mbox{\Hypertarget{make__bidg__headers_8m_af856be392aaad7451879584235d70695}\label{make__bidg__headers_8m_af856be392aaad7451879584235d70695}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!faceR@{faceR}}
+\index{faceR@{faceR}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{faceR}{faceR}}
+{\footnotesize\ttfamily \hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} faceR = r(\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:,1))}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ae20e10128affda41891e85c4eaf851be}\label{make__bidg__headers_8m_ae20e10128affda41891e85c4eaf851be}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!faceS@{faceS}}
+\index{faceS@{faceS}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{faceS}{faceS}}
+{\footnotesize\ttfamily \hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} faceS = s(\hyperlink{buildsource_8m_a53fedbe0b7d30bbdae17dd4984fb3177}{Fmask}(\+:,3))}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}\label{make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!f\+ID@{f\+ID}}
+\index{f\+ID@{f\+ID}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{f\+ID}{fID}}
+{\footnotesize\ttfamily f\+ID = fopen(\hyperlink{buildsource_8m_ae6aab5c308faac0fc539cc9c6da9fbd0}{sprintf}(\textquotesingle{}data\+\_\+\%s.\+h\textquotesingle{},\hyperlink{make__bidg__headers_8m_a9e84386471d07238c03b10507f58eba9}{elem\+\_\+type}),\textquotesingle{}\hyperlink{cubic2linear_8m_aad57484016654da87125db86f4227ea3}{w}\textquotesingle{})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a9d248ff3c701af57ed3e241d735bd034}\label{make__bidg__headers_8m_a9d248ff3c701af57ed3e241d735bd034}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Fmask@{Fmask}}
+\index{Fmask@{Fmask}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Fmask}{Fmask}}
+{\footnotesize\ttfamily Fmask = \mbox{[}\hyperlink{buildsource_8m_a94fc3ab9217cab318ada4ca502b10620}{fmask1}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a1a1dec21df6e8b9d02462f97b957473d}\label{make__bidg__headers_8m_a1a1dec21df6e8b9d02462f97b957473d}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fmask1@{fmask1}}
+\index{fmask1@{fmask1}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fmask1}{fmask1}}
+{\footnotesize\ttfamily derivatives of nodal basis nodal \hyperlink{make__bidg__headers_8m_a7d2fb616b76863109aa80a7ffdfad72b}{pts} \hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} stuff fmask1 = find( abs(s+1) $<$ \hyperlink{buildsource_8m_a409781c62c346e9048df00ae7d289582}{N\+O\+D\+E\+T\+OL})\textquotesingle{}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a2db7941f6935f48a7799d8214a5da8e7}\label{make__bidg__headers_8m_a2db7941f6935f48a7799d8214a5da8e7}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fmask2@{fmask2}}
+\index{fmask2@{fmask2}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fmask2}{fmask2}}
+{\footnotesize\ttfamily fmask2 = find( abs(r+s) $<$ \hyperlink{buildsource_8m_a409781c62c346e9048df00ae7d289582}{N\+O\+D\+E\+T\+OL})\textquotesingle{}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_afa6c03554970806d170ae51e45e92765}\label{make__bidg__headers_8m_afa6c03554970806d170ae51e45e92765}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!fmask3@{fmask3}}
+\index{fmask3@{fmask3}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{fmask3}{fmask3}}
+{\footnotesize\ttfamily fmask3 = find( abs(r+1) $<$ \hyperlink{buildsource_8m_a409781c62c346e9048df00ae7d289582}{N\+O\+D\+E\+T\+OL})\textquotesingle{}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_acbf1a23eea93c85cd113589566865e49}\label{make__bidg__headers_8m_acbf1a23eea93c85cd113589566865e49}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!gR@{gR}}
+\index{gR@{gR}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{gR}{gR}}
+{\footnotesize\ttfamily gR = \mbox{[}gz, -\/gz, -\/\hyperlink{make__bidg__headers_8m_a6d4fbbd46e46569dab2b0ad8372e0220}{ones}(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(gz))\mbox{]}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a51eed178703fb32c103fbb5565b564f1}\label{make__bidg__headers_8m_a51eed178703fb32c103fbb5565b564f1}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!gS@{gS}}
+\index{gS@{gS}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{gS}{gS}}
+{\footnotesize\ttfamily gS = \mbox{[}-\/\hyperlink{make__bidg__headers_8m_a6d4fbbd46e46569dab2b0ad8372e0220}{ones}(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(gz)), gz, -\/gz\mbox{]}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a2a3aaeecb452e864ff43bf3a5050191a}\label{make__bidg__headers_8m_a2a3aaeecb452e864ff43bf3a5050191a}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!gV@{gV}}
+\index{gV@{gV}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{gV}{gV}}
+{\footnotesize\ttfamily gV = zeros(length(\hyperlink{make__bidg__headers_8m_acbf1a23eea93c85cd113589566865e49}{gR}),length(\hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}),\hyperlink{buildsource_8m_aac4846947deeade1c4227c400ab38c13}{Nfaces})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a2e4ce9aeeb12bfcdb92dae2a4692c8fb}\label{make__bidg__headers_8m_a2e4ce9aeeb12bfcdb92dae2a4692c8fb}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!i@{i}}
+\index{i@{i}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily \hyperlink{gambit_file_in20_8m_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{threed__to__vtu_8m_a96c738d3e2120c4273f9d4390761d99e}{if} i}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 1:\hyperlink{adjustments_2make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc}-1
+    \hyperlink{adjustments_2make__bidg__headers_8m_a1c26c3e6fd09ad3f614fd2a28762dfe8}{fprintf}(\hyperlink{adjustments_2make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{fID},'%.25f ,', \hyperlink{adjustments_2make__bidg__headers_8m_ac4055e3a20b6b3af3d10590ea446ef6c}{v}(\hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i}))
+\end{DoxyCode}
+\mbox{\Hypertarget{make__bidg__headers_8m_ac86694252f8dfdb19aaeadc4b7c342c6}\label{make__bidg__headers_8m_ac86694252f8dfdb19aaeadc4b7c342c6}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!j@{j}}
+\index{j@{j}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily \hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} j}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 1:\hyperlink{adjustments_2make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}{Nc}-1
+        \hyperlink{adjustments_2make__bidg__headers_8m_a1c26c3e6fd09ad3f614fd2a28762dfe8}{fprintf}(\hyperlink{adjustments_2make__bidg__headers_8m_ae0527cbfd56392d5095a691bbf10ba5b}{fID},'%.25f ,', A(\hyperlink{adjustments_2make__bidg__headers_8m_afb6aca53df96564f2adf086c942453ec}{i},\hyperlink{adjustments_2make__bidg__headers_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}))
+\end{DoxyCode}
+\mbox{\Hypertarget{make__bidg__headers_8m_a0fba24154a4caea0aafcad5ebe222fd8}\label{make__bidg__headers_8m_a0fba24154a4caea0aafcad5ebe222fd8}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!mass\+Edge1@{mass\+Edge1}}
+\index{mass\+Edge1@{mass\+Edge1}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{mass\+Edge1}{massEdge1}}
+{\footnotesize\ttfamily mass\+Edge1 = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}$\ast$\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}\textquotesingle{})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a368aa65f00289fa5bef3ec6e0645499d}\label{make__bidg__headers_8m_a368aa65f00289fa5bef3ec6e0645499d}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!mass\+Edge2@{mass\+Edge2}}
+\index{mass\+Edge2@{mass\+Edge2}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{mass\+Edge2}{massEdge2}}
+{\footnotesize\ttfamily mass\+Edge2 = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}$\ast$\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}\textquotesingle{})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_af00cee47bb233fdc11ecc42cf3eff646}\label{make__bidg__headers_8m_af00cee47bb233fdc11ecc42cf3eff646}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!mass\+Edge3@{mass\+Edge3}}
+\index{mass\+Edge3@{mass\+Edge3}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{mass\+Edge3}{massEdge3}}
+{\footnotesize\ttfamily mass\+Edge3 = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}$\ast$\hyperlink{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}{V1D}\textquotesingle{})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_aa20acbefa603cd69ea23ad09880d6bd8}\label{make__bidg__headers_8m_aa20acbefa603cd69ea23ad09880d6bd8}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!MM@{MM}}
+\index{MM@{MM}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{MM}{MM}}
+{\footnotesize\ttfamily MM = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}$\ast$\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}\textquotesingle{})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a8a9fa6faadbf3c485ecdc832c0f78989}\label{make__bidg__headers_8m_a8a9fa6faadbf3c485ecdc832c0f78989}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!N@{N}}
+\index{N@{N}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily \hyperlink{write__vtu__template_8cpp_ad1e7380d51df1e0043d24d3c8a860e0a}{for} N}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 1:9
+    
+    \hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K} = 168
+\end{DoxyCode}
+\mbox{\Hypertarget{make__bidg__headers_8m_ab1f1cc1af4dcd6977ad6edb607b3d704}\label{make__bidg__headers_8m_ab1f1cc1af4dcd6977ad6edb607b3d704}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Nah@{Nah}}
+\index{Nah@{Nah}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Nah}{Nah}}
+{\footnotesize\ttfamily Nah =\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}\label{make__bidg__headers_8m_ae3962c98d9f11354a4d6ecf7fbd3f5b6}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Nc@{Nc}}
+\index{Nc@{Nc}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Nc}{Nc}}
+{\footnotesize\ttfamily name Nc = length(\hyperlink{cubic2linear_8m_ac4055e3a20b6b3af3d10590ea446ef6c}{v})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a65426726e39e9a3bb90febe7f32febdb}\label{make__bidg__headers_8m_a65426726e39e9a3bb90febe7f32febdb}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Nfaces@{Nfaces}}
+\index{Nfaces@{Nfaces}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Nfaces}{Nfaces}}
+{\footnotesize\ttfamily copied from L\+I\+F\+T2D \hyperlink{buildsource_8m_ab780b65adc28bca17f186bf3eebfb21d}{m} Nfaces = 3}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a20f422f104b7455cf2904b755786b44f}\label{make__bidg__headers_8m_a20f422f104b7455cf2904b755786b44f}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Nfp@{Nfp}}
+\index{Nfp@{Nfp}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Nfp}{Nfp}}
+{\footnotesize\ttfamily Nfp = \hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}+1}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a459274f44c959d3b6466dbf5c40c6931}\label{make__bidg__headers_8m_a459274f44c959d3b6466dbf5c40c6931}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!N\+O\+D\+E\+T\+OL@{N\+O\+D\+E\+T\+OL}}
+\index{N\+O\+D\+E\+T\+OL@{N\+O\+D\+E\+T\+OL}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{N\+O\+D\+E\+T\+OL}{NODETOL}}
+{\footnotesize\ttfamily \hyperlink{make_v_t_k_file_8m_a2420833d971716e9bab41cc9fb3abba1}{function} make\+\_\+bidg\+\_\+headers N\+O\+D\+E\+T\+OL = 1e-\/13}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_abe50207e56666a60c81e2a58f522eea3}\label{make__bidg__headers_8m_abe50207e56666a60c81e2a58f522eea3}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Np@{Np}}
+\index{Np@{Np}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Np}{Np}}
+{\footnotesize\ttfamily Np = length(r)}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a5613c6c6f438049d9d5464468692715a}\label{make__bidg__headers_8m_a5613c6c6f438049d9d5464468692715a}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Nq@{Nq}}
+\index{Nq@{Nq}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Nq}{Nq}}
+{\footnotesize\ttfamily Nq = length(rq)}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a5913da243070c054a1a9a79e0bdc2bf5}\label{make__bidg__headers_8m_a5913da243070c054a1a9a79e0bdc2bf5}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!output@{output}}
+\index{output@{output}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily output$<$$<$ \char`\"{}$<$!-\/-\/ \textbackslash{}output$<$$<$ \char`\"{}\# vtk Data\+File Version 3.\+0\char`\"{}$<$$<$ \textquotesingle{}\textbackslash{}\textquotesingle{}$<$$<$ \char`\"{}\#This file was generated by the deal.\+II library\char`\"{}if(flags.\+print\+\_\+date\+\_\+and\+\_\+time) \{ out$<$$<$ \char`\"{} on \char`\"{}$<$$<$ Utilities\+::\+System\+::get\+\_\+time()$<$$<$ \char`\"{} at \char`\"{}$<$$<$ Utilities\+::\+System\+::get\+\_\+date() \} else output$<$$<$ \char`\"{}.\char`\"{}output$<$$<$ \char`\"{}\textbackslash{}-\/-\/$>$ n = Nodes2D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a7d2fb616b76863109aa80a7ffdfad72b}\label{make__bidg__headers_8m_a7d2fb616b76863109aa80a7ffdfad72b}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!pts@{pts}}
+\index{pts@{pts}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{pts}{pts}}
+{\footnotesize\ttfamily evaluates nodal basis quad pts\mbox{[}Vrq Vsq\mbox{]} = Grad\+Vandermonde2D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N},rq,sq)}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ac3595844f3ad3881eaa91da23069d5eb}\label{make__bidg__headers_8m_ac3595844f3ad3881eaa91da23069d5eb}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!quadrature@{quadrature}}
+\index{quadrature@{quadrature}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{quadrature}{quadrature}}
+{\footnotesize\ttfamily derivatives of nodal basis quad \hyperlink{make__bidg__headers_8m_a7d2fb616b76863109aa80a7ffdfad72b}{pts} \hyperlink{make_v_t_k_file_8m_ac4ec0037ba529da25bf084669a45f60c}{face} quadrature\mbox{[}\hyperlink{make__bidg__headers_8m_a79d685dcbb9027705142b2a8b912aa1e}{r1\+Dq} \hyperlink{make__bidg__headers_8m_aa7de090b80d0a88d7d94e7763da3fe7e}{w1D}\mbox{]} = Jacobi\+GQ(0,0,ceil(3$\ast$\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}+1))}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_aed0fb0ce4332da27d943a566abf0bdb7}\label{make__bidg__headers_8m_aed0fb0ce4332da27d943a566abf0bdb7}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!r1\+Dq@{r1\+Dq}}
+\index{r1\+Dq@{r1\+Dq}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{r1\+Dq}{r1Dq}}
+{\footnotesize\ttfamily r1\+Dq}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_af5555ce3d578203ae1f6d0731e4f1170}\label{make__bidg__headers_8m_af5555ce3d578203ae1f6d0731e4f1170}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!sfq@{sfq}}
+\index{sfq@{sfq}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{sfq}{sfq}}
+{\footnotesize\ttfamily sfq = \mbox{[}-\/\hyperlink{make__bidg__headers_8m_a6d4fbbd46e46569dab2b0ad8372e0220}{ones}(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{make__bidg__headers_8m_a79d685dcbb9027705142b2a8b912aa1e}{r1\+Dq}))}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ab528855467ba0360924bbd0dd81edb35}\label{make__bidg__headers_8m_ab528855467ba0360924bbd0dd81edb35}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!uin@{uin}}
+\index{uin@{uin}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{uin}{uin}}
+{\footnotesize\ttfamily faces uin = zeros(\hyperlink{make_v_t_k_file_8m_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}))}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ac0055fa4cdc19a2690bfee3643413a7d}\label{make__bidg__headers_8m_ac0055fa4cdc19a2690bfee3643413a7d}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!V@{V}}
+\index{V@{V}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily V = Vandermonde2D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N},r,s)}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ac4055e3a20b6b3af3d10590ea446ef6c}\label{make__bidg__headers_8m_ac4055e3a20b6b3af3d10590ea446ef6c}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!v@{v}}
+\index{v@{v}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily v}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}\label{make__bidg__headers_8m_a015213f82f9dfc2bc247c0778f3bc120}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!V1D@{V1D}}
+\index{V1D@{V1D}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{V1D}{V1D}}
+{\footnotesize\ttfamily V1D = Vandermonde1D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}, \hyperlink{make__bidg__headers_8m_af856be392aaad7451879584235d70695}{faceR})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ad06233c3cbd809b83fb292471e66fc78}\label{make__bidg__headers_8m_ad06233c3cbd809b83fb292471e66fc78}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Vfq@{Vfq}}
+\index{Vfq@{Vfq}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Vfq}{Vfq}}
+{\footnotesize\ttfamily \hyperlink{adjustments_2make__bidg__headers_8m_ad06233c3cbd809b83fb292471e66fc78}{Vfq} = \mbox{[} \hyperlink{make__bidg__headers_8m_ab16464170b2d4f6a6b117aae1d91f963}{gV}(\+:,\+:,1)}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}\label{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!VinvV@{VinvV}}
+\index{VinvV@{VinvV}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{VinvV}{VinvV}}
+{\footnotesize\ttfamily VinvV = \hyperlink{make__bidg__headers_8m_a0c752aad07d6c7e22d2e63df41ccdf8b}{inv}(\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a6d762c2c00824e501e0b1336e38cd878}\label{make__bidg__headers_8m_a6d762c2c00824e501e0b1336e38cd878}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Vq@{Vq}}
+\index{Vq@{Vq}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Vq}{Vq}}
+{\footnotesize\ttfamily Vq = Vandermonde2D(\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N},rq,sq)/\hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_ae5b77eaf0930991d3654aae29f0fbb39}\label{make__bidg__headers_8m_ae5b77eaf0930991d3654aae29f0fbb39}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!Vt@{Vt}}
+\index{Vt@{Vt}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{Vt}{Vt}}
+{\footnotesize\ttfamily used to assemble mass \hyperlink{adjustments_2make__bidg__headers_8m_af07ff1035f34d77764ff516f110e6832}{matrix} Vt = \hyperlink{buildsource_8m_af658e24e5ad7935911c432c5c02d895c}{V}\textquotesingle{}}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_af4c53a4aa4d5d3e1700b6e53de79a026}\label{make__bidg__headers_8m_af4c53a4aa4d5d3e1700b6e53de79a026}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!vtu@{vtu}}
+\index{vtu@{vtu}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{vtu}{vtu}}
+{\footnotesize\ttfamily For \hyperlink{write__vtu__template_8cpp_a934120182a1459d17613528940e2bc61}{output} to vtu\mbox{[}Triout, \hyperlink{v_plot_field2_d_8m_aa43b7c30923e8fcf939fe12082a19359}{xout}, \hyperlink{v_plot_field2_d_8m_a440aa7a05dec25dc6fe586eaa162395b}{yout}, \hyperlink{v_plot_field2_d_8m_a5c8d8342682becd112eb9de226d6053f}{uout}, Interpout, \hyperlink{v_plot_field2_d_8m_a08a5429e87fabfe926dd685750b12894}{p\+\_\+interp}\mbox{]} = v\+Plot\+Field2D(2$\ast$\hyperlink{make__bidg__headers_8m_a5b9c4563028063ee53b517cce9aa701b}{N}, \hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}, y, \hyperlink{make__bidg__headers_8m_ab528855467ba0360924bbd0dd81edb35}{uin}, \hyperlink{make__bidg__headers_8m_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}, \hyperlink{gambit_file_in20_8m_a16e4ef534cec559430e07e05eb71c719}{K})}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_aa7de090b80d0a88d7d94e7763da3fe7e}\label{make__bidg__headers_8m_aa7de090b80d0a88d7d94e7763da3fe7e}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!w1D@{w1D}}
+\index{w1D@{w1D}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{w1D}{w1D}}
+{\footnotesize\ttfamily w1D}
+
+\mbox{\Hypertarget{make__bidg__headers_8m_a7bb9d681a4df47c616b79d82759cd0e6}\label{make__bidg__headers_8m_a7bb9d681a4df47c616b79d82759cd0e6}} 
+\index{make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}!wf@{wf}}
+\index{wf@{wf}!make\+\_\+bidg\+\_\+headers.\+m@{make\+\_\+bidg\+\_\+headers.\+m}}
+\subsubsection{\texorpdfstring{wf}{wf}}
+{\footnotesize\ttfamily wf = \mbox{[}\hyperlink{make__bidg__headers_8m_aa7de090b80d0a88d7d94e7763da3fe7e}{w1D}}
+

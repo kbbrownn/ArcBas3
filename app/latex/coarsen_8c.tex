@@ -1,0 +1,289 @@
+\hypertarget{coarsen_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/libmetis/coarsen.c File Reference}
+\label{coarsen_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/coarsen.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/coarsen.\+c}}
+
+
+Functions for computing matchings during graph coarsening.  
+
+
+{\ttfamily \#include \char`\"{}metislib.\+h\char`\"{}}\newline
+Include dependency graph for coarsen.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{coarsen_8c_ad49dc6effe759748c2065146d166c742}{U\+N\+M\+A\+T\+C\+H\+E\+D\+F\+O\+R2\+H\+OP}~0.\+10  /$\ast$ The fraction of unmatched vertices that triggers 2-\/hop $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$ \hyperlink{coarsen_8c_adeb2c7c9bffbeca00fcc97854fb88ada}{Coarsen\+Graph} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\item 
+\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$ \hyperlink{coarsen_8c_afa83320e3b311e0feef90d0bf4303716}{Coarsen\+Graph\+Nlevels} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} nlevels)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{coarsen_8c_a892d2ea16d613abc2276ad5fc6999724}{Match\+\_\+\+RM} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{coarsen_8c_af3ec72f3170ccdca06d8ad018d86cc58}{Match\+\_\+\+S\+H\+EM} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{coarsen_8c_aead846b2c69509c914426ff087509934}{Match\+\_\+2\+Hop} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_ab96e9eb84fc7c342d17690a1341645dd}{perm}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$match, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} cnvtxs, size\+\_\+t nunmatched)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{coarsen_8c_a838a4013e3b5cc5278ecc7a8757ce0ef}{Match\+\_\+2\+Hop\+Any} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_ab96e9eb84fc7c342d17690a1341645dd}{perm}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$match, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} cnvtxs, size\+\_\+t $\ast$r\+\_\+nunmatched, size\+\_\+t maxdegree)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{coarsen_8c_aa56d53cace160be27fb1750dcaffbc04}{Match\+\_\+2\+Hop\+All} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_ab96e9eb84fc7c342d17690a1341645dd}{perm}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$match, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} cnvtxs, size\+\_\+t $\ast$r\+\_\+nunmatched, size\+\_\+t maxdegree)
+\item 
+void \hyperlink{coarsen_8c_aac3e480e7e3bd02bfdf001d858a93562}{Print\+C\+Graph\+Stats} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{coarsen_8c_aac8820421b1c25698140c1b470c50e07}{Create\+Coarse\+Graph} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} cnvtxs, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$match)
+\item 
+void \hyperlink{coarsen_8c_a70dc59d4c7190507e7ad9a4cc0d80707}{Create\+Coarse\+Graph\+No\+Mask} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} cnvtxs, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$match)
+\item 
+void \hyperlink{coarsen_8c_a0aba484ba693edd6d56426d04bd7fd4b}{Create\+Coarse\+Graph\+Perm} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} cnvtxs, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$match, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_ab96e9eb84fc7c342d17690a1341645dd}{perm})
+\item 
+\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$ \hyperlink{coarsen_8c_a113522304bf628b09d0b69b4db05050e}{Setup\+Coarse\+Graph} (\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} cnvtxs, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} dovsize)
+\item 
+void \hyperlink{coarsen_8c_ab69ab96ec78174da232dff05e9c79d2f}{Re\+Adjust\+Memory} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$cgraph)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for computing matchings during graph coarsening. 
+
+\begin{DoxyDate}{Date}
+Started 7/23/97 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+
+Copyright 1997-\/2011, Regents of the University of Minnesota 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: coarsen.c 13936 2013-03-30 03:59:09Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{coarsen_8c_ad49dc6effe759748c2065146d166c742}\label{coarsen_8c_ad49dc6effe759748c2065146d166c742}} 
+\index{coarsen.\+c@{coarsen.\+c}!U\+N\+M\+A\+T\+C\+H\+E\+D\+F\+O\+R2\+H\+OP@{U\+N\+M\+A\+T\+C\+H\+E\+D\+F\+O\+R2\+H\+OP}}
+\index{U\+N\+M\+A\+T\+C\+H\+E\+D\+F\+O\+R2\+H\+OP@{U\+N\+M\+A\+T\+C\+H\+E\+D\+F\+O\+R2\+H\+OP}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{U\+N\+M\+A\+T\+C\+H\+E\+D\+F\+O\+R2\+H\+OP}{UNMATCHEDFOR2HOP}}
+{\footnotesize\ttfamily \#define U\+N\+M\+A\+T\+C\+H\+E\+D\+F\+O\+R2\+H\+OP~0.\+10  /$\ast$ The fraction of unmatched vertices that triggers 2-\/hop $\ast$/}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{coarsen_8c_adeb2c7c9bffbeca00fcc97854fb88ada}\label{coarsen_8c_adeb2c7c9bffbeca00fcc97854fb88ada}} 
+\index{coarsen.\+c@{coarsen.\+c}!Coarsen\+Graph@{Coarsen\+Graph}}
+\index{Coarsen\+Graph@{Coarsen\+Graph}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Coarsen\+Graph()}{CoarsenGraph()}}
+{\footnotesize\ttfamily \hyperlink{structgraph__t}{graph\+\_\+t}$\ast$ Coarsen\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function takes a graph and creates a sequence of coarser graphs. It implements the coarsening phase of the multilevel paradigm. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_adeb2c7c9bffbeca00fcc97854fb88ada_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_afa83320e3b311e0feef90d0bf4303716}\label{coarsen_8c_afa83320e3b311e0feef90d0bf4303716}} 
+\index{coarsen.\+c@{coarsen.\+c}!Coarsen\+Graph\+Nlevels@{Coarsen\+Graph\+Nlevels}}
+\index{Coarsen\+Graph\+Nlevels@{Coarsen\+Graph\+Nlevels}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Coarsen\+Graph\+Nlevels()}{CoarsenGraphNlevels()}}
+{\footnotesize\ttfamily \hyperlink{structgraph__t}{graph\+\_\+t}$\ast$ Coarsen\+Graph\+Nlevels (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nlevels }\end{DoxyParamCaption})}
+
+This function takes a graph and creates a sequence of nlevels coarser graphs, where nlevels is an input parameter. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_afa83320e3b311e0feef90d0bf4303716_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_afa83320e3b311e0feef90d0bf4303716_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_aac8820421b1c25698140c1b470c50e07}\label{coarsen_8c_aac8820421b1c25698140c1b470c50e07}} 
+\index{coarsen.\+c@{coarsen.\+c}!Create\+Coarse\+Graph@{Create\+Coarse\+Graph}}
+\index{Create\+Coarse\+Graph@{Create\+Coarse\+Graph}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Create\+Coarse\+Graph()}{CreateCoarseGraph()}}
+{\footnotesize\ttfamily void Create\+Coarse\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{cnvtxs,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{match }\end{DoxyParamCaption})}
+
+This function creates the coarser graph. It uses a simple hash-\/table for identifying the adjacent vertices that get collapsed to the same node. The hash-\/table can have conflicts, which are handled via a linear scan. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_aac8820421b1c25698140c1b470c50e07_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_aac8820421b1c25698140c1b470c50e07_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_a70dc59d4c7190507e7ad9a4cc0d80707}\label{coarsen_8c_a70dc59d4c7190507e7ad9a4cc0d80707}} 
+\index{coarsen.\+c@{coarsen.\+c}!Create\+Coarse\+Graph\+No\+Mask@{Create\+Coarse\+Graph\+No\+Mask}}
+\index{Create\+Coarse\+Graph\+No\+Mask@{Create\+Coarse\+Graph\+No\+Mask}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Create\+Coarse\+Graph\+No\+Mask()}{CreateCoarseGraphNoMask()}}
+{\footnotesize\ttfamily void Create\+Coarse\+Graph\+No\+Mask (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{cnvtxs,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{match }\end{DoxyParamCaption})}
+
+This function creates the coarser graph. It uses a full-\/size array (htable) for identifying the adjacent vertices that get collapsed to the same node. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_a70dc59d4c7190507e7ad9a4cc0d80707_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_a70dc59d4c7190507e7ad9a4cc0d80707_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_a0aba484ba693edd6d56426d04bd7fd4b}\label{coarsen_8c_a0aba484ba693edd6d56426d04bd7fd4b}} 
+\index{coarsen.\+c@{coarsen.\+c}!Create\+Coarse\+Graph\+Perm@{Create\+Coarse\+Graph\+Perm}}
+\index{Create\+Coarse\+Graph\+Perm@{Create\+Coarse\+Graph\+Perm}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Create\+Coarse\+Graph\+Perm()}{CreateCoarseGraphPerm()}}
+{\footnotesize\ttfamily void Create\+Coarse\+Graph\+Perm (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{cnvtxs,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{match,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{perm }\end{DoxyParamCaption})}
+
+This function creates the coarser graph. It uses a simple hash-\/table for identifying the adjacent vertices that get collapsed to the same node. The hash-\/table can have conflicts, which are handled via a linear scan. It relies on the perm\mbox{[}\mbox{]} array to visit the vertices in increasing cnvtxs order. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_a0aba484ba693edd6d56426d04bd7fd4b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_aead846b2c69509c914426ff087509934}\label{coarsen_8c_aead846b2c69509c914426ff087509934}} 
+\index{coarsen.\+c@{coarsen.\+c}!Match\+\_\+2\+Hop@{Match\+\_\+2\+Hop}}
+\index{Match\+\_\+2\+Hop@{Match\+\_\+2\+Hop}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Match\+\_\+2\+Hop()}{Match\_2Hop()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Match\+\_\+2\+Hop (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{perm,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{match,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{cnvtxs,  }\item[{size\+\_\+t}]{nunmatched }\end{DoxyParamCaption})}
+
+This function matches the unmatched vertices using a 2-\/hop matching that involves vertices that are two hops away from each other. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{coarsen_8c_aead846b2c69509c914426ff087509934_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_aead846b2c69509c914426ff087509934_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_aa56d53cace160be27fb1750dcaffbc04}\label{coarsen_8c_aa56d53cace160be27fb1750dcaffbc04}} 
+\index{coarsen.\+c@{coarsen.\+c}!Match\+\_\+2\+Hop\+All@{Match\+\_\+2\+Hop\+All}}
+\index{Match\+\_\+2\+Hop\+All@{Match\+\_\+2\+Hop\+All}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Match\+\_\+2\+Hop\+All()}{Match\_2HopAll()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Match\+\_\+2\+Hop\+All (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{perm,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{match,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{cnvtxs,  }\item[{size\+\_\+t $\ast$}]{r\+\_\+nunmatched,  }\item[{size\+\_\+t}]{maxdegree }\end{DoxyParamCaption})}
+
+This function matches the unmatched vertices whose degree is less than maxdegree using a 2-\/hop matching that involves vertices that are two hops away from each other. The requirement of the 2-\/hop matching is that of identical adjacency lists. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_aa56d53cace160be27fb1750dcaffbc04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_a838a4013e3b5cc5278ecc7a8757ce0ef}\label{coarsen_8c_a838a4013e3b5cc5278ecc7a8757ce0ef}} 
+\index{coarsen.\+c@{coarsen.\+c}!Match\+\_\+2\+Hop\+Any@{Match\+\_\+2\+Hop\+Any}}
+\index{Match\+\_\+2\+Hop\+Any@{Match\+\_\+2\+Hop\+Any}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Match\+\_\+2\+Hop\+Any()}{Match\_2HopAny()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Match\+\_\+2\+Hop\+Any (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{perm,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{match,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{cnvtxs,  }\item[{size\+\_\+t $\ast$}]{r\+\_\+nunmatched,  }\item[{size\+\_\+t}]{maxdegree }\end{DoxyParamCaption})}
+
+This function matches the unmatched vertices whose degree is less than maxdegree using a 2-\/hop matching that involves vertices that are two hops away from each other. The requirement of the 2-\/hop matching is a simple non-\/empty overlap between the adjancency lists of the vertices. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_a838a4013e3b5cc5278ecc7a8757ce0ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_a892d2ea16d613abc2276ad5fc6999724}\label{coarsen_8c_a892d2ea16d613abc2276ad5fc6999724}} 
+\index{coarsen.\+c@{coarsen.\+c}!Match\+\_\+\+RM@{Match\+\_\+\+RM}}
+\index{Match\+\_\+\+RM@{Match\+\_\+\+RM}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Match\+\_\+\+R\+M()}{Match\_RM()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Match\+\_\+\+RM (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function finds a matching by randomly selecting one of the unmatched adjacent vertices. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_a892d2ea16d613abc2276ad5fc6999724_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_a892d2ea16d613abc2276ad5fc6999724_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_af3ec72f3170ccdca06d8ad018d86cc58}\label{coarsen_8c_af3ec72f3170ccdca06d8ad018d86cc58}} 
+\index{coarsen.\+c@{coarsen.\+c}!Match\+\_\+\+S\+H\+EM@{Match\+\_\+\+S\+H\+EM}}
+\index{Match\+\_\+\+S\+H\+EM@{Match\+\_\+\+S\+H\+EM}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Match\+\_\+\+S\+H\+E\+M()}{Match\_SHEM()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Match\+\_\+\+S\+H\+EM (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function finds a matching using the H\+EM heuristic. The vertices are visited based on increasing degree to ensure that all vertices are given a chance to match with something. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_af3ec72f3170ccdca06d8ad018d86cc58_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_af3ec72f3170ccdca06d8ad018d86cc58_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_aac3e480e7e3bd02bfdf001d858a93562}\label{coarsen_8c_aac3e480e7e3bd02bfdf001d858a93562}} 
+\index{coarsen.\+c@{coarsen.\+c}!Print\+C\+Graph\+Stats@{Print\+C\+Graph\+Stats}}
+\index{Print\+C\+Graph\+Stats@{Print\+C\+Graph\+Stats}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Print\+C\+Graph\+Stats()}{PrintCGraphStats()}}
+{\footnotesize\ttfamily void Print\+C\+Graph\+Stats (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function prints various stats for each graph during coarsening Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_aac3e480e7e3bd02bfdf001d858a93562_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_ab69ab96ec78174da232dff05e9c79d2f}\label{coarsen_8c_ab69ab96ec78174da232dff05e9c79d2f}} 
+\index{coarsen.\+c@{coarsen.\+c}!Re\+Adjust\+Memory@{Re\+Adjust\+Memory}}
+\index{Re\+Adjust\+Memory@{Re\+Adjust\+Memory}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Re\+Adjust\+Memory()}{ReAdjustMemory()}}
+{\footnotesize\ttfamily void Re\+Adjust\+Memory (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{cgraph }\end{DoxyParamCaption})}
+
+This function re-\/adjusts the amount of memory that was allocated if it will lead to significant savings Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_ab69ab96ec78174da232dff05e9c79d2f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{coarsen_8c_a113522304bf628b09d0b69b4db05050e}\label{coarsen_8c_a113522304bf628b09d0b69b4db05050e}} 
+\index{coarsen.\+c@{coarsen.\+c}!Setup\+Coarse\+Graph@{Setup\+Coarse\+Graph}}
+\index{Setup\+Coarse\+Graph@{Setup\+Coarse\+Graph}!coarsen.\+c@{coarsen.\+c}}
+\subsubsection{\texorpdfstring{Setup\+Coarse\+Graph()}{SetupCoarseGraph()}}
+{\footnotesize\ttfamily \hyperlink{structgraph__t}{graph\+\_\+t}$\ast$ Setup\+Coarse\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{cnvtxs,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{dovsize }\end{DoxyParamCaption})}
+
+Setup the various arrays for the coarse graph Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coarsen_8c_a113522304bf628b09d0b69b4db05050e_icgraph}
+\end{center}
+\end{figure}

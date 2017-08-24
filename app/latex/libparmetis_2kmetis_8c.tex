@@ -1,0 +1,60 @@
+\hypertarget{libparmetis_2kmetis_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/libparmetis/kmetis.c File Reference}
+\label{libparmetis_2kmetis_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/kmetis.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/kmetis.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for kmetis.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libparmetis_2kmetis_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{libparmetis_2kmetis_8c_aa19849fbf0820dcdbc1d9b6451dc6d2d}{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Kway} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a34203f1160d94eca83e95f2718ea3504}{vwgt}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a2be4719baa820cfa5c06fd070796e0d3}{adjwgt}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$wgtflag, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa48ecaf34ec788199c3aedb2b1558eb7}{numflag}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{include_2metis_8h_af48bb348bc8440a61f90f137de83f203}{ubvec}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a68c032ed4161802775c6847d4cb39adf}{options}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a8e62a902298dd5fd88ef554d5277b1dc}{edgecut}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, M\+P\+I\+\_\+\+Comm $\ast$comm)
+\item 
+void \hyperlink{libparmetis_2kmetis_8c_af4c32961457a508271104065d135e675}{Global\+\_\+\+Partition} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{libparmetis_2kmetis_8c_af4c32961457a508271104065d135e675}\label{libparmetis_2kmetis_8c_af4c32961457a508271104065d135e675}} 
+\index{libparmetis/kmetis.\+c@{libparmetis/kmetis.\+c}!Global\+\_\+\+Partition@{Global\+\_\+\+Partition}}
+\index{Global\+\_\+\+Partition@{Global\+\_\+\+Partition}!libparmetis/kmetis.\+c@{libparmetis/kmetis.\+c}}
+\subsubsection{\texorpdfstring{Global\+\_\+\+Partition()}{Global\_Partition()}}
+{\footnotesize\ttfamily void Global\+\_\+\+Partition (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function is the driver to the multi-\/constraint partitioning algorithm. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libparmetis_2kmetis_8c_af4c32961457a508271104065d135e675_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libparmetis_2kmetis_8c_af4c32961457a508271104065d135e675_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{libparmetis_2kmetis_8c_aa19849fbf0820dcdbc1d9b6451dc6d2d}\label{libparmetis_2kmetis_8c_aa19849fbf0820dcdbc1d9b6451dc6d2d}} 
+\index{libparmetis/kmetis.\+c@{libparmetis/kmetis.\+c}!Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Kway@{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Kway}}
+\index{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Kway@{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Kway}!libparmetis/kmetis.\+c@{libparmetis/kmetis.\+c}}
+\subsubsection{\texorpdfstring{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Kway()}{ParMETIS\_V3\_PartKway()}}
+{\footnotesize\ttfamily int Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Kway (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vwgt,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjwgt,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{wgtflag,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{numflag,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{ncon,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{nparts,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ubvec,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{options,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{edgecut,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{M\+P\+I\+\_\+\+Comm $\ast$}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libparmetis_2kmetis_8c_aa19849fbf0820dcdbc1d9b6451dc6d2d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libparmetis_2kmetis_8c_aa19849fbf0820dcdbc1d9b6451dc6d2d_icgraph}
+\end{center}
+\end{figure}

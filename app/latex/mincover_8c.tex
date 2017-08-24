@@ -1,0 +1,189 @@
+\hypertarget{mincover_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/libmetis/mincover.c File Reference}
+\label{mincover_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/mincover.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/mincover.\+c}}
+{\ttfamily \#include \char`\"{}metislib.\+h\char`\"{}}\newline
+Include dependency graph for mincover.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mincover_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mincover_8c_ae32d01fd4cd18c869890a19c37b1258c}{I\+N\+C\+OL}~10
+\item 
+\#define \hyperlink{mincover_8c_a035a2028a6ea146356743a6d3a94703c}{I\+N\+R\+OW}~20
+\item 
+\#define \hyperlink{mincover_8c_aa6cbe827dd9151e470fb5111c63df685}{VC}~1
+\item 
+\#define \hyperlink{mincover_8c_a6bb7a09d1931dfbdd6d373cfe6e23357}{SC}~2
+\item 
+\#define \hyperlink{mincover_8c_a29939a749d943e3eba661f4f0302ef72}{HC}~3
+\item 
+\#define \hyperlink{mincover_8c_ae35e5b9a801b8c91c5597bb6c62db08a}{VR}~4
+\item 
+\#define \hyperlink{mincover_8c_abaed93a16a0cde13f32bc4dc48b96804}{SR}~5
+\item 
+\#define \hyperlink{mincover_8c_a9f4fe887f0a8d76a310f6539ebbae763}{HR}~6
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{mincover_8c_ad53d93ad9bfbd54416b3449971838830}{Min\+Cover} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} asize, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} bsize, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$cover, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$csize)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{mincover_8c_ad4fd2d52a6465e871ff38851cf443744}{Min\+Cover\+\_\+\+Augment} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} col, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mate, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$flag, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$level, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} maxlevel)
+\item 
+void \hyperlink{mincover_8c_ad5ccba21af8f9ed8b2faa69d4503ecfd}{Min\+Cover\+\_\+\+Decompose} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} asize, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} bsize, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mate, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$cover, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$csize)
+\item 
+void \hyperlink{mincover_8c_a4c92a2e434179f264498adf840127095}{Min\+Cover\+\_\+\+Col\+D\+FS} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} root, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mate, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a7a355801f721e9d8d4ae03590a3a56b0}{where}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} flag)
+\item 
+void \hyperlink{mincover_8c_a807020dce58bb03a180aa4a0cb8cdd3e}{Min\+Cover\+\_\+\+Row\+D\+FS} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} root, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mate, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a7a355801f721e9d8d4ae03590a3a56b0}{where}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} flag)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mincover_8c_a29939a749d943e3eba661f4f0302ef72}\label{mincover_8c_a29939a749d943e3eba661f4f0302ef72}} 
+\index{mincover.\+c@{mincover.\+c}!HC@{HC}}
+\index{HC@{HC}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{HC}{HC}}
+{\footnotesize\ttfamily \#define HC~3}
+
+\mbox{\Hypertarget{mincover_8c_a9f4fe887f0a8d76a310f6539ebbae763}\label{mincover_8c_a9f4fe887f0a8d76a310f6539ebbae763}} 
+\index{mincover.\+c@{mincover.\+c}!HR@{HR}}
+\index{HR@{HR}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{HR}{HR}}
+{\footnotesize\ttfamily \#define HR~6}
+
+\mbox{\Hypertarget{mincover_8c_ae32d01fd4cd18c869890a19c37b1258c}\label{mincover_8c_ae32d01fd4cd18c869890a19c37b1258c}} 
+\index{mincover.\+c@{mincover.\+c}!I\+N\+C\+OL@{I\+N\+C\+OL}}
+\index{I\+N\+C\+OL@{I\+N\+C\+OL}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+C\+OL}{INCOL}}
+{\footnotesize\ttfamily \#define I\+N\+C\+OL~10}
+
+\mbox{\Hypertarget{mincover_8c_a035a2028a6ea146356743a6d3a94703c}\label{mincover_8c_a035a2028a6ea146356743a6d3a94703c}} 
+\index{mincover.\+c@{mincover.\+c}!I\+N\+R\+OW@{I\+N\+R\+OW}}
+\index{I\+N\+R\+OW@{I\+N\+R\+OW}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+R\+OW}{INROW}}
+{\footnotesize\ttfamily \#define I\+N\+R\+OW~20}
+
+\mbox{\Hypertarget{mincover_8c_a6bb7a09d1931dfbdd6d373cfe6e23357}\label{mincover_8c_a6bb7a09d1931dfbdd6d373cfe6e23357}} 
+\index{mincover.\+c@{mincover.\+c}!SC@{SC}}
+\index{SC@{SC}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{SC}{SC}}
+{\footnotesize\ttfamily \#define SC~2}
+
+\mbox{\Hypertarget{mincover_8c_abaed93a16a0cde13f32bc4dc48b96804}\label{mincover_8c_abaed93a16a0cde13f32bc4dc48b96804}} 
+\index{mincover.\+c@{mincover.\+c}!SR@{SR}}
+\index{SR@{SR}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{SR}{SR}}
+{\footnotesize\ttfamily \#define SR~5}
+
+\mbox{\Hypertarget{mincover_8c_aa6cbe827dd9151e470fb5111c63df685}\label{mincover_8c_aa6cbe827dd9151e470fb5111c63df685}} 
+\index{mincover.\+c@{mincover.\+c}!VC@{VC}}
+\index{VC@{VC}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{VC}{VC}}
+{\footnotesize\ttfamily \#define VC~1}
+
+\mbox{\Hypertarget{mincover_8c_ae35e5b9a801b8c91c5597bb6c62db08a}\label{mincover_8c_ae35e5b9a801b8c91c5597bb6c62db08a}} 
+\index{mincover.\+c@{mincover.\+c}!VR@{VR}}
+\index{VR@{VR}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{VR}{VR}}
+{\footnotesize\ttfamily \#define VR~4}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{mincover_8c_ad53d93ad9bfbd54416b3449971838830}\label{mincover_8c_ad53d93ad9bfbd54416b3449971838830}} 
+\index{mincover.\+c@{mincover.\+c}!Min\+Cover@{Min\+Cover}}
+\index{Min\+Cover@{Min\+Cover}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{Min\+Cover()}{MinCover()}}
+{\footnotesize\ttfamily void Min\+Cover (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{asize,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{bsize,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{cover,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{csize }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mincover_8c_ad53d93ad9bfbd54416b3449971838830_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mincover_8c_ad4fd2d52a6465e871ff38851cf443744}\label{mincover_8c_ad4fd2d52a6465e871ff38851cf443744}} 
+\index{mincover.\+c@{mincover.\+c}!Min\+Cover\+\_\+\+Augment@{Min\+Cover\+\_\+\+Augment}}
+\index{Min\+Cover\+\_\+\+Augment@{Min\+Cover\+\_\+\+Augment}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{Min\+Cover\+\_\+\+Augment()}{MinCover\_Augment()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Min\+Cover\+\_\+\+Augment (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{col,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mate,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{flag,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{level,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{maxlevel }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{mincover_8c_ad4fd2d52a6465e871ff38851cf443744_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mincover_8c_ad4fd2d52a6465e871ff38851cf443744_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mincover_8c_a4c92a2e434179f264498adf840127095}\label{mincover_8c_a4c92a2e434179f264498adf840127095}} 
+\index{mincover.\+c@{mincover.\+c}!Min\+Cover\+\_\+\+Col\+D\+FS@{Min\+Cover\+\_\+\+Col\+D\+FS}}
+\index{Min\+Cover\+\_\+\+Col\+D\+FS@{Min\+Cover\+\_\+\+Col\+D\+FS}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{Min\+Cover\+\_\+\+Col\+D\+F\+S()}{MinCover\_ColDFS()}}
+{\footnotesize\ttfamily void Min\+Cover\+\_\+\+Col\+D\+FS (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{root,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mate,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{where,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{flag }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{mincover_8c_a4c92a2e434179f264498adf840127095_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mincover_8c_a4c92a2e434179f264498adf840127095_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mincover_8c_ad5ccba21af8f9ed8b2faa69d4503ecfd}\label{mincover_8c_ad5ccba21af8f9ed8b2faa69d4503ecfd}} 
+\index{mincover.\+c@{mincover.\+c}!Min\+Cover\+\_\+\+Decompose@{Min\+Cover\+\_\+\+Decompose}}
+\index{Min\+Cover\+\_\+\+Decompose@{Min\+Cover\+\_\+\+Decompose}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{Min\+Cover\+\_\+\+Decompose()}{MinCover\_Decompose()}}
+{\footnotesize\ttfamily void Min\+Cover\+\_\+\+Decompose (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{asize,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{bsize,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mate,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{cover,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{csize }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mincover_8c_ad5ccba21af8f9ed8b2faa69d4503ecfd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{mincover_8c_ad5ccba21af8f9ed8b2faa69d4503ecfd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mincover_8c_a807020dce58bb03a180aa4a0cb8cdd3e}\label{mincover_8c_a807020dce58bb03a180aa4a0cb8cdd3e}} 
+\index{mincover.\+c@{mincover.\+c}!Min\+Cover\+\_\+\+Row\+D\+FS@{Min\+Cover\+\_\+\+Row\+D\+FS}}
+\index{Min\+Cover\+\_\+\+Row\+D\+FS@{Min\+Cover\+\_\+\+Row\+D\+FS}!mincover.\+c@{mincover.\+c}}
+\subsubsection{\texorpdfstring{Min\+Cover\+\_\+\+Row\+D\+F\+S()}{MinCover\_RowDFS()}}
+{\footnotesize\ttfamily void Min\+Cover\+\_\+\+Row\+D\+FS (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{root,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mate,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{where,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{flag }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{mincover_8c_a807020dce58bb03a180aa4a0cb8cdd3e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mincover_8c_a807020dce58bb03a180aa4a0cb8cdd3e_icgraph}
+\end{center}
+\end{figure}

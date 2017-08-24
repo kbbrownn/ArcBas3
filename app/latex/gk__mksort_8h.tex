@@ -1,0 +1,91 @@
+\hypertarget{gk__mksort_8h}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/gk\+\_\+mksort.h File Reference}
+\label{gk__mksort_8h}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/gk\+\_\+mksort.\+h@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/gk\+\_\+mksort.\+h}}
+
+
+Templates for the qsort routine.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gk__mksort_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gk__mksort_8h_ad3ac0c6322a2bc1c81d4bf1f56317550}{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+W\+AP}(a,  b,  t)~((void)((t = $\ast$a), ($\ast$a = $\ast$b), ($\ast$b = t)))
+\item 
+\#define \hyperlink{gk__mksort_8h_a43b8aac87db5c2969428fbc7248519ca}{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+H\+R\+E\+SH}~4
+\item 
+\#define \hyperlink{gk__mksort_8h_ac21ca46c1b863f0588270f3605f35387}{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}~(8 $\ast$ sizeof(size\+\_\+t))
+\item 
+\#define \hyperlink{gk__mksort_8h_ac23b0e072b41f6eb655bc4a1c850c9ef}{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+U\+SH}(top,  low,  high)~(((top-\/$>$\+\_\+lo = (low)), (top-\/$>$\+\_\+hi = (high)), ++top))
+\item 
+\#define \hyperlink{gk__mksort_8h_af72e9377f158204172842cd4e01a7d4b}{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+OP}(low,  high,  top)~((-\/-\/top, (low = top-\/$>$\+\_\+lo), (high = top-\/$>$\+\_\+hi)))
+\item 
+\#define \hyperlink{gk__mksort_8h_a34111d68801790e5adbee9d0e0ae17b5}{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+N\+O\+T\+\_\+\+E\+M\+P\+TY}~(\+\_\+stack $<$ \+\_\+top)
+\item 
+\#define \hyperlink{gk__mksort_8h_a417bebefb2d8cd05880e85fe975bee02}{G\+K\+\_\+\+M\+K\+Q\+S\+O\+RT}(G\+K\+Q\+S\+O\+R\+T\+\_\+\+T\+Y\+PE,  G\+K\+Q\+S\+O\+R\+T\+\_\+\+B\+A\+SE,  G\+K\+Q\+S\+O\+R\+T\+\_\+\+N\+E\+LT,  G\+K\+Q\+S\+O\+R\+T\+\_\+\+LT)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Templates for the qsort routine. 
+
+\begin{DoxyDate}{Date}
+Started 3/28/07 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: gk_mksort.h 10711 2011-08-31 22:23:04Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gk__mksort_8h_a43b8aac87db5c2969428fbc7248519ca}\label{gk__mksort_8h_a43b8aac87db5c2969428fbc7248519ca}} 
+\index{gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}!\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+H\+R\+E\+SH@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+H\+R\+E\+SH}}
+\index{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+H\+R\+E\+SH@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+H\+R\+E\+SH}!gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+H\+R\+E\+SH}{\_GKQSORT\_MAX\_THRESH}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+H\+R\+E\+SH~4}
+
+\mbox{\Hypertarget{gk__mksort_8h_af72e9377f158204172842cd4e01a7d4b}\label{gk__mksort_8h_af72e9377f158204172842cd4e01a7d4b}} 
+\index{gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}!\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+OP@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+OP}}
+\index{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+OP@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+OP}!gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+OP}{\_GKQSORT\_POP}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+OP(\begin{DoxyParamCaption}\item[{}]{low,  }\item[{}]{high,  }\item[{}]{top }\end{DoxyParamCaption})~((-\/-\/top, (low = top-\/$>$\+\_\+lo), (high = top-\/$>$\+\_\+hi)))}
+
+\mbox{\Hypertarget{gk__mksort_8h_ac23b0e072b41f6eb655bc4a1c850c9ef}\label{gk__mksort_8h_ac23b0e072b41f6eb655bc4a1c850c9ef}} 
+\index{gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}!\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+U\+SH@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+U\+SH}}
+\index{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+U\+SH@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+U\+SH}!gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+U\+SH}{\_GKQSORT\_PUSH}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+P\+U\+SH(\begin{DoxyParamCaption}\item[{}]{top,  }\item[{}]{low,  }\item[{}]{high }\end{DoxyParamCaption})~(((top-\/$>$\+\_\+lo = (low)), (top-\/$>$\+\_\+hi = (high)), ++top))}
+
+\mbox{\Hypertarget{gk__mksort_8h_a34111d68801790e5adbee9d0e0ae17b5}\label{gk__mksort_8h_a34111d68801790e5adbee9d0e0ae17b5}} 
+\index{gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}!\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+N\+O\+T\+\_\+\+E\+M\+P\+TY@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+N\+O\+T\+\_\+\+E\+M\+P\+TY}}
+\index{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+N\+O\+T\+\_\+\+E\+M\+P\+TY@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+N\+O\+T\+\_\+\+E\+M\+P\+TY}!gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+N\+O\+T\+\_\+\+E\+M\+P\+TY}{\_GKQSORT\_STACK\_NOT\_EMPTY}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+N\+O\+T\+\_\+\+E\+M\+P\+TY~(\+\_\+stack $<$ \+\_\+top)}
+
+\mbox{\Hypertarget{gk__mksort_8h_ac21ca46c1b863f0588270f3605f35387}\label{gk__mksort_8h_ac21ca46c1b863f0588270f3605f35387}} 
+\index{gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}!\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}
+\index{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}!gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}{\_GKQSORT\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~(8 $\ast$ sizeof(size\+\_\+t))}
+
+\mbox{\Hypertarget{gk__mksort_8h_ad3ac0c6322a2bc1c81d4bf1f56317550}\label{gk__mksort_8h_ad3ac0c6322a2bc1c81d4bf1f56317550}} 
+\index{gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}!\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+W\+AP@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+W\+AP}}
+\index{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+W\+AP@{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+W\+AP}!gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+W\+AP}{\_GKQSORT\_SWAP}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+K\+Q\+S\+O\+R\+T\+\_\+\+S\+W\+AP(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{t }\end{DoxyParamCaption})~((void)((t = $\ast$a), ($\ast$a = $\ast$b), ($\ast$b = t)))}
+
+\mbox{\Hypertarget{gk__mksort_8h_a417bebefb2d8cd05880e85fe975bee02}\label{gk__mksort_8h_a417bebefb2d8cd05880e85fe975bee02}} 
+\index{gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}!G\+K\+\_\+\+M\+K\+Q\+S\+O\+RT@{G\+K\+\_\+\+M\+K\+Q\+S\+O\+RT}}
+\index{G\+K\+\_\+\+M\+K\+Q\+S\+O\+RT@{G\+K\+\_\+\+M\+K\+Q\+S\+O\+RT}!gk\+\_\+mksort.\+h@{gk\+\_\+mksort.\+h}}
+\subsubsection{\texorpdfstring{G\+K\+\_\+\+M\+K\+Q\+S\+O\+RT}{GK\_MKQSORT}}
+{\footnotesize\ttfamily \#define G\+K\+\_\+\+M\+K\+Q\+S\+O\+RT(\begin{DoxyParamCaption}\item[{}]{G\+K\+Q\+S\+O\+R\+T\+\_\+\+T\+Y\+PE,  }\item[{}]{G\+K\+Q\+S\+O\+R\+T\+\_\+\+B\+A\+SE,  }\item[{}]{G\+K\+Q\+S\+O\+R\+T\+\_\+\+N\+E\+LT,  }\item[{}]{G\+K\+Q\+S\+O\+R\+T\+\_\+\+LT }\end{DoxyParamCaption})}
+

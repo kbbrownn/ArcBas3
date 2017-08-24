@@ -1,0 +1,12 @@
+<map id="gk_i32readfilebin" name="gk_i32readfilebin">
+<area shape="rect" id="node2" href="$fs_8c.html#ab8e9c3fc4ed1161501b51e445afde0e5" title="Returns the size of the file in bytes. " alt="" coords="177,5,266,32"/>
+<area shape="rect" id="node3" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="477,107,557,133"/>
+<area shape="rect" id="node5" href="$metis_2_g_klib_2io_8c.html#abff04948821f625a3e59666e61c70e2f" title="gk_fopen" alt="" coords="183,56,260,83"/>
+<area shape="rect" id="node8" href="$gk__proto_8h.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="188,157,255,184"/>
+<area shape="rect" id="node10" href="$metis_2_g_klib_2io_8c.html#a70dec19fefaf0c84f3948b4679a73fec" title="gk_fclose" alt="" coords="182,208,261,235"/>
+<area shape="rect" id="node4" href="$adjustments_2make__bidg__headers_8m.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="605,69,661,96"/>
+<area shape="rect" id="node6" href="$buildsource_8m.html#ae6aab5c308faac0fc539cc9c6da9fbd0" title="sprintf" alt="" coords="343,56,401,83"/>
+<area shape="rect" id="node7" href="$error_8c.html#a56d0f2cc40cd8633a784582d6200d8b5" title="errexit" alt="" coords="488,31,547,57"/>
+<area shape="rect" id="node9" href="$gk__proto_8h.html#a6b0166aa10e35fb252f8561cac8f3bbb" title="gk_gkmcoreDel" alt="" coords="315,157,429,184"/>
+<area shape="rect" id="node11" href="$adjustments_2make__bidg__headers_8m.html#a355ed4cdac2a27aa04a6689ac2d7e86e" title="fclose" alt="" coords="343,208,401,235"/>
+</map>

@@ -1,0 +1,93 @@
+\hypertarget{diffutil_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/libparmetis/diffutil.c File Reference}
+\label{diffutil_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/diffutil.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/diffutil.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for diffutil.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{diffutil_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{diffutil_8c_ae66862df97d3cf546259e4f679371730}{Set\+Up\+Connect\+Graph} (\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{structmatrix__t}{matrix\+\_\+t} $\ast$\hyperlink{adjustments_2make__bidg__headers_8m_af07ff1035f34d77764ff516f110e6832}{matrix}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$workspace)
+\item 
+void \hyperlink{diffutil_8c_a007901e980318b5c455c6798c5686fc4}{Mc\+\_\+\+Compute\+Move\+Statistics} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$nmoved, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$maxin, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$maxout)
+\item 
+\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{diffutil_8c_ac2a70991745acc003b806be26e3a8124}{Mc\+\_\+\+Compute\+Serial\+TotalV} (\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$home)
+\item 
+void \hyperlink{diffutil_8c_ae334beb9a86e6a2816584c5d9872ecd7}{Compute\+Load} (\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{include_2metis_8h_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$load, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{include_2metis_8h_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} index)
+\item 
+void \hyperlink{diffutil_8c_a31c811c3b724d9d26416be8831be44e0}{Conj\+Grad2} (\hyperlink{structmatrix__t}{matrix\+\_\+t} $\ast$A, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$b, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{cubic2linear_8m_ac98c3bb25378222646e977292011625f}{x}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} tol, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$workspace)
+\item 
+void \hyperlink{diffutil_8c_a4ac5c2a9274b1ea7377f70e1047659db}{mv\+Mult2} (\hyperlink{structmatrix__t}{matrix\+\_\+t} $\ast$A, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{cubic2linear_8m_ac4055e3a20b6b3af3d10590ea446ef6c}{v}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{cubic2linear_8m_aad57484016654da87125db86f4227ea3}{w})
+\item 
+void \hyperlink{diffutil_8c_a703664e4eb382833e78b460fd8164ec7}{Compute\+Transfer\+Vector} (\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{include_2metis_8h_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{structmatrix__t}{matrix\+\_\+t} $\ast$\hyperlink{adjustments_2make__bidg__headers_8m_af07ff1035f34d77764ff516f110e6832}{matrix}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$solution, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$transfer, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{diffutil_8c_ae334beb9a86e6a2816584c5d9872ecd7}\label{diffutil_8c_ae334beb9a86e6a2816584c5d9872ecd7}} 
+\index{diffutil.\+c@{diffutil.\+c}!Compute\+Load@{Compute\+Load}}
+\index{Compute\+Load@{Compute\+Load}!diffutil.\+c@{diffutil.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Load()}{ComputeLoad()}}
+{\footnotesize\ttfamily void Compute\+Load (\begin{DoxyParamCaption}\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nparts,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{load,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{diffutil_8c_a703664e4eb382833e78b460fd8164ec7}\label{diffutil_8c_a703664e4eb382833e78b460fd8164ec7}} 
+\index{diffutil.\+c@{diffutil.\+c}!Compute\+Transfer\+Vector@{Compute\+Transfer\+Vector}}
+\index{Compute\+Transfer\+Vector@{Compute\+Transfer\+Vector}!diffutil.\+c@{diffutil.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Transfer\+Vector()}{ComputeTransferVector()}}
+{\footnotesize\ttfamily void Compute\+Transfer\+Vector (\begin{DoxyParamCaption}\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ncon,  }\item[{\hyperlink{structmatrix__t}{matrix\+\_\+t} $\ast$}]{matrix,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{solution,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{transfer,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{diffutil_8c_a31c811c3b724d9d26416be8831be44e0}\label{diffutil_8c_a31c811c3b724d9d26416be8831be44e0}} 
+\index{diffutil.\+c@{diffutil.\+c}!Conj\+Grad2@{Conj\+Grad2}}
+\index{Conj\+Grad2@{Conj\+Grad2}!diffutil.\+c@{diffutil.\+c}}
+\subsubsection{\texorpdfstring{Conj\+Grad2()}{ConjGrad2()}}
+{\footnotesize\ttfamily void Conj\+Grad2 (\begin{DoxyParamCaption}\item[{\hyperlink{structmatrix__t}{matrix\+\_\+t} $\ast$}]{A,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{b,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{x,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{tol,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{workspace }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{diffutil_8c_a31c811c3b724d9d26416be8831be44e0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{diffutil_8c_a007901e980318b5c455c6798c5686fc4}\label{diffutil_8c_a007901e980318b5c455c6798c5686fc4}} 
+\index{diffutil.\+c@{diffutil.\+c}!Mc\+\_\+\+Compute\+Move\+Statistics@{Mc\+\_\+\+Compute\+Move\+Statistics}}
+\index{Mc\+\_\+\+Compute\+Move\+Statistics@{Mc\+\_\+\+Compute\+Move\+Statistics}!diffutil.\+c@{diffutil.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Compute\+Move\+Statistics()}{Mc\_ComputeMoveStatistics()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Compute\+Move\+Statistics (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{nmoved,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{maxin,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{maxout }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{diffutil_8c_a007901e980318b5c455c6798c5686fc4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{diffutil_8c_ac2a70991745acc003b806be26e3a8124}\label{diffutil_8c_ac2a70991745acc003b806be26e3a8124}} 
+\index{diffutil.\+c@{diffutil.\+c}!Mc\+\_\+\+Compute\+Serial\+TotalV@{Mc\+\_\+\+Compute\+Serial\+TotalV}}
+\index{Mc\+\_\+\+Compute\+Serial\+TotalV@{Mc\+\_\+\+Compute\+Serial\+TotalV}!diffutil.\+c@{diffutil.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Compute\+Serial\+Total\+V()}{Mc\_ComputeSerialTotalV()}}
+{\footnotesize\ttfamily \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Mc\+\_\+\+Compute\+Serial\+TotalV (\begin{DoxyParamCaption}\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{home }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{diffutil_8c_a4ac5c2a9274b1ea7377f70e1047659db}\label{diffutil_8c_a4ac5c2a9274b1ea7377f70e1047659db}} 
+\index{diffutil.\+c@{diffutil.\+c}!mv\+Mult2@{mv\+Mult2}}
+\index{mv\+Mult2@{mv\+Mult2}!diffutil.\+c@{diffutil.\+c}}
+\subsubsection{\texorpdfstring{mv\+Mult2()}{mvMult2()}}
+{\footnotesize\ttfamily void mv\+Mult2 (\begin{DoxyParamCaption}\item[{\hyperlink{structmatrix__t}{matrix\+\_\+t} $\ast$}]{A,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{v,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{w }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{diffutil_8c_a4ac5c2a9274b1ea7377f70e1047659db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{diffutil_8c_ae66862df97d3cf546259e4f679371730}\label{diffutil_8c_ae66862df97d3cf546259e4f679371730}} 
+\index{diffutil.\+c@{diffutil.\+c}!Set\+Up\+Connect\+Graph@{Set\+Up\+Connect\+Graph}}
+\index{Set\+Up\+Connect\+Graph@{Set\+Up\+Connect\+Graph}!diffutil.\+c@{diffutil.\+c}}
+\subsubsection{\texorpdfstring{Set\+Up\+Connect\+Graph()}{SetUpConnectGraph()}}
+{\footnotesize\ttfamily void Set\+Up\+Connect\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{structmatrix__t}{matrix\+\_\+t} $\ast$}]{matrix,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{workspace }\end{DoxyParamCaption})}
+

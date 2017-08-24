@@ -1,0 +1,71 @@
+\hypertarget{libparmetis_2stat_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/libparmetis/stat.c File Reference}
+\label{libparmetis_2stat_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/stat.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/stat.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for stat.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libparmetis_2stat_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{libparmetis_2stat_8c_a48a74c9a48910c6ac34c15a4d0ab41b7}{Compute\+Serial\+Balance} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a7a355801f721e9d8d4ae03590a3a56b0}{where}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{include_2metis_8h_af48bb348bc8440a61f90f137de83f203}{ubvec})
+\item 
+void \hyperlink{libparmetis_2stat_8c_aab34140bbbccdd5b71308b7833812e4c}{Compute\+Parallel\+Balance} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{include_2metis_8h_a7a355801f721e9d8d4ae03590a3a56b0}{where}, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{include_2metis_8h_af48bb348bc8440a61f90f137de83f203}{ubvec})
+\item 
+void \hyperlink{libparmetis_2stat_8c_a48f286a4f71519dfc8262f34746495f9}{Mc\+\_\+\+Print\+Throttle\+Matrix} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{adjustments_2make__bidg__headers_8m_af07ff1035f34d77764ff516f110e6832}{matrix})
+\item 
+void \hyperlink{libparmetis_2stat_8c_a6f0fa911c3fe611186b0233e2bb19555}{Print\+Post\+Part\+Info} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} movestats)
+\item 
+void \hyperlink{libparmetis_2stat_8c_aa0a183e7221e2e7b4010355c77fa36c5}{Compute\+Move\+Statistics} (\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{structgraph__t}{graph\+\_\+t} $\ast$graph, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$nmoved, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$maxin, \hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$maxout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{libparmetis_2stat_8c_aa0a183e7221e2e7b4010355c77fa36c5}\label{libparmetis_2stat_8c_aa0a183e7221e2e7b4010355c77fa36c5}} 
+\index{libparmetis/stat.\+c@{libparmetis/stat.\+c}!Compute\+Move\+Statistics@{Compute\+Move\+Statistics}}
+\index{Compute\+Move\+Statistics@{Compute\+Move\+Statistics}!libparmetis/stat.\+c@{libparmetis/stat.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Move\+Statistics()}{ComputeMoveStatistics()}}
+{\footnotesize\ttfamily void Compute\+Move\+Statistics (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{nmoved,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{maxin,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{maxout }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libparmetis_2stat_8c_aa0a183e7221e2e7b4010355c77fa36c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{libparmetis_2stat_8c_aab34140bbbccdd5b71308b7833812e4c}\label{libparmetis_2stat_8c_aab34140bbbccdd5b71308b7833812e4c}} 
+\index{libparmetis/stat.\+c@{libparmetis/stat.\+c}!Compute\+Parallel\+Balance@{Compute\+Parallel\+Balance}}
+\index{Compute\+Parallel\+Balance@{Compute\+Parallel\+Balance}!libparmetis/stat.\+c@{libparmetis/stat.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Parallel\+Balance()}{ComputeParallelBalance()}}
+{\footnotesize\ttfamily void Compute\+Parallel\+Balance (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{where,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ubvec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{libparmetis_2stat_8c_a48a74c9a48910c6ac34c15a4d0ab41b7}\label{libparmetis_2stat_8c_a48a74c9a48910c6ac34c15a4d0ab41b7}} 
+\index{libparmetis/stat.\+c@{libparmetis/stat.\+c}!Compute\+Serial\+Balance@{Compute\+Serial\+Balance}}
+\index{Compute\+Serial\+Balance@{Compute\+Serial\+Balance}!libparmetis/stat.\+c@{libparmetis/stat.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Serial\+Balance()}{ComputeSerialBalance()}}
+{\footnotesize\ttfamily void Compute\+Serial\+Balance (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{where,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ubvec }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libparmetis_2stat_8c_a48a74c9a48910c6ac34c15a4d0ab41b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{libparmetis_2stat_8c_a48f286a4f71519dfc8262f34746495f9}\label{libparmetis_2stat_8c_a48f286a4f71519dfc8262f34746495f9}} 
+\index{libparmetis/stat.\+c@{libparmetis/stat.\+c}!Mc\+\_\+\+Print\+Throttle\+Matrix@{Mc\+\_\+\+Print\+Throttle\+Matrix}}
+\index{Mc\+\_\+\+Print\+Throttle\+Matrix@{Mc\+\_\+\+Print\+Throttle\+Matrix}!libparmetis/stat.\+c@{libparmetis/stat.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Print\+Throttle\+Matrix()}{Mc\_PrintThrottleMatrix()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Print\+Throttle\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{libparmetis_2stat_8c_a6f0fa911c3fe611186b0233e2bb19555}\label{libparmetis_2stat_8c_a6f0fa911c3fe611186b0233e2bb19555}} 
+\index{libparmetis/stat.\+c@{libparmetis/stat.\+c}!Print\+Post\+Part\+Info@{Print\+Post\+Part\+Info}}
+\index{Print\+Post\+Part\+Info@{Print\+Post\+Part\+Info}!libparmetis/stat.\+c@{libparmetis/stat.\+c}}
+\subsubsection{\texorpdfstring{Print\+Post\+Part\+Info()}{PrintPostPartInfo()}}
+{\footnotesize\ttfamily void Print\+Post\+Part\+Info (\begin{DoxyParamCaption}\item[{\hyperlink{structctrl__t}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{structgraph__t}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{movestats }\end{DoxyParamCaption})}
+
+This function prints post-\/partitioning information 

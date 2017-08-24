@@ -1,0 +1,180 @@
+\hypertarget{htable_8c}{}\section{3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/htable.c File Reference}
+\label{htable_8c}\index{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/htable.\+c@{3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/htable.\+c}}
+{\ttfamily \#include $<$G\+Klib.\+h$>$}\newline
+Include dependency graph for htable.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{htable_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$ \hyperlink{htable_8c_a8dc2b324b10c45883dacbf58ac0b7efd}{H\+Table\+\_\+\+Create} (int nelements)
+\item 
+void \hyperlink{htable_8c_a8a914231592293527bd1f42cdfb346d4}{H\+Table\+\_\+\+Reset} (\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$htable)
+\item 
+void \hyperlink{htable_8c_ad79cb786b03a73481fb3e5846d345801}{H\+Table\+\_\+\+Resize} (\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$htable, int nelements)
+\item 
+void \hyperlink{htable_8c_a39853dc7129323e7846d895c9026ad6f}{H\+Table\+\_\+\+Insert} (\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$htable, int key, int val)
+\item 
+void \hyperlink{htable_8c_a19564e2cf9bc13d7ba8b8d4ed2e9b1d1}{H\+Table\+\_\+\+Delete} (\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$htable, int key)
+\item 
+int \hyperlink{htable_8c_a2b610fbd6017e0ef2e393c563b4809a5}{H\+Table\+\_\+\+Search} (\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$htable, int key)
+\item 
+int \hyperlink{htable_8c_a226d34f299950350235ed2f54146c292}{H\+Table\+\_\+\+Get\+Next} (\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$htable, int key, int $\ast$r\+\_\+val, int type)
+\item 
+int \hyperlink{htable_8c_acb372a5e2569817f3a10cbeababda100}{H\+Table\+\_\+\+Search\+And\+Delete} (\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$htable, int key)
+\item 
+void \hyperlink{htable_8c_a4552b6bc8e0b509913638222daecf3aa}{H\+Table\+\_\+\+Destroy} (\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$htable)
+\item 
+int \hyperlink{htable_8c_afe255e126a6c4eec5efb11c3691b3155}{H\+Table\+\_\+\+H\+Function} (int nelements, int key)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{htable_8c_a8dc2b324b10c45883dacbf58ac0b7efd}\label{htable_8c_a8dc2b324b10c45883dacbf58ac0b7efd}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+Create@{H\+Table\+\_\+\+Create}}
+\index{H\+Table\+\_\+\+Create@{H\+Table\+\_\+\+Create}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+Create()}{HTable\_Create()}}
+{\footnotesize\ttfamily \hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t}$\ast$ H\+Table\+\_\+\+Create (\begin{DoxyParamCaption}\item[{int}]{nelements }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{htable_8c_a8dc2b324b10c45883dacbf58ac0b7efd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{htable_8c_a19564e2cf9bc13d7ba8b8d4ed2e9b1d1}\label{htable_8c_a19564e2cf9bc13d7ba8b8d4ed2e9b1d1}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+Delete@{H\+Table\+\_\+\+Delete}}
+\index{H\+Table\+\_\+\+Delete@{H\+Table\+\_\+\+Delete}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+Delete()}{HTable\_Delete()}}
+{\footnotesize\ttfamily void H\+Table\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$}]{htable,  }\item[{int}]{key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{htable_8c_a19564e2cf9bc13d7ba8b8d4ed2e9b1d1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{htable_8c_a4552b6bc8e0b509913638222daecf3aa}\label{htable_8c_a4552b6bc8e0b509913638222daecf3aa}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+Destroy@{H\+Table\+\_\+\+Destroy}}
+\index{H\+Table\+\_\+\+Destroy@{H\+Table\+\_\+\+Destroy}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+Destroy()}{HTable\_Destroy()}}
+{\footnotesize\ttfamily void H\+Table\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$}]{htable }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{htable_8c_a4552b6bc8e0b509913638222daecf3aa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{htable_8c_a226d34f299950350235ed2f54146c292}\label{htable_8c_a226d34f299950350235ed2f54146c292}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+Get\+Next@{H\+Table\+\_\+\+Get\+Next}}
+\index{H\+Table\+\_\+\+Get\+Next@{H\+Table\+\_\+\+Get\+Next}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+Get\+Next()}{HTable\_GetNext()}}
+{\footnotesize\ttfamily int H\+Table\+\_\+\+Get\+Next (\begin{DoxyParamCaption}\item[{\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$}]{htable,  }\item[{int}]{key,  }\item[{int $\ast$}]{r\+\_\+val,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{htable_8c_a226d34f299950350235ed2f54146c292_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{htable_8c_afe255e126a6c4eec5efb11c3691b3155}\label{htable_8c_afe255e126a6c4eec5efb11c3691b3155}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+H\+Function@{H\+Table\+\_\+\+H\+Function}}
+\index{H\+Table\+\_\+\+H\+Function@{H\+Table\+\_\+\+H\+Function}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+H\+Function()}{HTable\_HFunction()}}
+{\footnotesize\ttfamily int H\+Table\+\_\+\+H\+Function (\begin{DoxyParamCaption}\item[{int}]{nelements,  }\item[{int}]{key }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{htable_8c_afe255e126a6c4eec5efb11c3691b3155_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{htable_8c_a39853dc7129323e7846d895c9026ad6f}\label{htable_8c_a39853dc7129323e7846d895c9026ad6f}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+Insert@{H\+Table\+\_\+\+Insert}}
+\index{H\+Table\+\_\+\+Insert@{H\+Table\+\_\+\+Insert}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+Insert()}{HTable\_Insert()}}
+{\footnotesize\ttfamily void H\+Table\+\_\+\+Insert (\begin{DoxyParamCaption}\item[{\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$}]{htable,  }\item[{int}]{key,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{htable_8c_a39853dc7129323e7846d895c9026ad6f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{htable_8c_a39853dc7129323e7846d895c9026ad6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{htable_8c_a8a914231592293527bd1f42cdfb346d4}\label{htable_8c_a8a914231592293527bd1f42cdfb346d4}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+Reset@{H\+Table\+\_\+\+Reset}}
+\index{H\+Table\+\_\+\+Reset@{H\+Table\+\_\+\+Reset}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+Reset()}{HTable\_Reset()}}
+{\footnotesize\ttfamily void H\+Table\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$}]{htable }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{htable_8c_a8a914231592293527bd1f42cdfb346d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{htable_8c_ad79cb786b03a73481fb3e5846d345801}\label{htable_8c_ad79cb786b03a73481fb3e5846d345801}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+Resize@{H\+Table\+\_\+\+Resize}}
+\index{H\+Table\+\_\+\+Resize@{H\+Table\+\_\+\+Resize}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+Resize()}{HTable\_Resize()}}
+{\footnotesize\ttfamily void H\+Table\+\_\+\+Resize (\begin{DoxyParamCaption}\item[{\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$}]{htable,  }\item[{int}]{nelements }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{htable_8c_ad79cb786b03a73481fb3e5846d345801_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{htable_8c_ad79cb786b03a73481fb3e5846d345801_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{htable_8c_a2b610fbd6017e0ef2e393c563b4809a5}\label{htable_8c_a2b610fbd6017e0ef2e393c563b4809a5}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+Search@{H\+Table\+\_\+\+Search}}
+\index{H\+Table\+\_\+\+Search@{H\+Table\+\_\+\+Search}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+Search()}{HTable\_Search()}}
+{\footnotesize\ttfamily int H\+Table\+\_\+\+Search (\begin{DoxyParamCaption}\item[{\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$}]{htable,  }\item[{int}]{key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{htable_8c_a2b610fbd6017e0ef2e393c563b4809a5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{htable_8c_acb372a5e2569817f3a10cbeababda100}\label{htable_8c_acb372a5e2569817f3a10cbeababda100}} 
+\index{htable.\+c@{htable.\+c}!H\+Table\+\_\+\+Search\+And\+Delete@{H\+Table\+\_\+\+Search\+And\+Delete}}
+\index{H\+Table\+\_\+\+Search\+And\+Delete@{H\+Table\+\_\+\+Search\+And\+Delete}!htable.\+c@{htable.\+c}}
+\subsubsection{\texorpdfstring{H\+Table\+\_\+\+Search\+And\+Delete()}{HTable\_SearchAndDelete()}}
+{\footnotesize\ttfamily int H\+Table\+\_\+\+Search\+And\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{structgk___h_table__t}{gk\+\_\+\+H\+Table\+\_\+t} $\ast$}]{htable,  }\item[{int}]{key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{htable_8c_acb372a5e2569817f3a10cbeababda100_cgraph}
+\end{center}
+\end{figure}
