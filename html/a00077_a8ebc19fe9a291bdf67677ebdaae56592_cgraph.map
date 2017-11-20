@@ -1,0 +1,19 @@
+<map id="gk_csr_Read" name="gk_csr_Read">
+<area shape="rect" id="node2" href="$a00035.html#a627221a374552b5b6659d855b7446187" title="gk_fexists" alt="" coords="169,5,250,32"/>
+<area shape="rect" id="node3" href="$a00026.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="493,56,573,83"/>
+<area shape="rect" id="node5" href="$a00023.html#a82b885bbed5bd18c26629c35ce5d37e4" title="gk_csr_Create" alt="" coords="155,157,264,184"/>
+<area shape="rect" id="node10" href="$a00077.html#ab2b996e10c5bccb30204d81804adfd24" title="gk_fopen" alt="" coords="317,335,395,361"/>
+<area shape="rect" id="node11" href="$a00575.html#ae6aab5c308faac0fc539cc9c6da9fbd0" title="sprintf" alt="" coords="504,385,563,412"/>
+<area shape="rect" id="node12" href="$a00026.html#a56d0f2cc40cd8633a784582d6200d8b5" title="errexit" alt="" coords="504,259,563,285"/>
+<area shape="rect" id="node13" href="$a00077.html#a0fd03cab5187904b005485109d9fa2b5" title="gk_fclose" alt="" coords="317,461,395,488"/>
+<area shape="rect" id="node15" href="$a00077.html#ad8263f64108434d7ebab9799b5ab9632" title="gk_getline" alt="" coords="168,208,251,235"/>
+<area shape="rect" id="node17" href="$a00035.html#a739112cb142f2e96d6952140c66cd31c" title="gk_getfilestats" alt="" coords="156,360,263,387"/>
+<area shape="rect" id="node18" href="$a00077.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="176,512,243,539"/>
+<area shape="rect" id="node4" href="$a01014.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="667,208,723,235"/>
+<area shape="rect" id="node6" href="$a00077.html#aba6f76f5c67b9b7e9c2e45988d3d3e9d" title="gk_malloc" alt="" coords="315,157,397,184"/>
+<area shape="rect" id="node9" href="$a00023.html#a47a303d88c3316bd821219cae39d0461" title="gk_csr_Init" alt="" coords="313,107,399,133"/>
+<area shape="rect" id="node7" href="$a00110.html#ad2327b94227019b6753b6b09400c0522" title="gk_GetCurMemoryUsed" alt="" coords="451,107,616,133"/>
+<area shape="rect" id="node8" href="$a00110.html#a656fd5266ae12a96e53125486f8fea52" title="gk_GetMaxMemoryUsed" alt="" coords="449,157,618,184"/>
+<area shape="rect" id="node14" href="$a01014.html#a355ed4cdac2a27aa04a6689ac2d7e86e" title="fclose" alt="" coords="505,461,562,488"/>
+<area shape="rect" id="node16" href="$a00077.html#ab76a07ccd25288dd9acc99f5f24a7600" title="gk_realloc" alt="" coords="315,208,397,235"/>
+</map>

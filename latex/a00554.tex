@@ -1,0 +1,767 @@
+\hypertarget{a00554}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/include/fem.h File Reference}
+\label{a00554}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/include/fem.\+h@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/include/fem.\+h}}
+{\ttfamily \#include $<$strings.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Mesh.\+h\char`\"{}}\newline
+Include dependency graph for fem.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00555}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00556}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$$\ast$ \hyperlink{a00554_a4bf6e503687187059ced10b812beaab3}{Build\+Matrix} (int Nrows, int Ncols)
+\item 
+double $\ast$ \hyperlink{a00554_a990278305dbeaf8e4441cf4146bfdc62}{Build\+Vector} (int Nrows)
+\item 
+int $\ast$$\ast$ \hyperlink{a00554_a77f751d54b396015520a882d7a318e57}{Build\+Int\+Matrix} (int Nrows, int Ncols)
+\item 
+int $\ast$ \hyperlink{a00554_a0f24d8056fa979af4888469ea90576ff}{Build\+Int\+Vector} (int Nrows)
+\item 
+double $\ast$$\ast$$\ast$ \hyperlink{a00554_a6031ee45d6b3d95665a885b7128c311c}{Build3\+Tensor} (int Nrows, int Ncols, int I\+DX)
+\item 
+double $\ast$$\ast$$\ast$$\ast$ \hyperlink{a00554_a745a480f3faf250c87406ddb1d8d0e4f}{Build4\+Tensor} (int Nrows, int Ncols, int I\+D\+X1, int I\+D\+X2)
+\item 
+double $\ast$$\ast$ \hyperlink{a00554_afa534e284e3bdd83ec70e03b3348d960}{Destroy\+Matrix} (double $\ast$$\ast$)
+\item 
+double $\ast$ \hyperlink{a00554_a6d2c56d5886407db34f7810cd4ebb1ac}{Destroy\+Vector} (double $\ast$)
+\item 
+int $\ast$$\ast$ \hyperlink{a00554_a4212ac496c2e42e38dd0ad0cd18ed161}{Destroy\+Int\+Matrix} (int $\ast$$\ast$)
+\item 
+int $\ast$ \hyperlink{a00554_ab7be757b254a2ca937d1d5399cbc63af}{Destroy\+Int\+Vector} (int $\ast$)
+\item 
+double $\ast$$\ast$$\ast$ \hyperlink{a00554_a51bb9f1cde4263ba91387d1c20dcf8c7}{Destroy3\+Tensor} (double $\ast$$\ast$$\ast$)
+\item 
+double $\ast$$\ast$$\ast$$\ast$ \hyperlink{a00554_a04367038e0614f8f3a881b057048d009}{Destroy4\+Tensor} (double $\ast$$\ast$$\ast$$\ast$)
+\item 
+void \hyperlink{a00554_a75942b12ae1b0172595c4d482b8203c0}{Print\+Matrix} (char $\ast$message, double $\ast$$\ast$A, int Nrows, int Ncols)
+\item 
+void \hyperlink{a00554_ac376677d3caaa98a9daf61674a973d1b}{Save\+Matrix} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, double $\ast$$\ast$A, int Nrows, int Ncols)
+\item 
+\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$ \hyperlink{a00554_af31fd6654ededed596d98c090d8748b5}{Read\+Mesh2d} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename})
+\item 
+\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$ \hyperlink{a00554_a992690ab68b8564681b5a038ca111413}{Read\+Mesh2d\+\_\+linear} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename})
+\item 
+\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$ \hyperlink{a00554_ae31747f9df306a59e6f4df61fddfe15f}{Read\+Mesh3d} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename})
+\item 
+void \hyperlink{a00554_ad62a25bbacac8912e4932b3163c885f0}{Print\+Mesh} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a0f8fa1f045215f1ea478f91156eb0317}{Print\+Mesh\+\_\+linear} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a6e05f4bc3238ae8e045ddc269dd77f74}{Normals2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int \hyperlink{a00605_a6086917dfee54d84abe1838505c8cf69}{k}, double $\ast$nx, double $\ast$ny, double $\ast$sJ)
+\item 
+void \hyperlink{a00554_a7dad59f4c5add70012ffb84d688ce948}{Normals3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int \hyperlink{a00605_a6086917dfee54d84abe1838505c8cf69}{k}, double $\ast$nx, double $\ast$ny, double $\ast$nz, double $\ast$sJ)
+\item 
+void \hyperlink{a00554_a17dce51b6f44350809fb0f67f41bf80a}{Geometric\+Factors2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int \hyperlink{a00605_a6086917dfee54d84abe1838505c8cf69}{k}, double $\ast$drdx, double $\ast$dsdx, double $\ast$drdy, double $\ast$dsdy, double $\ast$J)
+\item 
+void \hyperlink{a00554_a962817a1e01d941ede2d0a7e31f136d7}{Geometric\+Factors3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int \hyperlink{a00605_a6086917dfee54d84abe1838505c8cf69}{k}, double $\ast$drdx, double $\ast$dsdx, double $\ast$dtdx, double $\ast$drdy, double $\ast$dsdy, double $\ast$dtdy, double $\ast$drdz, double $\ast$dsdz, double $\ast$dtdz, double $\ast$J)
+\item 
+void \hyperlink{a00554_ad2387c52fae7bf66e1511ef9a281ee26}{inverse} (double $\ast$A, int \hyperlink{a00473_a5b9c4563028063ee53b517cce9aa701b}{N}, int $\ast$ipiv, int lwork, double $\ast$work)
+\item 
+void \hyperlink{a00554_a9ade98d71580bb70e0ddf663d30e4bb4}{dgetrf\+\_\+} (int $\ast$M, int $\ast$\hyperlink{a00473_a5b9c4563028063ee53b517cce9aa701b}{N}, double $\ast$A, int $\ast$lda, int $\ast$I\+P\+IV, int $\ast$I\+N\+FO)
+\item 
+void \hyperlink{a00554_af83709f5dcd4b9fbff71c3623b64fa21}{dgetri\+\_\+} (int $\ast$\hyperlink{a00473_a5b9c4563028063ee53b517cce9aa701b}{N}, double $\ast$A, int $\ast$lda, int $\ast$I\+P\+IV, double $\ast$W\+O\+RK, int $\ast$lwork, int $\ast$I\+N\+FO)
+\item 
+void \hyperlink{a00554_a35ba318a20f8b83eefe63eeb1e1ac4b0}{Start\+Up2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_aefa0403a31ac7d229d0ca09dc0004d3e}{Start\+Up3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_ac0114aa8a9d094bad20943e1b79ba473}{Build\+Maps2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a0b7218104d1df7fc4acbe306edf10f98}{Build\+Maps3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a251e55e80af031383ec1f7ec753439de}{Load\+Balance2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a004c52e87250e61b258755469b25bbe9}{Load\+Balance3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a73ad96b82acf2bf80fd24823a58b3f14}{Face\+Pair2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int $\ast$max\+Nv)
+\item 
+void \hyperlink{a00554_aaf4bbe0ed66b39808512cc6e5c09c989}{Face\+Pair3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int $\ast$max\+Nv)
+\item 
+void \hyperlink{a00554_a20e0973b5bd186b5b6a4be06801451b6}{Parallel\+Pairs} (void $\ast$objs, int Nmyobjs, int sizeobj, int($\ast$numget)(const void $\ast$), void($\ast$numset)(const void $\ast$, int), int($\ast$procget)(const void $\ast$), void($\ast$marry)(const void $\ast$, const void $\ast$), int($\ast$compare\+\_\+objs)(const void $\ast$, const void $\ast$))
+\item 
+void \hyperlink{a00554_afec0a6701e6aba907861d94fd2ac8276}{Maxwells\+M\+P\+I\+Send2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a53811ddf1e649d3fec43d10bdf1257d1}{Maxwells\+M\+P\+I\+Recv2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a9483c9abdd975a939e1c1e127d64441e}{Maxwells\+M\+P\+I\+Send3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a58d69c52413e160a4ebf893be8168162}{Maxwells\+M\+P\+I\+Recv3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh)
+\item 
+void \hyperlink{a00554_a47b4375211682db69a53012631fb2ee7}{gpu\+\_\+set\+\_\+data2d} (int \hyperlink{a00608_a16e4ef534cec559430e07e05eb71c719}{K}, double $\ast$d\+\_\+\+Hx, double $\ast$d\+\_\+\+Hy, double $\ast$d\+\_\+\+Ez)
+\item 
+void \hyperlink{a00554_ad512c37561b25c93d8d7c7717a500df4}{gpu\+\_\+set\+\_\+data3d} (int \hyperlink{a00608_a16e4ef534cec559430e07e05eb71c719}{K}, double $\ast$d\+\_\+\+Hx, double $\ast$d\+\_\+\+Hy, double $\ast$d\+\_\+\+Hz, double $\ast$d\+\_\+\+Ex, double $\ast$d\+\_\+\+Ey, double $\ast$d\+\_\+\+Ez)
+\item 
+void \hyperlink{a00554_a9a91b5a9124c99d834ef1283492fe734}{gpu\+\_\+get\+\_\+data2d} (int \hyperlink{a00608_a16e4ef534cec559430e07e05eb71c719}{K}, double $\ast$d\+\_\+\+Hx, double $\ast$d\+\_\+\+Hy, double $\ast$d\+\_\+\+Ez)
+\item 
+void \hyperlink{a00554_aa1ecfe5bfbcdb9a59cb6c3c39f62f744}{gpu\+\_\+get\+\_\+data3d} (int \hyperlink{a00608_a16e4ef534cec559430e07e05eb71c719}{K}, double $\ast$d\+\_\+\+Hx, double $\ast$d\+\_\+\+Hy, double $\ast$d\+\_\+\+Hz, double $\ast$d\+\_\+\+Ex, double $\ast$d\+\_\+\+Ey, double $\ast$d\+\_\+\+Ez)
+\item 
+double \hyperlink{a00554_ab965ef78f495dbc09dddf8540c0f47e2}{Init\+G\+P\+U2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int Nfields)
+\item 
+double \hyperlink{a00554_ab16dab9b00f6c601b3a5dd593f23c3de}{Init\+G\+P\+U3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int Nfields)
+\item 
+void \hyperlink{a00554_ac36fe1f22177bd96a5c69239eee6ad30}{cpu\+\_\+set\+\_\+data2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, double $\ast$Hx, double $\ast$Hy, double $\ast$Ez)
+\item 
+void \hyperlink{a00554_a55829c497e26c6b3a96d50b085abda9c}{cpu\+\_\+set\+\_\+data3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, double $\ast$Hx, double $\ast$Hy, double $\ast$Hz, double $\ast$Ex, double $\ast$Ey, double $\ast$Ez)
+\item 
+double \hyperlink{a00554_acc775dc40019b5ac599de29b12411161}{Init\+C\+P\+U2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int Nfields)
+\item 
+double \hyperlink{a00554_a04c9f7c3bec6e6a2e833dbe2752fa76d}{Init\+C\+P\+U3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int Nfields)
+\item 
+void \hyperlink{a00554_a9b253cfe04029e084b403542b0d7a64b}{rk\+\_\+step\+\_\+2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, \hyperlink{a00557_aa484d27c864c1a224505d8a302c0a4a4}{datafloat} a, \hyperlink{a00557_aa484d27c864c1a224505d8a302c0a4a4}{datafloat} b, \hyperlink{a00557_aa484d27c864c1a224505d8a302c0a4a4}{datafloat} dt)
+\item 
+void \hyperlink{a00554_a21a02761bc746f8e6205d02f662aee16}{rk\+\_\+run\+\_\+2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, double Final\+Time, double dt)
+\item 
+void \hyperlink{a00554_a2aba2292a481f3bb8f85213baf22686b}{evaluate\+Basis} (double xi, double \hyperlink{a00605_a28acc4a90fe6ffb907aa145b7b01326a}{eta}, const double $\ast$\hyperlink{a00605_a15bccd83c1e570e4a0ff17c42152989b}{vert}, const double $\ast$\hyperlink{a00605_ae906280b3cb956d2555d33b882cca5bf}{tuples}, const unsigned int \hyperlink{a00614_a1e0420801cd5156c14e085b87a4945f5}{p}, const int \hyperlink{a00605_acbbc42389c3587d1280ad7f1322035ba}{nen}, const double $\ast$fact\+\_\+i, double $\ast$B, double $\ast$d\+B\+\_\+du)
+\item 
+void \hyperlink{a00554_a5f6af94f39daf53ff33c328e81b7aeae}{tri10} (double $\ast$$\ast$\hyperlink{a00611_adf51fe9945b6ca147057cc27ff639d0f}{node}, const double $\ast$du\+\_\+dxi, const int \hyperlink{a00605_acbbc42389c3587d1280ad7f1322035ba}{nen}, double $\ast$\hyperlink{a00605_ac98c3bb25378222646e977292011625f}{x}, double $\ast$y, double $\ast$drdx, double $\ast$dsdx, double $\ast$drdy, double $\ast$dsdy, double $\ast$J\+\_\+det, double $\ast$B, double $\ast$d\+B\+\_\+du)
+\item 
+void \hyperlink{a00554_a45390a77c9093b8b1144623da67508c8}{bidg\+\_\+constants} (double $\ast$\hyperlink{a00605_a15bccd83c1e570e4a0ff17c42152989b}{vert}, double $\ast$\hyperlink{a00605_ae906280b3cb956d2555d33b882cca5bf}{tuples}, double $\ast$fact\+\_\+i, double $\ast$du\+\_\+dxi)
+\item 
+void \hyperlink{a00554_aa275e5ac3935009592aad28f023ed4a1}{write\+\_\+vtu} (\hyperlink{a00557_aa484d27c864c1a224505d8a302c0a4a4}{datafloat} $\ast$Qout, int cycle, int procid, int cells, double $\ast$$\ast$\hyperlink{a00605_ac98c3bb25378222646e977292011625f}{x}, double $\ast$$\ast$y, int \hyperlink{a00563_a08a5429e87fabfe926dd685750b12894}{p\+\_\+interp}, double $\ast$$\ast$Interpout, double $\ast$$\ast$Triout, int K\+\_\+interp)
+\item 
+void \hyperlink{a00554_a9db283bf2b7ea0ec1c4f6f898ef67f73}{Maxwells\+Kernel2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, float frka, float frkb, float fdt)
+\item 
+void \hyperlink{a00554_aebe732d2b2c755a4892e1eacb6a2b2a7}{Maxwells\+Kernel3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, float frka, float frkb, float fdt)
+\item 
+void \hyperlink{a00554_acabe0a53c2062136f9d423f071668a02}{Maxwells\+R\+H\+S2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, float frka, float frkb, float fdt)
+\item 
+void \hyperlink{a00554_a819aa63bee26ada32119a2a58ddab139}{Maxwells\+R\+H\+S3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, float frka, float frkb, float fdt)
+\item 
+void \hyperlink{a00554_a08cfe992d80b7b195cfd3a3c366b8f65}{Maxwells\+Run2d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, double Final\+Time, double dt)
+\item 
+void \hyperlink{a00554_a630113a871c79c54d968c6c233e59145}{Maxwells\+Run3d} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, double Final\+Time, double dt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00554_a45390a77c9093b8b1144623da67508c8}\label{a00554_a45390a77c9093b8b1144623da67508c8}} 
+\index{fem.\+h@{fem.\+h}!bidg\+\_\+constants@{bidg\+\_\+constants}}
+\index{bidg\+\_\+constants@{bidg\+\_\+constants}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{bidg\+\_\+constants()}{bidg\_constants()}}
+{\footnotesize\ttfamily void bidg\+\_\+constants (\begin{DoxyParamCaption}\item[{double $\ast$}]{vert,  }\item[{double $\ast$}]{tuples,  }\item[{double $\ast$}]{fact\+\_\+i,  }\item[{double $\ast$}]{du\+\_\+dxi }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{a00554_a45390a77c9093b8b1144623da67508c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a6031ee45d6b3d95665a885b7128c311c}\label{a00554_a6031ee45d6b3d95665a885b7128c311c}} 
+\index{fem.\+h@{fem.\+h}!Build3\+Tensor@{Build3\+Tensor}}
+\index{Build3\+Tensor@{Build3\+Tensor}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Build3\+Tensor()}{Build3Tensor()}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$ Build3\+Tensor (\begin{DoxyParamCaption}\item[{int}]{Nrows,  }\item[{int}]{Ncols,  }\item[{int}]{I\+DX }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{a00554_a6031ee45d6b3d95665a885b7128c311c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a745a480f3faf250c87406ddb1d8d0e4f}\label{a00554_a745a480f3faf250c87406ddb1d8d0e4f}} 
+\index{fem.\+h@{fem.\+h}!Build4\+Tensor@{Build4\+Tensor}}
+\index{Build4\+Tensor@{Build4\+Tensor}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Build4\+Tensor()}{Build4Tensor()}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$$\ast$ Build4\+Tensor (\begin{DoxyParamCaption}\item[{int}]{Nrows,  }\item[{int}]{Ncols,  }\item[{int}]{I\+D\+X1,  }\item[{int}]{I\+D\+X2 }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{a00554_a745a480f3faf250c87406ddb1d8d0e4f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a77f751d54b396015520a882d7a318e57}\label{a00554_a77f751d54b396015520a882d7a318e57}} 
+\index{fem.\+h@{fem.\+h}!Build\+Int\+Matrix@{Build\+Int\+Matrix}}
+\index{Build\+Int\+Matrix@{Build\+Int\+Matrix}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Build\+Int\+Matrix()}{BuildIntMatrix()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ Build\+Int\+Matrix (\begin{DoxyParamCaption}\item[{int}]{Nrows,  }\item[{int}]{Ncols }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00554_a77f751d54b396015520a882d7a318e57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a0f24d8056fa979af4888469ea90576ff}\label{a00554_a0f24d8056fa979af4888469ea90576ff}} 
+\index{fem.\+h@{fem.\+h}!Build\+Int\+Vector@{Build\+Int\+Vector}}
+\index{Build\+Int\+Vector@{Build\+Int\+Vector}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Build\+Int\+Vector()}{BuildIntVector()}}
+{\footnotesize\ttfamily int$\ast$ Build\+Int\+Vector (\begin{DoxyParamCaption}\item[{int}]{Nrows }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00554_a0f24d8056fa979af4888469ea90576ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_ac0114aa8a9d094bad20943e1b79ba473}\label{a00554_ac0114aa8a9d094bad20943e1b79ba473}} 
+\index{fem.\+h@{fem.\+h}!Build\+Maps2d@{Build\+Maps2d}}
+\index{Build\+Maps2d@{Build\+Maps2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Build\+Maps2d()}{BuildMaps2d()}}
+{\footnotesize\ttfamily void Build\+Maps2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{a00554_ac0114aa8a9d094bad20943e1b79ba473_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{a00554_ac0114aa8a9d094bad20943e1b79ba473_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a0b7218104d1df7fc4acbe306edf10f98}\label{a00554_a0b7218104d1df7fc4acbe306edf10f98}} 
+\index{fem.\+h@{fem.\+h}!Build\+Maps3d@{Build\+Maps3d}}
+\index{Build\+Maps3d@{Build\+Maps3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Build\+Maps3d()}{BuildMaps3d()}}
+{\footnotesize\ttfamily void Build\+Maps3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a4bf6e503687187059ced10b812beaab3}\label{a00554_a4bf6e503687187059ced10b812beaab3}} 
+\index{fem.\+h@{fem.\+h}!Build\+Matrix@{Build\+Matrix}}
+\index{Build\+Matrix@{Build\+Matrix}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Build\+Matrix()}{BuildMatrix()}}
+{\footnotesize\ttfamily double$\ast$$\ast$ Build\+Matrix (\begin{DoxyParamCaption}\item[{int}]{Nrows,  }\item[{int}]{Ncols }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00554_a4bf6e503687187059ced10b812beaab3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a990278305dbeaf8e4441cf4146bfdc62}\label{a00554_a990278305dbeaf8e4441cf4146bfdc62}} 
+\index{fem.\+h@{fem.\+h}!Build\+Vector@{Build\+Vector}}
+\index{Build\+Vector@{Build\+Vector}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Build\+Vector()}{BuildVector()}}
+{\footnotesize\ttfamily double$\ast$ Build\+Vector (\begin{DoxyParamCaption}\item[{int}]{Nrows }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00554_a990278305dbeaf8e4441cf4146bfdc62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_ac36fe1f22177bd96a5c69239eee6ad30}\label{a00554_ac36fe1f22177bd96a5c69239eee6ad30}} 
+\index{fem.\+h@{fem.\+h}!cpu\+\_\+set\+\_\+data2d@{cpu\+\_\+set\+\_\+data2d}}
+\index{cpu\+\_\+set\+\_\+data2d@{cpu\+\_\+set\+\_\+data2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{cpu\+\_\+set\+\_\+data2d()}{cpu\_set\_data2d()}}
+{\footnotesize\ttfamily void cpu\+\_\+set\+\_\+data2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{double $\ast$}]{Hx,  }\item[{double $\ast$}]{Hy,  }\item[{double $\ast$}]{Ez }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a55829c497e26c6b3a96d50b085abda9c}\label{a00554_a55829c497e26c6b3a96d50b085abda9c}} 
+\index{fem.\+h@{fem.\+h}!cpu\+\_\+set\+\_\+data3d@{cpu\+\_\+set\+\_\+data3d}}
+\index{cpu\+\_\+set\+\_\+data3d@{cpu\+\_\+set\+\_\+data3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{cpu\+\_\+set\+\_\+data3d()}{cpu\_set\_data3d()}}
+{\footnotesize\ttfamily void cpu\+\_\+set\+\_\+data3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{double $\ast$}]{Hx,  }\item[{double $\ast$}]{Hy,  }\item[{double $\ast$}]{Hz,  }\item[{double $\ast$}]{Ex,  }\item[{double $\ast$}]{Ey,  }\item[{double $\ast$}]{Ez }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a51bb9f1cde4263ba91387d1c20dcf8c7}\label{a00554_a51bb9f1cde4263ba91387d1c20dcf8c7}} 
+\index{fem.\+h@{fem.\+h}!Destroy3\+Tensor@{Destroy3\+Tensor}}
+\index{Destroy3\+Tensor@{Destroy3\+Tensor}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Destroy3\+Tensor()}{Destroy3Tensor()}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$ Destroy3\+Tensor (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a04367038e0614f8f3a881b057048d009}\label{a00554_a04367038e0614f8f3a881b057048d009}} 
+\index{fem.\+h@{fem.\+h}!Destroy4\+Tensor@{Destroy4\+Tensor}}
+\index{Destroy4\+Tensor@{Destroy4\+Tensor}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Destroy4\+Tensor()}{Destroy4Tensor()}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$$\ast$ Destroy4\+Tensor (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$$\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a4212ac496c2e42e38dd0ad0cd18ed161}\label{a00554_a4212ac496c2e42e38dd0ad0cd18ed161}} 
+\index{fem.\+h@{fem.\+h}!Destroy\+Int\+Matrix@{Destroy\+Int\+Matrix}}
+\index{Destroy\+Int\+Matrix@{Destroy\+Int\+Matrix}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Destroy\+Int\+Matrix()}{DestroyIntMatrix()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ Destroy\+Int\+Matrix (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{a00554_a4212ac496c2e42e38dd0ad0cd18ed161_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_ab7be757b254a2ca937d1d5399cbc63af}\label{a00554_ab7be757b254a2ca937d1d5399cbc63af}} 
+\index{fem.\+h@{fem.\+h}!Destroy\+Int\+Vector@{Destroy\+Int\+Vector}}
+\index{Destroy\+Int\+Vector@{Destroy\+Int\+Vector}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Destroy\+Int\+Vector()}{DestroyIntVector()}}
+{\footnotesize\ttfamily int$\ast$ Destroy\+Int\+Vector (\begin{DoxyParamCaption}\item[{int $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_afa534e284e3bdd83ec70e03b3348d960}\label{a00554_afa534e284e3bdd83ec70e03b3348d960}} 
+\index{fem.\+h@{fem.\+h}!Destroy\+Matrix@{Destroy\+Matrix}}
+\index{Destroy\+Matrix@{Destroy\+Matrix}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Destroy\+Matrix()}{DestroyMatrix()}}
+{\footnotesize\ttfamily double$\ast$$\ast$ Destroy\+Matrix (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{a00554_afa534e284e3bdd83ec70e03b3348d960_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a6d2c56d5886407db34f7810cd4ebb1ac}\label{a00554_a6d2c56d5886407db34f7810cd4ebb1ac}} 
+\index{fem.\+h@{fem.\+h}!Destroy\+Vector@{Destroy\+Vector}}
+\index{Destroy\+Vector@{Destroy\+Vector}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Destroy\+Vector()}{DestroyVector()}}
+{\footnotesize\ttfamily double$\ast$ Destroy\+Vector (\begin{DoxyParamCaption}\item[{double $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a9ade98d71580bb70e0ddf663d30e4bb4}\label{a00554_a9ade98d71580bb70e0ddf663d30e4bb4}} 
+\index{fem.\+h@{fem.\+h}!dgetrf\+\_\+@{dgetrf\+\_\+}}
+\index{dgetrf\+\_\+@{dgetrf\+\_\+}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{dgetrf\+\_\+()}{dgetrf\_()}}
+{\footnotesize\ttfamily void dgetrf\+\_\+ (\begin{DoxyParamCaption}\item[{int $\ast$}]{M,  }\item[{int $\ast$}]{N,  }\item[{double $\ast$}]{A,  }\item[{int $\ast$}]{lda,  }\item[{int $\ast$}]{I\+P\+IV,  }\item[{int $\ast$}]{I\+N\+FO }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_af83709f5dcd4b9fbff71c3623b64fa21}\label{a00554_af83709f5dcd4b9fbff71c3623b64fa21}} 
+\index{fem.\+h@{fem.\+h}!dgetri\+\_\+@{dgetri\+\_\+}}
+\index{dgetri\+\_\+@{dgetri\+\_\+}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{dgetri\+\_\+()}{dgetri\_()}}
+{\footnotesize\ttfamily void dgetri\+\_\+ (\begin{DoxyParamCaption}\item[{int $\ast$}]{N,  }\item[{double $\ast$}]{A,  }\item[{int $\ast$}]{lda,  }\item[{int $\ast$}]{I\+P\+IV,  }\item[{double $\ast$}]{W\+O\+RK,  }\item[{int $\ast$}]{lwork,  }\item[{int $\ast$}]{I\+N\+FO }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a2aba2292a481f3bb8f85213baf22686b}\label{a00554_a2aba2292a481f3bb8f85213baf22686b}} 
+\index{fem.\+h@{fem.\+h}!evaluate\+Basis@{evaluate\+Basis}}
+\index{evaluate\+Basis@{evaluate\+Basis}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{evaluate\+Basis()}{evaluateBasis()}}
+{\footnotesize\ttfamily void evaluate\+Basis (\begin{DoxyParamCaption}\item[{double}]{xi,  }\item[{double}]{eta,  }\item[{const double $\ast$}]{vert,  }\item[{const double $\ast$}]{tuples,  }\item[{const unsigned int}]{p,  }\item[{const int}]{nen,  }\item[{const double $\ast$}]{fact\+\_\+i,  }\item[{double $\ast$}]{B,  }\item[{double $\ast$}]{d\+B\+\_\+du }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{a00554_a2aba2292a481f3bb8f85213baf22686b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a73ad96b82acf2bf80fd24823a58b3f14}\label{a00554_a73ad96b82acf2bf80fd24823a58b3f14}} 
+\index{fem.\+h@{fem.\+h}!Face\+Pair2d@{Face\+Pair2d}}
+\index{Face\+Pair2d@{Face\+Pair2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Face\+Pair2d()}{FacePair2d()}}
+{\footnotesize\ttfamily void Face\+Pair2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int $\ast$}]{max\+Nv }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{a00554_a73ad96b82acf2bf80fd24823a58b3f14_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{a00554_a73ad96b82acf2bf80fd24823a58b3f14_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_aaf4bbe0ed66b39808512cc6e5c09c989}\label{a00554_aaf4bbe0ed66b39808512cc6e5c09c989}} 
+\index{fem.\+h@{fem.\+h}!Face\+Pair3d@{Face\+Pair3d}}
+\index{Face\+Pair3d@{Face\+Pair3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Face\+Pair3d()}{FacePair3d()}}
+{\footnotesize\ttfamily void Face\+Pair3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int $\ast$}]{max\+Nv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a17dce51b6f44350809fb0f67f41bf80a}\label{a00554_a17dce51b6f44350809fb0f67f41bf80a}} 
+\index{fem.\+h@{fem.\+h}!Geometric\+Factors2d@{Geometric\+Factors2d}}
+\index{Geometric\+Factors2d@{Geometric\+Factors2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Geometric\+Factors2d()}{GeometricFactors2d()}}
+{\footnotesize\ttfamily void Geometric\+Factors2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{k,  }\item[{double $\ast$}]{drdx,  }\item[{double $\ast$}]{dsdx,  }\item[{double $\ast$}]{drdy,  }\item[{double $\ast$}]{dsdy,  }\item[{double $\ast$}]{J }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a962817a1e01d941ede2d0a7e31f136d7}\label{a00554_a962817a1e01d941ede2d0a7e31f136d7}} 
+\index{fem.\+h@{fem.\+h}!Geometric\+Factors3d@{Geometric\+Factors3d}}
+\index{Geometric\+Factors3d@{Geometric\+Factors3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Geometric\+Factors3d()}{GeometricFactors3d()}}
+{\footnotesize\ttfamily void Geometric\+Factors3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{k,  }\item[{double $\ast$}]{drdx,  }\item[{double $\ast$}]{dsdx,  }\item[{double $\ast$}]{dtdx,  }\item[{double $\ast$}]{drdy,  }\item[{double $\ast$}]{dsdy,  }\item[{double $\ast$}]{dtdy,  }\item[{double $\ast$}]{drdz,  }\item[{double $\ast$}]{dsdz,  }\item[{double $\ast$}]{dtdz,  }\item[{double $\ast$}]{J }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{a00554_a962817a1e01d941ede2d0a7e31f136d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a9a91b5a9124c99d834ef1283492fe734}\label{a00554_a9a91b5a9124c99d834ef1283492fe734}} 
+\index{fem.\+h@{fem.\+h}!gpu\+\_\+get\+\_\+data2d@{gpu\+\_\+get\+\_\+data2d}}
+\index{gpu\+\_\+get\+\_\+data2d@{gpu\+\_\+get\+\_\+data2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{gpu\+\_\+get\+\_\+data2d()}{gpu\_get\_data2d()}}
+{\footnotesize\ttfamily void gpu\+\_\+get\+\_\+data2d (\begin{DoxyParamCaption}\item[{int}]{K,  }\item[{double $\ast$}]{d\+\_\+\+Hx,  }\item[{double $\ast$}]{d\+\_\+\+Hy,  }\item[{double $\ast$}]{d\+\_\+\+Ez }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_aa1ecfe5bfbcdb9a59cb6c3c39f62f744}\label{a00554_aa1ecfe5bfbcdb9a59cb6c3c39f62f744}} 
+\index{fem.\+h@{fem.\+h}!gpu\+\_\+get\+\_\+data3d@{gpu\+\_\+get\+\_\+data3d}}
+\index{gpu\+\_\+get\+\_\+data3d@{gpu\+\_\+get\+\_\+data3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{gpu\+\_\+get\+\_\+data3d()}{gpu\_get\_data3d()}}
+{\footnotesize\ttfamily void gpu\+\_\+get\+\_\+data3d (\begin{DoxyParamCaption}\item[{int}]{K,  }\item[{double $\ast$}]{d\+\_\+\+Hx,  }\item[{double $\ast$}]{d\+\_\+\+Hy,  }\item[{double $\ast$}]{d\+\_\+\+Hz,  }\item[{double $\ast$}]{d\+\_\+\+Ex,  }\item[{double $\ast$}]{d\+\_\+\+Ey,  }\item[{double $\ast$}]{d\+\_\+\+Ez }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{a00554_aa1ecfe5bfbcdb9a59cb6c3c39f62f744_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a47b4375211682db69a53012631fb2ee7}\label{a00554_a47b4375211682db69a53012631fb2ee7}} 
+\index{fem.\+h@{fem.\+h}!gpu\+\_\+set\+\_\+data2d@{gpu\+\_\+set\+\_\+data2d}}
+\index{gpu\+\_\+set\+\_\+data2d@{gpu\+\_\+set\+\_\+data2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{gpu\+\_\+set\+\_\+data2d()}{gpu\_set\_data2d()}}
+{\footnotesize\ttfamily void gpu\+\_\+set\+\_\+data2d (\begin{DoxyParamCaption}\item[{int}]{K,  }\item[{double $\ast$}]{d\+\_\+\+Hx,  }\item[{double $\ast$}]{d\+\_\+\+Hy,  }\item[{double $\ast$}]{d\+\_\+\+Ez }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_ad512c37561b25c93d8d7c7717a500df4}\label{a00554_ad512c37561b25c93d8d7c7717a500df4}} 
+\index{fem.\+h@{fem.\+h}!gpu\+\_\+set\+\_\+data3d@{gpu\+\_\+set\+\_\+data3d}}
+\index{gpu\+\_\+set\+\_\+data3d@{gpu\+\_\+set\+\_\+data3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{gpu\+\_\+set\+\_\+data3d()}{gpu\_set\_data3d()}}
+{\footnotesize\ttfamily void gpu\+\_\+set\+\_\+data3d (\begin{DoxyParamCaption}\item[{int}]{K,  }\item[{double $\ast$}]{d\+\_\+\+Hx,  }\item[{double $\ast$}]{d\+\_\+\+Hy,  }\item[{double $\ast$}]{d\+\_\+\+Hz,  }\item[{double $\ast$}]{d\+\_\+\+Ex,  }\item[{double $\ast$}]{d\+\_\+\+Ey,  }\item[{double $\ast$}]{d\+\_\+\+Ez }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{a00554_ad512c37561b25c93d8d7c7717a500df4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_acc775dc40019b5ac599de29b12411161}\label{a00554_acc775dc40019b5ac599de29b12411161}} 
+\index{fem.\+h@{fem.\+h}!Init\+C\+P\+U2d@{Init\+C\+P\+U2d}}
+\index{Init\+C\+P\+U2d@{Init\+C\+P\+U2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Init\+C\+P\+U2d()}{InitCPU2d()}}
+{\footnotesize\ttfamily double Init\+C\+P\+U2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{Nfields }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a04c9f7c3bec6e6a2e833dbe2752fa76d}\label{a00554_a04c9f7c3bec6e6a2e833dbe2752fa76d}} 
+\index{fem.\+h@{fem.\+h}!Init\+C\+P\+U3d@{Init\+C\+P\+U3d}}
+\index{Init\+C\+P\+U3d@{Init\+C\+P\+U3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Init\+C\+P\+U3d()}{InitCPU3d()}}
+{\footnotesize\ttfamily double Init\+C\+P\+U3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{Nfields }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_ab965ef78f495dbc09dddf8540c0f47e2}\label{a00554_ab965ef78f495dbc09dddf8540c0f47e2}} 
+\index{fem.\+h@{fem.\+h}!Init\+G\+P\+U2d@{Init\+G\+P\+U2d}}
+\index{Init\+G\+P\+U2d@{Init\+G\+P\+U2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Init\+G\+P\+U2d()}{InitGPU2d()}}
+{\footnotesize\ttfamily double Init\+G\+P\+U2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{Nfields }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_ab16dab9b00f6c601b3a5dd593f23c3de}\label{a00554_ab16dab9b00f6c601b3a5dd593f23c3de}} 
+\index{fem.\+h@{fem.\+h}!Init\+G\+P\+U3d@{Init\+G\+P\+U3d}}
+\index{Init\+G\+P\+U3d@{Init\+G\+P\+U3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Init\+G\+P\+U3d()}{InitGPU3d()}}
+{\footnotesize\ttfamily double Init\+G\+P\+U3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{Nfields }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_ad2387c52fae7bf66e1511ef9a281ee26}\label{a00554_ad2387c52fae7bf66e1511ef9a281ee26}} 
+\index{fem.\+h@{fem.\+h}!inverse@{inverse}}
+\index{inverse@{inverse}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{inverse()}{inverse()}}
+{\footnotesize\ttfamily void inverse (\begin{DoxyParamCaption}\item[{double $\ast$}]{A,  }\item[{int}]{N,  }\item[{int $\ast$}]{ipiv,  }\item[{int}]{lwork,  }\item[{double $\ast$}]{work }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{a00554_ad2387c52fae7bf66e1511ef9a281ee26_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{a00554_ad2387c52fae7bf66e1511ef9a281ee26_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a251e55e80af031383ec1f7ec753439de}\label{a00554_a251e55e80af031383ec1f7ec753439de}} 
+\index{fem.\+h@{fem.\+h}!Load\+Balance2d@{Load\+Balance2d}}
+\index{Load\+Balance2d@{Load\+Balance2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Load\+Balance2d()}{LoadBalance2d()}}
+{\footnotesize\ttfamily void Load\+Balance2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a004c52e87250e61b258755469b25bbe9}\label{a00554_a004c52e87250e61b258755469b25bbe9}} 
+\index{fem.\+h@{fem.\+h}!Load\+Balance3d@{Load\+Balance3d}}
+\index{Load\+Balance3d@{Load\+Balance3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Load\+Balance3d()}{LoadBalance3d()}}
+{\footnotesize\ttfamily void Load\+Balance3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00554_a004c52e87250e61b258755469b25bbe9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a9db283bf2b7ea0ec1c4f6f898ef67f73}\label{a00554_a9db283bf2b7ea0ec1c4f6f898ef67f73}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+Kernel2d@{Maxwells\+Kernel2d}}
+\index{Maxwells\+Kernel2d@{Maxwells\+Kernel2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+Kernel2d()}{MaxwellsKernel2d()}}
+{\footnotesize\ttfamily void Maxwells\+Kernel2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{float}]{frka,  }\item[{float}]{frkb,  }\item[{float}]{fdt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_aebe732d2b2c755a4892e1eacb6a2b2a7}\label{a00554_aebe732d2b2c755a4892e1eacb6a2b2a7}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+Kernel3d@{Maxwells\+Kernel3d}}
+\index{Maxwells\+Kernel3d@{Maxwells\+Kernel3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+Kernel3d()}{MaxwellsKernel3d()}}
+{\footnotesize\ttfamily void Maxwells\+Kernel3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{float}]{frka,  }\item[{float}]{frkb,  }\item[{float}]{fdt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a53811ddf1e649d3fec43d10bdf1257d1}\label{a00554_a53811ddf1e649d3fec43d10bdf1257d1}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+M\+P\+I\+Recv2d@{Maxwells\+M\+P\+I\+Recv2d}}
+\index{Maxwells\+M\+P\+I\+Recv2d@{Maxwells\+M\+P\+I\+Recv2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+M\+P\+I\+Recv2d()}{MaxwellsMPIRecv2d()}}
+{\footnotesize\ttfamily void Maxwells\+M\+P\+I\+Recv2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a58d69c52413e160a4ebf893be8168162}\label{a00554_a58d69c52413e160a4ebf893be8168162}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+M\+P\+I\+Recv3d@{Maxwells\+M\+P\+I\+Recv3d}}
+\index{Maxwells\+M\+P\+I\+Recv3d@{Maxwells\+M\+P\+I\+Recv3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+M\+P\+I\+Recv3d()}{MaxwellsMPIRecv3d()}}
+{\footnotesize\ttfamily void Maxwells\+M\+P\+I\+Recv3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_afec0a6701e6aba907861d94fd2ac8276}\label{a00554_afec0a6701e6aba907861d94fd2ac8276}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+M\+P\+I\+Send2d@{Maxwells\+M\+P\+I\+Send2d}}
+\index{Maxwells\+M\+P\+I\+Send2d@{Maxwells\+M\+P\+I\+Send2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+M\+P\+I\+Send2d()}{MaxwellsMPISend2d()}}
+{\footnotesize\ttfamily void Maxwells\+M\+P\+I\+Send2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a9483c9abdd975a939e1c1e127d64441e}\label{a00554_a9483c9abdd975a939e1c1e127d64441e}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+M\+P\+I\+Send3d@{Maxwells\+M\+P\+I\+Send3d}}
+\index{Maxwells\+M\+P\+I\+Send3d@{Maxwells\+M\+P\+I\+Send3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+M\+P\+I\+Send3d()}{MaxwellsMPISend3d()}}
+{\footnotesize\ttfamily void Maxwells\+M\+P\+I\+Send3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_acabe0a53c2062136f9d423f071668a02}\label{a00554_acabe0a53c2062136f9d423f071668a02}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+R\+H\+S2d@{Maxwells\+R\+H\+S2d}}
+\index{Maxwells\+R\+H\+S2d@{Maxwells\+R\+H\+S2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+R\+H\+S2d()}{MaxwellsRHS2d()}}
+{\footnotesize\ttfamily void Maxwells\+R\+H\+S2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{float}]{frka,  }\item[{float}]{frkb,  }\item[{float}]{fdt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a819aa63bee26ada32119a2a58ddab139}\label{a00554_a819aa63bee26ada32119a2a58ddab139}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+R\+H\+S3d@{Maxwells\+R\+H\+S3d}}
+\index{Maxwells\+R\+H\+S3d@{Maxwells\+R\+H\+S3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+R\+H\+S3d()}{MaxwellsRHS3d()}}
+{\footnotesize\ttfamily void Maxwells\+R\+H\+S3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{float}]{frka,  }\item[{float}]{frkb,  }\item[{float}]{fdt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a08cfe992d80b7b195cfd3a3c366b8f65}\label{a00554_a08cfe992d80b7b195cfd3a3c366b8f65}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+Run2d@{Maxwells\+Run2d}}
+\index{Maxwells\+Run2d@{Maxwells\+Run2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+Run2d()}{MaxwellsRun2d()}}
+{\footnotesize\ttfamily void Maxwells\+Run2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{double}]{Final\+Time,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a630113a871c79c54d968c6c233e59145}\label{a00554_a630113a871c79c54d968c6c233e59145}} 
+\index{fem.\+h@{fem.\+h}!Maxwells\+Run3d@{Maxwells\+Run3d}}
+\index{Maxwells\+Run3d@{Maxwells\+Run3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Maxwells\+Run3d()}{MaxwellsRun3d()}}
+{\footnotesize\ttfamily void Maxwells\+Run3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{double}]{Final\+Time,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{a00554_a630113a871c79c54d968c6c233e59145_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a6e05f4bc3238ae8e045ddc269dd77f74}\label{a00554_a6e05f4bc3238ae8e045ddc269dd77f74}} 
+\index{fem.\+h@{fem.\+h}!Normals2d@{Normals2d}}
+\index{Normals2d@{Normals2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Normals2d()}{Normals2d()}}
+{\footnotesize\ttfamily void Normals2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{k,  }\item[{double $\ast$}]{nx,  }\item[{double $\ast$}]{ny,  }\item[{double $\ast$}]{sJ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00554_a6e05f4bc3238ae8e045ddc269dd77f74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a7dad59f4c5add70012ffb84d688ce948}\label{a00554_a7dad59f4c5add70012ffb84d688ce948}} 
+\index{fem.\+h@{fem.\+h}!Normals3d@{Normals3d}}
+\index{Normals3d@{Normals3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Normals3d()}{Normals3d()}}
+{\footnotesize\ttfamily void Normals3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{k,  }\item[{double $\ast$}]{nx,  }\item[{double $\ast$}]{ny,  }\item[{double $\ast$}]{nz,  }\item[{double $\ast$}]{sJ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{a00554_a7dad59f4c5add70012ffb84d688ce948_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a20e0973b5bd186b5b6a4be06801451b6}\label{a00554_a20e0973b5bd186b5b6a4be06801451b6}} 
+\index{fem.\+h@{fem.\+h}!Parallel\+Pairs@{Parallel\+Pairs}}
+\index{Parallel\+Pairs@{Parallel\+Pairs}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Parallel\+Pairs()}{ParallelPairs()}}
+{\footnotesize\ttfamily void Parallel\+Pairs (\begin{DoxyParamCaption}\item[{void $\ast$}]{objs,  }\item[{int}]{Nmyobjs,  }\item[{int}]{sizeobj,  }\item[{int($\ast$)(const void $\ast$)}]{numget,  }\item[{void($\ast$)(const void $\ast$, int)}]{numset,  }\item[{int($\ast$)(const void $\ast$)}]{procget,  }\item[{void($\ast$)(const void $\ast$, const void $\ast$)}]{marry,  }\item[{int($\ast$)(const void $\ast$, const void $\ast$)}]{compare\+\_\+objs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a75942b12ae1b0172595c4d482b8203c0}\label{a00554_a75942b12ae1b0172595c4d482b8203c0}} 
+\index{fem.\+h@{fem.\+h}!Print\+Matrix@{Print\+Matrix}}
+\index{Print\+Matrix@{Print\+Matrix}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Print\+Matrix()}{PrintMatrix()}}
+{\footnotesize\ttfamily void Print\+Matrix (\begin{DoxyParamCaption}\item[{char $\ast$}]{message,  }\item[{double $\ast$$\ast$}]{A,  }\item[{int}]{Nrows,  }\item[{int}]{Ncols }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_ad62a25bbacac8912e4932b3163c885f0}\label{a00554_ad62a25bbacac8912e4932b3163c885f0}} 
+\index{fem.\+h@{fem.\+h}!Print\+Mesh@{Print\+Mesh}}
+\index{Print\+Mesh@{Print\+Mesh}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Print\+Mesh()}{PrintMesh()}}
+{\footnotesize\ttfamily void Print\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a0f8fa1f045215f1ea478f91156eb0317}\label{a00554_a0f8fa1f045215f1ea478f91156eb0317}} 
+\index{fem.\+h@{fem.\+h}!Print\+Mesh\+\_\+linear@{Print\+Mesh\+\_\+linear}}
+\index{Print\+Mesh\+\_\+linear@{Print\+Mesh\+\_\+linear}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Print\+Mesh\+\_\+linear()}{PrintMesh\_linear()}}
+{\footnotesize\ttfamily void Print\+Mesh\+\_\+linear (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_af31fd6654ededed596d98c090d8748b5}\label{a00554_af31fd6654ededed596d98c090d8748b5}} 
+\index{fem.\+h@{fem.\+h}!Read\+Mesh2d@{Read\+Mesh2d}}
+\index{Read\+Mesh2d@{Read\+Mesh2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Read\+Mesh2d()}{ReadMesh2d()}}
+{\footnotesize\ttfamily \hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh}$\ast$ Read\+Mesh2d (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{a00554_af31fd6654ededed596d98c090d8748b5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{a00554_af31fd6654ededed596d98c090d8748b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a992690ab68b8564681b5a038ca111413}\label{a00554_a992690ab68b8564681b5a038ca111413}} 
+\index{fem.\+h@{fem.\+h}!Read\+Mesh2d\+\_\+linear@{Read\+Mesh2d\+\_\+linear}}
+\index{Read\+Mesh2d\+\_\+linear@{Read\+Mesh2d\+\_\+linear}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Read\+Mesh2d\+\_\+linear()}{ReadMesh2d\_linear()}}
+{\footnotesize\ttfamily \hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh}$\ast$ Read\+Mesh2d\+\_\+linear (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{a00554_a992690ab68b8564681b5a038ca111413_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_ae31747f9df306a59e6f4df61fddfe15f}\label{a00554_ae31747f9df306a59e6f4df61fddfe15f}} 
+\index{fem.\+h@{fem.\+h}!Read\+Mesh3d@{Read\+Mesh3d}}
+\index{Read\+Mesh3d@{Read\+Mesh3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Read\+Mesh3d()}{ReadMesh3d()}}
+{\footnotesize\ttfamily \hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh}$\ast$ Read\+Mesh3d (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{a00554_ae31747f9df306a59e6f4df61fddfe15f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a21a02761bc746f8e6205d02f662aee16}\label{a00554_a21a02761bc746f8e6205d02f662aee16}} 
+\index{fem.\+h@{fem.\+h}!rk\+\_\+run\+\_\+2d@{rk\+\_\+run\+\_\+2d}}
+\index{rk\+\_\+run\+\_\+2d@{rk\+\_\+run\+\_\+2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{rk\+\_\+run\+\_\+2d()}{rk\_run\_2d()}}
+{\footnotesize\ttfamily void rk\+\_\+run\+\_\+2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{double}]{Final\+Time,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{a00554_a21a02761bc746f8e6205d02f662aee16_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{a00554_a21a02761bc746f8e6205d02f662aee16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a9b253cfe04029e084b403542b0d7a64b}\label{a00554_a9b253cfe04029e084b403542b0d7a64b}} 
+\index{fem.\+h@{fem.\+h}!rk\+\_\+step\+\_\+2d@{rk\+\_\+step\+\_\+2d}}
+\index{rk\+\_\+step\+\_\+2d@{rk\+\_\+step\+\_\+2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{rk\+\_\+step\+\_\+2d()}{rk\_step\_2d()}}
+{\footnotesize\ttfamily void rk\+\_\+step\+\_\+2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{\hyperlink{a00557_aa484d27c864c1a224505d8a302c0a4a4}{datafloat}}]{a,  }\item[{\hyperlink{a00557_aa484d27c864c1a224505d8a302c0a4a4}{datafloat}}]{b,  }\item[{\hyperlink{a00557_aa484d27c864c1a224505d8a302c0a4a4}{datafloat}}]{dt }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{a00554_a9b253cfe04029e084b403542b0d7a64b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_ac376677d3caaa98a9daf61674a973d1b}\label{a00554_ac376677d3caaa98a9daf61674a973d1b}} 
+\index{fem.\+h@{fem.\+h}!Save\+Matrix@{Save\+Matrix}}
+\index{Save\+Matrix@{Save\+Matrix}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Save\+Matrix()}{SaveMatrix()}}
+{\footnotesize\ttfamily void Save\+Matrix (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{double $\ast$$\ast$}]{A,  }\item[{int}]{Nrows,  }\item[{int}]{Ncols }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{a00554_ac376677d3caaa98a9daf61674a973d1b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_a35ba318a20f8b83eefe63eeb1e1ac4b0}\label{a00554_a35ba318a20f8b83eefe63eeb1e1ac4b0}} 
+\index{fem.\+h@{fem.\+h}!Start\+Up2d@{Start\+Up2d}}
+\index{Start\+Up2d@{Start\+Up2d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Start\+Up2d()}{StartUp2d()}}
+{\footnotesize\ttfamily void Start\+Up2d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00554_a35ba318a20f8b83eefe63eeb1e1ac4b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{a00554_a35ba318a20f8b83eefe63eeb1e1ac4b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_aefa0403a31ac7d229d0ca09dc0004d3e}\label{a00554_aefa0403a31ac7d229d0ca09dc0004d3e}} 
+\index{fem.\+h@{fem.\+h}!Start\+Up3d@{Start\+Up3d}}
+\index{Start\+Up3d@{Start\+Up3d}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{Start\+Up3d()}{StartUp3d()}}
+{\footnotesize\ttfamily void Start\+Up3d (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00554_a5f6af94f39daf53ff33c328e81b7aeae}\label{a00554_a5f6af94f39daf53ff33c328e81b7aeae}} 
+\index{fem.\+h@{fem.\+h}!tri10@{tri10}}
+\index{tri10@{tri10}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{tri10()}{tri10()}}
+{\footnotesize\ttfamily void tri10 (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{node,  }\item[{const double $\ast$}]{du\+\_\+dxi,  }\item[{const int}]{nen,  }\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{y,  }\item[{double $\ast$}]{drdx,  }\item[{double $\ast$}]{dsdx,  }\item[{double $\ast$}]{drdy,  }\item[{double $\ast$}]{dsdy,  }\item[{double $\ast$}]{J\+\_\+det,  }\item[{double $\ast$}]{B,  }\item[{double $\ast$}]{d\+B\+\_\+du }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{a00554_a5f6af94f39daf53ff33c328e81b7aeae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00554_aa275e5ac3935009592aad28f023ed4a1}\label{a00554_aa275e5ac3935009592aad28f023ed4a1}} 
+\index{fem.\+h@{fem.\+h}!write\+\_\+vtu@{write\+\_\+vtu}}
+\index{write\+\_\+vtu@{write\+\_\+vtu}!fem.\+h@{fem.\+h}}
+\subsubsection{\texorpdfstring{write\+\_\+vtu()}{write\_vtu()}}
+{\footnotesize\ttfamily void write\+\_\+vtu (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aa484d27c864c1a224505d8a302c0a4a4}{datafloat} $\ast$}]{Qout,  }\item[{int}]{cycle,  }\item[{int}]{procid,  }\item[{int}]{cells,  }\item[{double $\ast$$\ast$}]{x,  }\item[{double $\ast$$\ast$}]{y,  }\item[{int}]{p\+\_\+interp,  }\item[{double $\ast$$\ast$}]{Interpout,  }\item[{double $\ast$$\ast$}]{Triout,  }\item[{int}]{K\+\_\+interp }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{a00554_aa275e5ac3935009592aad28f023ed4a1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{a00554_aa275e5ac3935009592aad28f023ed4a1_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,5 @@
+<map id="FM_2WayNodeRefine1SidedP" name="FM_2WayNodeRefine1SidedP">
+<area shape="rect" id="node2" href="$a00939.html#a7181616e1bdb4454ac4a54aab65a4fab" title="METIS_NodeRefine" alt="" coords="259,5,399,32"/>
+<area shape="rect" id="node3" href="$a00951.html#ad38351510bbf07393425b90ea3c4f5bd" title="KWayNodeRefineInterior" alt="" coords="449,5,618,32"/>
+<area shape="rect" id="node4" href="$a00951.html#a5c42d043dc7f9e6d0b955a4d004a7470" title="KWayNodeRefine2Phase" alt="" coords="667,5,840,32"/>
+</map>

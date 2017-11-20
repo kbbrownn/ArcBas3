@@ -1,0 +1,7 @@
+<map id="Allocate2WayNodePartitionMemory" name="Allocate2WayNodePartitionMemory">
+<area shape="rect" id="node2" href="$a00077.html#aba6f76f5c67b9b7e9c2e45988d3d3e9d" title="gk_malloc" alt="" coords="237,59,320,85"/>
+<area shape="rect" id="node3" href="$a01014.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="587,59,643,85"/>
+<area shape="rect" id="node4" href="$a00110.html#ad2327b94227019b6753b6b09400c0522" title="gk_GetCurMemoryUsed" alt="" coords="371,33,536,60"/>
+<area shape="rect" id="node5" href="$a00110.html#a656fd5266ae12a96e53125486f8fea52" title="gk_GetMaxMemoryUsed" alt="" coords="369,84,538,111"/>
+<area shape="rect" id="node6" href="$a00026.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="413,135,493,161"/>
+</map>

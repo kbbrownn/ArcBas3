@@ -1,0 +1,98 @@
+\hypertarget{a00173}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/metis/libmetis/balance.c File Reference}
+\label{a00173}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/balance.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/balance.\+c}}
+
+
+Functions for the edge-\/based balancing.  
+
+
+{\ttfamily \#include \char`\"{}metislib.\+h\char`\"{}}\newline
+Include dependency graph for balance.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00174}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00173_a11bd5be7764194a2bb8d6cfe580a30b8}{Balance2\+Way} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ntpwgts)
+\item 
+void \hyperlink{a00173_ab06911b71a6e285ceb52bb80b6592e79}{Bnd2\+Way\+Balance} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ntpwgts)
+\item 
+void \hyperlink{a00173_a726f3ab2e1dbf55fcf3c6a31037542f5}{General2\+Way\+Balance} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ntpwgts)
+\item 
+void \hyperlink{a00173_a765ccbdaa41401e55a2b6d350964f289}{Mc\+General2\+Way\+Balance} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ntpwgts)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for the edge-\/based balancing. 
+
+\begin{DoxyDate}{Date}
+Started 7/23/97 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+
+Copyright 1997-\/2011, Regents of the University of Minnesota 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: balance.c 10187 2011-06-13 13:46:57Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00173_a11bd5be7764194a2bb8d6cfe580a30b8}\label{a00173_a11bd5be7764194a2bb8d6cfe580a30b8}} 
+\index{balance.\+c@{balance.\+c}!Balance2\+Way@{Balance2\+Way}}
+\index{Balance2\+Way@{Balance2\+Way}!balance.\+c@{balance.\+c}}
+\subsubsection{\texorpdfstring{Balance2\+Way()}{Balance2Way()}}
+{\footnotesize\ttfamily void Balance2\+Way (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ntpwgts }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{a00173_a11bd5be7764194a2bb8d6cfe580a30b8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00173_ab06911b71a6e285ceb52bb80b6592e79}\label{a00173_ab06911b71a6e285ceb52bb80b6592e79}} 
+\index{balance.\+c@{balance.\+c}!Bnd2\+Way\+Balance@{Bnd2\+Way\+Balance}}
+\index{Bnd2\+Way\+Balance@{Bnd2\+Way\+Balance}!balance.\+c@{balance.\+c}}
+\subsubsection{\texorpdfstring{Bnd2\+Way\+Balance()}{Bnd2WayBalance()}}
+{\footnotesize\ttfamily void Bnd2\+Way\+Balance (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ntpwgts }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{a00173_ab06911b71a6e285ceb52bb80b6592e79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00173_a726f3ab2e1dbf55fcf3c6a31037542f5}\label{a00173_a726f3ab2e1dbf55fcf3c6a31037542f5}} 
+\index{balance.\+c@{balance.\+c}!General2\+Way\+Balance@{General2\+Way\+Balance}}
+\index{General2\+Way\+Balance@{General2\+Way\+Balance}!balance.\+c@{balance.\+c}}
+\subsubsection{\texorpdfstring{General2\+Way\+Balance()}{General2WayBalance()}}
+{\footnotesize\ttfamily void General2\+Way\+Balance (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ntpwgts }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{a00173_a726f3ab2e1dbf55fcf3c6a31037542f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00173_a765ccbdaa41401e55a2b6d350964f289}\label{a00173_a765ccbdaa41401e55a2b6d350964f289}} 
+\index{balance.\+c@{balance.\+c}!Mc\+General2\+Way\+Balance@{Mc\+General2\+Way\+Balance}}
+\index{Mc\+General2\+Way\+Balance@{Mc\+General2\+Way\+Balance}!balance.\+c@{balance.\+c}}
+\subsubsection{\texorpdfstring{Mc\+General2\+Way\+Balance()}{McGeneral2WayBalance()}}
+{\footnotesize\ttfamily void Mc\+General2\+Way\+Balance (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ntpwgts }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{a00173_a765ccbdaa41401e55a2b6d350964f289_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,200 @@
+\hypertarget{a00602}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/src/\+Utils.cpp File Reference}
+\label{a00602}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/src/\+Utils.\+cpp@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/src/\+Utils.\+cpp}}
+{\ttfamily \#include \char`\"{}fem.\+h\char`\"{}}\newline
+Include dependency graph for Utils.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00603}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$$\ast$$\ast$$\ast$ \hyperlink{a00602_a745a480f3faf250c87406ddb1d8d0e4f}{Build4\+Tensor} (int Nrows, int Ncols, int I\+D\+X1, int I\+D\+X2)
+\item 
+double $\ast$$\ast$$\ast$ \hyperlink{a00602_a6031ee45d6b3d95665a885b7128c311c}{Build3\+Tensor} (int Nrows, int Ncols, int I\+DX)
+\item 
+double $\ast$$\ast$ \hyperlink{a00602_a4bf6e503687187059ced10b812beaab3}{Build\+Matrix} (int Nrows, int Ncols)
+\item 
+double $\ast$ \hyperlink{a00602_a990278305dbeaf8e4441cf4146bfdc62}{Build\+Vector} (int Nrows)
+\item 
+int $\ast$$\ast$ \hyperlink{a00602_a77f751d54b396015520a882d7a318e57}{Build\+Int\+Matrix} (int Nrows, int Ncols)
+\item 
+int $\ast$ \hyperlink{a00602_a0f24d8056fa979af4888469ea90576ff}{Build\+Int\+Vector} (int Nrows)
+\item 
+double $\ast$ \hyperlink{a00602_a80d1cd97ff27b4af78dcae4720b12ec2}{Destroy\+Vector} (double $\ast$\hyperlink{a00605_ac4055e3a20b6b3af3d10590ea446ef6c}{v})
+\item 
+double $\ast$$\ast$$\ast$ \hyperlink{a00602_a44d9724ffbc5b6937b622948003b9237}{Destroy3\+Tensor} (double $\ast$$\ast$$\ast$A)
+\item 
+double $\ast$$\ast$$\ast$$\ast$ \hyperlink{a00602_a622db7bf01e187334349001f44f29b8a}{Destroy4\+Tensor} (double $\ast$$\ast$$\ast$$\ast$A)
+\item 
+double $\ast$$\ast$ \hyperlink{a00602_a93ff2c99f019051b3cdeba84fd798332}{Destroy\+Matrix} (double $\ast$$\ast$A)
+\item 
+int $\ast$ \hyperlink{a00602_a77ea0d4c74ea8c7599ebe5c15ecbb7fa}{Destroy\+Int\+Vector} (int $\ast$\hyperlink{a00605_ac4055e3a20b6b3af3d10590ea446ef6c}{v})
+\item 
+int $\ast$$\ast$ \hyperlink{a00602_a60e426d6cf7506409d3d88171c1335fb}{Destroy\+Int\+Matrix} (int $\ast$$\ast$A)
+\item 
+void \hyperlink{a00602_a75942b12ae1b0172595c4d482b8203c0}{Print\+Matrix} (char $\ast$message, double $\ast$$\ast$A, int Nrows, int Ncols)
+\item 
+void \hyperlink{a00602_ac376677d3caaa98a9daf61674a973d1b}{Save\+Matrix} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, double $\ast$$\ast$A, int Nrows, int Ncols)
+\item 
+int \hyperlink{a00602_ae80676d4366a8214050e9ee665b94563}{trianglebase} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int \hyperlink{a00605_a6086917dfee54d84abe1838505c8cf69}{k})
+\item 
+int \hyperlink{a00602_aab0b0f793509896cdcfaa0b143acd8e8}{tetbase} (\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$mesh, int \hyperlink{a00605_a6086917dfee54d84abe1838505c8cf69}{k})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00602_a6031ee45d6b3d95665a885b7128c311c}\label{a00602_a6031ee45d6b3d95665a885b7128c311c}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Build3\+Tensor@{Build3\+Tensor}}
+\index{Build3\+Tensor@{Build3\+Tensor}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Build3\+Tensor()}{Build3Tensor()}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$ Build3\+Tensor (\begin{DoxyParamCaption}\item[{int}]{Nrows,  }\item[{int}]{Ncols,  }\item[{int}]{I\+DX }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{a00602_a6031ee45d6b3d95665a885b7128c311c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00602_a745a480f3faf250c87406ddb1d8d0e4f}\label{a00602_a745a480f3faf250c87406ddb1d8d0e4f}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Build4\+Tensor@{Build4\+Tensor}}
+\index{Build4\+Tensor@{Build4\+Tensor}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Build4\+Tensor()}{Build4Tensor()}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$$\ast$ Build4\+Tensor (\begin{DoxyParamCaption}\item[{int}]{Nrows,  }\item[{int}]{Ncols,  }\item[{int}]{I\+D\+X1,  }\item[{int}]{I\+D\+X2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00602_a77f751d54b396015520a882d7a318e57}\label{a00602_a77f751d54b396015520a882d7a318e57}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Build\+Int\+Matrix@{Build\+Int\+Matrix}}
+\index{Build\+Int\+Matrix@{Build\+Int\+Matrix}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Build\+Int\+Matrix()}{BuildIntMatrix()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ Build\+Int\+Matrix (\begin{DoxyParamCaption}\item[{int}]{Nrows,  }\item[{int}]{Ncols }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00602_a77f751d54b396015520a882d7a318e57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00602_a0f24d8056fa979af4888469ea90576ff}\label{a00602_a0f24d8056fa979af4888469ea90576ff}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Build\+Int\+Vector@{Build\+Int\+Vector}}
+\index{Build\+Int\+Vector@{Build\+Int\+Vector}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Build\+Int\+Vector()}{BuildIntVector()}}
+{\footnotesize\ttfamily int$\ast$ Build\+Int\+Vector (\begin{DoxyParamCaption}\item[{int}]{Nrows }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00602_a0f24d8056fa979af4888469ea90576ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00602_a4bf6e503687187059ced10b812beaab3}\label{a00602_a4bf6e503687187059ced10b812beaab3}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Build\+Matrix@{Build\+Matrix}}
+\index{Build\+Matrix@{Build\+Matrix}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Build\+Matrix()}{BuildMatrix()}}
+{\footnotesize\ttfamily double$\ast$$\ast$ Build\+Matrix (\begin{DoxyParamCaption}\item[{int}]{Nrows,  }\item[{int}]{Ncols }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00602_a4bf6e503687187059ced10b812beaab3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00602_a990278305dbeaf8e4441cf4146bfdc62}\label{a00602_a990278305dbeaf8e4441cf4146bfdc62}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Build\+Vector@{Build\+Vector}}
+\index{Build\+Vector@{Build\+Vector}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Build\+Vector()}{BuildVector()}}
+{\footnotesize\ttfamily double$\ast$ Build\+Vector (\begin{DoxyParamCaption}\item[{int}]{Nrows }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00602_a990278305dbeaf8e4441cf4146bfdc62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00602_a44d9724ffbc5b6937b622948003b9237}\label{a00602_a44d9724ffbc5b6937b622948003b9237}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Destroy3\+Tensor@{Destroy3\+Tensor}}
+\index{Destroy3\+Tensor@{Destroy3\+Tensor}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Destroy3\+Tensor()}{Destroy3Tensor()}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$ Destroy3\+Tensor (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$$\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00602_a622db7bf01e187334349001f44f29b8a}\label{a00602_a622db7bf01e187334349001f44f29b8a}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Destroy4\+Tensor@{Destroy4\+Tensor}}
+\index{Destroy4\+Tensor@{Destroy4\+Tensor}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Destroy4\+Tensor()}{Destroy4Tensor()}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$$\ast$ Destroy4\+Tensor (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$$\ast$$\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00602_a60e426d6cf7506409d3d88171c1335fb}\label{a00602_a60e426d6cf7506409d3d88171c1335fb}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Destroy\+Int\+Matrix@{Destroy\+Int\+Matrix}}
+\index{Destroy\+Int\+Matrix@{Destroy\+Int\+Matrix}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Destroy\+Int\+Matrix()}{DestroyIntMatrix()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ Destroy\+Int\+Matrix (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{A }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{a00602_a60e426d6cf7506409d3d88171c1335fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00602_a77ea0d4c74ea8c7599ebe5c15ecbb7fa}\label{a00602_a77ea0d4c74ea8c7599ebe5c15ecbb7fa}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Destroy\+Int\+Vector@{Destroy\+Int\+Vector}}
+\index{Destroy\+Int\+Vector@{Destroy\+Int\+Vector}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Destroy\+Int\+Vector()}{DestroyIntVector()}}
+{\footnotesize\ttfamily int$\ast$ Destroy\+Int\+Vector (\begin{DoxyParamCaption}\item[{int $\ast$}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00602_a93ff2c99f019051b3cdeba84fd798332}\label{a00602_a93ff2c99f019051b3cdeba84fd798332}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Destroy\+Matrix@{Destroy\+Matrix}}
+\index{Destroy\+Matrix@{Destroy\+Matrix}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Destroy\+Matrix()}{DestroyMatrix()}}
+{\footnotesize\ttfamily double$\ast$$\ast$ Destroy\+Matrix (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{A }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{a00602_a93ff2c99f019051b3cdeba84fd798332_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00602_a80d1cd97ff27b4af78dcae4720b12ec2}\label{a00602_a80d1cd97ff27b4af78dcae4720b12ec2}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Destroy\+Vector@{Destroy\+Vector}}
+\index{Destroy\+Vector@{Destroy\+Vector}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Destroy\+Vector()}{DestroyVector()}}
+{\footnotesize\ttfamily double$\ast$ Destroy\+Vector (\begin{DoxyParamCaption}\item[{double $\ast$}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00602_a75942b12ae1b0172595c4d482b8203c0}\label{a00602_a75942b12ae1b0172595c4d482b8203c0}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Print\+Matrix@{Print\+Matrix}}
+\index{Print\+Matrix@{Print\+Matrix}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Print\+Matrix()}{PrintMatrix()}}
+{\footnotesize\ttfamily void Print\+Matrix (\begin{DoxyParamCaption}\item[{char $\ast$}]{message,  }\item[{double $\ast$$\ast$}]{A,  }\item[{int}]{Nrows,  }\item[{int}]{Ncols }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00602_ac376677d3caaa98a9daf61674a973d1b}\label{a00602_ac376677d3caaa98a9daf61674a973d1b}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!Save\+Matrix@{Save\+Matrix}}
+\index{Save\+Matrix@{Save\+Matrix}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{Save\+Matrix()}{SaveMatrix()}}
+{\footnotesize\ttfamily void Save\+Matrix (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{double $\ast$$\ast$}]{A,  }\item[{int}]{Nrows,  }\item[{int}]{Ncols }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{a00602_ac376677d3caaa98a9daf61674a973d1b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00602_aab0b0f793509896cdcfaa0b143acd8e8}\label{a00602_aab0b0f793509896cdcfaa0b143acd8e8}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!tetbase@{tetbase}}
+\index{tetbase@{tetbase}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{tetbase()}{tetbase()}}
+{\footnotesize\ttfamily int tetbase (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00602_ae80676d4366a8214050e9ee665b94563}\label{a00602_ae80676d4366a8214050e9ee665b94563}} 
+\index{Utils.\+cpp@{Utils.\+cpp}!trianglebase@{trianglebase}}
+\index{trianglebase@{trianglebase}!Utils.\+cpp@{Utils.\+cpp}}
+\subsubsection{\texorpdfstring{trianglebase()}{trianglebase()}}
+{\footnotesize\ttfamily int trianglebase (\begin{DoxyParamCaption}\item[{\hyperlink{a00557_aeffbe0891ab73a4d8964c9cb7978426e}{Mesh} $\ast$}]{mesh,  }\item[{int}]{k }\end{DoxyParamCaption})}
+

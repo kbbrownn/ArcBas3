@@ -1,0 +1,136 @@
+\hypertarget{a00852}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/libparmetis/graph.c File Reference}
+\label{a00852}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/graph.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/graph.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for graph.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00853}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00734}{graph\+\_\+t} $\ast$ \hyperlink{a00852_a010e2ad3dd68ae816d481fdcd4260583}{Setup\+Graph} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a34203f1160d94eca83e95f2718ea3504}{vwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aac32df5bb22250d94fc2fc7e4078308b}{vsize}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a2be4719baa820cfa5c06fd070796e0d3}{adjwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} wgtflag)
+\item 
+void \hyperlink{a00852_adc4ae6f6575afd6ae777f535ea8c439f}{Setup\+Graph\+\_\+nvwgts} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\item 
+\hyperlink{a00734}{graph\+\_\+t} $\ast$ \hyperlink{a00852_a01903fa912de9fc7f01dace993a3fc85}{Create\+Graph} (void)
+\item 
+void \hyperlink{a00852_af046766ada304a0cf49db44b544810a8}{Init\+Graph} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{a00852_a583ba60fc42c1592f69587a1ae9c94d4}{Free\+Graph} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{a00852_a0ff13bda23f95ec19bb263ef036cd109}{Free\+Non\+Graph\+Fields} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{a00852_a7f1865a64a8a13def4eacf3d253f970a}{Free\+Non\+Graph\+Non\+Setup\+Fields} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\item 
+void \hyperlink{a00852_a739360f530677f48f239c049cbbf7855}{Free\+Initial\+Graph\+And\+Remap} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00852_a01903fa912de9fc7f01dace993a3fc85}\label{a00852_a01903fa912de9fc7f01dace993a3fc85}} 
+\index{libparmetis/graph.\+c@{libparmetis/graph.\+c}!Create\+Graph@{Create\+Graph}}
+\index{Create\+Graph@{Create\+Graph}!libparmetis/graph.\+c@{libparmetis/graph.\+c}}
+\subsubsection{\texorpdfstring{Create\+Graph()}{CreateGraph()}}
+{\footnotesize\ttfamily \hyperlink{a00734}{graph\+\_\+t}$\ast$ Create\+Graph (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+This function creates a Coarsegraph\+\_\+t data structure and initializes the various fields. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00852_a01903fa912de9fc7f01dace993a3fc85_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00852_a583ba60fc42c1592f69587a1ae9c94d4}\label{a00852_a583ba60fc42c1592f69587a1ae9c94d4}} 
+\index{libparmetis/graph.\+c@{libparmetis/graph.\+c}!Free\+Graph@{Free\+Graph}}
+\index{Free\+Graph@{Free\+Graph}!libparmetis/graph.\+c@{libparmetis/graph.\+c}}
+\subsubsection{\texorpdfstring{Free\+Graph()}{FreeGraph()}}
+{\footnotesize\ttfamily void Free\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function deallocates any memory stored in a graph Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00852_a583ba60fc42c1592f69587a1ae9c94d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00852_a739360f530677f48f239c049cbbf7855}\label{a00852_a739360f530677f48f239c049cbbf7855}} 
+\index{libparmetis/graph.\+c@{libparmetis/graph.\+c}!Free\+Initial\+Graph\+And\+Remap@{Free\+Initial\+Graph\+And\+Remap}}
+\index{Free\+Initial\+Graph\+And\+Remap@{Free\+Initial\+Graph\+And\+Remap}!libparmetis/graph.\+c@{libparmetis/graph.\+c}}
+\subsubsection{\texorpdfstring{Free\+Initial\+Graph\+And\+Remap()}{FreeInitialGraphAndRemap()}}
+{\footnotesize\ttfamily void Free\+Initial\+Graph\+And\+Remap (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function frees any memory allocated for storing the initial graph and performs the local to global (i.\+e., original numbering of the adjacency list) Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00852_a739360f530677f48f239c049cbbf7855_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00852_a0ff13bda23f95ec19bb263ef036cd109}\label{a00852_a0ff13bda23f95ec19bb263ef036cd109}} 
+\index{libparmetis/graph.\+c@{libparmetis/graph.\+c}!Free\+Non\+Graph\+Fields@{Free\+Non\+Graph\+Fields}}
+\index{Free\+Non\+Graph\+Fields@{Free\+Non\+Graph\+Fields}!libparmetis/graph.\+c@{libparmetis/graph.\+c}}
+\subsubsection{\texorpdfstring{Free\+Non\+Graph\+Fields()}{FreeNonGraphFields()}}
+{\footnotesize\ttfamily void Free\+Non\+Graph\+Fields (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function deallocates the non-\/graph structure fields of a graph data structure Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{a00852_a0ff13bda23f95ec19bb263ef036cd109_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00852_a0ff13bda23f95ec19bb263ef036cd109_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00852_a7f1865a64a8a13def4eacf3d253f970a}\label{a00852_a7f1865a64a8a13def4eacf3d253f970a}} 
+\index{libparmetis/graph.\+c@{libparmetis/graph.\+c}!Free\+Non\+Graph\+Non\+Setup\+Fields@{Free\+Non\+Graph\+Non\+Setup\+Fields}}
+\index{Free\+Non\+Graph\+Non\+Setup\+Fields@{Free\+Non\+Graph\+Non\+Setup\+Fields}!libparmetis/graph.\+c@{libparmetis/graph.\+c}}
+\subsubsection{\texorpdfstring{Free\+Non\+Graph\+Non\+Setup\+Fields()}{FreeNonGraphNonSetupFields()}}
+{\footnotesize\ttfamily void Free\+Non\+Graph\+Non\+Setup\+Fields (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function deallocates the non-\/graph and non-\/setup structure fields of a graph data structure Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{a00852_a7f1865a64a8a13def4eacf3d253f970a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00852_af046766ada304a0cf49db44b544810a8}\label{a00852_af046766ada304a0cf49db44b544810a8}} 
+\index{libparmetis/graph.\+c@{libparmetis/graph.\+c}!Init\+Graph@{Init\+Graph}}
+\index{Init\+Graph@{Init\+Graph}!libparmetis/graph.\+c@{libparmetis/graph.\+c}}
+\subsubsection{\texorpdfstring{Init\+Graph()}{InitGraph()}}
+{\footnotesize\ttfamily void Init\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function creates a Coarsegraph\+\_\+t data structure and initializes the various fields \mbox{\Hypertarget{a00852_a010e2ad3dd68ae816d481fdcd4260583}\label{a00852_a010e2ad3dd68ae816d481fdcd4260583}} 
+\index{libparmetis/graph.\+c@{libparmetis/graph.\+c}!Setup\+Graph@{Setup\+Graph}}
+\index{Setup\+Graph@{Setup\+Graph}!libparmetis/graph.\+c@{libparmetis/graph.\+c}}
+\subsubsection{\texorpdfstring{Setup\+Graph()}{SetupGraph()}}
+{\footnotesize\ttfamily \hyperlink{a00734}{graph\+\_\+t}$\ast$ Setup\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ncon,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vsize,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{wgtflag }\end{DoxyParamCaption})}
+
+This function creates the graph from the user\textquotesingle{}s inputs Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{a00852_a010e2ad3dd68ae816d481fdcd4260583_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00852_adc4ae6f6575afd6ae777f535ea8c439f}\label{a00852_adc4ae6f6575afd6ae777f535ea8c439f}} 
+\index{libparmetis/graph.\+c@{libparmetis/graph.\+c}!Setup\+Graph\+\_\+nvwgts@{Setup\+Graph\+\_\+nvwgts}}
+\index{Setup\+Graph\+\_\+nvwgts@{Setup\+Graph\+\_\+nvwgts}!libparmetis/graph.\+c@{libparmetis/graph.\+c}}
+\subsubsection{\texorpdfstring{Setup\+Graph\+\_\+nvwgts()}{SetupGraph\_nvwgts()}}
+{\footnotesize\ttfamily void Setup\+Graph\+\_\+nvwgts (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function creates the nvwgt of the graph Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{a00852_adc4ae6f6575afd6ae777f535ea8c439f_icgraph}
+\end{center}
+\end{figure}

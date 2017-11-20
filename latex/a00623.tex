@@ -1,0 +1,86 @@
+\hypertarget{a00623}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/src/write\+\_\+algs/write\+\_\+vtu\+\_\+template.cpp File Reference}
+\label{a00623}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/src/write\+\_\+algs/write\+\_\+vtu\+\_\+template.\+cpp@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/src/write\+\_\+algs/write\+\_\+vtu\+\_\+template.\+cpp}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ofstream \hyperlink{a00623_a934120182a1459d17613528940e2bc61}{output} (filename.\+c\+\_\+str())
+\item 
+\hyperlink{a00623_a4271ce0c289249580f95635786f05419}{Exc\+Lower\+Range} (std\+\_\+cxx11\+::get$<$ 1 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]}), std\+\_\+cxx11\+::get$<$ 0 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]})))
+\item 
+\hyperlink{a00623_a2b1bf74c066621ba811fd8bc87bc0dba}{Assert\+Throw} (std\+\_\+cxx11\+::get$<$ 1 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]})$<$ n\+\_\+data\+\_\+sets, Exc\+Index\+Range(std\+\_\+cxx11\+::get$<$ 1 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]}), 0, n\+\_\+data\+\_\+sets))
+\item 
+\hyperlink{a00623_a2641c21aa7765f6d1dff5c8b213e99dc}{Assert\+Throw} (std\+\_\+cxx11\+::get$<$ 1 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]})+1 -\/ std\+\_\+cxx11\+::get$<$ 0 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]})$<$=3, Exc\+Message(\char`\"{}Can\textquotesingle{}t declare a vector with more than 3 components \char`\"{} \char`\"{}in V\+TK\char`\"{}))
+\item 
+\hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} (unsigned int \hyperlink{a00608_afb6aca53df96564f2adf086c942453ec}{i}=std\+\_\+cxx11\+::get$<$ 0 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]});\hyperlink{a00608_afb6aca53df96564f2adf086c942453ec}{i}$<$=std\+\_\+cxx11\+::get$<$ 1 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]});++\hyperlink{a00608_afb6aca53df96564f2adf086c942453ec}{i}) data\+\_\+set\+\_\+written\mbox{[}\hyperlink{a00608_afb6aca53df96564f2adf086c942453ec}{i}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}
+\item 
+\hyperlink{a00623_a934120182a1459d17613528940e2bc61}{output}$<$$<$ \char`\"{}$<$?xml version=\textbackslash{}1.\+0\textbackslash{} ?$>$ \hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00623_a2b1bf74c066621ba811fd8bc87bc0dba}\label{a00623_a2b1bf74c066621ba811fd8bc87bc0dba}} 
+\index{write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}!Assert\+Throw@{Assert\+Throw}}
+\index{Assert\+Throw@{Assert\+Throw}!write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}}
+\subsubsection{\texorpdfstring{Assert\+Throw()}{AssertThrow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Assert\+Throw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00623_a2641c21aa7765f6d1dff5c8b213e99dc}\label{a00623_a2641c21aa7765f6d1dff5c8b213e99dc}} 
+\index{write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}!Assert\+Throw@{Assert\+Throw}}
+\index{Assert\+Throw@{Assert\+Throw}!write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}}
+\subsubsection{\texorpdfstring{Assert\+Throw()}{AssertThrow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Assert\+Throw (\begin{DoxyParamCaption}\item[{std\+\_\+cxx11\+::get$<$ 1 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]})+1 -\/ std\+\_\+cxx11\+::get$<$ 0 $>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]})$<$=}]{3,  }\item[{Exc\+Message(\char`\"{}Can\textquotesingle{}t declare a vector with more than 3 components \char`\"{} \char`\"{}in V\+TK\char`\"{})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00623_a4271ce0c289249580f95635786f05419}\label{a00623_a4271ce0c289249580f95635786f05419}} 
+\index{write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}!Exc\+Lower\+Range@{Exc\+Lower\+Range}}
+\index{Exc\+Lower\+Range@{Exc\+Lower\+Range}!write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}}
+\subsubsection{\texorpdfstring{Exc\+Lower\+Range()}{ExcLowerRange()}}
+{\footnotesize\ttfamily Exc\+Lower\+Range (\begin{DoxyParamCaption}\item[{std\+\_\+cxx11\+::get$<$ 1 $>$}]{vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]},  }\item[{std\+\_\+cxx11\+::get$<$ 0 $>$}]{vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}\label{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}} 
+\index{write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}!for@{for}}
+\index{for@{for}!write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}}
+\subsubsection{\texorpdfstring{for()}{for()}}
+{\footnotesize\ttfamily for (\begin{DoxyParamCaption}\item[{unsigned int}]{i = {\ttfamily std\+\_\+cxx11\+:\+:get$<$~0~$>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]});\hyperlink{a00608_afb6aca53df96564f2adf086c942453ec}{i}$<$=std\+\_\+cxx11\+:\+:get$<$~1~$>$(vector\+\_\+data\+\_\+ranges\mbox{[}n\+\_\+th\+\_\+vector\mbox{]});++\hyperlink{a00608_afb6aca53df96564f2adf086c942453ec}{i}} }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00623_ad1e7380d51df1e0043d24d3c8a860e0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00623_a934120182a1459d17613528940e2bc61}\label{a00623_a934120182a1459d17613528940e2bc61}} 
+\index{write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}!output@{output}}
+\index{output@{output}!write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily std\+::ofstream output (\begin{DoxyParamCaption}\item[{filename.}]{c\+\_\+str() }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{a00623_a42a21beb8018ac623f4d09db1343b9cf}\label{a00623_a42a21beb8018ac623f4d09db1343b9cf}} 
+\index{write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}!filename@{filename}}
+\index{filename@{filename}!write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}}
+\subsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily const std\+::string filename}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= (\textcolor{stringliteral}{"density\_output/density-"} +
+                  std::to\_string (cycle, 5) +
+                  \textcolor{stringliteral}{"."} +
+                  std::to\_string
+                  (mesh->procid, 4) +
+                  \textcolor{stringliteral}{".vtu"})
+\end{DoxyCode}
+\mbox{\Hypertarget{a00623_a781a04ab095280f838ff3eb0e51312e0}\label{a00623_a781a04ab095280f838ff3eb0e51312e0}} 
+\index{write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}!n@{n}}
+\index{n@{n}!write\+\_\+vtu\+\_\+template.\+cpp@{write\+\_\+vtu\+\_\+template.\+cpp}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily \hyperlink{a00623_a934120182a1459d17613528940e2bc61}{output}$<$$<$ \char`\"{}$<$!-\/-\/ \textbackslash{}n\char`\"{};output $<$$<$ \char`\"{}\# vtk Data\+File Version 3.\+0\char`\"{}$<$$<$ \textquotesingle{}\textbackslash{}n\textquotesingle{}$<$$<$ \char`\"{}\#This file was generated by the deal.\+II library\char`\"{};if (flags.\+print\+\_\+date\+\_\+and\+\_\+time) \{ out $<$$<$ \char`\"{} on \char`\"{} $<$$<$ Utilities\+::\+System\+::get\+\_\+time() $<$$<$ \char`\"{} at \char`\"{} $<$$<$ Utilities\+::\+System\+::get\+\_\+date(); \} else \hyperlink{a00623_a934120182a1459d17613528940e2bc61}{output} $<$$<$ \char`\"{}.\char`\"{};\hyperlink{a00623_a934120182a1459d17613528940e2bc61}{output} $<$$<$ \char`\"{}\textbackslash{}n-\/-\/$>$ n}
+

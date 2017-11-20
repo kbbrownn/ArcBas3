@@ -1,0 +1,189 @@
+\hypertarget{a00924}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/libparmetis/macros.h File Reference}
+\label{a00924}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/macros.\+h@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/macros.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00926}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{a00924_a51db6ba85772031b0a49ab3b1e46fc87}{A\+ND}(a,  b)~((a) $<$ 0 ? ((-\/(a))\&(b)) \+: ((a)\&(b)))
+\item 
+\#define \hyperlink{a00924_af69441c33563ebe0eb0312939509bba3}{OR}(a,  b)~((a) $<$ 0 ? -\/((-\/(a))$\vert$(b)) \+: ((a)$\vert$(b)))
+\item 
+\#define \hyperlink{a00924_af68c93838d750937b129e406f849ed94}{X\+OR}(a,  b)~((a) $<$ 0 ? -\/((-\/(a))$^\wedge$(b)) \+: ((a)$^\wedge$(b)))
+\item 
+\#define \hyperlink{a00924_aad4ca8af06a4e7cde40c07e0d3f0e17a}{H\+A\+S\+H\+F\+CT}(key,  \hyperlink{a00611_ad6cb0afbbe6ea4f56407890be2533966}{size})~((key)\%(\hyperlink{a00611_ad6cb0afbbe6ea4f56407890be2533966}{size}))
+\item 
+\#define \hyperlink{a00924_a76445c109da4a1f7bdf538f71922446b}{W\+C\+O\+R\+E\+P\+U\+SH}~do \{\hyperlink{a00924_a9702c21c10bbf405ed280d84651f379b}{P\+A\+S\+S\+E\+RT}(ctrl,ctrl-\/$>$mcore!=N\+U\+LL); \hyperlink{a00107_a07579694837248c1f2908860edc643c0}{gk\+\_\+mcore\+Push}(ctrl-\/$>$mcore);\}while(0)
+\item 
+\#define \hyperlink{a00924_a213331e15c4859c51ae85a9f45dc4403}{W\+C\+O\+R\+E\+P\+OP}~do \{\hyperlink{a00924_a9702c21c10bbf405ed280d84651f379b}{P\+A\+S\+S\+E\+RT}(ctrl,ctrl-\/$>$mcore!=N\+U\+LL); \hyperlink{a00107_ac7b3189a2be11b6736dc4c27d3d30f3a}{gk\+\_\+mcore\+Pop}(ctrl-\/$>$mcore);\}while(0)
+\item 
+\#define \hyperlink{a00924_aa7425aa3c84bbb11bf4f0aead48dd15a}{cleartimer}(tmr)~(tmr = 0.\+0)
+\item 
+\#define \hyperlink{a00924_ae152c218f682104fbe90b42318765caf}{starttimer}(tmr)~(tmr -\/= M\+P\+I\+\_\+\+Wtime())
+\item 
+\#define \hyperlink{a00924_a5201dfe38edd7089e892384c62267802}{stoptimer}(tmr)~(tmr += M\+P\+I\+\_\+\+Wtime())
+\item 
+\#define \hyperlink{a00924_a51041a3e56cadadaf4ab510451363daa}{gettimer}(tmr)~(tmr)
+\item 
+\#define \hyperlink{a00924_a8ebbce945d4e224ebce93e9038376ef3}{S\+T\+A\+R\+T\+T\+I\+M\+ER}(ctrl,  tmr)
+\item 
+\#define \hyperlink{a00924_ac283007da12d7cee4bc94d545f4700f5}{S\+T\+O\+P\+T\+I\+M\+ER}(ctrl,  tmr)
+\item 
+\#define \hyperlink{a00924_a9702c21c10bbf405ed280d84651f379b}{P\+A\+S\+S\+E\+RT}(ctrl,  expr)
+\item 
+\#define \hyperlink{a00924_a1c9bd3e7cf4a336b473269eece968ab2}{P\+A\+S\+S\+E\+R\+TP}(ctrl,  expr,  msg)
+\item 
+\#define \hyperlink{a00924_a3e31d128b80999f03f99b89c706e3756}{B\+N\+D\+Insert}(nbnd,  bndind,  bndptr,  vtx)
+\item 
+\#define \hyperlink{a00924_a50c0ec343fb393d7e2334d15a2d22003}{B\+N\+D\+Delete}(nbnd,  bndind,  bndptr,  vtx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00924_a51db6ba85772031b0a49ab3b1e46fc87}\label{a00924_a51db6ba85772031b0a49ab3b1e46fc87}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!A\+ND@{A\+ND}}
+\index{A\+ND@{A\+ND}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{A\+ND}{AND}}
+{\footnotesize\ttfamily \#define A\+ND(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a) $<$ 0 ? ((-\/(a))\&(b)) \+: ((a)\&(b)))}
+
+\mbox{\Hypertarget{a00924_a50c0ec343fb393d7e2334d15a2d22003}\label{a00924_a50c0ec343fb393d7e2334d15a2d22003}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!B\+N\+D\+Delete@{B\+N\+D\+Delete}}
+\index{B\+N\+D\+Delete@{B\+N\+D\+Delete}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{B\+N\+D\+Delete}{BNDDelete}}
+{\footnotesize\ttfamily \#define B\+N\+D\+Delete(\begin{DoxyParamCaption}\item[{}]{nbnd,  }\item[{}]{bndind,  }\item[{}]{bndptr,  }\item[{}]{vtx }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+        bndind[bndptr[vtx]] = bndind[--nbnd]; \(\backslash\)
+    bndptr[bndind[nbnd]] = bndptr[vtx]; \(\backslash\)
+    bndptr[vtx] = -1; \(\backslash\)
+      \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+\mbox{\Hypertarget{a00924_a3e31d128b80999f03f99b89c706e3756}\label{a00924_a3e31d128b80999f03f99b89c706e3756}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!B\+N\+D\+Insert@{B\+N\+D\+Insert}}
+\index{B\+N\+D\+Insert@{B\+N\+D\+Insert}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{B\+N\+D\+Insert}{BNDInsert}}
+{\footnotesize\ttfamily \#define B\+N\+D\+Insert(\begin{DoxyParamCaption}\item[{}]{nbnd,  }\item[{}]{bndind,  }\item[{}]{bndptr,  }\item[{}]{vtx }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    bndind[nbnd] = vtx; \(\backslash\)
+    bndptr[vtx] = nbnd++;\(\backslash\)
+      \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+\mbox{\Hypertarget{a00924_aa7425aa3c84bbb11bf4f0aead48dd15a}\label{a00924_aa7425aa3c84bbb11bf4f0aead48dd15a}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!cleartimer@{cleartimer}}
+\index{cleartimer@{cleartimer}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{cleartimer}{cleartimer}}
+{\footnotesize\ttfamily \#define cleartimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr = 0.\+0)}
+
+\mbox{\Hypertarget{a00924_a51041a3e56cadadaf4ab510451363daa}\label{a00924_a51041a3e56cadadaf4ab510451363daa}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!gettimer@{gettimer}}
+\index{gettimer@{gettimer}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{gettimer}{gettimer}}
+{\footnotesize\ttfamily \#define gettimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr)}
+
+\mbox{\Hypertarget{a00924_aad4ca8af06a4e7cde40c07e0d3f0e17a}\label{a00924_aad4ca8af06a4e7cde40c07e0d3f0e17a}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!H\+A\+S\+H\+F\+CT@{H\+A\+S\+H\+F\+CT}}
+\index{H\+A\+S\+H\+F\+CT@{H\+A\+S\+H\+F\+CT}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{H\+A\+S\+H\+F\+CT}{HASHFCT}}
+{\footnotesize\ttfamily \#define H\+A\+S\+H\+F\+CT(\begin{DoxyParamCaption}\item[{}]{key,  }\item[{}]{\hyperlink{a00611_ad6cb0afbbe6ea4f56407890be2533966}{size} }\end{DoxyParamCaption})~((key)\%(\hyperlink{a00611_ad6cb0afbbe6ea4f56407890be2533966}{size}))}
+
+\mbox{\Hypertarget{a00924_af69441c33563ebe0eb0312939509bba3}\label{a00924_af69441c33563ebe0eb0312939509bba3}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!OR@{OR}}
+\index{OR@{OR}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{OR}{OR}}
+{\footnotesize\ttfamily \#define OR(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a) $<$ 0 ? -\/((-\/(a))$\vert$(b)) \+: ((a)$\vert$(b)))}
+
+\mbox{\Hypertarget{a00924_a9702c21c10bbf405ed280d84651f379b}\label{a00924_a9702c21c10bbf405ed280d84651f379b}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!P\+A\+S\+S\+E\+RT@{P\+A\+S\+S\+E\+RT}}
+\index{P\+A\+S\+S\+E\+RT@{P\+A\+S\+S\+E\+RT}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+S\+S\+E\+RT}{PASSERT}}
+{\footnotesize\ttfamily \#define P\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{ctrl,  }\item[{}]{expr }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!(expr)) \{                                               \(\backslash\)
+       myprintf(ctrl, \textcolor{stringliteral}{"***ASSERTION failed on line %d of file %s: "} #expr \textcolor{stringliteral}{"\(\backslash\)n"}, \(\backslash\)
+            \_\_LINE\_\_, \_\_FILE\_\_);                               \(\backslash\)
+       assert(expr);                                           \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{a00924_a1c9bd3e7cf4a336b473269eece968ab2}\label{a00924_a1c9bd3e7cf4a336b473269eece968ab2}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!P\+A\+S\+S\+E\+R\+TP@{P\+A\+S\+S\+E\+R\+TP}}
+\index{P\+A\+S\+S\+E\+R\+TP@{P\+A\+S\+S\+E\+R\+TP}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+S\+S\+E\+R\+TP}{PASSERTP}}
+{\footnotesize\ttfamily \#define P\+A\+S\+S\+E\+R\+TP(\begin{DoxyParamCaption}\item[{}]{ctrl,  }\item[{}]{expr,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!(expr)) \{                                               \(\backslash\)
+        myprintf(ctrl, \textcolor{stringliteral}{"***ASSERTION failed on line %d of file %s:"} #expr \textcolor{stringliteral}{"\(\backslash\)n"}, \(\backslash\)
+              \_\_LINE\_\_, \_\_FILE\_\_);                               \(\backslash\)
+        myprintf msg ; \(\backslash\)
+        assert(expr); \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{a00924_ae152c218f682104fbe90b42318765caf}\label{a00924_ae152c218f682104fbe90b42318765caf}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!starttimer@{starttimer}}
+\index{starttimer@{starttimer}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{starttimer}{starttimer}}
+{\footnotesize\ttfamily \#define starttimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr -\/= M\+P\+I\+\_\+\+Wtime())}
+
+\mbox{\Hypertarget{a00924_a8ebbce945d4e224ebce93e9038376ef3}\label{a00924_a8ebbce945d4e224ebce93e9038376ef3}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!S\+T\+A\+R\+T\+T\+I\+M\+ER@{S\+T\+A\+R\+T\+T\+I\+M\+ER}}
+\index{S\+T\+A\+R\+T\+T\+I\+M\+ER@{S\+T\+A\+R\+T\+T\+I\+M\+ER}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+A\+R\+T\+T\+I\+M\+ER}{STARTTIMER}}
+{\footnotesize\ttfamily \#define S\+T\+A\+R\+T\+T\+I\+M\+ER(\begin{DoxyParamCaption}\item[{}]{ctrl,  }\item[{}]{tmr }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+     IFSET((ctrl)->dbglvl, \hyperlink{a00894_ae69476d7e520ec253b24dd0f2305dfbc}{DBG\_TIME}, \hyperlink{a00960_a2e3dc0708c9b1ba0aa67b8138b878d00}{gkMPI\_Barrier}((ctrl)->gcomm));\(\backslash\)
+     IFSET((ctrl)->dbglvl, \hyperlink{a00894_ae69476d7e520ec253b24dd0f2305dfbc}{DBG\_TIME}, \hyperlink{a00924_ae152c218f682104fbe90b42318765caf}{starttimer}((tmr))); \(\backslash\)
+   \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{a00924_a5201dfe38edd7089e892384c62267802}\label{a00924_a5201dfe38edd7089e892384c62267802}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!stoptimer@{stoptimer}}
+\index{stoptimer@{stoptimer}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{stoptimer}{stoptimer}}
+{\footnotesize\ttfamily \#define stoptimer(\begin{DoxyParamCaption}\item[{}]{tmr }\end{DoxyParamCaption})~(tmr += M\+P\+I\+\_\+\+Wtime())}
+
+\mbox{\Hypertarget{a00924_ac283007da12d7cee4bc94d545f4700f5}\label{a00924_ac283007da12d7cee4bc94d545f4700f5}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!S\+T\+O\+P\+T\+I\+M\+ER@{S\+T\+O\+P\+T\+I\+M\+ER}}
+\index{S\+T\+O\+P\+T\+I\+M\+ER@{S\+T\+O\+P\+T\+I\+M\+ER}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+O\+P\+T\+I\+M\+ER}{STOPTIMER}}
+{\footnotesize\ttfamily \#define S\+T\+O\+P\+T\+I\+M\+ER(\begin{DoxyParamCaption}\item[{}]{ctrl,  }\item[{}]{tmr }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+     IFSET((ctrl)->dbglvl, \hyperlink{a00894_ae69476d7e520ec253b24dd0f2305dfbc}{DBG\_TIME}, \hyperlink{a00960_a2e3dc0708c9b1ba0aa67b8138b878d00}{gkMPI\_Barrier}((ctrl)->gcomm));\(\backslash\)
+     IFSET((ctrl)->dbglvl, \hyperlink{a00894_ae69476d7e520ec253b24dd0f2305dfbc}{DBG\_TIME}, \hyperlink{a00924_a5201dfe38edd7089e892384c62267802}{stoptimer}((tmr))); \(\backslash\)
+   \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{a00924_a213331e15c4859c51ae85a9f45dc4403}\label{a00924_a213331e15c4859c51ae85a9f45dc4403}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!W\+C\+O\+R\+E\+P\+OP@{W\+C\+O\+R\+E\+P\+OP}}
+\index{W\+C\+O\+R\+E\+P\+OP@{W\+C\+O\+R\+E\+P\+OP}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{W\+C\+O\+R\+E\+P\+OP}{WCOREPOP}}
+{\footnotesize\ttfamily \#define W\+C\+O\+R\+E\+P\+OP~do \{\hyperlink{a00924_a9702c21c10bbf405ed280d84651f379b}{P\+A\+S\+S\+E\+RT}(ctrl,ctrl-\/$>$mcore!=N\+U\+LL); \hyperlink{a00107_ac7b3189a2be11b6736dc4c27d3d30f3a}{gk\+\_\+mcore\+Pop}(ctrl-\/$>$mcore);\}while(0)}
+
+\mbox{\Hypertarget{a00924_a76445c109da4a1f7bdf538f71922446b}\label{a00924_a76445c109da4a1f7bdf538f71922446b}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!W\+C\+O\+R\+E\+P\+U\+SH@{W\+C\+O\+R\+E\+P\+U\+SH}}
+\index{W\+C\+O\+R\+E\+P\+U\+SH@{W\+C\+O\+R\+E\+P\+U\+SH}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{W\+C\+O\+R\+E\+P\+U\+SH}{WCOREPUSH}}
+{\footnotesize\ttfamily \#define W\+C\+O\+R\+E\+P\+U\+SH~do \{\hyperlink{a00924_a9702c21c10bbf405ed280d84651f379b}{P\+A\+S\+S\+E\+RT}(ctrl,ctrl-\/$>$mcore!=N\+U\+LL); \hyperlink{a00107_a07579694837248c1f2908860edc643c0}{gk\+\_\+mcore\+Push}(ctrl-\/$>$mcore);\}while(0)}
+
+\mbox{\Hypertarget{a00924_af68c93838d750937b129e406f849ed94}\label{a00924_af68c93838d750937b129e406f849ed94}} 
+\index{libparmetis/macros.\+h@{libparmetis/macros.\+h}!X\+OR@{X\+OR}}
+\index{X\+OR@{X\+OR}!libparmetis/macros.\+h@{libparmetis/macros.\+h}}
+\subsubsection{\texorpdfstring{X\+OR}{XOR}}
+{\footnotesize\ttfamily \#define X\+OR(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a) $<$ 0 ? -\/((-\/(a))$^\wedge$(b)) \+: ((a)$^\wedge$(b)))}
+

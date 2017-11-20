@@ -1,0 +1,99 @@
+\hypertarget{a00428}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/programs/otest.c File Reference}
+\label{a00428}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/programs/otest.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/programs/otest.\+c}}
+{\ttfamily \#include $<$parmetisbin.\+h$>$}\newline
+Include dependency graph for otest.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00429}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00428_a8f4019835796a39a97c345864d80fcbb}{main} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{a00428_ac0ca0065f1dc35b0f4fe4d1968313dca}{Test\+Par\+Metis} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00428_a725d56a999dc467b3f7883eea465bab2}{Compute\+Real\+Cut} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00428_a5bf6f2fe30133c3be1dc3d34329e650d}{Compute\+Real\+Cut2} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mvtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mpart, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+void \hyperlink{a00428_a136ad3b21ef4f877c3100a997814e8ce}{Test\+Move\+Graph} (\hyperlink{a00734}{graph\+\_\+t} $\ast$ograph, \hyperlink{a00734}{graph\+\_\+t} $\ast$omgraph, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{a00734}{graph\+\_\+t} $\ast$ \hyperlink{a00428_ac5472d28ea064341acff9be6744eea92}{Set\+Up\+Graph} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a34203f1160d94eca83e95f2718ea3504}{vwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a2be4719baa820cfa5c06fd070796e0d3}{adjwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} wgtflag)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00428_a725d56a999dc467b3f7883eea465bab2}\label{a00428_a725d56a999dc467b3f7883eea465bab2}} 
+\index{otest.\+c@{otest.\+c}!Compute\+Real\+Cut@{Compute\+Real\+Cut}}
+\index{Compute\+Real\+Cut@{Compute\+Real\+Cut}!otest.\+c@{otest.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Real\+Cut()}{ComputeRealCut()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Compute\+Real\+Cut (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00428_a5bf6f2fe30133c3be1dc3d34329e650d}\label{a00428_a5bf6f2fe30133c3be1dc3d34329e650d}} 
+\index{otest.\+c@{otest.\+c}!Compute\+Real\+Cut2@{Compute\+Real\+Cut2}}
+\index{Compute\+Real\+Cut2@{Compute\+Real\+Cut2}!otest.\+c@{otest.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Real\+Cut2()}{ComputeRealCut2()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Compute\+Real\+Cut2 (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mvtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mpart,  }\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00428_a5bf6f2fe30133c3be1dc3d34329e650d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00428_a8f4019835796a39a97c345864d80fcbb}\label{a00428_a8f4019835796a39a97c345864d80fcbb}} 
+\index{otest.\+c@{otest.\+c}!main@{main}}
+\index{main@{main}!otest.\+c@{otest.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} main (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Entry point of the testing routine Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00428_a8f4019835796a39a97c345864d80fcbb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00428_ac5472d28ea064341acff9be6744eea92}\label{a00428_ac5472d28ea064341acff9be6744eea92}} 
+\index{otest.\+c@{otest.\+c}!Set\+Up\+Graph@{Set\+Up\+Graph}}
+\index{Set\+Up\+Graph@{Set\+Up\+Graph}!otest.\+c@{otest.\+c}}
+\subsubsection{\texorpdfstring{Set\+Up\+Graph()}{SetUpGraph()}}
+{\footnotesize\ttfamily \hyperlink{a00734}{graph\+\_\+t}$\ast$ Set\+Up\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{wgtflag }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00428_ac5472d28ea064341acff9be6744eea92_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00428_a136ad3b21ef4f877c3100a997814e8ce}\label{a00428_a136ad3b21ef4f877c3100a997814e8ce}} 
+\index{otest.\+c@{otest.\+c}!Test\+Move\+Graph@{Test\+Move\+Graph}}
+\index{Test\+Move\+Graph@{Test\+Move\+Graph}!otest.\+c@{otest.\+c}}
+\subsubsection{\texorpdfstring{Test\+Move\+Graph()}{TestMoveGraph()}}
+{\footnotesize\ttfamily void Test\+Move\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{ograph,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{omgraph,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{a00428_a136ad3b21ef4f877c3100a997814e8ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00428_ac0ca0065f1dc35b0f4fe4d1968313dca}\label{a00428_ac0ca0065f1dc35b0f4fe4d1968313dca}} 
+\index{otest.\+c@{otest.\+c}!Test\+Par\+Metis@{Test\+Par\+Metis}}
+\index{Test\+Par\+Metis@{Test\+Par\+Metis}!otest.\+c@{otest.\+c}}
+\subsubsection{\texorpdfstring{Test\+Par\+Metis()}{TestParMetis()}}
+{\footnotesize\ttfamily void Test\+Par\+Metis (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+This function tests the various graph partitioning and ordering routines Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00428_ac0ca0065f1dc35b0f4fe4d1968313dca_cgraph}
+\end{center}
+\end{figure}

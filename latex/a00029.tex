@@ -1,0 +1,90 @@
+\hypertarget{a00029}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/evaluate.c File Reference}
+\label{a00029}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/evaluate.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/evaluate.\+c}}
+
+
+Various routines to evaluate classification performance.  
+
+
+{\ttfamily \#include $<$G\+Klib.\+h$>$}\newline
+Include dependency graph for evaluate.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00030}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{a00029_ae4d47a20b362605d1521159a9b090a04}{Compute\+Accuracy} (int \hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}, gk\+\_\+fkv\+\_\+t $\ast$list)
+\item 
+float \hyperlink{a00029_a8df1d3501976b7a3168df9f80ccf0cf6}{Compute\+R\+O\+Cn} (int \hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}, int maxN, gk\+\_\+fkv\+\_\+t $\ast$list)
+\item 
+float \hyperlink{a00029_a0712d76a8c05b906a790c20887ad1874}{Compute\+Median\+R\+FP} (int \hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}, gk\+\_\+fkv\+\_\+t $\ast$list)
+\item 
+float \hyperlink{a00029_aeeed505299d523a6061b0c1966d88427}{Compute\+Mean} (int \hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}, float $\ast$values)
+\item 
+float \hyperlink{a00029_a59fad97dedb62ff1ae0722de46318412}{Compute\+Std\+Dev} (int \hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}, float $\ast$values)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Various routines to evaluate classification performance. 
+
+\begin{DoxyAuthor}{Author}
+George 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+9/23/2008 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: evaluate.c 13328 2012-12-31 14:57:40Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00029_ae4d47a20b362605d1521159a9b090a04}\label{a00029_ae4d47a20b362605d1521159a9b090a04}} 
+\index{evaluate.\+c@{evaluate.\+c}!Compute\+Accuracy@{Compute\+Accuracy}}
+\index{Compute\+Accuracy@{Compute\+Accuracy}!evaluate.\+c@{evaluate.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Accuracy()}{ComputeAccuracy()}}
+{\footnotesize\ttfamily float Compute\+Accuracy (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{gk\+\_\+fkv\+\_\+t $\ast$}]{list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00029_aeeed505299d523a6061b0c1966d88427}\label{a00029_aeeed505299d523a6061b0c1966d88427}} 
+\index{evaluate.\+c@{evaluate.\+c}!Compute\+Mean@{Compute\+Mean}}
+\index{Compute\+Mean@{Compute\+Mean}!evaluate.\+c@{evaluate.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Mean()}{ComputeMean()}}
+{\footnotesize\ttfamily float Compute\+Mean (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{float $\ast$}]{values }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{a00029_aeeed505299d523a6061b0c1966d88427_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a0712d76a8c05b906a790c20887ad1874}\label{a00029_a0712d76a8c05b906a790c20887ad1874}} 
+\index{evaluate.\+c@{evaluate.\+c}!Compute\+Median\+R\+FP@{Compute\+Median\+R\+FP}}
+\index{Compute\+Median\+R\+FP@{Compute\+Median\+R\+FP}!evaluate.\+c@{evaluate.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Median\+R\+F\+P()}{ComputeMedianRFP()}}
+{\footnotesize\ttfamily float Compute\+Median\+R\+FP (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{gk\+\_\+fkv\+\_\+t $\ast$}]{list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00029_a8df1d3501976b7a3168df9f80ccf0cf6}\label{a00029_a8df1d3501976b7a3168df9f80ccf0cf6}} 
+\index{evaluate.\+c@{evaluate.\+c}!Compute\+R\+O\+Cn@{Compute\+R\+O\+Cn}}
+\index{Compute\+R\+O\+Cn@{Compute\+R\+O\+Cn}!evaluate.\+c@{evaluate.\+c}}
+\subsubsection{\texorpdfstring{Compute\+R\+O\+Cn()}{ComputeROCn()}}
+{\footnotesize\ttfamily float Compute\+R\+O\+Cn (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{maxN,  }\item[{gk\+\_\+fkv\+\_\+t $\ast$}]{list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00029_a59fad97dedb62ff1ae0722de46318412}\label{a00029_a59fad97dedb62ff1ae0722de46318412}} 
+\index{evaluate.\+c@{evaluate.\+c}!Compute\+Std\+Dev@{Compute\+Std\+Dev}}
+\index{Compute\+Std\+Dev@{Compute\+Std\+Dev}!evaluate.\+c@{evaluate.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Std\+Dev()}{ComputeStdDev()}}
+{\footnotesize\ttfamily float Compute\+Std\+Dev (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{float $\ast$}]{values }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{a00029_a59fad97dedb62ff1ae0722de46318412_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,148 @@
+\hypertarget{a00437}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/programs/ptest.c File Reference}
+\label{a00437}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/programs/ptest.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/programs/ptest.\+c}}
+{\ttfamily \#include $<$parmetisbin.\+h$>$}\newline
+Include dependency graph for ptest.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00438}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{a00437_a9214dfc9b3f48a9499d9db889783b938}{N\+C\+ON}~5
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{a00437_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{a00437_adb0c2dc0c5138f35c71739328c702074}{Test\+Par\+Metis\+\_\+\+G\+Part} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, char $\ast$xyzfile, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00437_a725d56a999dc467b3f7883eea465bab2}{Compute\+Real\+Cut} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00437_a8003a74d9258bf251cc16e3b964c4b69}{Compute\+Real\+Cut\+From\+Moved} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mvtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$mpart, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+void \hyperlink{a00437_a136ad3b21ef4f877c3100a997814e8ce}{Test\+Move\+Graph} (\hyperlink{a00734}{graph\+\_\+t} $\ast$ograph, \hyperlink{a00734}{graph\+\_\+t} $\ast$omgraph, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{a00734}{graph\+\_\+t} $\ast$ \hyperlink{a00437_aff9e935a0b03f0424e9c241573bb437b}{Test\+Set\+Up\+Graph} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a34203f1160d94eca83e95f2718ea3504}{vwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a2be4719baa820cfa5c06fd070796e0d3}{adjwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} wgtflag)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00437_a9214dfc9b3f48a9499d9db889783b938}\label{a00437_a9214dfc9b3f48a9499d9db889783b938}} 
+\index{ptest.\+c@{ptest.\+c}!N\+C\+ON@{N\+C\+ON}}
+\index{N\+C\+ON@{N\+C\+ON}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{N\+C\+ON}{NCON}}
+{\footnotesize\ttfamily \#define N\+C\+ON~5}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00437_a725d56a999dc467b3f7883eea465bab2}\label{a00437_a725d56a999dc467b3f7883eea465bab2}} 
+\index{ptest.\+c@{ptest.\+c}!Compute\+Real\+Cut@{Compute\+Real\+Cut}}
+\index{Compute\+Real\+Cut@{Compute\+Real\+Cut}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Real\+Cut()}{ComputeRealCut()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Compute\+Real\+Cut (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+This function takes a partition vector that is distributed and reads in the original graph and computes the edgecut Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00437_a725d56a999dc467b3f7883eea465bab2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00437_a725d56a999dc467b3f7883eea465bab2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00437_a8003a74d9258bf251cc16e3b964c4b69}\label{a00437_a8003a74d9258bf251cc16e3b964c4b69}} 
+\index{ptest.\+c@{ptest.\+c}!Compute\+Real\+Cut\+From\+Moved@{Compute\+Real\+Cut\+From\+Moved}}
+\index{Compute\+Real\+Cut\+From\+Moved@{Compute\+Real\+Cut\+From\+Moved}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Real\+Cut\+From\+Moved()}{ComputeRealCutFromMoved()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Compute\+Real\+Cut\+From\+Moved (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mvtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{mpart,  }\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+This function takes a partition vector of the original graph and that of the moved graph and computes the cut of the original graph based on the moved graph Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00437_a8003a74d9258bf251cc16e3b964c4b69_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00437_a8003a74d9258bf251cc16e3b964c4b69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00437_a0ddf1224851353fc92bfbff6f499fa97}\label{a00437_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{ptest.\+c@{ptest.\+c}!main@{main}}
+\index{main@{main}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Entry point of the testing routine Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00437_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00437_a136ad3b21ef4f877c3100a997814e8ce}\label{a00437_a136ad3b21ef4f877c3100a997814e8ce}} 
+\index{ptest.\+c@{ptest.\+c}!Test\+Move\+Graph@{Test\+Move\+Graph}}
+\index{Test\+Move\+Graph@{Test\+Move\+Graph}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Test\+Move\+Graph()}{TestMoveGraph()}}
+{\footnotesize\ttfamily void Test\+Move\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{ograph,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{omgraph,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{a00437_a136ad3b21ef4f877c3100a997814e8ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00437_a136ad3b21ef4f877c3100a997814e8ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00437_adb0c2dc0c5138f35c71739328c702074}\label{a00437_adb0c2dc0c5138f35c71739328c702074}} 
+\index{ptest.\+c@{ptest.\+c}!Test\+Par\+Metis\+\_\+\+G\+Part@{Test\+Par\+Metis\+\_\+\+G\+Part}}
+\index{Test\+Par\+Metis\+\_\+\+G\+Part@{Test\+Par\+Metis\+\_\+\+G\+Part}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Test\+Par\+Metis\+\_\+\+G\+Part()}{TestParMetis\_GPart()}}
+{\footnotesize\ttfamily void Test\+Par\+Metis\+\_\+\+G\+Part (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{char $\ast$}]{xyzfile,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+This function tests the various graph partitioning and ordering routines Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00437_adb0c2dc0c5138f35c71739328c702074_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{a00437_adb0c2dc0c5138f35c71739328c702074_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00437_aff9e935a0b03f0424e9c241573bb437b}\label{a00437_aff9e935a0b03f0424e9c241573bb437b}} 
+\index{ptest.\+c@{ptest.\+c}!Test\+Set\+Up\+Graph@{Test\+Set\+Up\+Graph}}
+\index{Test\+Set\+Up\+Graph@{Test\+Set\+Up\+Graph}!ptest.\+c@{ptest.\+c}}
+\subsubsection{\texorpdfstring{Test\+Set\+Up\+Graph()}{TestSetUpGraph()}}
+{\footnotesize\ttfamily \hyperlink{a00734}{graph\+\_\+t}$\ast$ Test\+Set\+Up\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{wgtflag }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00437_aff9e935a0b03f0424e9c241573bb437b_icgraph}
+\end{center}
+\end{figure}

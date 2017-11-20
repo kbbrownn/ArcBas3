@@ -1,0 +1,243 @@
+\hypertarget{a00407}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/libparmetis/serial.c File Reference}
+\label{a00407}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/serial.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/serial.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for serial.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00408}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00407_a0148b1267b79812e051a021ca4e50073}{Mc\+\_\+\+Compute\+Serial\+Partition\+Params} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_aad88065af88fd6759101788a8e15ce9e}{nparts})
+\item 
+void \hyperlink{a00407_a8aad6fc44513e8a6ff7e151c231f98ce}{Mc\+\_\+\+Serial\+K\+Way\+Adapt\+Refine} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$home, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$orgubvec, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} npasses)
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00407_ace02f7278bd27e41cf76dd1d4bac9a80}{Are\+All\+H\+Vwgts\+Below} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} alpha, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$vwgt1, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} beta, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$vwgt2, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$limit)
+\item 
+void \hyperlink{a00407_aac7dc6996b9a0fa1725d5fb832c83f6d}{Compute\+H\+K\+Way\+Load\+Imbalance} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$npwgts, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$lbvec)
+\item 
+void \hyperlink{a00407_aa139665d0b90ebdcfc8e227a983994b2}{Serial\+Remap} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$base, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$scratch, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$remap, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts})
+\item 
+int \hyperlink{a00407_a786beb5cf2ec4aaae09596c302eb510d}{S\+S\+M\+Inc\+Key\+Cmp} (const void $\ast$fptr, const void $\ast$sptr)
+\item 
+void \hyperlink{a00407_a9e8699c39f355dea5ad38e1dfee7b7cf}{Mc\+\_\+\+Serial\+\_\+\+F\+M\+\_\+2\+Way\+Refine} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} npasses)
+\item 
+void \hyperlink{a00407_a9f3e61c58695c143989d96c57154fb80}{Serial\+\_\+\+Select\+Queue} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$npwgts, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$from, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$cnum, rpq\+\_\+t $\ast$$\ast$queues\mbox{[}2\mbox{]})
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00407_a62ce727c3eee17b8d8add92ffeb8adbe}{Serial\+\_\+\+Better\+Balance} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$npwgts, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$diff, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$tmpdiff)
+\item 
+\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} \hyperlink{a00407_afa6aadaf308fc164c98e67d2511daf03}{Serial\+\_\+\+Compute2\+Way\+H\+Load\+Imbalance} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$npwgts, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts})
+\item 
+void \hyperlink{a00407_a89fa5b7aa9a8bab154de5a47d47d9d60}{Mc\+\_\+\+Serial\+\_\+\+Balance2\+Way} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} lbfactor)
+\item 
+void \hyperlink{a00407_ad376cf99d1d14ec6aeecf466359ce898}{Mc\+\_\+\+Serial\+\_\+\+Init2\+Way\+Balance} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts})
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00407_a9f0787bb9b0a641e0f5cdcbb6152ff1f}{Serial\+\_\+\+Select\+Queue\+One\+Way} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$npwgts, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} from, rpq\+\_\+t $\ast$$\ast$queues\mbox{[}2\mbox{]})
+\item 
+void \hyperlink{a00407_acd91d34fdc0988e13fe82f76f97f6d03}{Mc\+\_\+\+Serial\+\_\+\+Compute2\+Way\+Partition\+Params} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00407_ad0ed41db7a15698760c73a84b9eb64fc}{Serial\+\_\+\+Are\+Any\+Vwgts\+Below} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} alpha, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$vwgt1, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} beta, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$vwgt2, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$limit)
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00407_ad7e392702b960962be6a33019588c455}{Compute\+Serial\+Edge\+Cut} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00407_a80c35c7bcee6b0bfaf31270a38715d28}{Compute\+Serial\+TotalV} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$home)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00407_ace02f7278bd27e41cf76dd1d4bac9a80}\label{a00407_ace02f7278bd27e41cf76dd1d4bac9a80}} 
+\index{serial.\+c@{serial.\+c}!Are\+All\+H\+Vwgts\+Below@{Are\+All\+H\+Vwgts\+Below}}
+\index{Are\+All\+H\+Vwgts\+Below@{Are\+All\+H\+Vwgts\+Below}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Are\+All\+H\+Vwgts\+Below()}{AreAllHVwgtsBelow()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Are\+All\+H\+Vwgts\+Below (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ncon,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{alpha,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{vwgt1,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{beta,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{vwgt2,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{limit }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_ace02f7278bd27e41cf76dd1d4bac9a80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_aac7dc6996b9a0fa1725d5fb832c83f6d}\label{a00407_aac7dc6996b9a0fa1725d5fb832c83f6d}} 
+\index{serial.\+c@{serial.\+c}!Compute\+H\+K\+Way\+Load\+Imbalance@{Compute\+H\+K\+Way\+Load\+Imbalance}}
+\index{Compute\+H\+K\+Way\+Load\+Imbalance@{Compute\+H\+K\+Way\+Load\+Imbalance}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Compute\+H\+K\+Way\+Load\+Imbalance()}{ComputeHKWayLoadImbalance()}}
+{\footnotesize\ttfamily void Compute\+H\+K\+Way\+Load\+Imbalance (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ncon,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nparts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{npwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{lbvec }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_aac7dc6996b9a0fa1725d5fb832c83f6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_ad7e392702b960962be6a33019588c455}\label{a00407_ad7e392702b960962be6a33019588c455}} 
+\index{serial.\+c@{serial.\+c}!Compute\+Serial\+Edge\+Cut@{Compute\+Serial\+Edge\+Cut}}
+\index{Compute\+Serial\+Edge\+Cut@{Compute\+Serial\+Edge\+Cut}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Serial\+Edge\+Cut()}{ComputeSerialEdgeCut()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Compute\+Serial\+Edge\+Cut (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00407_a80c35c7bcee6b0bfaf31270a38715d28}\label{a00407_a80c35c7bcee6b0bfaf31270a38715d28}} 
+\index{serial.\+c@{serial.\+c}!Compute\+Serial\+TotalV@{Compute\+Serial\+TotalV}}
+\index{Compute\+Serial\+TotalV@{Compute\+Serial\+TotalV}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Compute\+Serial\+Total\+V()}{ComputeSerialTotalV()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Compute\+Serial\+TotalV (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{home }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00407_a0148b1267b79812e051a021ca4e50073}\label{a00407_a0148b1267b79812e051a021ca4e50073}} 
+\index{serial.\+c@{serial.\+c}!Mc\+\_\+\+Compute\+Serial\+Partition\+Params@{Mc\+\_\+\+Compute\+Serial\+Partition\+Params}}
+\index{Mc\+\_\+\+Compute\+Serial\+Partition\+Params@{Mc\+\_\+\+Compute\+Serial\+Partition\+Params}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Compute\+Serial\+Partition\+Params()}{Mc\_ComputeSerialPartitionParams()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Compute\+Serial\+Partition\+Params (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nparts }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00407_a89fa5b7aa9a8bab154de5a47d47d9d60}\label{a00407_a89fa5b7aa9a8bab154de5a47d47d9d60}} 
+\index{serial.\+c@{serial.\+c}!Mc\+\_\+\+Serial\+\_\+\+Balance2\+Way@{Mc\+\_\+\+Serial\+\_\+\+Balance2\+Way}}
+\index{Mc\+\_\+\+Serial\+\_\+\+Balance2\+Way@{Mc\+\_\+\+Serial\+\_\+\+Balance2\+Way}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Serial\+\_\+\+Balance2\+Way()}{Mc\_Serial\_Balance2Way()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Serial\+\_\+\+Balance2\+Way (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{lbfactor }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_a89fa5b7aa9a8bab154de5a47d47d9d60_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_acd91d34fdc0988e13fe82f76f97f6d03}\label{a00407_acd91d34fdc0988e13fe82f76f97f6d03}} 
+\index{serial.\+c@{serial.\+c}!Mc\+\_\+\+Serial\+\_\+\+Compute2\+Way\+Partition\+Params@{Mc\+\_\+\+Serial\+\_\+\+Compute2\+Way\+Partition\+Params}}
+\index{Mc\+\_\+\+Serial\+\_\+\+Compute2\+Way\+Partition\+Params@{Mc\+\_\+\+Serial\+\_\+\+Compute2\+Way\+Partition\+Params}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Serial\+\_\+\+Compute2\+Way\+Partition\+Params()}{Mc\_Serial\_Compute2WayPartitionParams()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Serial\+\_\+\+Compute2\+Way\+Partition\+Params (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00407_a9e8699c39f355dea5ad38e1dfee7b7cf}\label{a00407_a9e8699c39f355dea5ad38e1dfee7b7cf}} 
+\index{serial.\+c@{serial.\+c}!Mc\+\_\+\+Serial\+\_\+\+F\+M\+\_\+2\+Way\+Refine@{Mc\+\_\+\+Serial\+\_\+\+F\+M\+\_\+2\+Way\+Refine}}
+\index{Mc\+\_\+\+Serial\+\_\+\+F\+M\+\_\+2\+Way\+Refine@{Mc\+\_\+\+Serial\+\_\+\+F\+M\+\_\+2\+Way\+Refine}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Serial\+\_\+\+F\+M\+\_\+2\+Way\+Refine()}{Mc\_Serial\_FM\_2WayRefine()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Serial\+\_\+\+F\+M\+\_\+2\+Way\+Refine (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{npasses }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_a9e8699c39f355dea5ad38e1dfee7b7cf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_ad376cf99d1d14ec6aeecf466359ce898}\label{a00407_ad376cf99d1d14ec6aeecf466359ce898}} 
+\index{serial.\+c@{serial.\+c}!Mc\+\_\+\+Serial\+\_\+\+Init2\+Way\+Balance@{Mc\+\_\+\+Serial\+\_\+\+Init2\+Way\+Balance}}
+\index{Mc\+\_\+\+Serial\+\_\+\+Init2\+Way\+Balance@{Mc\+\_\+\+Serial\+\_\+\+Init2\+Way\+Balance}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Serial\+\_\+\+Init2\+Way\+Balance()}{Mc\_Serial\_Init2WayBalance()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Serial\+\_\+\+Init2\+Way\+Balance (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_ad376cf99d1d14ec6aeecf466359ce898_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_a8aad6fc44513e8a6ff7e151c231f98ce}\label{a00407_a8aad6fc44513e8a6ff7e151c231f98ce}} 
+\index{serial.\+c@{serial.\+c}!Mc\+\_\+\+Serial\+K\+Way\+Adapt\+Refine@{Mc\+\_\+\+Serial\+K\+Way\+Adapt\+Refine}}
+\index{Mc\+\_\+\+Serial\+K\+Way\+Adapt\+Refine@{Mc\+\_\+\+Serial\+K\+Way\+Adapt\+Refine}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Serial\+K\+Way\+Adapt\+Refine()}{Mc\_SerialKWayAdaptRefine()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Serial\+K\+Way\+Adapt\+Refine (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nparts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{home,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{orgubvec,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{npasses }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_a8aad6fc44513e8a6ff7e151c231f98ce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_ad0ed41db7a15698760c73a84b9eb64fc}\label{a00407_ad0ed41db7a15698760c73a84b9eb64fc}} 
+\index{serial.\+c@{serial.\+c}!Serial\+\_\+\+Are\+Any\+Vwgts\+Below@{Serial\+\_\+\+Are\+Any\+Vwgts\+Below}}
+\index{Serial\+\_\+\+Are\+Any\+Vwgts\+Below@{Serial\+\_\+\+Are\+Any\+Vwgts\+Below}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Are\+Any\+Vwgts\+Below()}{Serial\_AreAnyVwgtsBelow()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Serial\+\_\+\+Are\+Any\+Vwgts\+Below (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ncon,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{alpha,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{vwgt1,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{beta,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{vwgt2,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{limit }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_ad0ed41db7a15698760c73a84b9eb64fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_a62ce727c3eee17b8d8add92ffeb8adbe}\label{a00407_a62ce727c3eee17b8d8add92ffeb8adbe}} 
+\index{serial.\+c@{serial.\+c}!Serial\+\_\+\+Better\+Balance@{Serial\+\_\+\+Better\+Balance}}
+\index{Serial\+\_\+\+Better\+Balance@{Serial\+\_\+\+Better\+Balance}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Better\+Balance()}{Serial\_BetterBalance()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Serial\+\_\+\+Better\+Balance (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ncon,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{npwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{diff,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tmpdiff }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_a62ce727c3eee17b8d8add92ffeb8adbe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_afa6aadaf308fc164c98e67d2511daf03}\label{a00407_afa6aadaf308fc164c98e67d2511daf03}} 
+\index{serial.\+c@{serial.\+c}!Serial\+\_\+\+Compute2\+Way\+H\+Load\+Imbalance@{Serial\+\_\+\+Compute2\+Way\+H\+Load\+Imbalance}}
+\index{Serial\+\_\+\+Compute2\+Way\+H\+Load\+Imbalance@{Serial\+\_\+\+Compute2\+Way\+H\+Load\+Imbalance}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Compute2\+Way\+H\+Load\+Imbalance()}{Serial\_Compute2WayHLoadImbalance()}}
+{\footnotesize\ttfamily \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} Serial\+\_\+\+Compute2\+Way\+H\+Load\+Imbalance (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ncon,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{npwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_afa6aadaf308fc164c98e67d2511daf03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_a9f3e61c58695c143989d96c57154fb80}\label{a00407_a9f3e61c58695c143989d96c57154fb80}} 
+\index{serial.\+c@{serial.\+c}!Serial\+\_\+\+Select\+Queue@{Serial\+\_\+\+Select\+Queue}}
+\index{Serial\+\_\+\+Select\+Queue@{Serial\+\_\+\+Select\+Queue}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Select\+Queue()}{Serial\_SelectQueue()}}
+{\footnotesize\ttfamily void Serial\+\_\+\+Select\+Queue (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ncon,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{npwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{from,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{cnum,  }\item[{rpq\+\_\+t $\ast$$\ast$}]{queues\mbox{[}2\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_a9f3e61c58695c143989d96c57154fb80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_a9f0787bb9b0a641e0f5cdcbb6152ff1f}\label{a00407_a9f0787bb9b0a641e0f5cdcbb6152ff1f}} 
+\index{serial.\+c@{serial.\+c}!Serial\+\_\+\+Select\+Queue\+One\+Way@{Serial\+\_\+\+Select\+Queue\+One\+Way}}
+\index{Serial\+\_\+\+Select\+Queue\+One\+Way@{Serial\+\_\+\+Select\+Queue\+One\+Way}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Select\+Queue\+One\+Way()}{Serial\_SelectQueueOneWay()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Serial\+\_\+\+Select\+Queue\+One\+Way (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{ncon,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{npwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{from,  }\item[{rpq\+\_\+t $\ast$$\ast$}]{queues\mbox{[}2\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00407_a9f0787bb9b0a641e0f5cdcbb6152ff1f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_aa139665d0b90ebdcfc8e227a983994b2}\label{a00407_aa139665d0b90ebdcfc8e227a983994b2}} 
+\index{serial.\+c@{serial.\+c}!Serial\+Remap@{Serial\+Remap}}
+\index{Serial\+Remap@{Serial\+Remap}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{Serial\+Remap()}{SerialRemap()}}
+{\footnotesize\ttfamily void Serial\+Remap (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nparts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{base,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{scratch,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{remap,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{a00407_aa139665d0b90ebdcfc8e227a983994b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00407_a786beb5cf2ec4aaae09596c302eb510d}\label{a00407_a786beb5cf2ec4aaae09596c302eb510d}} 
+\index{serial.\+c@{serial.\+c}!S\+S\+M\+Inc\+Key\+Cmp@{S\+S\+M\+Inc\+Key\+Cmp}}
+\index{S\+S\+M\+Inc\+Key\+Cmp@{S\+S\+M\+Inc\+Key\+Cmp}!serial.\+c@{serial.\+c}}
+\subsubsection{\texorpdfstring{S\+S\+M\+Inc\+Key\+Cmp()}{SSMIncKeyCmp()}}
+{\footnotesize\ttfamily int S\+S\+M\+Inc\+Key\+Cmp (\begin{DoxyParamCaption}\item[{const void $\ast$}]{fptr,  }\item[{const void $\ast$}]{sptr }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{a00407_a786beb5cf2ec4aaae09596c302eb510d_icgraph}
+\end{center}
+\end{figure}

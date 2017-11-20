@@ -1,0 +1,127 @@
+\hypertarget{a00197}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/metis/libmetis/fm.c File Reference}
+\label{a00197}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/fm.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/fm.\+c}}
+
+
+Functions for the edge-\/based FM refinement.  
+
+
+{\ttfamily \#include \char`\"{}metislib.\+h\char`\"{}}\newline
+Include dependency graph for fm.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00198}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00197_a1ffe9ee55eb23e345beb5da3e67c501a}{F\+M\+\_\+2\+Way\+Refine} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ntpwgts, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} niter)
+\item 
+void \hyperlink{a00197_a1c215aad2804a5cba2e54e93113bc0d5}{F\+M\+\_\+2\+Way\+Cut\+Refine} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ntpwgts, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} niter)
+\item 
+void \hyperlink{a00197_aaa49d065f964af00512da0c4b3d4cad6}{F\+M\+\_\+\+Mc2\+Way\+Cut\+Refine} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ntpwgts, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} niter)
+\item 
+void \hyperlink{a00197_a51193f4b76d298d94234642136879390}{Select\+Queue} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$pijbm, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ubfactors, rpq\+\_\+t $\ast$$\ast$queues, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$from, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$cnum)
+\item 
+void \hyperlink{a00197_a6e4663b4acc63be2c1b33533e7827f1a}{Print2\+Way\+Refine\+Stats} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ntpwgts, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} deltabal, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} mincutorder)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for the edge-\/based FM refinement. 
+
+\begin{DoxyDate}{Date}
+Started 7/23/97 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+
+Copyright 1997-\/2011, Regents of the University of Minnesota 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: fm.c 10187 2011-06-13 13:46:57Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00197_a1c215aad2804a5cba2e54e93113bc0d5}\label{a00197_a1c215aad2804a5cba2e54e93113bc0d5}} 
+\index{fm.\+c@{fm.\+c}!F\+M\+\_\+2\+Way\+Cut\+Refine@{F\+M\+\_\+2\+Way\+Cut\+Refine}}
+\index{F\+M\+\_\+2\+Way\+Cut\+Refine@{F\+M\+\_\+2\+Way\+Cut\+Refine}!fm.\+c@{fm.\+c}}
+\subsubsection{\texorpdfstring{F\+M\+\_\+2\+Way\+Cut\+Refine()}{FM\_2WayCutRefine()}}
+{\footnotesize\ttfamily void F\+M\+\_\+2\+Way\+Cut\+Refine (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ntpwgts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{niter }\end{DoxyParamCaption})}
+
+This function performs a cut-\/focused FM refinement Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{a00197_a1c215aad2804a5cba2e54e93113bc0d5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{a00197_a1c215aad2804a5cba2e54e93113bc0d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00197_a1ffe9ee55eb23e345beb5da3e67c501a}\label{a00197_a1ffe9ee55eb23e345beb5da3e67c501a}} 
+\index{fm.\+c@{fm.\+c}!F\+M\+\_\+2\+Way\+Refine@{F\+M\+\_\+2\+Way\+Refine}}
+\index{F\+M\+\_\+2\+Way\+Refine@{F\+M\+\_\+2\+Way\+Refine}!fm.\+c@{fm.\+c}}
+\subsubsection{\texorpdfstring{F\+M\+\_\+2\+Way\+Refine()}{FM\_2WayRefine()}}
+{\footnotesize\ttfamily void F\+M\+\_\+2\+Way\+Refine (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ntpwgts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{niter }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00197_a1ffe9ee55eb23e345beb5da3e67c501a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00197_aaa49d065f964af00512da0c4b3d4cad6}\label{a00197_aaa49d065f964af00512da0c4b3d4cad6}} 
+\index{fm.\+c@{fm.\+c}!F\+M\+\_\+\+Mc2\+Way\+Cut\+Refine@{F\+M\+\_\+\+Mc2\+Way\+Cut\+Refine}}
+\index{F\+M\+\_\+\+Mc2\+Way\+Cut\+Refine@{F\+M\+\_\+\+Mc2\+Way\+Cut\+Refine}!fm.\+c@{fm.\+c}}
+\subsubsection{\texorpdfstring{F\+M\+\_\+\+Mc2\+Way\+Cut\+Refine()}{FM\_Mc2WayCutRefine()}}
+{\footnotesize\ttfamily void F\+M\+\_\+\+Mc2\+Way\+Cut\+Refine (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ntpwgts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{niter }\end{DoxyParamCaption})}
+
+This function performs a cut-\/focused multi-\/constraint FM refinement Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00197_aaa49d065f964af00512da0c4b3d4cad6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{a00197_aaa49d065f964af00512da0c4b3d4cad6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00197_a6e4663b4acc63be2c1b33533e7827f1a}\label{a00197_a6e4663b4acc63be2c1b33533e7827f1a}} 
+\index{fm.\+c@{fm.\+c}!Print2\+Way\+Refine\+Stats@{Print2\+Way\+Refine\+Stats}}
+\index{Print2\+Way\+Refine\+Stats@{Print2\+Way\+Refine\+Stats}!fm.\+c@{fm.\+c}}
+\subsubsection{\texorpdfstring{Print2\+Way\+Refine\+Stats()}{Print2WayRefineStats()}}
+{\footnotesize\ttfamily void Print2\+Way\+Refine\+Stats (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ntpwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{deltabal,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{mincutorder }\end{DoxyParamCaption})}
+
+Prints statistics about the refinement Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00197_a6e4663b4acc63be2c1b33533e7827f1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00197_a51193f4b76d298d94234642136879390}\label{a00197_a51193f4b76d298d94234642136879390}} 
+\index{fm.\+c@{fm.\+c}!Select\+Queue@{Select\+Queue}}
+\index{Select\+Queue@{Select\+Queue}!fm.\+c@{fm.\+c}}
+\subsubsection{\texorpdfstring{Select\+Queue()}{SelectQueue()}}
+{\footnotesize\ttfamily void Select\+Queue (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{pijbm,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ubfactors,  }\item[{rpq\+\_\+t $\ast$$\ast$}]{queues,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{from,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{cnum }\end{DoxyParamCaption})}
+
+This function selects the partition number and the queue from which we will move vertices out. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00197_a51193f4b76d298d94234642136879390_icgraph}
+\end{center}
+\end{figure}

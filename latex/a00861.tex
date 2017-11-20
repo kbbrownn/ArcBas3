@@ -1,0 +1,229 @@
+\hypertarget{a00861}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/programs/io.c File Reference}
+\label{a00861}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/programs/io.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/programs/io.\+c}}
+{\ttfamily \#include $<$parmetisbin.\+h$>$}\newline
+Include dependency graph for io.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00862}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{a00861_a3e937c42922f7601edb17b747602c471}{M\+A\+X\+L\+I\+NE}~64$\ast$1024$\ast$1024
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00861_abcd3804c62bf4464f2c8de37a42e6ef8}{Parallel\+Read\+Graph} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+void \hyperlink{a00861_a13a98ce22f397ea58e35b30ea012a6a0}{Mc\+\_\+\+Parallel\+Write\+Graph} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} testset)
+\item 
+void \hyperlink{a00861_a248f280836966f501ed8ecceb1b32a4a}{Read\+Test\+Graph} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$ \hyperlink{a00861_a4c1a88b3f492be37fe35e779692fb84c}{Read\+Test\+Coordinates} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$r\+\_\+ndims, M\+P\+I\+\_\+\+Comm comm)
+\item 
+void \hyperlink{a00861_a4ff02bbc05033b431cc3b60bc2f2a1a4}{Read\+Metis\+Graph} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$r\+\_\+nvtxs, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$\hyperlink{a00879_ab92af26e448291b7932687dee45298df}{r\+\_\+xadj}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$\hyperlink{a00879_ad0152ea85617e06eb0e2d9f386150411}{r\+\_\+adjncy})
+\item 
+void \hyperlink{a00861_a51cf512b2713a4b6397016836e9e653e}{Mc\+\_\+\+Serial\+Read\+Graph} (\hyperlink{a00734}{graph\+\_\+t} $\ast$graph, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$wgtflag, M\+P\+I\+\_\+\+Comm comm)
+\item 
+void \hyperlink{a00861_ab618501d6d645eabdbe89cc62d33a54f}{Mc\+\_\+\+Serial\+Read\+Metis\+Graph} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$r\+\_\+nvtxs, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$r\+\_\+ncon, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$r\+\_\+nobj, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$r\+\_\+fmt, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$\hyperlink{a00879_ab92af26e448291b7932687dee45298df}{r\+\_\+xadj}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$r\+\_\+vwgt, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$\hyperlink{a00879_ad0152ea85617e06eb0e2d9f386150411}{r\+\_\+adjncy}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$r\+\_\+adjwgt, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$wgtflag)
+\item 
+void \hyperlink{a00861_a19b5376612558b2381990f2e7a06bffc}{Write\+P\+Vector} (char $\ast$gname, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+void \hyperlink{a00861_a9ff4864d8e906761bd6c55597c085e3b}{Write\+O\+Vector} (char $\ast$gname, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$vtxdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00611_aab21ede0c02820806e77fd7890ee6bd7}{order}, M\+P\+I\+\_\+\+Comm comm)
+\item 
+void \hyperlink{a00861_a2c53ca97c8a99924f3bbaa8fbd050b8c}{Parallel\+Read\+Mesh} (\hyperlink{a00738}{mesh\+\_\+t} $\ast$mesh, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, M\+P\+I\+\_\+\+Comm comm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00861_a3e937c42922f7601edb17b747602c471}\label{a00861_a3e937c42922f7601edb17b747602c471}} 
+\index{programs/io.\+c@{programs/io.\+c}!M\+A\+X\+L\+I\+NE@{M\+A\+X\+L\+I\+NE}}
+\index{M\+A\+X\+L\+I\+NE@{M\+A\+X\+L\+I\+NE}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+X\+L\+I\+NE}{MAXLINE}}
+{\footnotesize\ttfamily \#define M\+A\+X\+L\+I\+NE~64$\ast$1024$\ast$1024}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00861_a13a98ce22f397ea58e35b30ea012a6a0}\label{a00861_a13a98ce22f397ea58e35b30ea012a6a0}} 
+\index{programs/io.\+c@{programs/io.\+c}!Mc\+\_\+\+Parallel\+Write\+Graph@{Mc\+\_\+\+Parallel\+Write\+Graph}}
+\index{Mc\+\_\+\+Parallel\+Write\+Graph@{Mc\+\_\+\+Parallel\+Write\+Graph}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Parallel\+Write\+Graph()}{Mc\_ParallelWriteGraph()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Parallel\+Write\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{char $\ast$}]{filename,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nparts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{testset }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00861_a13a98ce22f397ea58e35b30ea012a6a0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00861_a51cf512b2713a4b6397016836e9e653e}\label{a00861_a51cf512b2713a4b6397016836e9e653e}} 
+\index{programs/io.\+c@{programs/io.\+c}!Mc\+\_\+\+Serial\+Read\+Graph@{Mc\+\_\+\+Serial\+Read\+Graph}}
+\index{Mc\+\_\+\+Serial\+Read\+Graph@{Mc\+\_\+\+Serial\+Read\+Graph}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Serial\+Read\+Graph()}{Mc\_SerialReadGraph()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Serial\+Read\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{char $\ast$}]{filename,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{wgtflag,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00861_a51cf512b2713a4b6397016836e9e653e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00861_ab618501d6d645eabdbe89cc62d33a54f}\label{a00861_ab618501d6d645eabdbe89cc62d33a54f}} 
+\index{programs/io.\+c@{programs/io.\+c}!Mc\+\_\+\+Serial\+Read\+Metis\+Graph@{Mc\+\_\+\+Serial\+Read\+Metis\+Graph}}
+\index{Mc\+\_\+\+Serial\+Read\+Metis\+Graph@{Mc\+\_\+\+Serial\+Read\+Metis\+Graph}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Mc\+\_\+\+Serial\+Read\+Metis\+Graph()}{Mc\_SerialReadMetisGraph()}}
+{\footnotesize\ttfamily void Mc\+\_\+\+Serial\+Read\+Metis\+Graph (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{r\+\_\+nvtxs,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{r\+\_\+ncon,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{r\+\_\+nobj,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{r\+\_\+fmt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$}]{r\+\_\+xadj,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$}]{r\+\_\+vwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$}]{r\+\_\+adjncy,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$}]{r\+\_\+adjwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{wgtflag }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{a00861_ab618501d6d645eabdbe89cc62d33a54f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00861_ab618501d6d645eabdbe89cc62d33a54f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00861_abcd3804c62bf4464f2c8de37a42e6ef8}\label{a00861_abcd3804c62bf4464f2c8de37a42e6ef8}} 
+\index{programs/io.\+c@{programs/io.\+c}!Parallel\+Read\+Graph@{Parallel\+Read\+Graph}}
+\index{Parallel\+Read\+Graph@{Parallel\+Read\+Graph}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Parallel\+Read\+Graph()}{ParallelReadGraph()}}
+{\footnotesize\ttfamily void Parallel\+Read\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{a00861_abcd3804c62bf4464f2c8de37a42e6ef8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00861_abcd3804c62bf4464f2c8de37a42e6ef8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00861_a2c53ca97c8a99924f3bbaa8fbd050b8c}\label{a00861_a2c53ca97c8a99924f3bbaa8fbd050b8c}} 
+\index{programs/io.\+c@{programs/io.\+c}!Parallel\+Read\+Mesh@{Parallel\+Read\+Mesh}}
+\index{Parallel\+Read\+Mesh@{Parallel\+Read\+Mesh}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Parallel\+Read\+Mesh()}{ParallelReadMesh()}}
+{\footnotesize\ttfamily void Parallel\+Read\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{a00738}{mesh\+\_\+t} $\ast$}]{mesh,  }\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{a00861_a2c53ca97c8a99924f3bbaa8fbd050b8c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{a00861_a2c53ca97c8a99924f3bbaa8fbd050b8c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00861_a4ff02bbc05033b431cc3b60bc2f2a1a4}\label{a00861_a4ff02bbc05033b431cc3b60bc2f2a1a4}} 
+\index{programs/io.\+c@{programs/io.\+c}!Read\+Metis\+Graph@{Read\+Metis\+Graph}}
+\index{Read\+Metis\+Graph@{Read\+Metis\+Graph}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Read\+Metis\+Graph()}{ReadMetisGraph()}}
+{\footnotesize\ttfamily void Read\+Metis\+Graph (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{r\+\_\+nvtxs,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$}]{r\+\_\+xadj,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$$\ast$}]{r\+\_\+adjncy }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{a00861_a4ff02bbc05033b431cc3b60bc2f2a1a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00861_a4ff02bbc05033b431cc3b60bc2f2a1a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00861_a4c1a88b3f492be37fe35e779692fb84c}\label{a00861_a4c1a88b3f492be37fe35e779692fb84c}} 
+\index{programs/io.\+c@{programs/io.\+c}!Read\+Test\+Coordinates@{Read\+Test\+Coordinates}}
+\index{Read\+Test\+Coordinates@{Read\+Test\+Coordinates}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Read\+Test\+Coordinates()}{ReadTestCoordinates()}}
+{\footnotesize\ttfamily \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}$\ast$ Read\+Test\+Coordinates (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{char $\ast$}]{filename,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{r\+\_\+ndims,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Reads the coordinates associated with the vertices of a graph Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00861_a4c1a88b3f492be37fe35e779692fb84c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00861_a4c1a88b3f492be37fe35e779692fb84c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00861_a248f280836966f501ed8ecceb1b32a4a}\label{a00861_a248f280836966f501ed8ecceb1b32a4a}} 
+\index{programs/io.\+c@{programs/io.\+c}!Read\+Test\+Graph@{Read\+Test\+Graph}}
+\index{Read\+Test\+Graph@{Read\+Test\+Graph}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Read\+Test\+Graph()}{ReadTestGraph()}}
+{\footnotesize\ttfamily void Read\+Test\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{char $\ast$}]{filename,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00861_a248f280836966f501ed8ecceb1b32a4a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00861_a9ff4864d8e906761bd6c55597c085e3b}\label{a00861_a9ff4864d8e906761bd6c55597c085e3b}} 
+\index{programs/io.\+c@{programs/io.\+c}!Write\+O\+Vector@{Write\+O\+Vector}}
+\index{Write\+O\+Vector@{Write\+O\+Vector}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Write\+O\+Vector()}{WriteOVector()}}
+{\footnotesize\ttfamily void Write\+O\+Vector (\begin{DoxyParamCaption}\item[{char $\ast$}]{gname,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{order,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{a00861_a9ff4864d8e906761bd6c55597c085e3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{a00861_a9ff4864d8e906761bd6c55597c085e3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00861_a19b5376612558b2381990f2e7a06bffc}\label{a00861_a19b5376612558b2381990f2e7a06bffc}} 
+\index{programs/io.\+c@{programs/io.\+c}!Write\+P\+Vector@{Write\+P\+Vector}}
+\index{Write\+P\+Vector@{Write\+P\+Vector}!programs/io.\+c@{programs/io.\+c}}
+\subsubsection{\texorpdfstring{Write\+P\+Vector()}{WritePVector()}}
+{\footnotesize\ttfamily void Write\+P\+Vector (\begin{DoxyParamCaption}\item[{char $\ast$}]{gname,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vtxdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{M\+P\+I\+\_\+\+Comm}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{a00861_a19b5376612558b2381990f2e7a06bffc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{a00861_a19b5376612558b2381990f2e7a06bffc_icgraph}
+\end{center}
+\end{figure}

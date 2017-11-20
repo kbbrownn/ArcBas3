@@ -1,0 +1,6 @@
+<map id="InitMultisection" name="InitMultisection">
+<area shape="rect" id="node2" href="$a00365.html#aafb75eb581d7dd13903d8e5040dce30a" title="AssembleMultisectedGraph" alt="" coords="183,5,369,32"/>
+<area shape="rect" id="node3" href="$a00170.html#abea67bb0c6286795ac5fc9bee605dc5d" title="METIS_SetDefaultOptions" alt="" coords="187,56,365,83"/>
+<area shape="rect" id="node4" href="$a00939.html#ace6bcd6bf97b8579b1deed389874ddc6" title="METIS_ComputeVertexSeparator" alt="" coords="165,107,387,133"/>
+<area shape="rect" id="node5" href="$a00077.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="243,157,309,184"/>
+</map>

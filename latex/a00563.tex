@@ -1,0 +1,225 @@
+\hypertarget{a00563}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/include/v\+Plot\+Field2D.m File Reference}
+\label{a00563}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/include/v\+Plot\+Field2\+D.\+m@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/include/v\+Plot\+Field2\+D.\+m}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00563_af37c7e7d7baefebf97f9b18e437d3a0b}{sout} (\hyperlink{a00563_ad95e1f06b6be929c6b670b2a9a80d5cc}{sk})
+\item 
+\hyperlink{a00563_a22845a91f919051f5ce10e0fc468c821}{counter} (\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}, \hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m})
+\item 
+\hyperlink{a00563_ae338c28baa2c1bd1c7f9308a222c880f}{if} (\hyperlink{a00563_aaa05ec51c2d691a0b7560a330374e1c4}{v4}) \hyperlink{a00563_aa0c5dcb80b0d73954cf3cba7bb428081}{tri}
+\item 
+render and format solution field \hyperlink{a00563_a262ff24ee701ceda68e45731f3f8f5b3}{trisurf} (\hyperlink{a00563_a558baeb50ad046e899b5e64f957b043f}{T\+RI}, \hyperlink{a00563_aa43b7c30923e8fcf939fe12082a19359}{xout}(\+:), \hyperlink{a00563_a440aa7a05dec25dc6fe586eaa162395b}{yout}(\+:), \hyperlink{a00563_a5c8d8342682becd112eb9de226d6053f}{uout}(\+:))
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00563_a8acf1654b3cf5e5e470e3de2050c8a88}{function} \mbox{[}\hyperlink{a00563_a558baeb50ad046e899b5e64f957b043f}{T\+RI}, \hyperlink{a00563_aa43b7c30923e8fcf939fe12082a19359}{xout}, \hyperlink{a00563_a440aa7a05dec25dc6fe586eaa162395b}{yout}, \hyperlink{a00563_a5c8d8342682becd112eb9de226d6053f}{uout}, \hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp}, \hyperlink{a00563_a08a5429e87fabfe926dd685750b12894}{p\+\_\+interp}\mbox{]}
+\item 
+build equally spaced grid on reference triangle \hyperlink{a00563_a75cc3e159d58012abe41092c5a0d5707}{Npout} = (Nout+1)$\ast$(Nout+2)/2
+\item 
+\hyperlink{a00563_a2428903c9f57e3eba1ab8aa2ea4ad70b}{rout} = zeros(\hyperlink{a00563_a75cc3e159d58012abe41092c5a0d5707}{Npout},1)
+\item 
+\hyperlink{a00563_a2e91fc640c0a9feaa4cd6fa858ba430b}{sout} = zeros(\hyperlink{a00563_a75cc3e159d58012abe41092c5a0d5707}{Npout},1)
+\item 
+\hyperlink{a00563_ad95e1f06b6be929c6b670b2a9a80d5cc}{sk} = 1
+\item 
+\hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{a00563_a4c2d80ab32fc3a598413ae25e9f2bdce}{n}
+\item 
+\hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} build \hyperlink{a01014_af07ff1035f34d77764ff516f110e6832}{matrix} to interpolate field data to equally spaced \hyperlink{a00608_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} \hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp} = v\+Interp\+Matrix2D(\hyperlink{a00473_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}, Nout/2, \hyperlink{a00563_a2428903c9f57e3eba1ab8aa2ea4ad70b}{rout}, \hyperlink{a00563_af37c7e7d7baefebf97f9b18e437d3a0b}{sout})
+\item 
+\hyperlink{a00563_a08a5429e87fabfe926dd685750b12894}{p\+\_\+interp} = \hyperlink{a00611_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp},1)
+\item 
+build triangulation of equally spaced \hyperlink{a00608_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} on reference triangle \hyperlink{a00563_aa0c5dcb80b0d73954cf3cba7bb428081}{tri} = \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{a00563_a3d803e0c4632bc09e2b354d3f886f21d}{v1} = \hyperlink{a00563_a22845a91f919051f5ce10e0fc468c821}{counter}(\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n},\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m})
+\item 
+\hyperlink{a00563_ab67228b8fa7f3169c3dc47e49373c570}{v2} = \hyperlink{a00563_a22845a91f919051f5ce10e0fc468c821}{counter}(\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n},\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m}+1)
+\item 
+\hyperlink{a00563_a3a3e850fb405026b319fae4bf5794c12}{v3} = \hyperlink{a00563_a22845a91f919051f5ce10e0fc468c821}{counter}(\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}+1,\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m})
+\item 
+\hyperlink{a00563_aaa05ec51c2d691a0b7560a330374e1c4}{v4} = \hyperlink{a00563_a22845a91f919051f5ce10e0fc468c821}{counter}(\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}+1,\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m}+1)
+\item 
+\hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} build triangulation \hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} all equally spaced \hyperlink{a00608_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} on all \hyperlink{a00617_aa9aaa650bacb9b91c82437c2ce48f50c}{elements} \hyperlink{a00563_a558baeb50ad046e899b5e64f957b043f}{T\+RI} = \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{a00563_a1c73327b2882639bc9f5e416bb3cc7ac}{k}
+\item 
+\hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} interpolate \hyperlink{a00611_adf51fe9945b6ca147057cc27ff639d0f}{node} coordinates and field to equally spaced \hyperlink{a00608_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} \hyperlink{a00563_aa43b7c30923e8fcf939fe12082a19359}{xout} = \hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp}$\ast$xin
+\item 
+\hyperlink{a00563_a440aa7a05dec25dc6fe586eaa162395b}{yout} = \hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp}$\ast$yin
+\item 
+\hyperlink{a00563_a5c8d8342682becd112eb9de226d6053f}{uout} = \hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp}$\ast$\hyperlink{a00473_ab528855467ba0360924bbd0dd81edb35}{uin}
+\item 
+shading material \hyperlink{a00563_ab63d4993b30151e0a639ef14110d91e6}{shiny}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00563_a22845a91f919051f5ce10e0fc468c821}\label{a00563_a22845a91f919051f5ce10e0fc468c821}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!counter@{counter}}
+\index{counter@{counter}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{counter()}{counter()}}
+{\footnotesize\ttfamily counter (\begin{DoxyParamCaption}\item[{\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}}]{,  }\item[{\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00563_ae338c28baa2c1bd1c7f9308a222c880f}\label{a00563_ae338c28baa2c1bd1c7f9308a222c880f}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!if@{if}}
+\index{if@{if}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{\hyperlink{a00563_aaa05ec51c2d691a0b7560a330374e1c4}{v4}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{a00563_ae338c28baa2c1bd1c7f9308a222c880f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00563_af37c7e7d7baefebf97f9b18e437d3a0b}\label{a00563_af37c7e7d7baefebf97f9b18e437d3a0b}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!sout@{sout}}
+\index{sout@{sout}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{sout()}{sout()}}
+{\footnotesize\ttfamily sout (\begin{DoxyParamCaption}\item[{\hyperlink{a00563_ad95e1f06b6be929c6b670b2a9a80d5cc}{sk}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00563_a262ff24ee701ceda68e45731f3f8f5b3}\label{a00563_a262ff24ee701ceda68e45731f3f8f5b3}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!trisurf@{trisurf}}
+\index{trisurf@{trisurf}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{trisurf()}{trisurf()}}
+{\footnotesize\ttfamily render and format solution field trisurf (\begin{DoxyParamCaption}\item[{\hyperlink{a00563_a558baeb50ad046e899b5e64f957b043f}{T\+RI}}]{,  }\item[{\hyperlink{a00563_aa43b7c30923e8fcf939fe12082a19359}{xout}(\+:)}]{,  }\item[{\hyperlink{a00563_a440aa7a05dec25dc6fe586eaa162395b}{yout}(\+:)}]{,  }\item[{\hyperlink{a00563_a5c8d8342682becd112eb9de226d6053f}{uout}(\+:)}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{a00563_a8acf1654b3cf5e5e470e3de2050c8a88}\label{a00563_a8acf1654b3cf5e5e470e3de2050c8a88}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!function@{function}}
+\index{function@{function}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{function}{function}}
+{\footnotesize\ttfamily function\mbox{[}\hyperlink{a00563_a558baeb50ad046e899b5e64f957b043f}{T\+RI}, \hyperlink{a00563_aa43b7c30923e8fcf939fe12082a19359}{xout}, \hyperlink{a00563_a440aa7a05dec25dc6fe586eaa162395b}{yout}, \hyperlink{a00563_a5c8d8342682becd112eb9de226d6053f}{uout}, \hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp}, \hyperlink{a00563_a08a5429e87fabfe926dd685750b12894}{p\+\_\+interp}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= vPlotField2D(Nout, xin, yin, \hyperlink{a00473_ab528855467ba0360924bbd0dd81edb35}{uin}, \hyperlink{a00473_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}, Kin)
+
+% \textcolor{keyword}{function} [TRI,xout,yout,uout,interp] = PlotField2D(Nout, xin, yin, \hyperlink{a00473_ab528855467ba0360924bbd0dd81edb35}{uin})
+% Purpose: filled contour plot of solution data
+
+Globals2D
+\end{DoxyCode}
+\mbox{\Hypertarget{a00563_a7626c967b638c3cc70c7c96863cbd07f}\label{a00563_a7626c967b638c3cc70c7c96863cbd07f}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!interp@{interp}}
+\index{interp@{interp}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{interp}{interp}}
+{\footnotesize\ttfamily shading interp = v\+Interp\+Matrix2D(\hyperlink{a00473_a8ef32285093ff36729ef70bb1e8149c4}{VinvV}, Nout/2, \hyperlink{a00563_a2428903c9f57e3eba1ab8aa2ea4ad70b}{rout}, \hyperlink{a00563_af37c7e7d7baefebf97f9b18e437d3a0b}{sout})}
+
+\mbox{\Hypertarget{a00563_a1c73327b2882639bc9f5e416bb3cc7ac}\label{a00563_a1c73327b2882639bc9f5e416bb3cc7ac}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!k@{k}}
+\index{k@{k}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily \hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} k}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=1:Kin
+  \hyperlink{a00563_a558baeb50ad046e899b5e64f957b043f}{TRI} = 
+\end{DoxyCode}
+\mbox{\Hypertarget{a00563_a4c2d80ab32fc3a598413ae25e9f2bdce}\label{a00563_a4c2d80ab32fc3a598413ae25e9f2bdce}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!n@{n}}
+\index{n@{n}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily \hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} n}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=1:Nout+1
+  \hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} \hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m}=1:Nout+2-n
+    rout(\hyperlink{a00563_ad95e1f06b6be929c6b670b2a9a80d5cc}{sk}) = -1 + 2*(\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m}-1)/Nout
+\end{DoxyCode}
+\mbox{\Hypertarget{a00563_a75cc3e159d58012abe41092c5a0d5707}\label{a00563_a75cc3e159d58012abe41092c5a0d5707}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!Npout@{Npout}}
+\index{Npout@{Npout}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{Npout}{Npout}}
+{\footnotesize\ttfamily build equally spaced grid on reference triangle Npout = (Nout+1)$\ast$(Nout+2)/2}
+
+\mbox{\Hypertarget{a00563_a08a5429e87fabfe926dd685750b12894}\label{a00563_a08a5429e87fabfe926dd685750b12894}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!p\+\_\+interp@{p\+\_\+interp}}
+\index{p\+\_\+interp@{p\+\_\+interp}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{p\+\_\+interp}{p\_interp}}
+{\footnotesize\ttfamily p\+\_\+interp = \hyperlink{a00611_ad6cb0afbbe6ea4f56407890be2533966}{size}(\hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp},1)}
+
+\mbox{\Hypertarget{a00563_a2428903c9f57e3eba1ab8aa2ea4ad70b}\label{a00563_a2428903c9f57e3eba1ab8aa2ea4ad70b}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!rout@{rout}}
+\index{rout@{rout}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{rout}{rout}}
+{\footnotesize\ttfamily rout = zeros(\hyperlink{a00563_a75cc3e159d58012abe41092c5a0d5707}{Npout},1)}
+
+\mbox{\Hypertarget{a00563_ab63d4993b30151e0a639ef14110d91e6}\label{a00563_ab63d4993b30151e0a639ef14110d91e6}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!shiny@{shiny}}
+\index{shiny@{shiny}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{shiny}{shiny}}
+{\footnotesize\ttfamily shading material shiny}
+
+\mbox{\Hypertarget{a00563_ad95e1f06b6be929c6b670b2a9a80d5cc}\label{a00563_ad95e1f06b6be929c6b670b2a9a80d5cc}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!sk@{sk}}
+\index{sk@{sk}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{sk}{sk}}
+{\footnotesize\ttfamily sk = 1}
+
+\mbox{\Hypertarget{a00563_a2e91fc640c0a9feaa4cd6fa858ba430b}\label{a00563_a2e91fc640c0a9feaa4cd6fa858ba430b}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!sout@{sout}}
+\index{sout@{sout}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{sout}{sout}}
+{\footnotesize\ttfamily sout = zeros(\hyperlink{a00563_a75cc3e159d58012abe41092c5a0d5707}{Npout},1)}
+
+\mbox{\Hypertarget{a00563_aa0c5dcb80b0d73954cf3cba7bb428081}\label{a00563_aa0c5dcb80b0d73954cf3cba7bb428081}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!tri@{tri}}
+\index{tri@{tri}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{tri}{tri}}
+{\footnotesize\ttfamily else tri = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{a00563_a558baeb50ad046e899b5e64f957b043f}\label{a00563_a558baeb50ad046e899b5e64f957b043f}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!T\+RI@{T\+RI}}
+\index{T\+RI@{T\+RI}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{T\+RI}{TRI}}
+{\footnotesize\ttfamily \hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} \hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} build triangulation \hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} all equally spaced \hyperlink{a00608_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} on all \hyperlink{a00617_aa9aaa650bacb9b91c82437c2ce48f50c}{elements} T\+RI = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{a00563_a5c8d8342682becd112eb9de226d6053f}\label{a00563_a5c8d8342682becd112eb9de226d6053f}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!uout@{uout}}
+\index{uout@{uout}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{uout}{uout}}
+{\footnotesize\ttfamily uout = \hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp}$\ast$\hyperlink{a00473_ab528855467ba0360924bbd0dd81edb35}{uin}}
+
+\mbox{\Hypertarget{a00563_a3d803e0c4632bc09e2b354d3f886f21d}\label{a00563_a3d803e0c4632bc09e2b354d3f886f21d}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!v1@{v1}}
+\index{v1@{v1}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{v1}{v1}}
+{\footnotesize\ttfamily \hyperlink{a00623_ad1e7380d51df1e0043d24d3c8a860e0a}{for} v1 = \hyperlink{a00563_a22845a91f919051f5ce10e0fc468c821}{counter}(\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n},\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m})}
+
+\mbox{\Hypertarget{a00563_ab67228b8fa7f3169c3dc47e49373c570}\label{a00563_ab67228b8fa7f3169c3dc47e49373c570}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!v2@{v2}}
+\index{v2@{v2}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{v2}{v2}}
+{\footnotesize\ttfamily v2 = \hyperlink{a00563_a22845a91f919051f5ce10e0fc468c821}{counter}(\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n},\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m}+1)}
+
+\mbox{\Hypertarget{a00563_a3a3e850fb405026b319fae4bf5794c12}\label{a00563_a3a3e850fb405026b319fae4bf5794c12}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!v3@{v3}}
+\index{v3@{v3}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{v3}{v3}}
+{\footnotesize\ttfamily v3 = \hyperlink{a00563_a22845a91f919051f5ce10e0fc468c821}{counter}(\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}+1,\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m})}
+
+\mbox{\Hypertarget{a00563_aaa05ec51c2d691a0b7560a330374e1c4}\label{a00563_aaa05ec51c2d691a0b7560a330374e1c4}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!v4@{v4}}
+\index{v4@{v4}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{v4}{v4}}
+{\footnotesize\ttfamily v4 = \hyperlink{a00563_a22845a91f919051f5ce10e0fc468c821}{counter}(\hyperlink{a00623_a781a04ab095280f838ff3eb0e51312e0}{n}+1,\hyperlink{a00575_ab780b65adc28bca17f186bf3eebfb21d}{m}+1)}
+
+\mbox{\Hypertarget{a00563_aa43b7c30923e8fcf939fe12082a19359}\label{a00563_aa43b7c30923e8fcf939fe12082a19359}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!xout@{xout}}
+\index{xout@{xout}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{xout}{xout}}
+{\footnotesize\ttfamily \hyperlink{a00608_afb358f48b1646c750fb9da6c6585be2b}{end} interpolate \hyperlink{a00611_adf51fe9945b6ca147057cc27ff639d0f}{node} coordinates and field to equally spaced \hyperlink{a00608_a9fd973fb7dcbed4123ae5eb2f3868e61}{nodes} xout = \hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp}$\ast$xin}
+
+\mbox{\Hypertarget{a00563_a440aa7a05dec25dc6fe586eaa162395b}\label{a00563_a440aa7a05dec25dc6fe586eaa162395b}} 
+\index{v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}!yout@{yout}}
+\index{yout@{yout}!v\+Plot\+Field2\+D.\+m@{v\+Plot\+Field2\+D.\+m}}
+\subsubsection{\texorpdfstring{yout}{yout}}
+{\footnotesize\ttfamily yout = \hyperlink{a00563_a7626c967b638c3cc70c7c96863cbd07f}{interp}$\ast$yin}
+

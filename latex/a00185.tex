@@ -1,0 +1,58 @@
+\hypertarget{a00185}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/metis/libmetis/compress.c File Reference}
+\label{a00185}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/compress.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/compress.\+c}}
+{\ttfamily \#include \char`\"{}metislib.\+h\char`\"{}}\newline
+Include dependency graph for compress.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00186}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00734}{graph\+\_\+t} $\ast$ \hyperlink{a00185_aa4d0e5c89a60679b517deddad368b686}{Compress\+Graph} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} nvtxs, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a34203f1160d94eca83e95f2718ea3504}{vwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$cptr, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$cind)
+\item 
+\hyperlink{a00734}{graph\+\_\+t} $\ast$ \hyperlink{a00185_afc11099daf13e5e24f17076daf471765}{Prune\+Graph} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} nvtxs, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a34203f1160d94eca83e95f2718ea3504}{vwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a76ba0ee1ced7914ce87ac7eab1758c42}{iperm}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} factor)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00185_aa4d0e5c89a60679b517deddad368b686}\label{a00185_aa4d0e5c89a60679b517deddad368b686}} 
+\index{compress.\+c@{compress.\+c}!Compress\+Graph@{Compress\+Graph}}
+\index{Compress\+Graph@{Compress\+Graph}!compress.\+c@{compress.\+c}}
+\subsubsection{\texorpdfstring{Compress\+Graph()}{CompressGraph()}}
+{\footnotesize\ttfamily \hyperlink{a00734}{graph\+\_\+t}$\ast$ Compress\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nvtxs,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{cptr,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{cind }\end{DoxyParamCaption})}
+
+This function compresses a graph by merging identical vertices The compression should lead to at least 10\% reduction.
+
+The compressed graph that is generated has its adjwgts set to 1.
+
+\begin{DoxyReturn}{Returns}
+1 if compression was performed, otherwise it returns 0. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{a00185_aa4d0e5c89a60679b517deddad368b686_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00185_afc11099daf13e5e24f17076daf471765}\label{a00185_afc11099daf13e5e24f17076daf471765}} 
+\index{compress.\+c@{compress.\+c}!Prune\+Graph@{Prune\+Graph}}
+\index{Prune\+Graph@{Prune\+Graph}!compress.\+c@{compress.\+c}}
+\subsubsection{\texorpdfstring{Prune\+Graph()}{PruneGraph()}}
+{\footnotesize\ttfamily \hyperlink{a00734}{graph\+\_\+t}$\ast$ Prune\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nvtxs,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{iperm,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t}}]{factor }\end{DoxyParamCaption})}
+
+This function prunes all the vertices in a graph with degree greater than factor$\ast$average.
+
+\begin{DoxyReturn}{Returns}
+the number of vertices that were prunned. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{a00185_afc11099daf13e5e24f17076daf471765_cgraph}
+\end{center}
+\end{figure}

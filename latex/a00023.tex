@@ -1,0 +1,695 @@
+\hypertarget{a00023}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/csr.c File Reference}
+\label{a00023}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/csr.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/csr.\+c}}
+
+
+Various routines with dealing with C\+SR matrices.  
+
+
+{\ttfamily \#include $<$G\+Klib.\+h$>$}\newline
+Include dependency graph for csr.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00024}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{a00023_afbb5013b831efde4d664bae299d7d2ee}{O\+M\+P\+M\+I\+N\+O\+PS}~50000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_a82b885bbed5bd18c26629c35ce5d37e4}{gk\+\_\+csr\+\_\+\+Create} ()
+\item 
+void \hyperlink{a00023_a47a303d88c3316bd821219cae39d0461}{gk\+\_\+csr\+\_\+\+Init} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat)
+\item 
+void \hyperlink{a00023_ac3736361b8d6b391356f273c960c203b}{gk\+\_\+csr\+\_\+\+Free} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$$\ast$mat)
+\item 
+void \hyperlink{a00023_a9646f29b0605ba264bf373c441a6826d}{gk\+\_\+csr\+\_\+\+Free\+Contents} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_a24144cf4c30d5ec4ed8b488d371476b3}{gk\+\_\+csr\+\_\+\+Dup} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_a0b106b838c4dc370c32a47aaaf990375}{gk\+\_\+csr\+\_\+\+Extract\+Submatrix} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int rstart, int nrows)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_aaa2391cce5eb8291e65f6dc4d8e252fd}{gk\+\_\+csr\+\_\+\+Extract\+Rows} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int nrows, int $\ast$rind)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_ac59047c4a89fa4680d746fcdce4aa1a7}{gk\+\_\+csr\+\_\+\+Extract\+Partition} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, int pid)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$$\ast$ \hyperlink{a00023_ac438fca404c3f1ff6989aa68f83ed241}{gk\+\_\+csr\+\_\+\+Split} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int $\ast$color)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_a8ebc19fe9a291bdf67677ebdaae56592}{gk\+\_\+csr\+\_\+\+Read} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, int format, int readvals, int numbering)
+\item 
+void \hyperlink{a00023_a6eee009c30261b4b9450016267b4567c}{gk\+\_\+csr\+\_\+\+Write} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename}, int format, int writevals, int numbering)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_a06edc174c5986841b589900ffce6600f}{gk\+\_\+csr\+\_\+\+Prune} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int what, int minf, int maxf)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_a66729af11e7dee3585d6191661757c37}{gk\+\_\+csr\+\_\+\+Low\+Filter} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int what, int norm, float fraction)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_ad6f2c5699b47e1bc2285a1b391d7c7da}{gk\+\_\+csr\+\_\+\+Top\+K\+Plus\+Filter} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int what, int topk, float keepval)
+\item 
+\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$ \hyperlink{a00023_a193f32ef7dd91c2c633157bafea26080}{gk\+\_\+csr\+\_\+\+Z\+Score\+Filter} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int what, float zscore)
+\item 
+void \hyperlink{a00023_a3e15963be76870160707368a5fe7f693}{gk\+\_\+csr\+\_\+\+Compact\+Columns} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat)
+\item 
+void \hyperlink{a00023_a06ffa04d1369de42ae3b7d2a9f85b91d}{gk\+\_\+csr\+\_\+\+Sort\+Indices} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int what)
+\item 
+void \hyperlink{a00023_a8bdd383ab80fe76507463f59c3d2863a}{gk\+\_\+csr\+\_\+\+Create\+Index} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int what)
+\item 
+void \hyperlink{a00023_aa74b347c4a6a07c0b2ea15c7d67f27b0}{gk\+\_\+csr\+\_\+\+Normalize} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int what, int norm)
+\item 
+void \hyperlink{a00023_adf45acdb60028f87304c1edc75baf194}{gk\+\_\+csr\+\_\+\+Scale} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int type)
+\item 
+void \hyperlink{a00023_a3cc2a64b0ead1b41ad824bc9401f1b84}{gk\+\_\+csr\+\_\+\+Compute\+Sums} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int what)
+\item 
+void \hyperlink{a00023_adb5c0f634607e45daaf7098399f1da0e}{gk\+\_\+csr\+\_\+\+Compute\+Squared\+Norms} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int what)
+\item 
+float \hyperlink{a00023_a86d96bf7b4f265b0e4a3b244ba031b0d}{gk\+\_\+csr\+\_\+\+Compute\+Similarity} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int i1, int i2, int what, int simtype)
+\item 
+int \hyperlink{a00023_a601a4baa00acee0a9c446a4c6f5ac394}{gk\+\_\+csr\+\_\+\+Get\+Similar\+Rows} (\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat, int nqterms, int $\ast$qind, float $\ast$qval, int simtype, int nsim, float minsim, gk\+\_\+fkv\+\_\+t $\ast$hits, int $\ast$i\+\_\+marker, gk\+\_\+fkv\+\_\+t $\ast$i\+\_\+cand)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Various routines with dealing with C\+SR matrices. 
+
+\begin{DoxyAuthor}{Author}
+George Karypis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: csr.c 13437 2013-01-11 21:54:10Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00023_afbb5013b831efde4d664bae299d7d2ee}\label{a00023_afbb5013b831efde4d664bae299d7d2ee}} 
+\index{csr.\+c@{csr.\+c}!O\+M\+P\+M\+I\+N\+O\+PS@{O\+M\+P\+M\+I\+N\+O\+PS}}
+\index{O\+M\+P\+M\+I\+N\+O\+PS@{O\+M\+P\+M\+I\+N\+O\+PS}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{O\+M\+P\+M\+I\+N\+O\+PS}{OMPMINOPS}}
+{\footnotesize\ttfamily \#define O\+M\+P\+M\+I\+N\+O\+PS~50000}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00023_a3e15963be76870160707368a5fe7f693}\label{a00023_a3e15963be76870160707368a5fe7f693}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Compact\+Columns@{gk\+\_\+csr\+\_\+\+Compact\+Columns}}
+\index{gk\+\_\+csr\+\_\+\+Compact\+Columns@{gk\+\_\+csr\+\_\+\+Compact\+Columns}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Compact\+Columns()}{gk\_csr\_CompactColumns()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Compact\+Columns (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+Compacts the column-\/space of the matrix by removing empty columns. As a result of the compaction, the column numbers are renumbered. The compaction operation is done in place and only affects the row-\/based representation of the matrix. The new columns are ordered in decreasing frequency.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix whose empty columns will be removed. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{a00023_a3e15963be76870160707368a5fe7f693_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a86d96bf7b4f265b0e4a3b244ba031b0d}\label{a00023_a86d96bf7b4f265b0e4a3b244ba031b0d}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Compute\+Similarity@{gk\+\_\+csr\+\_\+\+Compute\+Similarity}}
+\index{gk\+\_\+csr\+\_\+\+Compute\+Similarity@{gk\+\_\+csr\+\_\+\+Compute\+Similarity}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Compute\+Similarity()}{gk\_csr\_ComputeSimilarity()}}
+{\footnotesize\ttfamily float gk\+\_\+csr\+\_\+\+Compute\+Similarity (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{i1,  }\item[{int}]{i2,  }\item[{int}]{what,  }\item[{int}]{simtype }\end{DoxyParamCaption})}
+
+Computes the similarity between two rows/columns
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix itself. The routine assumes that the indices are sorted in increasing order. \\
+\hline
+{\em i1} & is the first row/column, \\
+\hline
+{\em i2} & is the second row/column, \\
+\hline
+{\em what} & is either G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW or G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL indicating the type of objects between the similarity will be computed, \\
+\hline
+{\em simtype} & is the type of similarity and is one of G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OS, G\+K\+\_\+\+C\+S\+R\+\_\+\+J\+AC, G\+K\+\_\+\+C\+S\+R\+\_\+\+M\+IN, G\+K\+\_\+\+C\+S\+R\+\_\+\+A\+M\+IN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the similarity between the two rows/columns. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a86d96bf7b4f265b0e4a3b244ba031b0d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_adb5c0f634607e45daaf7098399f1da0e}\label{a00023_adb5c0f634607e45daaf7098399f1da0e}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Compute\+Squared\+Norms@{gk\+\_\+csr\+\_\+\+Compute\+Squared\+Norms}}
+\index{gk\+\_\+csr\+\_\+\+Compute\+Squared\+Norms@{gk\+\_\+csr\+\_\+\+Compute\+Squared\+Norms}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Compute\+Squared\+Norms()}{gk\_csr\_ComputeSquaredNorms()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Compute\+Squared\+Norms (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{what }\end{DoxyParamCaption})}
+
+Computes the squared of the norms of the rows/columns 
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix itself, \\
+\hline
+{\em what} & is either G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW or G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL indicating which squared norms to compute. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_adb5c0f634607e45daaf7098399f1da0e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a3cc2a64b0ead1b41ad824bc9401f1b84}\label{a00023_a3cc2a64b0ead1b41ad824bc9401f1b84}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Compute\+Sums@{gk\+\_\+csr\+\_\+\+Compute\+Sums}}
+\index{gk\+\_\+csr\+\_\+\+Compute\+Sums@{gk\+\_\+csr\+\_\+\+Compute\+Sums}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Compute\+Sums()}{gk\_csr\_ComputeSums()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Compute\+Sums (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{what }\end{DoxyParamCaption})}
+
+Computes the sums of the rows/columns 
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix itself, \\
+\hline
+{\em what} & is either G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW or G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL indicating which sums to compute. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a3cc2a64b0ead1b41ad824bc9401f1b84_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a82b885bbed5bd18c26629c35ce5d37e4}\label{a00023_a82b885bbed5bd18c26629c35ce5d37e4}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Create@{gk\+\_\+csr\+\_\+\+Create}}
+\index{gk\+\_\+csr\+\_\+\+Create@{gk\+\_\+csr\+\_\+\+Create}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Create()}{gk\_csr\_Create()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allocate memory for a C\+SR matrix and initializes it \begin{DoxyReturn}{Returns}
+the allocated matrix. The various fields are set to N\+U\+LL. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a82b885bbed5bd18c26629c35ce5d37e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a82b885bbed5bd18c26629c35ce5d37e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a8bdd383ab80fe76507463f59c3d2863a}\label{a00023_a8bdd383ab80fe76507463f59c3d2863a}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Create\+Index@{gk\+\_\+csr\+\_\+\+Create\+Index}}
+\index{gk\+\_\+csr\+\_\+\+Create\+Index@{gk\+\_\+csr\+\_\+\+Create\+Index}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Create\+Index()}{gk\_csr\_CreateIndex()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Create\+Index (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{what }\end{DoxyParamCaption})}
+
+Creates a row/column index from the column/row data. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix itself, \\
+\hline
+{\em what} & is either G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW or G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL indicating which index will be created. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a8bdd383ab80fe76507463f59c3d2863a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a8bdd383ab80fe76507463f59c3d2863a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a24144cf4c30d5ec4ed8b488d371476b3}\label{a00023_a24144cf4c30d5ec4ed8b488d371476b3}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Dup@{gk\+\_\+csr\+\_\+\+Dup}}
+\index{gk\+\_\+csr\+\_\+\+Dup@{gk\+\_\+csr\+\_\+\+Dup}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Dup()}{gk\_csr\_Dup()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Dup (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+Returns a copy of a matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is the matrix to be duplicated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly created copy of the matrix. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a24144cf4c30d5ec4ed8b488d371476b3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_ac59047c4a89fa4680d746fcdce4aa1a7}\label{a00023_ac59047c4a89fa4680d746fcdce4aa1a7}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Extract\+Partition@{gk\+\_\+csr\+\_\+\+Extract\+Partition}}
+\index{gk\+\_\+csr\+\_\+\+Extract\+Partition@{gk\+\_\+csr\+\_\+\+Extract\+Partition}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Extract\+Partition()}{gk\_csr\_ExtractPartition()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Extract\+Partition (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int $\ast$}]{part,  }\item[{int}]{pid }\end{DoxyParamCaption})}
+
+Returns a submatrix corresponding to a specified partitioning of rows. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is the original matrix. \\
+\hline
+{\em part} & is the partitioning vector of the rows. \\
+\hline
+{\em pid} & is the partition ID that will be extracted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the row structure of the newly created submatrix. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_ac59047c4a89fa4680d746fcdce4aa1a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_aaa2391cce5eb8291e65f6dc4d8e252fd}\label{a00023_aaa2391cce5eb8291e65f6dc4d8e252fd}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Extract\+Rows@{gk\+\_\+csr\+\_\+\+Extract\+Rows}}
+\index{gk\+\_\+csr\+\_\+\+Extract\+Rows@{gk\+\_\+csr\+\_\+\+Extract\+Rows}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Extract\+Rows()}{gk\_csr\_ExtractRows()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Extract\+Rows (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{nrows,  }\item[{int $\ast$}]{rind }\end{DoxyParamCaption})}
+
+Returns a submatrix containing a certain set of rows. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is the original matrix. \\
+\hline
+{\em nrows} & is the number of rows to extract. \\
+\hline
+{\em rind} & is the set of row numbers to extract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the row structure of the newly created submatrix. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_aaa2391cce5eb8291e65f6dc4d8e252fd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a0b106b838c4dc370c32a47aaaf990375}\label{a00023_a0b106b838c4dc370c32a47aaaf990375}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Extract\+Submatrix@{gk\+\_\+csr\+\_\+\+Extract\+Submatrix}}
+\index{gk\+\_\+csr\+\_\+\+Extract\+Submatrix@{gk\+\_\+csr\+\_\+\+Extract\+Submatrix}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Extract\+Submatrix()}{gk\_csr\_ExtractSubmatrix()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Extract\+Submatrix (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{rstart,  }\item[{int}]{nrows }\end{DoxyParamCaption})}
+
+Returns a submatrix containint a set of consecutive rows. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is the original matrix. \\
+\hline
+{\em rstart} & is the starting row. \\
+\hline
+{\em nrows} & is the number of rows from rstart to extract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the row structure of the newly created submatrix. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a0b106b838c4dc370c32a47aaaf990375_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_ac3736361b8d6b391356f273c960c203b}\label{a00023_ac3736361b8d6b391356f273c960c203b}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Free@{gk\+\_\+csr\+\_\+\+Free}}
+\index{gk\+\_\+csr\+\_\+\+Free@{gk\+\_\+csr\+\_\+\+Free}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Free()}{gk\_csr\_Free()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$$\ast$}]{mat }\end{DoxyParamCaption})}
+
+Frees all the memory allocated for matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is the matrix to be freed. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_ac3736361b8d6b391356f273c960c203b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_ac3736361b8d6b391356f273c960c203b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a9646f29b0605ba264bf373c441a6826d}\label{a00023_a9646f29b0605ba264bf373c441a6826d}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Free\+Contents@{gk\+\_\+csr\+\_\+\+Free\+Contents}}
+\index{gk\+\_\+csr\+\_\+\+Free\+Contents@{gk\+\_\+csr\+\_\+\+Free\+Contents}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Free\+Contents()}{gk\_csr\_FreeContents()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Free\+Contents (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+Frees only the memory allocated for the matrix\textquotesingle{}s different fields and sets them to N\+U\+LL. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is the matrix whose contents will be freed. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{a00023_a9646f29b0605ba264bf373c441a6826d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a9646f29b0605ba264bf373c441a6826d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a601a4baa00acee0a9c446a4c6f5ac394}\label{a00023_a601a4baa00acee0a9c446a4c6f5ac394}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Get\+Similar\+Rows@{gk\+\_\+csr\+\_\+\+Get\+Similar\+Rows}}
+\index{gk\+\_\+csr\+\_\+\+Get\+Similar\+Rows@{gk\+\_\+csr\+\_\+\+Get\+Similar\+Rows}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Get\+Similar\+Rows()}{gk\_csr\_GetSimilarRows()}}
+{\footnotesize\ttfamily int gk\+\_\+csr\+\_\+\+Get\+Similar\+Rows (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{nqterms,  }\item[{int $\ast$}]{qind,  }\item[{float $\ast$}]{qval,  }\item[{int}]{simtype,  }\item[{int}]{nsim,  }\item[{float}]{minsim,  }\item[{gk\+\_\+fkv\+\_\+t $\ast$}]{hits,  }\item[{int $\ast$}]{i\+\_\+marker,  }\item[{gk\+\_\+fkv\+\_\+t $\ast$}]{i\+\_\+cand }\end{DoxyParamCaption})}
+
+Finds the n most similar rows (neighbors) to the query using cosine similarity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix itself \\
+\hline
+{\em nqterms} & is the number of columns in the query \\
+\hline
+{\em qind} & is the list of query columns \\
+\hline
+{\em qval} & is the list of correspodning query weights \\
+\hline
+{\em simtype} & is the type of similarity and is one of G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OS, G\+K\+\_\+\+C\+S\+R\+\_\+\+J\+AC, G\+K\+\_\+\+C\+S\+R\+\_\+\+M\+IN, G\+K\+\_\+\+C\+S\+R\+\_\+\+A\+M\+IN \\
+\hline
+{\em nsim} & is the maximum number of requested most similar rows. If -\/1 is provided, then everything is returned unsorted. \\
+\hline
+{\em minsim} & is the minimum similarity of the requested most similar rows \\
+\hline
+{\em hits} & is the result set. This array should be at least of length nsim. \\
+\hline
+{\em i\+\_\+marker} & is an array of size equal to the number of rows whose values are initialized to -\/1. If N\+U\+LL is provided then this array is allocated and freed internally. \\
+\hline
+{\em i\+\_\+cand} & is an array of size equal to the number of rows. If N\+U\+LL is provided then this array is allocated and freed internally. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of identified most similar rows, which can be smaller than the requested number of nnbrs in those cases in which there are no sufficiently many neighbors. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a601a4baa00acee0a9c446a4c6f5ac394_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a47a303d88c3316bd821219cae39d0461}\label{a00023_a47a303d88c3316bd821219cae39d0461}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Init@{gk\+\_\+csr\+\_\+\+Init}}
+\index{gk\+\_\+csr\+\_\+\+Init@{gk\+\_\+csr\+\_\+\+Init}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Init()}{gk\_csr\_Init()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+Initializes the matrix 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is the matrix to be initialized. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a47a303d88c3316bd821219cae39d0461_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a66729af11e7dee3585d6191661757c37}\label{a00023_a66729af11e7dee3585d6191661757c37}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Low\+Filter@{gk\+\_\+csr\+\_\+\+Low\+Filter}}
+\index{gk\+\_\+csr\+\_\+\+Low\+Filter@{gk\+\_\+csr\+\_\+\+Low\+Filter}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Low\+Filter()}{gk\_csr\_LowFilter()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Low\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{what,  }\item[{int}]{norm,  }\item[{float}]{fraction }\end{DoxyParamCaption})}
+
+Eliminates certain entries from the rows/columns of the matrix. The filtering takes place by keeping only the highest weight entries whose sum accounts for a certain fraction of the overall weight of the row/column.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix to be prunned, \\
+\hline
+{\em what} & indicates if the rows (G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW) or the columns (G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL) of the matrix will be prunned, \\
+\hline
+{\em norm} & indicates the norm that will be used to aggregate the weights and possible values are 1 or 2, \\
+\hline
+{\em fraction} & is the fraction of the overall norm that will be retained by the kept entries. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the filtered matrix consisting only of its row-\/based structure. The input matrix is not modified. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a66729af11e7dee3585d6191661757c37_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_aa74b347c4a6a07c0b2ea15c7d67f27b0}\label{a00023_aa74b347c4a6a07c0b2ea15c7d67f27b0}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Normalize@{gk\+\_\+csr\+\_\+\+Normalize}}
+\index{gk\+\_\+csr\+\_\+\+Normalize@{gk\+\_\+csr\+\_\+\+Normalize}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Normalize()}{gk\_csr\_Normalize()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Normalize (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{what,  }\item[{int}]{norm }\end{DoxyParamCaption})}
+
+Normalizes the rows/columns of the matrix to be unit length. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix itself, \\
+\hline
+{\em what} & indicates what will be normalized and is obtained by specifying G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW, G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL, G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+O\+W$\vert$\+G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL. \\
+\hline
+{\em norm} & indicates what norm is to normalize to, 1\+: 1-\/norm, 2\+: 2-\/norm \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00023_a06edc174c5986841b589900ffce6600f}\label{a00023_a06edc174c5986841b589900ffce6600f}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Prune@{gk\+\_\+csr\+\_\+\+Prune}}
+\index{gk\+\_\+csr\+\_\+\+Prune@{gk\+\_\+csr\+\_\+\+Prune}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Prune()}{gk\_csr\_Prune()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Prune (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{what,  }\item[{int}]{minf,  }\item[{int}]{maxf }\end{DoxyParamCaption})}
+
+Prunes certain rows/columns of the matrix. The prunning takes place by analyzing the row structure of the matrix. The prunning takes place by removing rows/columns but it does not affect the numbering of the remaining rows/columns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix to be prunned, \\
+\hline
+{\em what} & indicates if the rows (G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW) or the columns (G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL) of the matrix will be prunned, \\
+\hline
+{\em minf} & is the minimum number of rows (columns) that a column (row) must be present in order to be kept, \\
+\hline
+{\em maxf} & is the maximum number of rows (columns) that a column (row) must be present at in order to be kept. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the prunned matrix consisting only of its row-\/based structure. The input matrix is not modified. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a06edc174c5986841b589900ffce6600f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a8ebc19fe9a291bdf67677ebdaae56592}\label{a00023_a8ebc19fe9a291bdf67677ebdaae56592}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Read@{gk\+\_\+csr\+\_\+\+Read}}
+\index{gk\+\_\+csr\+\_\+\+Read@{gk\+\_\+csr\+\_\+\+Read}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Read()}{gk\_csr\_Read()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{int}]{format,  }\item[{int}]{readvals,  }\item[{int}]{numbering }\end{DoxyParamCaption})}
+
+Reads a C\+SR matrix from the supplied file and stores it the matrix\textquotesingle{}s forward structure. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & is the file that stores the data. \\
+\hline
+{\em format} & is either G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+M\+E\+T\+IS, G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+C\+L\+U\+TO, G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+C\+SR, G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+B\+I\+N\+R\+OW, G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+B\+I\+N\+C\+OL specifying the type of the input format. The G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+C\+SR does not contain a header line, whereas the G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+B\+I\+N\+R\+OW is a binary format written by \hyperlink{a00023_a6eee009c30261b4b9450016267b4567c}{gk\+\_\+csr\+\_\+\+Write()} using the same format specifier. \\
+\hline
+{\em readvals} & is either 1 or 0, indicating if the C\+SR file contains values or it does not. It only applies when G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+C\+SR is used. \\
+\hline
+{\em numbering} & is either 1 or 0, indicating if the numbering of the indices start from 1 or 0, respectively. If they start from 1, they are automatically decreamented during input so that they will start from 0. It only applies when G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+C\+SR is used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the matrix that was read. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a8ebc19fe9a291bdf67677ebdaae56592_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{a00023_a8ebc19fe9a291bdf67677ebdaae56592_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_adf45acdb60028f87304c1edc75baf194}\label{a00023_adf45acdb60028f87304c1edc75baf194}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Scale@{gk\+\_\+csr\+\_\+\+Scale}}
+\index{gk\+\_\+csr\+\_\+\+Scale@{gk\+\_\+csr\+\_\+\+Scale}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Scale()}{gk\_csr\_Scale()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Scale (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+Applies different row scaling methods. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix itself, \\
+\hline
+{\em type} & indicates the type of row scaling. Possible values are\+: G\+K\+\_\+\+C\+S\+R\+\_\+\+M\+A\+X\+TF, G\+K\+\_\+\+C\+S\+R\+\_\+\+S\+Q\+RT, G\+K\+\_\+\+C\+S\+R\+\_\+\+L\+OG, G\+K\+\_\+\+C\+S\+R\+\_\+\+I\+DF, G\+K\+\_\+\+C\+S\+R\+\_\+\+M\+A\+X\+T\+F2. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{a00023_adf45acdb60028f87304c1edc75baf194_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a06ffa04d1369de42ae3b7d2a9f85b91d}\label{a00023_a06ffa04d1369de42ae3b7d2a9f85b91d}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Sort\+Indices@{gk\+\_\+csr\+\_\+\+Sort\+Indices}}
+\index{gk\+\_\+csr\+\_\+\+Sort\+Indices@{gk\+\_\+csr\+\_\+\+Sort\+Indices}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Sort\+Indices()}{gk\_csr\_SortIndices()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Sort\+Indices (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{what }\end{DoxyParamCaption})}
+
+Sorts the indices in increasing order 
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix itself, \\
+\hline
+{\em what} & is either G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW or G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL indicating which set of indices to sort. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a06ffa04d1369de42ae3b7d2a9f85b91d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_ac438fca404c3f1ff6989aa68f83ed241}\label{a00023_ac438fca404c3f1ff6989aa68f83ed241}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Split@{gk\+\_\+csr\+\_\+\+Split}}
+\index{gk\+\_\+csr\+\_\+\+Split@{gk\+\_\+csr\+\_\+\+Split}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Split()}{gk\_csr\_Split()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$$\ast$ gk\+\_\+csr\+\_\+\+Split (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int $\ast$}]{color }\end{DoxyParamCaption})}
+
+Splits the matrix into multiple sub-\/matrices based on the provided color array. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is the original matrix. \\
+\hline
+{\em color} & is an array of size equal to the number of non-\/zeros in the matrix (row-\/wise structure). The matrix is split into as many parts as the number of colors. For meaningfull results, the colors should be numbered consecutively starting from 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array of matrices for each supplied color number. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_ac438fca404c3f1ff6989aa68f83ed241_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_ad6f2c5699b47e1bc2285a1b391d7c7da}\label{a00023_ad6f2c5699b47e1bc2285a1b391d7c7da}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Top\+K\+Plus\+Filter@{gk\+\_\+csr\+\_\+\+Top\+K\+Plus\+Filter}}
+\index{gk\+\_\+csr\+\_\+\+Top\+K\+Plus\+Filter@{gk\+\_\+csr\+\_\+\+Top\+K\+Plus\+Filter}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Top\+K\+Plus\+Filter()}{gk\_csr\_TopKPlusFilter()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Top\+K\+Plus\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{what,  }\item[{int}]{topk,  }\item[{float}]{keepval }\end{DoxyParamCaption})}
+
+Eliminates certain entries from the rows/columns of the matrix. The filtering takes place by keeping only the highest weight top-\/K entries along each row/column and those entries whose weight is greater than a specified value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix to be prunned, \\
+\hline
+{\em what} & indicates if the rows (G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW) or the columns (G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL) of the matrix will be prunned, \\
+\hline
+{\em topk} & is the number of the highest weight entries to keep. \\
+\hline
+{\em keepval} & is the weight of a term above which will be kept. This is used to select additional terms past the first topk. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the filtered matrix consisting only of its row-\/based structure. The input matrix is not modified. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_ad6f2c5699b47e1bc2285a1b391d7c7da_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a6eee009c30261b4b9450016267b4567c}\label{a00023_a6eee009c30261b4b9450016267b4567c}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Write@{gk\+\_\+csr\+\_\+\+Write}}
+\index{gk\+\_\+csr\+\_\+\+Write@{gk\+\_\+csr\+\_\+\+Write}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Write()}{gk\_csr\_Write()}}
+{\footnotesize\ttfamily void gk\+\_\+csr\+\_\+\+Write (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{char $\ast$}]{filename,  }\item[{int}]{format,  }\item[{int}]{writevals,  }\item[{int}]{numbering }\end{DoxyParamCaption})}
+
+Writes the row-\/based structure of a matrix into a file. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is the matrix to be written, \\
+\hline
+{\em filename} & is the name of the output file. \\
+\hline
+{\em format} & is one of\+: G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+C\+L\+U\+TO, G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+C\+SR, G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+B\+I\+N\+R\+OW, G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+B\+I\+N\+C\+OL. \\
+\hline
+{\em writevals} & is either 1 or 0 indicating if the values will be written or not. This is only applicable when G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+C\+SR is used. \\
+\hline
+{\em numbering} & is either 1 or 0 indicating if the internal 0-\/based numbering will be shifted by one or not during output. This is only applicable when G\+K\+\_\+\+C\+S\+R\+\_\+\+F\+M\+T\+\_\+\+C\+SR is used. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a6eee009c30261b4b9450016267b4567c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00023_a193f32ef7dd91c2c633157bafea26080}\label{a00023_a193f32ef7dd91c2c633157bafea26080}} 
+\index{csr.\+c@{csr.\+c}!gk\+\_\+csr\+\_\+\+Z\+Score\+Filter@{gk\+\_\+csr\+\_\+\+Z\+Score\+Filter}}
+\index{gk\+\_\+csr\+\_\+\+Z\+Score\+Filter@{gk\+\_\+csr\+\_\+\+Z\+Score\+Filter}!csr.\+c@{csr.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+csr\+\_\+\+Z\+Score\+Filter()}{gk\_csr\_ZScoreFilter()}}
+{\footnotesize\ttfamily \hyperlink{a00634}{gk\+\_\+csr\+\_\+t}$\ast$ gk\+\_\+csr\+\_\+\+Z\+Score\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat,  }\item[{int}]{what,  }\item[{float}]{zscore }\end{DoxyParamCaption})}
+
+Eliminates certain entries from the rows/columns of the matrix. The filtering takes place by keeping only the terms whose contribution to the total length of the document is greater than a user-\/splied multiple over the average.
+
+This routine assumes that the vectors are normalized to be unit length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & the matrix to be prunned, \\
+\hline
+{\em what} & indicates if the rows (G\+K\+\_\+\+C\+S\+R\+\_\+\+R\+OW) or the columns (G\+K\+\_\+\+C\+S\+R\+\_\+\+C\+OL) of the matrix will be prunned, \\
+\hline
+{\em zscore} & is the multiplicative factor over the average contribution to the length of the document. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the filtered matrix consisting only of its row-\/based structure. The input matrix is not modified. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00023_a193f32ef7dd91c2c633157bafea26080_cgraph}
+\end{center}
+\end{figure}

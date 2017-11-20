@@ -1,0 +1,157 @@
+\hypertarget{a00260}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/metis/libmetis/pmetis.c File Reference}
+\label{a00260}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/pmetis.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/libmetis/pmetis.\+c}}
+
+
+This file contains the top level routines for the multilevel recursive bisection algorithm P\+M\+E\+T\+IS.  
+
+
+{\ttfamily \#include \char`\"{}metislib.\+h\char`\"{}}\newline
+Include dependency graph for pmetis.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00261}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{a00260_a25fc90fd934931239b3c98ac4bdbce76}{M\+E\+T\+I\+S\+\_\+\+Part\+Graph\+Recursive} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$nvtxs, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aa8fc7f75458e38e1e2979ed6db639164}{xadj}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a20c068e3ebdd8f9889fb82c1f677d679}{adjncy}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a34203f1160d94eca83e95f2718ea3504}{vwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aac32df5bb22250d94fc2fc7e4078308b}{vsize}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a2be4719baa820cfa5c06fd070796e0d3}{adjwgt}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_af48bb348bc8440a61f90f137de83f203}{ubvec}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a68c032ed4161802775c6847d4cb39adf}{options}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a3cb2fc01fde2f4d088a9c5bc8da62b0a}{objval}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part})
+\begin{DoxyCompactList}\small\item\em Recursive partitioning routine. \end{DoxyCompactList}\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00260_a5510f276b321a8450b2e9cc913c2f00f}{Mlevel\+Recursive\+Bisection} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00879_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} fpart)
+\item 
+\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} \hyperlink{a00260_a33c48a23cc94ea0221fa5c7317cd0222}{Multilevel\+Bisect} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts})
+\item 
+void \hyperlink{a00260_a49d272affb67ce57b2d20dccd7f15f53}{Split\+Graph\+Part} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph, \hyperlink{a00734}{graph\+\_\+t} $\ast$$\ast$r\+\_\+lgraph, \hyperlink{a00734}{graph\+\_\+t} $\ast$$\ast$r\+\_\+rgraph)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains the top level routines for the multilevel recursive bisection algorithm P\+M\+E\+T\+IS. 
+
+\begin{DoxyDate}{Date}
+Started 7/24/1997 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+
+Copyright 1997-\/2009, Regents of the University of Minnesota 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: pmetis.c 10513 2011-07-07 22:06:03Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00260_a25fc90fd934931239b3c98ac4bdbce76}\label{a00260_a25fc90fd934931239b3c98ac4bdbce76}} 
+\index{pmetis.\+c@{pmetis.\+c}!M\+E\+T\+I\+S\+\_\+\+Part\+Graph\+Recursive@{M\+E\+T\+I\+S\+\_\+\+Part\+Graph\+Recursive}}
+\index{M\+E\+T\+I\+S\+\_\+\+Part\+Graph\+Recursive@{M\+E\+T\+I\+S\+\_\+\+Part\+Graph\+Recursive}!pmetis.\+c@{pmetis.\+c}}
+\subsubsection{\texorpdfstring{M\+E\+T\+I\+S\+\_\+\+Part\+Graph\+Recursive()}{METIS\_PartGraphRecursive()}}
+{\footnotesize\ttfamily int M\+E\+T\+I\+S\+\_\+\+Part\+Graph\+Recursive (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{nvtxs,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{ncon,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{xadj,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjncy,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{vsize,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{adjwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{nparts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ubvec,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{options,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{objval,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part }\end{DoxyParamCaption})}
+
+
+
+Recursive partitioning routine. 
+
+This function computes a partitioning of a graph based on multilevel recursive bisection. It can be used to partition a graph into {\itshape k} parts. The objective of the partitioning is to minimize the edgecut subject to one or more balancing constraints.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nvtxs} & is the number of vertices in the graph.\\
+\hline
+\mbox{\tt in}  & {\em ncon} & is the number of balancing constraints. For the standard partitioning problem in which each vertex is either unweighted or has a single weight, ncon should be 1.\\
+\hline
+\mbox{\tt in}  & {\em xadj} & is an array of size nvtxs+1 used to specify the starting positions of the adjacency structure of the vertices in the adjncy array.\\
+\hline
+\mbox{\tt in}  & {\em adjncy} & is an array of size to the sum of the degrees of the graph that stores for each vertex the set of vertices that is adjancent to.\\
+\hline
+\mbox{\tt in}  & {\em vwgt} & is an array of size nvtxs$\ast$ncon that stores the weights of the vertices for each constraint. The ncon weights for the ith vertex are stored in the ncon consecutive locations starting at vwgt\mbox{[}i$\ast$ncon\mbox{]}. When ncon==1, a N\+U\+LL value can be passed indicating that all the vertices in the graph have the same weight.\\
+\hline
+\mbox{\tt in}  & {\em adjwgt} & is an array of size equal to adjncy, specifying the weight for each edge (i.\+e., adjwgt\mbox{[}j\mbox{]} corresponds to the weight of the edge stored in adjncy\mbox{[}j\mbox{]}). A N\+U\+LL value can be passed indicating that all the edges in the graph have the same weight.\\
+\hline
+\mbox{\tt in}  & {\em nparts} & is the number of desired partitions.\\
+\hline
+\mbox{\tt in}  & {\em tpwgts} & is an array of size nparts$\ast$ncon that specifies the desired weight for each part and constraint. The {\itshape }\{target partition weight\} for the ith part and jth constraint is specified at tpwgts\mbox{[}i$\ast$ncon+j\mbox{]} (the numbering of i and j starts from 0). For each constraint, the sum of the tpwgts\mbox{[}\mbox{]} entries must be 1.\+0 (i.\+e., $ \sum_i tpwgts[i*ncon+j] = 1.0 $). A N\+U\+LL value can be passed indicating that the graph should be equally divided among the parts.\\
+\hline
+\mbox{\tt in}  & {\em ubvec} & is an array of size ncon that specifies the allowed load imbalance tolerance for each constraint. For the ith part and jth constraint the allowed weight is the ubvec\mbox{[}j\mbox{]}$\ast$tpwgts\mbox{[}i$\ast$ncon+j\mbox{]} fraction of the jth\textquotesingle{}s constraint total weight. The load imbalances must be greater than 1.\+0. A N\+U\+LL value can be passed indicating that the load imbalance tolerance for each constraint should be 1.\+001 (for ncon==1) or 1.\+01 (for ncon$>$1).\\
+\hline
+\end{DoxyParams}
+\mbox{[}in\mbox{]} options is the array for passing additional parameters in order to customize the behaviour of the partitioning algorithm.
+
+\mbox{[}out\mbox{]} edgecut stores the cut of the partitioning.
+
+\mbox{[}out\mbox{]} part is an array of size nvtxs used to store the computed partitioning. The partition number for the ith vertex is stored in part\mbox{[}i\mbox{]}. Based on the numflag parameter, the numbering of the parts starts from either 0 or 1.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em M\+E\+T\+I\+S\+\_\+\+OK} & indicates that the function returned normally. \\
+\hline
+{\em M\+E\+T\+I\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+P\+UT} & indicates an input error. \\
+\hline
+{\em M\+E\+T\+I\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+E\+M\+O\+RY} & indicates that it could not allocate the required memory. \\
+\hline
+\end{DoxyRetVals}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00260_a25fc90fd934931239b3c98ac4bdbce76_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00260_a25fc90fd934931239b3c98ac4bdbce76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00260_a5510f276b321a8450b2e9cc913c2f00f}\label{a00260_a5510f276b321a8450b2e9cc913c2f00f}} 
+\index{pmetis.\+c@{pmetis.\+c}!Mlevel\+Recursive\+Bisection@{Mlevel\+Recursive\+Bisection}}
+\index{Mlevel\+Recursive\+Bisection@{Mlevel\+Recursive\+Bisection}!pmetis.\+c@{pmetis.\+c}}
+\subsubsection{\texorpdfstring{Mlevel\+Recursive\+Bisection()}{MlevelRecursiveBisection()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Mlevel\+Recursive\+Bisection (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{nparts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t}}]{fpart }\end{DoxyParamCaption})}
+
+This function is the top-\/level driver of the recursive bisection routine. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{a00260_a5510f276b321a8450b2e9cc913c2f00f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00260_a5510f276b321a8450b2e9cc913c2f00f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00260_a33c48a23cc94ea0221fa5c7317cd0222}\label{a00260_a33c48a23cc94ea0221fa5c7317cd0222}} 
+\index{pmetis.\+c@{pmetis.\+c}!Multilevel\+Bisect@{Multilevel\+Bisect}}
+\index{Multilevel\+Bisect@{Multilevel\+Bisect}!pmetis.\+c@{pmetis.\+c}}
+\subsubsection{\texorpdfstring{Multilevel\+Bisect()}{MultilevelBisect()}}
+{\footnotesize\ttfamily \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} Multilevel\+Bisect (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts }\end{DoxyParamCaption})}
+
+This function performs a multilevel bisection Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00260_a33c48a23cc94ea0221fa5c7317cd0222_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00260_a49d272affb67ce57b2d20dccd7f15f53}\label{a00260_a49d272affb67ce57b2d20dccd7f15f53}} 
+\index{pmetis.\+c@{pmetis.\+c}!Split\+Graph\+Part@{Split\+Graph\+Part}}
+\index{Split\+Graph\+Part@{Split\+Graph\+Part}!pmetis.\+c@{pmetis.\+c}}
+\subsubsection{\texorpdfstring{Split\+Graph\+Part()}{SplitGraphPart()}}
+{\footnotesize\ttfamily void Split\+Graph\+Part (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$$\ast$}]{r\+\_\+lgraph,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$$\ast$}]{r\+\_\+rgraph }\end{DoxyParamCaption})}
+
+This function splits a graph into two based on its bisection Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00260_a49d272affb67ce57b2d20dccd7f15f53_icgraph}
+\end{center}
+\end{figure}

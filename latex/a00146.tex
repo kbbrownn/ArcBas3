@@ -1,0 +1,187 @@
+\hypertarget{a00146}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/test/fis.c File Reference}
+\label{a00146}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/test/fis.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/test/fis.\+c}}
+
+
+A simple frequent itemset discovery program to test G\+Klib\textquotesingle{}s routines.  
+
+
+{\ttfamily \#include $<$G\+Klib.\+h$>$}\newline
+Include dependency graph for fis.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00147}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{a00706}{params\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{a00146_aacf04ecfd59a1c65ac2d0837c6797418}{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN}~1
+\item 
+\#define \hyperlink{a00146_a07a54a5f6fc8e52b89e9c2e0244d4cc1}{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN}~2
+\item 
+\#define \hyperlink{a00146_a08e5c69995fd8e73505890ac8e4949cc}{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ}~3
+\item 
+\#define \hyperlink{a00146_a034dfcbea3f5be5b2c6922b2c95caedb}{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ}~4
+\item 
+\#define \hyperlink{a00146_a2e65376b8a4d8bfb10fed749904bbfa2}{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT}~5
+\item 
+\#define \hyperlink{a00146_a431c4dd9dfee6eda132e882f0d19bdc7}{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE}~6
+\item 
+\#define \hyperlink{a00146_a42553adbbb23a03ca876697c00ea44b1}{C\+M\+D\+\_\+\+H\+E\+LP}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00146_a2270624f104a1d261314dd112e4a1d1d}{print\+\_\+init\+\_\+info} (\hyperlink{a00706}{params\+\_\+t} $\ast$params, \hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$mat)
+\item 
+void \hyperlink{a00146_a702976a4c55992ddbfc1918ec1b70943}{print\+\_\+final\+\_\+info} (\hyperlink{a00706}{params\+\_\+t} $\ast$params)
+\item 
+\hyperlink{a00706}{params\+\_\+t} $\ast$ \hyperlink{a00146_aea2aa8c9b5bb7c64a3f316d7760f0341}{parse\+\_\+cmdline} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{a00146_a3b3cc293672156bbc5026fd567f52462}{print\+\_\+an\+\_\+itemset} (void $\ast$stateptr, int nitems, int $\ast$itemind, int ntrans, int $\ast$tranind)
+\item 
+int \hyperlink{a00146_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple frequent itemset discovery program to test G\+Klib\textquotesingle{}s routines. 
+
+\begin{DoxyDate}{Date}
+6/12/2008 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: fis.c 11075 2011-11-11 22:31:52Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00146_a431c4dd9dfee6eda132e882f0d19bdc7}\label{a00146_a431c4dd9dfee6eda132e882f0d19bdc7}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE@{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE}}
+\index{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE@{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE}{CMD\_CLABELFILE}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+C\+L\+A\+B\+E\+L\+F\+I\+LE~6}
+
+\mbox{\Hypertarget{a00146_a42553adbbb23a03ca876697c00ea44b1}\label{a00146_a42553adbbb23a03ca876697c00ea44b1}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+H\+E\+LP@{C\+M\+D\+\_\+\+H\+E\+LP}}
+\index{C\+M\+D\+\_\+\+H\+E\+LP@{C\+M\+D\+\_\+\+H\+E\+LP}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+H\+E\+LP}{CMD\_HELP}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+H\+E\+LP~10}
+
+\mbox{\Hypertarget{a00146_a034dfcbea3f5be5b2c6922b2c95caedb}\label{a00146_a034dfcbea3f5be5b2c6922b2c95caedb}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ@{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ}}
+\index{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ@{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ}{CMD\_MAXFREQ}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+M\+A\+X\+F\+R\+EQ~4}
+
+\mbox{\Hypertarget{a00146_a07a54a5f6fc8e52b89e9c2e0244d4cc1}\label{a00146_a07a54a5f6fc8e52b89e9c2e0244d4cc1}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+M\+A\+X\+L\+EN@{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN}}
+\index{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN@{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+M\+A\+X\+L\+EN}{CMD\_MAXLEN}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+M\+A\+X\+L\+EN~2}
+
+\mbox{\Hypertarget{a00146_a08e5c69995fd8e73505890ac8e4949cc}\label{a00146_a08e5c69995fd8e73505890ac8e4949cc}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ@{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ}}
+\index{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ@{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ}{CMD\_MINFREQ}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+M\+I\+N\+F\+R\+EQ~3}
+
+\mbox{\Hypertarget{a00146_aacf04ecfd59a1c65ac2d0837c6797418}\label{a00146_aacf04ecfd59a1c65ac2d0837c6797418}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+M\+I\+N\+L\+EN@{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN}}
+\index{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN@{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+M\+I\+N\+L\+EN}{CMD\_MINLEN}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+M\+I\+N\+L\+EN~1}
+
+Constants \mbox{\Hypertarget{a00146_a2e65376b8a4d8bfb10fed749904bbfa2}\label{a00146_a2e65376b8a4d8bfb10fed749904bbfa2}} 
+\index{fis.\+c@{fis.\+c}!C\+M\+D\+\_\+\+S\+I\+L\+E\+NT@{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT}}
+\index{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT@{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{C\+M\+D\+\_\+\+S\+I\+L\+E\+NT}{CMD\_SILENT}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+S\+I\+L\+E\+NT~5}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00146_a0ddf1224851353fc92bfbff6f499fa97}\label{a00146_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{fis.\+c@{fis.\+c}!main@{main}}
+\index{main@{main}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+the entry point Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00146_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00146_aea2aa8c9b5bb7c64a3f316d7760f0341}\label{a00146_aea2aa8c9b5bb7c64a3f316d7760f0341}} 
+\index{fis.\+c@{fis.\+c}!parse\+\_\+cmdline@{parse\+\_\+cmdline}}
+\index{parse\+\_\+cmdline@{parse\+\_\+cmdline}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{parse\+\_\+cmdline()}{parse\_cmdline()}}
+{\footnotesize\ttfamily \hyperlink{a00706}{params\+\_\+t} $\ast$ parse\+\_\+cmdline (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+This is the entry point of the command-\/line argument parser Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{a00146_aea2aa8c9b5bb7c64a3f316d7760f0341_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00146_a3b3cc293672156bbc5026fd567f52462}\label{a00146_a3b3cc293672156bbc5026fd567f52462}} 
+\index{fis.\+c@{fis.\+c}!print\+\_\+an\+\_\+itemset@{print\+\_\+an\+\_\+itemset}}
+\index{print\+\_\+an\+\_\+itemset@{print\+\_\+an\+\_\+itemset}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+an\+\_\+itemset()}{print\_an\_itemset()}}
+{\footnotesize\ttfamily void print\+\_\+an\+\_\+itemset (\begin{DoxyParamCaption}\item[{void $\ast$}]{stateptr,  }\item[{int}]{nitems,  }\item[{int $\ast$}]{itemids,  }\item[{int}]{ntrans,  }\item[{int $\ast$}]{transids }\end{DoxyParamCaption})}
+
+This is the callback function for the itemset discovery routine Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{a00146_a3b3cc293672156bbc5026fd567f52462_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00146_a702976a4c55992ddbfc1918ec1b70943}\label{a00146_a702976a4c55992ddbfc1918ec1b70943}} 
+\index{fis.\+c@{fis.\+c}!print\+\_\+final\+\_\+info@{print\+\_\+final\+\_\+info}}
+\index{print\+\_\+final\+\_\+info@{print\+\_\+final\+\_\+info}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+final\+\_\+info()}{print\_final\_info()}}
+{\footnotesize\ttfamily void print\+\_\+final\+\_\+info (\begin{DoxyParamCaption}\item[{\hyperlink{a00706}{params\+\_\+t} $\ast$}]{params }\end{DoxyParamCaption})}
+
+This function prints final statistics Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{a00146_a702976a4c55992ddbfc1918ec1b70943_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{a00146_a702976a4c55992ddbfc1918ec1b70943_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00146_a2270624f104a1d261314dd112e4a1d1d}\label{a00146_a2270624f104a1d261314dd112e4a1d1d}} 
+\index{fis.\+c@{fis.\+c}!print\+\_\+init\+\_\+info@{print\+\_\+init\+\_\+info}}
+\index{print\+\_\+init\+\_\+info@{print\+\_\+init\+\_\+info}!fis.\+c@{fis.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+init\+\_\+info()}{print\_init\_info()}}
+{\footnotesize\ttfamily void print\+\_\+init\+\_\+info (\begin{DoxyParamCaption}\item[{\hyperlink{a00706}{params\+\_\+t} $\ast$}]{params,  }\item[{\hyperlink{a00634}{gk\+\_\+csr\+\_\+t} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+Function prototypes
+
+This function prints run parameters Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{a00146_a2270624f104a1d261314dd112e4a1d1d_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,64 @@
+\hypertarget{a00365}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/libparmetis/initmsection.c File Reference}
+\label{a00365}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/initmsection.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/initmsection.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for initmsection.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00366}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{a00365_a1492f936447ebd68489d4ca456ffadef}{D\+E\+B\+U\+G\+\_\+\+I\+P\+A\+R\+T\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00365_ad2642ed6985ca20fc79c0a5b52c5424b}{Init\+Multisection} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\item 
+\hyperlink{a00734}{graph\+\_\+t} $\ast$ \hyperlink{a00365_aafb75eb581d7dd13903d8e5040dce30a}{Assemble\+Multisected\+Graph} (\hyperlink{a00742}{ctrl\+\_\+t} $\ast$ctrl, \hyperlink{a00734}{graph\+\_\+t} $\ast$graph)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00365_a1492f936447ebd68489d4ca456ffadef}\label{a00365_a1492f936447ebd68489d4ca456ffadef}} 
+\index{initmsection.\+c@{initmsection.\+c}!D\+E\+B\+U\+G\+\_\+\+I\+P\+A\+R\+T\+\_\+@{D\+E\+B\+U\+G\+\_\+\+I\+P\+A\+R\+T\+\_\+}}
+\index{D\+E\+B\+U\+G\+\_\+\+I\+P\+A\+R\+T\+\_\+@{D\+E\+B\+U\+G\+\_\+\+I\+P\+A\+R\+T\+\_\+}!initmsection.\+c@{initmsection.\+c}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+I\+P\+A\+R\+T\+\_\+}{DEBUG\_IPART\_}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+\_\+\+I\+P\+A\+R\+T\+\_\+}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00365_aafb75eb581d7dd13903d8e5040dce30a}\label{a00365_aafb75eb581d7dd13903d8e5040dce30a}} 
+\index{initmsection.\+c@{initmsection.\+c}!Assemble\+Multisected\+Graph@{Assemble\+Multisected\+Graph}}
+\index{Assemble\+Multisected\+Graph@{Assemble\+Multisected\+Graph}!initmsection.\+c@{initmsection.\+c}}
+\subsubsection{\texorpdfstring{Assemble\+Multisected\+Graph()}{AssembleMultisectedGraph()}}
+{\footnotesize\ttfamily \hyperlink{a00734}{graph\+\_\+t}$\ast$ Assemble\+Multisected\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+This function assembles the graph into a single processor Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{a00365_aafb75eb581d7dd13903d8e5040dce30a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00365_ad2642ed6985ca20fc79c0a5b52c5424b}\label{a00365_ad2642ed6985ca20fc79c0a5b52c5424b}} 
+\index{initmsection.\+c@{initmsection.\+c}!Init\+Multisection@{Init\+Multisection}}
+\index{Init\+Multisection@{Init\+Multisection}!initmsection.\+c@{initmsection.\+c}}
+\subsubsection{\texorpdfstring{Init\+Multisection()}{InitMultisection()}}
+{\footnotesize\ttfamily void Init\+Multisection (\begin{DoxyParamCaption}\item[{\hyperlink{a00742}{ctrl\+\_\+t} $\ast$}]{ctrl,  }\item[{\hyperlink{a00734}{graph\+\_\+t} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+The entry point of the algorithm that finds the separators of the coarsest graph. This algorithm first assembles the graph to all the processors, it then splits the processors into groups depending on the number of partitions for which we want to compute the separator. The processors of each group compute the separator of their corresponding graph and the smallest separator is selected.
+
+The parameter nparts on calling this routine indicates the number of desired partitions after the multisection (excluding the nodes that end up on the separator). The initial bisection is achieved when nparts==2 and upon entry graph-\/$>$where\mbox{[}\mbox{]} = 0 for all vertices. Similarly, if nparts==4, it indicates that we have a graph that is already partitioned into two parts (as specified in graph-\/$>$where) and we need to find the separator of each one of these parts.
+
+The final partitioning is encoded in the graph-\/$>$where vector as follows. If nparts is the number of partitions, the left, right, and separator subpartitions of the original partition i will be labeled 2$\ast$i, 2$\ast$i+1, and nparts+2$\ast$i, respectively. Note that in the above expressions, i goes from \mbox{[}0...nparts/2\mbox{]}. As a result of this encoding, the left (i.\+e., 0th) partition of a node {\ttfamily i} on the separator will be given by where\mbox{[}i\mbox{]}nparts. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00365_ad2642ed6985ca20fc79c0a5b52c5424b_cgraph}
+\end{center}
+\end{figure}

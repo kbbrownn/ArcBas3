@@ -1,0 +1,215 @@
+\hypertarget{a00035}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/metis/\+G\+Klib/fs.c File Reference}
+\label{a00035}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/fs.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/metis/\+G\+Klib/fs.\+c}}
+
+
+Various file-\/system functions.  
+
+
+{\ttfamily \#include $<$G\+Klib.\+h$>$}\newline
+Include dependency graph for fs.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00036}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{a00035_a627221a374552b5b6659d855b7446187}{gk\+\_\+fexists} (char $\ast$fname)
+\item 
+int \hyperlink{a00035_ac489be391410e38e025f83cf013c90ca}{gk\+\_\+dexists} (char $\ast$dirname)
+\item 
+\hyperlink{a00119_a036cd61bb4b30bb510b9538af4cebd1d}{intmax\+\_\+t} \hyperlink{a00035_ab8e9c3fc4ed1161501b51e445afde0e5}{gk\+\_\+getfsize} (char $\ast$\hyperlink{a00623_a42a21beb8018ac623f4d09db1343b9cf}{filename})
+\begin{DoxyCompactList}\small\item\em Returns the size of the file in bytes. \end{DoxyCompactList}\item 
+void \hyperlink{a00035_a739112cb142f2e96d6952140c66cd31c}{gk\+\_\+getfilestats} (char $\ast$fname, size\+\_\+t $\ast$r\+\_\+nlines, size\+\_\+t $\ast$r\+\_\+ntokens, size\+\_\+t $\ast$r\+\_\+max\+\_\+nlntokens, size\+\_\+t $\ast$r\+\_\+nbytes)
+\item 
+char $\ast$ \hyperlink{a00035_ad732cbb6372e1eb9b396792f700091a5}{gk\+\_\+getbasename} (char $\ast$path)
+\item 
+char $\ast$ \hyperlink{a00035_a4d728cd9869792eb93b315f949819d99}{gk\+\_\+getextname} (char $\ast$path)
+\item 
+char $\ast$ \hyperlink{a00035_a742e52c08aa7e46acd66cde95045d935}{gk\+\_\+getfilename} (char $\ast$path)
+\item 
+char $\ast$ \hyperlink{a00035_abae64e0957b2369082de428989501f5f}{getpathname} (char $\ast$path)
+\item 
+int \hyperlink{a00035_ab7c5c98647a9e3366fbe03a3a12f1f80}{gk\+\_\+mkpath} (char $\ast$pathname)
+\item 
+int \hyperlink{a00035_a8859354bba4be7b1eb2a3846684fd1f9}{gk\+\_\+rmpath} (char $\ast$pathname)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Various file-\/system functions. 
+
+This file contains various functions that deal with interfacing with the filesystem in a portable way.
+
+\begin{DoxyDate}{Date}
+Started 4/10/95 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+George 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\begin{DoxyVerb}$Id: fs.c 10711 2011-08-31 22:23:04Z karypis $ \end{DoxyVerb}
+ 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00035_abae64e0957b2369082de428989501f5f}\label{a00035_abae64e0957b2369082de428989501f5f}} 
+\index{fs.\+c@{fs.\+c}!getpathname@{getpathname}}
+\index{getpathname@{getpathname}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{getpathname()}{getpathname()}}
+{\footnotesize\ttfamily char$\ast$ getpathname (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00035_abae64e0957b2369082de428989501f5f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00035_ac489be391410e38e025f83cf013c90ca}\label{a00035_ac489be391410e38e025f83cf013c90ca}} 
+\index{fs.\+c@{fs.\+c}!gk\+\_\+dexists@{gk\+\_\+dexists}}
+\index{gk\+\_\+dexists@{gk\+\_\+dexists}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+dexists()}{gk\_dexists()}}
+{\footnotesize\ttfamily int gk\+\_\+dexists (\begin{DoxyParamCaption}\item[{char $\ast$}]{dirname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00035_a627221a374552b5b6659d855b7446187}\label{a00035_a627221a374552b5b6659d855b7446187}} 
+\index{fs.\+c@{fs.\+c}!gk\+\_\+fexists@{gk\+\_\+fexists}}
+\index{gk\+\_\+fexists@{gk\+\_\+fexists}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+fexists()}{gk\_fexists()}}
+{\footnotesize\ttfamily int gk\+\_\+fexists (\begin{DoxyParamCaption}\item[{char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{a00035_a627221a374552b5b6659d855b7446187_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00035_ad732cbb6372e1eb9b396792f700091a5}\label{a00035_ad732cbb6372e1eb9b396792f700091a5}} 
+\index{fs.\+c@{fs.\+c}!gk\+\_\+getbasename@{gk\+\_\+getbasename}}
+\index{gk\+\_\+getbasename@{gk\+\_\+getbasename}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+getbasename()}{gk\_getbasename()}}
+{\footnotesize\ttfamily char$\ast$ gk\+\_\+getbasename (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00035_ad732cbb6372e1eb9b396792f700091a5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00035_ad732cbb6372e1eb9b396792f700091a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00035_a4d728cd9869792eb93b315f949819d99}\label{a00035_a4d728cd9869792eb93b315f949819d99}} 
+\index{fs.\+c@{fs.\+c}!gk\+\_\+getextname@{gk\+\_\+getextname}}
+\index{gk\+\_\+getextname@{gk\+\_\+getextname}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+getextname()}{gk\_getextname()}}
+{\footnotesize\ttfamily char$\ast$ gk\+\_\+getextname (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00035_a4d728cd9869792eb93b315f949819d99_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00035_a742e52c08aa7e46acd66cde95045d935}\label{a00035_a742e52c08aa7e46acd66cde95045d935}} 
+\index{fs.\+c@{fs.\+c}!gk\+\_\+getfilename@{gk\+\_\+getfilename}}
+\index{gk\+\_\+getfilename@{gk\+\_\+getfilename}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+getfilename()}{gk\_getfilename()}}
+{\footnotesize\ttfamily char$\ast$ gk\+\_\+getfilename (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00035_a742e52c08aa7e46acd66cde95045d935_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00035_a739112cb142f2e96d6952140c66cd31c}\label{a00035_a739112cb142f2e96d6952140c66cd31c}} 
+\index{fs.\+c@{fs.\+c}!gk\+\_\+getfilestats@{gk\+\_\+getfilestats}}
+\index{gk\+\_\+getfilestats@{gk\+\_\+getfilestats}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+getfilestats()}{gk\_getfilestats()}}
+{\footnotesize\ttfamily void gk\+\_\+getfilestats (\begin{DoxyParamCaption}\item[{char $\ast$}]{fname,  }\item[{size\+\_\+t $\ast$}]{r\+\_\+nlines,  }\item[{size\+\_\+t $\ast$}]{r\+\_\+ntokens,  }\item[{size\+\_\+t $\ast$}]{r\+\_\+max\+\_\+nlntokens,  }\item[{size\+\_\+t $\ast$}]{r\+\_\+nbytes }\end{DoxyParamCaption})}
+
+This function gets some basic statistics about the file. 
+\begin{DoxyParams}{Parameters}
+{\em fname} & is the name of the file \\
+\hline
+{\em r\+\_\+nlines} & is the number of lines in the file. If it is N\+U\+LL, this information is not returned. \\
+\hline
+{\em r\+\_\+ntokens} & is the number of tokens in the file. If it is N\+U\+LL, this information is not returned. \\
+\hline
+{\em r\+\_\+max\+\_\+nlntokens} & is the maximum number of tokens in any line in the file. If it is N\+U\+LL this information is not returned. \\
+\hline
+{\em r\+\_\+nbytes} & is the number of bytes in the file. If it is N\+U\+LL, this information is not returned. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00035_a739112cb142f2e96d6952140c66cd31c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00035_a739112cb142f2e96d6952140c66cd31c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00035_ab8e9c3fc4ed1161501b51e445afde0e5}\label{a00035_ab8e9c3fc4ed1161501b51e445afde0e5}} 
+\index{fs.\+c@{fs.\+c}!gk\+\_\+getfsize@{gk\+\_\+getfsize}}
+\index{gk\+\_\+getfsize@{gk\+\_\+getfsize}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+getfsize()}{gk\_getfsize()}}
+{\footnotesize\ttfamily \hyperlink{a00119_a036cd61bb4b30bb510b9538af4cebd1d}{intmax\+\_\+t} gk\+\_\+getfsize (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Returns the size of the file in bytes. 
+
+This function returns the size of a file as a 64 bit integer. If there were any errors in stat\textquotesingle{}ing the file, -\/1 is returned. \begin{DoxyNote}{Note}
+That due to the -\/1 return code, the maximum file size is limited to 63 bits (which I guess is okay for now). 
+\end{DoxyNote}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{a00035_ab8e9c3fc4ed1161501b51e445afde0e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00035_ab7c5c98647a9e3366fbe03a3a12f1f80}\label{a00035_ab7c5c98647a9e3366fbe03a3a12f1f80}} 
+\index{fs.\+c@{fs.\+c}!gk\+\_\+mkpath@{gk\+\_\+mkpath}}
+\index{gk\+\_\+mkpath@{gk\+\_\+mkpath}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+mkpath()}{gk\_mkpath()}}
+{\footnotesize\ttfamily int gk\+\_\+mkpath (\begin{DoxyParamCaption}\item[{char $\ast$}]{pathname }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{a00035_ab7c5c98647a9e3366fbe03a3a12f1f80_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00035_a8859354bba4be7b1eb2a3846684fd1f9}\label{a00035_a8859354bba4be7b1eb2a3846684fd1f9}} 
+\index{fs.\+c@{fs.\+c}!gk\+\_\+rmpath@{gk\+\_\+rmpath}}
+\index{gk\+\_\+rmpath@{gk\+\_\+rmpath}!fs.\+c@{fs.\+c}}
+\subsubsection{\texorpdfstring{gk\+\_\+rmpath()}{gk\_rmpath()}}
+{\footnotesize\ttfamily int gk\+\_\+rmpath (\begin{DoxyParamCaption}\item[{char $\ast$}]{pathname }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{a00035_a8859354bba4be7b1eb2a3846684fd1f9_cgraph}
+\end{center}
+\end{figure}

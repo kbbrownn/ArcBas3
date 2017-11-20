@@ -1,0 +1,38 @@
+\hypertarget{a00374}{}\section{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.0.3/libparmetis/mmetis.c File Reference}
+\label{a00374}\index{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/mmetis.\+c@{/\+Users/\+Kaden/\+Documents/project/\+Arc\+Syn3sis/3rd\+Party/parmetis-\/4.\+0.\+3/libparmetis/mmetis.\+c}}
+{\ttfamily \#include $<$parmetislib.\+h$>$}\newline
+Include dependency graph for mmetis.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00375}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{a00374_a800266372258ca13cc60f863cb34b4b7}{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Mesh\+Kway} (\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$elmdist, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_af3ca47b5acd610d8d94e45e3480b2583}{eptr}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_af06d5753771b844d01c4c20e75c6401b}{eind}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$elmwgt, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$wgtflag, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aa48ecaf34ec788199c3aedb2b1558eb7}{numflag}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_ac1dd31740e8f97fb57dc917ded30253f}{ncon}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a1a215d5e3b7fb6675cd2e6266772b752}{ncommon}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_aad88065af88fd6759101788a8e15ce9e}{nparts}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_aa91786cd8ea996ec49ed5b382eb7fc2f}{tpwgts}, \hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$\hyperlink{a00879_af48bb348bc8440a61f90f137de83f203}{ubvec}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a68c032ed4161802775c6847d4cb39adf}{options}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a8e62a902298dd5fd88ef554d5277b1dc}{edgecut}, \hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$\hyperlink{a00879_a0a9ea8670f88d6db1e021fee2dcd94be}{part}, M\+P\+I\+\_\+\+Comm $\ast$comm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{a00374_a800266372258ca13cc60f863cb34b4b7}\label{a00374_a800266372258ca13cc60f863cb34b4b7}} 
+\index{mmetis.\+c@{mmetis.\+c}!Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Mesh\+Kway@{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Mesh\+Kway}}
+\index{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Mesh\+Kway@{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Mesh\+Kway}!mmetis.\+c@{mmetis.\+c}}
+\subsubsection{\texorpdfstring{Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Mesh\+Kway()}{ParMETIS\_V3\_PartMeshKway()}}
+{\footnotesize\ttfamily int Par\+M\+E\+T\+I\+S\+\_\+\+V3\+\_\+\+Part\+Mesh\+Kway (\begin{DoxyParamCaption}\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{elmdist,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{eptr,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{eind,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{elmwgt,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{wgtflag,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{numflag,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{ncon,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{ncommon,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{nparts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{tpwgts,  }\item[{\hyperlink{a00876_a1924a4f6907cc3833213aba1f07fcbe9}{real\+\_\+t} $\ast$}]{ubvec,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{options,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{edgecut,  }\item[{\hyperlink{a00876_aaa5262be3e700770163401acb0150f52}{idx\+\_\+t} $\ast$}]{part,  }\item[{M\+P\+I\+\_\+\+Comm $\ast$}]{comm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00374_a800266372258ca13cc60f863cb34b4b7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00374_a800266372258ca13cc60f863cb34b4b7_icgraph}
+\end{center}
+\end{figure}
