@@ -1,5 +1,0 @@
-<map id="Refine2Way" name="Refine2Way">
-<area shape="rect" id="node2" href="$a00266.html#a0ed9efb4761e829a24f4066856640f86" title="Compute2WayPartitionParams" alt="" coords="149,5,355,32"/>
-<area shape="rect" id="node3" href="$a00266.html#a99814e73a646480f8af05e7d8bcfe4bc" title="Project2WayPartition" alt="" coords="179,56,325,83"/>
-<area shape="rect" id="node4" href="$a00266.html#aadcb666600c1f5ded03cdd998b6ffd8f" title="Allocate2WayPartitionMemory" alt="" coords="403,56,603,83"/>
-</map>

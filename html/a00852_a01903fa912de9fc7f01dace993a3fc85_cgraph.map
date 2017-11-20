@@ -1,8 +1,0 @@
-<map id="CreateGraph" name="CreateGraph">
-<area shape="rect" id="node2" href="$a00077.html#aba6f76f5c67b9b7e9c2e45988d3d3e9d" title="gk_malloc" alt="" coords="152,59,235,85"/>
-<area shape="rect" id="node7" href="$a00849.html#af046766ada304a0cf49db44b544810a8" title="InitGraph" alt="" coords="155,109,232,136"/>
-<area shape="rect" id="node3" href="$a01014.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="501,59,557,85"/>
-<area shape="rect" id="node4" href="$a00110.html#ad2327b94227019b6753b6b09400c0522" title="gk_GetCurMemoryUsed" alt="" coords="285,33,451,60"/>
-<area shape="rect" id="node5" href="$a00110.html#a656fd5266ae12a96e53125486f8fea52" title="gk_GetMaxMemoryUsed" alt="" coords="283,84,453,111"/>
-<area shape="rect" id="node6" href="$a00026.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="328,135,408,161"/>
-</map>

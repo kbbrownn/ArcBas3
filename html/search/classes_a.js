@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vkrinfo_5ft',['vkrinfo_t',['../a00726.html',1,'']]],
-  ['vnbr_5ft',['vnbr_t',['../a00722.html',1,'']]]
+  ['vkrinfo_5ft',['vkrinfo_t',['../structvkrinfo__t.html',1,'']]],
+  ['vnbr_5ft',['vnbr_t',['../structvnbr__t.html',1,'']]]
 ];

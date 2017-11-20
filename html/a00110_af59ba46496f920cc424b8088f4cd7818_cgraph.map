@@ -1,8 +1,0 @@
-<map id="gk_AllocMatrix" name="gk_AllocMatrix">
-<area shape="rect" id="node2" href="$a00110.html#aba6f76f5c67b9b7e9c2e45988d3d3e9d" title="gk_malloc" alt="" coords="163,59,245,85"/>
-<area shape="rect" id="node7" href="$a00110.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="171,109,237,136"/>
-<area shape="rect" id="node3" href="$a01014.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="512,59,568,85"/>
-<area shape="rect" id="node4" href="$a00110.html#ad2327b94227019b6753b6b09400c0522" title="gk_GetCurMemoryUsed" alt="" coords="296,33,461,60"/>
-<area shape="rect" id="node5" href="$a00110.html#a656fd5266ae12a96e53125486f8fea52" title="gk_GetMaxMemoryUsed" alt="" coords="294,84,463,111"/>
-<area shape="rect" id="node6" href="$a00026.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="339,135,419,161"/>
-</map>

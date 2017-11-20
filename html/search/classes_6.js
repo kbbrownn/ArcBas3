@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nrinfo_5ft',['nrinfo_t',['../a00730.html',1,'']]],
-  ['nrinfodef',['nrinfodef',['../a00750.html',1,'']]]
+  ['nrinfo_5ft',['nrinfo_t',['../structnrinfo__t.html',1,'']]],
+  ['nrinfodef',['nrinfodef',['../structnrinfodef.html',1,'']]]
 ];

@@ -1,9 +1,0 @@
-<map id="ProjectKWayPartition" name="ProjectKWayPartition">
-<area shape="rect" id="node2" href="$a00915.html#a22a23a687ef7ed0d4f66ab58e3a81d12" title="AllocateKWayPartitionMemory" alt="" coords="203,109,405,136"/>
-<area shape="rect" id="node7" href="$a00026.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="629,135,709,161"/>
-<area shape="rect" id="node8" href="$a00915.html#acd248e19a1ba82c235d52479e231e2f7" title="ComputeKWayVolGains" alt="" coords="221,211,387,237"/>
-<area shape="rect" id="node3" href="$a00077.html#aba6f76f5c67b9b7e9c2e45988d3d3e9d" title="gk_malloc" alt="" coords="453,59,536,85"/>
-<area shape="rect" id="node4" href="$a01014.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="803,59,859,85"/>
-<area shape="rect" id="node5" href="$a00110.html#ad2327b94227019b6753b6b09400c0522" title="gk_GetCurMemoryUsed" alt="" coords="587,33,752,60"/>
-<area shape="rect" id="node6" href="$a00110.html#a656fd5266ae12a96e53125486f8fea52" title="gk_GetMaxMemoryUsed" alt="" coords="585,84,754,111"/>
-</map>

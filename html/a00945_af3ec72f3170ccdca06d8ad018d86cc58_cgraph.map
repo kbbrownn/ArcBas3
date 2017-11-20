@@ -1,9 +1,0 @@
-<map id="Match_SHEM" name="Match_SHEM">
-<area shape="rect" id="node2" href="$a00182.html#aead846b2c69509c914426ff087509934" title="Match_2Hop" alt="" coords="181,56,278,83"/>
-<area shape="rect" id="node5" href="$a00182.html#aac8820421b1c25698140c1b470c50e07" title="CreateCoarseGraph" alt="" coords="158,132,301,159"/>
-<area shape="rect" id="node3" href="$a00182.html#a838a4013e3b5cc5278ecc7a8757ce0ef" title="Match_2HopAny" alt="" coords="385,5,505,32"/>
-<area shape="rect" id="node4" href="$a00182.html#aa56d53cace160be27fb1750dcaffbc04" title="Match_2HopAll" alt="" coords="389,56,501,83"/>
-<area shape="rect" id="node6" href="$a00182.html#a70dc59d4c7190507e7ad9a4cc0d80707" title="CreateCoarseGraphNoMask" alt="" coords="350,157,541,184"/>
-<area shape="rect" id="node7" href="$a00182.html#a113522304bf628b09d0b69b4db05050e" title="SetupCoarseGraph" alt="" coords="590,132,727,159"/>
-<area shape="rect" id="node8" href="$a00182.html#ab69ab96ec78174da232dff05e9c79d2f" title="ReAdjustMemory" alt="" coords="597,195,721,221"/>
-</map>

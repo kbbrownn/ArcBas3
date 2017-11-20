@@ -1,8 +1,0 @@
-<map id="gk_getfilestats" name="gk_getfilestats">
-<area shape="rect" id="node2" href="$a00077.html#ab2b996e10c5bccb30204d81804adfd24" title="gk_fopen" alt="" coords="161,56,239,83"/>
-<area shape="rect" id="node6" href="$a00077.html#a0fd03cab5187904b005485109d9fa2b5" title="gk_fclose" alt="" coords="161,107,239,133"/>
-<area shape="rect" id="node3" href="$a00575.html#ae6aab5c308faac0fc539cc9c6da9fbd0" title="sprintf" alt="" coords="288,5,347,32"/>
-<area shape="rect" id="node4" href="$a00026.html#a56d0f2cc40cd8633a784582d6200d8b5" title="errexit" alt="" coords="288,56,347,83"/>
-<area shape="rect" id="node5" href="$a01014.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="395,56,451,83"/>
-<area shape="rect" id="node7" href="$a01014.html#a355ed4cdac2a27aa04a6689ac2d7e86e" title="fclose" alt="" coords="289,107,346,133"/>
-</map>

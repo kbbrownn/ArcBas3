@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['matrix_5ft',['matrix_t',['../a00754.html',1,'']]],
-  ['mesh_5ft',['mesh_t',['../a00738.html',1,'']]]
+  ['matrix_5ft',['matrix_t',['../structmatrix__t.html',1,'']]],
+  ['mesh_5ft',['mesh_t',['../structmesh__t.html',1,'']]]
 ];

@@ -1,7 +1,0 @@
-<map id="FindCommonElements" name="FindCommonElements">
-<area shape="rect" id="node2" href="$a00945.html#a10400dffe4954a697990134da62b387d" title="CreateGraphDual" alt="" coords="211,31,338,57"/>
-<area shape="rect" id="node3" href="$a00927.html#a2cf4672355fcfed039c04a2d1d134136" title="METIS_MeshToDual" alt="" coords="387,31,533,57"/>
-<area shape="rect" id="node4" href="$a00236.html#a8f496ac1cd2246b124da246b5c6f9193" title="METIS_PartMeshDual" alt="" coords="581,5,736,32"/>
-<area shape="rect" id="node6" href="$a00317.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="633,56,684,83"/>
-<area shape="rect" id="node5" href="$a00323.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="784,5,835,32"/>
-</map>
