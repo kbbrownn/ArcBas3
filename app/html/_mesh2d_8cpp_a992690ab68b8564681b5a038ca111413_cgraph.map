@@ -1,6 +1,0 @@
-<map id="ReadMesh2d_linear" name="ReadMesh2d_linear">
-<area shape="rect" id="node2" href="$fem_8h.html#a990278305dbeaf8e4441cf4146bfdc62" title="BuildVector" alt="" coords="201,5,292,32"/>
-<area shape="rect" id="node3" href="$fem_8h.html#a77f751d54b396015520a882d7a318e57" title="BuildIntMatrix" alt="" coords="195,56,298,83"/>
-<area shape="rect" id="node4" href="$fem_8h.html#a4bf6e503687187059ced10b812beaab3" title="BuildMatrix" alt="" coords="203,107,291,133"/>
-<area shape="rect" id="node5" href="$adjustments_2make__bidg__headers_8m.html#a355ed4cdac2a27aa04a6689ac2d7e86e" title="fclose" alt="" coords="218,157,275,184"/>
-</map>

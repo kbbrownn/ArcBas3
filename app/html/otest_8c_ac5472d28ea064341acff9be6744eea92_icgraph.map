@@ -1,6 +1,0 @@
-<map id="SetUpGraph" name="SetUpGraph">
-<area shape="rect" id="node2" href="$programs_2proto_8h.html#a646249107ea9150124408b418ad61f15" title="TestMoveGraph" alt="" coords="149,31,267,57"/>
-<area shape="rect" id="node3" href="$otest_8c.html#ac0ca0065f1dc35b0f4fe4d1968313dca" title="TestParMetis" alt="" coords="337,5,437,32"/>
-<area shape="rect" id="node4" href="$ptest_8c.html#adb0c2dc0c5138f35c71739328c702074" title="TestParMetis_GPart" alt="" coords="315,56,458,83"/>
-<area shape="rect" id="node5" href="$otest_8c.html#a8f4019835796a39a97c345864d80fcbb" title="main" alt="" coords="507,56,557,83"/>
-</map>

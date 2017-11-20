@@ -1,9 +1,0 @@
-<map id="HTable_Resize" name="HTable_Resize">
-<area shape="rect" id="node2" href="$write__vtu__template_8cpp.html#ad1e7380d51df1e0043d24d3c8a860e0a" title="for" alt="" coords="202,5,241,32"/>
-<area shape="rect" id="node3" href="$htable_8c.html#a39853dc7129323e7846d895c9026ad6f" title="HTable_Insert" alt="" coords="169,56,274,83"/>
-<area shape="rect" id="node5" href="$gk__proto_8h.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="188,107,255,133"/>
-<area shape="rect" id="node4" href="$htable_8c.html#afe255e126a6c4eec5efb11c3691b3155" title="HTable_HFunction" alt="" coords="323,56,456,83"/>
-<area shape="rect" id="node6" href="$gk__proto_8h.html#a6b0166aa10e35fb252f8561cac8f3bbb" title="gk_gkmcoreDel" alt="" coords="332,107,447,133"/>
-<area shape="rect" id="node7" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="504,107,584,133"/>
-<area shape="rect" id="node8" href="$adjustments_2make__bidg__headers_8m.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="632,107,688,133"/>
-</map>

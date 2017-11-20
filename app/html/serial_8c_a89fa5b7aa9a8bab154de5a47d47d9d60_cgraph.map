@@ -1,5 +1,0 @@
-<map id="Mc_Serial_Balance2Way" name="Mc_Serial_Balance2Way">
-<area shape="rect" id="node2" href="$serial_8c.html#afa6aadaf308fc164c98e67d2511daf03" title="Serial_Compute2WayHLoadImbalance" alt="" coords="225,5,477,32"/>
-<area shape="rect" id="node3" href="$serial_8c.html#a9f3e61c58695c143989d96c57154fb80" title="Serial_SelectQueue" alt="" coords="281,56,421,83"/>
-<area shape="rect" id="node4" href="$serial_8c.html#a62ce727c3eee17b8d8add92ffeb8adbe" title="Serial_BetterBalance" alt="" coords="277,107,424,133"/>
-</map>

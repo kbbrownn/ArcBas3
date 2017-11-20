@@ -1,9 +1,0 @@
-<map id="InitMultisection" name="InitMultisection">
-<area shape="rect" id="node2" href="$initmsection_8c.html#aafb75eb581d7dd13903d8e5040dce30a" title="AssembleMultisectedGraph" alt="" coords="183,5,369,32"/>
-<area shape="rect" id="node3" href="$auxapi_8c.html#abea67bb0c6286795ac5fc9bee605dc5d" title="METIS_SetDefaultOptions" alt="" coords="187,56,365,83"/>
-<area shape="rect" id="node4" href="$metis_2libmetis_2parmetis_8c.html#ace6bcd6bf97b8579b1deed389874ddc6" title="METIS_ComputeVertexSeparator" alt="" coords="165,107,387,133"/>
-<area shape="rect" id="node5" href="$gk__proto_8h.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="243,157,309,184"/>
-<area shape="rect" id="node6" href="$gk__proto_8h.html#a6b0166aa10e35fb252f8561cac8f3bbb" title="gk_gkmcoreDel" alt="" coords="435,157,549,184"/>
-<area shape="rect" id="node7" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="597,157,677,184"/>
-<area shape="rect" id="node8" href="$adjustments_2make__bidg__headers_8m.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="725,157,781,184"/>
-</map>

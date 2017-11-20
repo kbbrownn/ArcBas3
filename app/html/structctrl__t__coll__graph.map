@@ -1,7 +1,0 @@
-<map id="ctrl_t" name="ctrl_t">
-<area shape="rect" id="node2" href="$structgk__mcore__t.html" title="gk_mcore_t" alt="" coords="5,96,96,123"/>
-<area shape="rect" id="node3" href="$structgk__mop__t.html" title="gk_mop_t" alt="" coords="11,5,91,32"/>
-<area shape="rect" id="node4" href="$structvnbr__t.html" title="vnbr_t" alt="" coords="121,96,180,123"/>
-<area shape="rect" id="node5" href="$structcnbr__t.html" title="cnbr_t" alt="" coords="208,96,267,123"/>
-<area shape="rect" id="node6" href="$structmatrix__t.html" title="matrix_t" alt="" coords="291,96,360,123"/>
-</map>

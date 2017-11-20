@@ -1,8 +1,0 @@
-<map id="MinCover_Decompose" name="MinCover_Decompose">
-<area shape="rect" id="node2" href="$mincover_8c.html#a4c92a2e434179f264498adf840127095" title="MinCover_ColDFS" alt="" coords="215,29,348,56"/>
-<area shape="rect" id="node3" href="$mincover_8c.html#a807020dce58bb03a180aa4a0cb8cdd3e" title="MinCover_RowDFS" alt="" coords="211,104,351,131"/>
-<area shape="rect" id="node4" href="$gk__proto_8h.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="248,155,315,181"/>
-<area shape="rect" id="node5" href="$gk__proto_8h.html#a6b0166aa10e35fb252f8561cac8f3bbb" title="gk_gkmcoreDel" alt="" coords="400,155,515,181"/>
-<area shape="rect" id="node6" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="563,155,643,181"/>
-<area shape="rect" id="node7" href="$adjustments_2make__bidg__headers_8m.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="691,155,747,181"/>
-</map>

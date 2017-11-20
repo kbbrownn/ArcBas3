@@ -1,9 +1,0 @@
-<map id="CommUpdateNnbrs" name="CommUpdateNnbrs">
-<area shape="rect" id="node2" href="$gk__proto_8h.html#ab76a07ccd25288dd9acc99f5f24a7600" title="gk_realloc" alt="" coords="195,132,277,159"/>
-<area shape="rect" id="node3" href="$gk__proto_8h.html#a6b0166aa10e35fb252f8561cac8f3bbb" title="gk_gkmcoreDel" alt="" coords="353,5,468,32"/>
-<area shape="rect" id="node4" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="544,81,624,108"/>
-<area shape="rect" id="node5" href="$adjustments_2make__bidg__headers_8m.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="672,171,728,197"/>
-<area shape="rect" id="node6" href="$memory_8c.html#a656fd5266ae12a96e53125486f8fea52" title="gk_GetMaxMemoryUsed" alt="" coords="326,157,495,184"/>
-<area shape="rect" id="node7" href="$memory_8c.html#ad2327b94227019b6753b6b09400c0522" title="gk_GetCurMemoryUsed" alt="" coords="328,208,493,235"/>
-<area shape="rect" id="node8" href="$gk__proto_8h.html#a3777d3929aad6ae5e17b76656cd6797b" title="gk_gkmcoreAdd" alt="" coords="351,107,470,133"/>
-</map>

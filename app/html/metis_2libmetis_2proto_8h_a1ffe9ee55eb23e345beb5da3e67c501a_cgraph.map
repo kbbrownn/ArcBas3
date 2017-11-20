@@ -1,6 +1,0 @@
-<map id="FM_2WayRefine" name="FM_2WayRefine">
-<area shape="rect" id="node2" href="$fm_8c.html#a1c215aad2804a5cba2e54e93113bc0d5" title="FM_2WayCutRefine" alt="" coords="185,5,327,32"/>
-<area shape="rect" id="node4" href="$fm_8c.html#aaa49d065f964af00512da0c4b3d4cad6" title="FM_Mc2WayCutRefine" alt="" coords="176,56,336,83"/>
-<area shape="rect" id="node3" href="$fm_8c.html#a6e4663b4acc63be2c1b33533e7827f1a" title="Print2WayRefineStats" alt="" coords="384,5,536,32"/>
-<area shape="rect" id="node5" href="$fm_8c.html#a51193f4b76d298d94234642136879390" title="SelectQueue" alt="" coords="411,56,509,83"/>
-</map>

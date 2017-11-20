@@ -1,8 +1,0 @@
-<map id="Mc_SerialReadGraph" name="Mc_SerialReadGraph">
-<area shape="rect" id="node2" href="$programs_2io_8c.html#ab618501d6d645eabdbe89cc62d33a54f" title="Mc_SerialReadMetisGraph" alt="" coords="206,5,389,32"/>
-<area shape="rect" id="node4" href="$gk__proto_8h.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="437,56,504,83"/>
-<area shape="rect" id="node3" href="$adjustments_2make__bidg__headers_8m.html#a355ed4cdac2a27aa04a6689ac2d7e86e" title="fclose" alt="" coords="442,5,499,32"/>
-<area shape="rect" id="node5" href="$gk__proto_8h.html#a6b0166aa10e35fb252f8561cac8f3bbb" title="gk_gkmcoreDel" alt="" coords="552,56,667,83"/>
-<area shape="rect" id="node6" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="715,56,795,83"/>
-<area shape="rect" id="node7" href="$adjustments_2make__bidg__headers_8m.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="843,56,899,83"/>
-</map>

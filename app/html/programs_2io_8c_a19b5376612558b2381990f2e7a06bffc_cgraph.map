@@ -1,9 +1,0 @@
-<map id="WritePVector" name="WritePVector">
-<area shape="rect" id="node2" href="$buildsource_8m.html#ae6aab5c308faac0fc539cc9c6da9fbd0" title="sprintf" alt="" coords="159,5,217,32"/>
-<area shape="rect" id="node3" href="$error_8c.html#a56d0f2cc40cd8633a784582d6200d8b5" title="errexit" alt="" coords="297,56,356,83"/>
-<area shape="rect" id="node4" href="$adjustments_2make__bidg__headers_8m.html#a1c26c3e6fd09ad3f614fd2a28762dfe8" title="fprintf" alt="" coords="560,107,616,133"/>
-<area shape="rect" id="node5" href="$gk__proto_8h.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="155,157,221,184"/>
-<area shape="rect" id="node8" href="$adjustments_2make__bidg__headers_8m.html#a355ed4cdac2a27aa04a6689ac2d7e86e" title="fclose" alt="" coords="159,208,217,235"/>
-<area shape="rect" id="node6" href="$gk__proto_8h.html#a6b0166aa10e35fb252f8561cac8f3bbb" title="gk_gkmcoreDel" alt="" coords="269,157,384,184"/>
-<area shape="rect" id="node7" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="432,157,512,184"/>
-</map>
