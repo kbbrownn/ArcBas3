@@ -1,0 +1,9 @@
+<map id="Project2WayNodePartition" name="Project2WayNodePartition">
+<area shape="rect" id="node2" href="$srefine_8c.html#a843a5692564dc695b281647dc690c887" title="Allocate2WayNodePartition\lMemory" alt="" coords="236,51,420,93"/>
+<area shape="rect" id="node8" href="$srefine_8c.html#a66257f7c528ad75c86244ef3794d1ae5" title="Compute2WayNodePartition\lParams" alt="" coords="233,117,423,158"/>
+<area shape="rect" id="node3" href="$gk__proto_8h.html#aba6f76f5c67b9b7e9c2e45988d3d3e9d" title="gk_malloc" alt="" coords="472,59,555,85"/>
+<area shape="rect" id="node4" href="$adjustments_2make__bidg__headers_8m.html#a2e311a777ffe9c80e405efa7cd2757be" title="fprintf" alt="" coords="821,59,877,85"/>
+<area shape="rect" id="node5" href="$memory_8c.html#ad2327b94227019b6753b6b09400c0522" title="gk_GetCurMemoryUsed" alt="" coords="605,33,771,60"/>
+<area shape="rect" id="node6" href="$memory_8c.html#a656fd5266ae12a96e53125486f8fea52" title="gk_GetMaxMemoryUsed" alt="" coords="603,84,773,111"/>
+<area shape="rect" id="node7" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="648,135,728,161"/>
+</map>

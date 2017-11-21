@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['readme',['README',['../md___users__kaden__documents_project__arc_syn3sis__r_e_a_d_m_e.html',1,'']]],
   ['r',['r',['../structfoo.html#a8532cd651cdeaf8abb631238ab86f4ac',1,'foo']]],
   ['r1dq',['r1Dq',['../adjustments_2make__bidg__headers_8m.html#ab28e50838346fc61a7727407a03eae5b',1,'r1Dq():&#160;make_bidg_headers.m'],['../make__bidg__headers_8m.html#aed0fb0ce4332da27d943a566abf0bdb7',1,'r1Dq():&#160;make_bidg_headers.m'],['../adjustments_2make__bidg__headers_8m.html#a79d685dcbb9027705142b2a8b912aa1e',1,'r1Dq():&#160;make_bidg_headers.m'],['../make__bidg__headers_8m.html#a79d685dcbb9027705142b2a8b912aa1e',1,'r1Dq():&#160;make_bidg_headers.m']]],
   ['r_5fadjncy',['r_adjncy',['../3rd_party_2parmetis-4_80_83_2metis_2include_2metis_8h.html#a4040cc61d2caf7fddbbcb1ea3a212565',1,'r_adjncy():&#160;metis.h'],['../include_2metis_8h.html#ad0152ea85617e06eb0e2d9f386150411',1,'r_adjncy():&#160;metis.h']]],

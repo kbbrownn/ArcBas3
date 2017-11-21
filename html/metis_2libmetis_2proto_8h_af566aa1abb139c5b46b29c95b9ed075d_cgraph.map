@@ -1,0 +1,9 @@
+<map id="Init2WayPartition" name="Init2WayPartition">
+<area shape="rect" id="node2" href="$metis_2libmetis_2initpart_8c.html#ad9f0573a18d3fcfa45d73c3bef80e5f8" title="RandomBisection" alt="" coords="185,5,311,32"/>
+<area shape="rect" id="node3" href="$metis_2libmetis_2initpart_8c.html#a3ac013a2933e687d40aee2496120367e" title="McRandomBisection" alt="" coords="176,56,320,83"/>
+<area shape="rect" id="node4" href="$metis_2libmetis_2initpart_8c.html#aa565fcd8af582579b67153287a07ea69" title="GrowBisection" alt="" coords="194,107,302,133"/>
+<area shape="rect" id="node6" href="$metis_2libmetis_2initpart_8c.html#af361dc8ba850849b9230c5c7c8c8c582" title="McGrowBisection" alt="" coords="185,157,311,184"/>
+<area shape="rect" id="node7" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="208,208,288,235"/>
+<area shape="rect" id="node5" href="$write__vtu__template_8cpp.html#ad1e7380d51df1e0043d24d3c8a860e0a" title="for" alt="" coords="377,107,415,133"/>
+<area shape="rect" id="node8" href="$adjustments_2make__bidg__headers_8m.html#a2e311a777ffe9c80e405efa7cd2757be" title="fprintf" alt="" coords="368,208,424,235"/>
+</map>

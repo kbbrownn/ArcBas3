@@ -108,6 +108,7 @@ font-size: 1.15em !important;
 }
 .navbar{
  border: 0px solid #222 !important;
+ color: black;
 }
 table{
     white-space:pre-wrap !important;

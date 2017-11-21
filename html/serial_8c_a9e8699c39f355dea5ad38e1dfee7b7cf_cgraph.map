@@ -1,0 +1,5 @@
+<map id="Mc_Serial_FM_2WayRefine" name="Mc_Serial_FM_2WayRefine">
+<area shape="rect" id="node2" href="$serial_8c.html#afa6aadaf308fc164c98e67d2511daf03" title="Serial_Compute2WayHLoadImbalance" alt="" coords="243,5,495,32"/>
+<area shape="rect" id="node3" href="$serial_8c.html#a9f3e61c58695c143989d96c57154fb80" title="Serial_SelectQueue" alt="" coords="299,56,439,83"/>
+<area shape="rect" id="node4" href="$serial_8c.html#a62ce727c3eee17b8d8add92ffeb8adbe" title="Serial_BetterBalance" alt="" coords="296,107,443,133"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="AllocateNodePartitionParams" name="AllocateNodePartitionParams">
+<area shape="rect" id="node2" href="$gk__proto_8h.html#aba6f76f5c67b9b7e9c2e45988d3d3e9d" title="gk_malloc" alt="" coords="251,59,333,85"/>
+<area shape="rect" id="node7" href="$gk__proto_8h.html#ac8df62c4e3d0910711a9874f9cc58884" title="gk_free" alt="" coords="259,109,325,136"/>
+<area shape="rect" id="node3" href="$adjustments_2make__bidg__headers_8m.html#a2e311a777ffe9c80e405efa7cd2757be" title="fprintf" alt="" coords="600,59,656,85"/>
+<area shape="rect" id="node4" href="$memory_8c.html#ad2327b94227019b6753b6b09400c0522" title="gk_GetCurMemoryUsed" alt="" coords="384,33,549,60"/>
+<area shape="rect" id="node5" href="$memory_8c.html#a656fd5266ae12a96e53125486f8fea52" title="gk_GetMaxMemoryUsed" alt="" coords="382,84,551,111"/>
+<area shape="rect" id="node6" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="427,135,507,161"/>
+</map>
