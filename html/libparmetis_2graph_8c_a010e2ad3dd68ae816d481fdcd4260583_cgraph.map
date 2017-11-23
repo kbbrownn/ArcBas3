@@ -1,5 +1,0 @@
-<map id="SetupGraph" name="SetupGraph">
-<area shape="rect" id="node2" href="$metis_2libmetis_2graph_8c.html#a01903fa912de9fc7f01dace993a3fc85" title="CreateGraph" alt="" coords="169,5,268,32"/>
-<area shape="rect" id="node3" href="$libparmetis_2proto_8h.html#addb1218f833155110864d49f0d1879ab" title="SetupCtrl_invtvwgts" alt="" coords="149,56,289,83"/>
-<area shape="rect" id="node4" href="$libparmetis_2graph_8c.html#adc4ae6f6575afd6ae777f535ea8c439f" title="SetupGraph_nvwgts" alt="" coords="147,107,290,133"/>
-</map>

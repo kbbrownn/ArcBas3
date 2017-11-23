@@ -1,6 +1,0 @@
-<map id="graph_t" name="graph_t">
-<area shape="rect" id="node2" href="$structckrinfo__t.html" title="{ckrinfo_t\n|+ id\l+ ed\l+ nnbrs\l+ inbr\l|}" alt="" coords="5,13,77,134"/>
-<area shape="rect" id="node3" href="$structnrinfo__t.html" title="{nrinfo_t\n|+ edegrees\l|}" alt="" coords="102,35,191,112"/>
-<area shape="rect" id="node4" href="$structnrinfodef.html" title="{nrinfodef\n|+ edegrees\l|}" alt="" coords="215,35,304,112"/>
-<area shape="rect" id="node5" href="$structvkrinfo__t.html" title="{vkrinfo_t\n|+ nid\l+ ned\l+ gv\l+ nnbrs\l+ inbr\l|}" alt="" coords="329,5,401,141"/>
-</map>

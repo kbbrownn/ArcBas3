@@ -1,8 +1,0 @@
-<map id="EliminateSubDomainEdges" name="EliminateSubDomainEdges">
-<area shape="rect" id="node2" href="$minconn_8c.html#a78c50bcdffefbd90914a77c4add573cc" title="ComputeSubDomainGraph" alt="" coords="239,5,422,32"/>
-<area shape="rect" id="node3" href="$error_8c.html#a4c320c13bcdc9967613253ef4c73f59f" title="gk_errexit" alt="" coords="533,44,613,71"/>
-<area shape="rect" id="node5" href="$minconn_8c.html#a39d997df18cf07ea8609a66db133a8b6" title="MoveGroupMinConnForCut" alt="" coords="238,107,423,133"/>
-<area shape="rect" id="node7" href="$minconn_8c.html#acab0293e31c438218cd4b37b608466c6" title="MoveGroupMinConnForVol" alt="" coords="239,157,423,184"/>
-<area shape="rect" id="node4" href="$adjustments_2make__bidg__headers_8m.html#a2e311a777ffe9c80e405efa7cd2757be" title="fprintf" alt="" coords="723,44,779,71"/>
-<area shape="rect" id="node6" href="$minconn_8c.html#a004451dc6b5a9ebe36a063f7bcd6495a" title="UpdateEdgeSubDomainGraph" alt="" coords="472,120,675,147"/>
-</map>

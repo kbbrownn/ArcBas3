@@ -1,6 +1,0 @@
-<map id="CreateGraphNodal" name="CreateGraphNodal">
-<area shape="rect" id="node2" href="$metis_2libmetis_2mesh_8c.html#ae9390485cd2d3654742f779a7188c125" title="METIS_MeshToNodal" alt="" coords="187,31,341,57"/>
-<area shape="rect" id="node3" href="$meshpart_8c.html#ade1e7e23ad687989a6343b4fb8d61ba7" title="METIS_PartMeshNodal" alt="" coords="389,5,552,32"/>
-<area shape="rect" id="node5" href="$m2gmetis_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="445,56,496,83"/>
-<area shape="rect" id="node4" href="$mpmetis_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="600,5,651,32"/>
-</map>
