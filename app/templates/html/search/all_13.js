@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['r',['r',['../a00260.html#a8532cd651cdeaf8abb631238ab86f4ac',1,'foo']]],
+  ['r1dq',['r1Dq',['../a00300.html#ab28e50838346fc61a7727407a03eae5b',1,'r1Dq():&#160;make_bidg_headers.m'],['../a00074.html#aed0fb0ce4332da27d943a566abf0bdb7',1,'r1Dq():&#160;make_bidg_headers.m'],['../a00300.html#a79d685dcbb9027705142b2a8b912aa1e',1,'r1Dq():&#160;make_bidg_headers.m'],['../a00074.html#a79d685dcbb9027705142b2a8b912aa1e',1,'r1Dq():&#160;make_bidg_headers.m']]],
+  ['r_5fadjncy',['r_adjncy',['../a00161.html#a4040cc61d2caf7fddbbcb1ea3a212565',1,'metis.h']]],
+  ['r_5fxadj',['r_xadj',['../a00161.html#ab58ec537eec2f01f06af2c024d07599c',1,'metis.h']]],
+  ['rabs',['rabs',['../a00161.html#a5f027fb1242f417e1631cc5e1c67ce0d',1,'metis.h']]],
+  ['readme_2emd',['README.md',['../a00188.html',1,'']]],
+  ['readmesh2d',['ReadMesh2d',['../a00155.html#af31fd6654ededed596d98c090d8748b5',1,'ReadMesh2d(char *filename):&#160;Mesh2d.cpp'],['../a00206.html#af31fd6654ededed596d98c090d8748b5',1,'ReadMesh2d(char *filename):&#160;Mesh2d.cpp']]],
+  ['readmesh2d_5flinear',['ReadMesh2d_linear',['../a00155.html#a992690ab68b8564681b5a038ca111413',1,'ReadMesh2d_linear(char *filename):&#160;Mesh2d.cpp'],['../a00206.html#a992690ab68b8564681b5a038ca111413',1,'ReadMesh2d_linear(char *filename):&#160;Mesh2d.cpp']]],
+  ['readmesh3d',['ReadMesh3d',['../a00155.html#ae31747f9df306a59e6f4df61fddfe15f',1,'ReadMesh3d(char *filename):&#160;Mesh3d.cpp'],['../a00215.html#ae31747f9df306a59e6f4df61fddfe15f',1,'ReadMesh3d(char *filename):&#160;Mesh3d.cpp']]],
+  ['real_5fepsilon',['REAL_EPSILON',['../a00161.html#a268bd688a4b5c8bb1c12bfdb92e27a1d',1,'metis.h']]],
+  ['real_5fmax',['REAL_MAX',['../a00161.html#a70fc4e60483cc1a5cb39dd935640cadc',1,'metis.h']]],
+  ['real_5fmin',['REAL_MIN',['../a00161.html#ae19c49417e2720027ed571edc915b5f2',1,'metis.h']]],
+  ['real_5ft',['real_t',['../a00161.html#a1924a4f6907cc3833213aba1f07fcbe9',1,'real_t():&#160;metis.h'],['../a00164.html#aad262b5311ae7d2166c3fcaa58d1834b',1,'REAL_T():&#160;parmetis.h']]],
+  ['realeq',['REALEQ',['../a00161.html#af7ffa47809b85f79ddc368e67705d5b3',1,'metis.h']]],
+  ['realtypewidth',['REALTYPEWIDTH',['../a00161.html#a0ffc9bd00d2a4943cb50d3adda94572a',1,'metis.h']]],
+  ['removenode',['removeNode',['../a00233.html#ae344a0a545940b078e36623bf4b44c7f',1,'cubic2linear.m']]],
+  ['rfq',['rfq',['../a00260.html#a6e2cc6e126c113d2663ade1c7b78c69e',1,'foo']]],
+  ['rk4a',['rk4a',['../a00260.html#a04f68d31dacc490f9ed243b07f82f961',1,'foo']]],
+  ['rk4b',['rk4b',['../a00260.html#aed5bda8434e6b56f5c3ed87e7a0756b8',1,'foo']]],
+  ['rk4c',['rk4c',['../a00260.html#af5e9ef96eb6874d1d0bd73457add9db8',1,'foo']]],
+  ['rk_5frun_5f2d',['rk_run_2d',['../a00155.html#a21a02761bc746f8e6205d02f662aee16',1,'rk_run_2d(Mesh *mesh, double FinalTime, double dt):&#160;occa_routines.cpp'],['../a00209.html#a21a02761bc746f8e6205d02f662aee16',1,'rk_run_2d(Mesh *mesh, double FinalTime, double dt):&#160;occa_routines.cpp']]],
+  ['rk_5fstep_5f2d',['rk_step_2d',['../a00155.html#a9b253cfe04029e084b403542b0d7a64b',1,'rk_step_2d(Mesh *mesh, datafloat a, datafloat b, datafloat dt):&#160;occa_routines.cpp'],['../a00209.html#a9b253cfe04029e084b403542b0d7a64b',1,'rk_step_2d(Mesh *mesh, datafloat a, datafloat b, datafloat dt):&#160;occa_routines.cpp']]],
+  ['rout',['rout',['../a00170.html#a2428903c9f57e3eba1ab8aa2ea4ad70b',1,'vPlotField2D.m']]],
+  ['rq',['rq',['../a00260.html#a35c4afa14e15761e0981ffe78ed235ab',1,'foo']]],
+  ['rstatus_5fet',['rstatus_et',['../a00161.html#ac2f4a66b49d7100c9eea6d8df6c57781',1,'metis.h']]]
+];

@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['e_5fconn',['E_CONN',['../a00239.html#a079075855682f743c02a9698eaf074b5',1,'makeVTKFile.m']]],
+  ['element_5fnode',['element_node',['../a00239.html#a50df015479692caa32ea5ed86939881e',1,'element_node(1:element_order, 1:element_num):&#160;makeVTKFile.m'],['../a00242.html#a50df015479692caa32ea5ed86939881e',1,'element_node(1:element_order, 1:element_num):&#160;threed_to_vtu.m']]],
+  ['elseif',['elseif',['../a00239.html#a605afbf27a23b76ea451d4e10b41548b',1,'makeVTKFile.m']]],
+  ['emat',['Emat',['../a00300.html#a897368b80c690bb1d86a139b2e32f062',1,'Emat(Fmask(:, 1), 1:Nfp):&#160;make_bidg_headers.m'],['../a00300.html#a60824f742b56f2e7937c971600df7da0',1,'Emat(Fmask(:, 2), Nfp+1:2 *Nfp):&#160;make_bidg_headers.m'],['../a00300.html#a1afcdf2927c1ba1a2c01991ac8791bab',1,'Emat(Fmask(:, 3), 2 *Nfp+1:3 *Nfp):&#160;make_bidg_headers.m'],['../a00074.html#a897368b80c690bb1d86a139b2e32f062',1,'Emat(Fmask(:, 1), 1:Nfp):&#160;make_bidg_headers.m'],['../a00074.html#a60824f742b56f2e7937c971600df7da0',1,'Emat(Fmask(:, 2), Nfp+1:2 *Nfp):&#160;make_bidg_headers.m'],['../a00074.html#a1afcdf2927c1ba1a2c01991ac8791bab',1,'Emat(Fmask(:, 3), 2 *Nfp+1:3 *Nfp):&#160;make_bidg_headers.m']]],
+  ['evaluatebasis',['evaluateBasis',['../a00155.html#a2aba2292a481f3bb8f85213baf22686b',1,'evaluateBasis(double xi, double eta, const double *vert, const double *tuples, const unsigned int p, const int nen, const double *fact_i, double *B, double *dB_du):&#160;tri10bidg.cpp'],['../a00224.html#a2aba2292a481f3bb8f85213baf22686b',1,'evaluateBasis(double xi, double eta, const double *vert, const double *tuples, const unsigned int p, const int nen, const double *fact_i, double *B, double *dB_du):&#160;tri10bidg.cpp']]],
+  ['exclowerrange',['ExcLowerRange',['../a00251.html#a4271ce0c289249580f95635786f05419',1,'write_vtu_template.cpp']]]
+];

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['b',['B',['../a00260.html#a05a280ab7b2cad4d63fb711e212d4659',1,'foo']]],
+  ['bb',['bb',['../a00236.html#af10d0cbe849959834570568849bc2290',1,'gambitFileIn20.m']]],
+  ['bcflag',['bcflag',['../a00260.html#a5f4b416c3e7d37b5d18c9fef1ad378a6',1,'foo']]],
+  ['bcprop',['bcprop',['../a00236.html#aeb3bba3f2a1cac40e67dcec5c4faf3d8',1,'gambitFileIn20.m']]],
+  ['belem',['belem',['../a00236.html#abb20825a1a6ea12717847b56b3231c6a',1,'gambitFileIn20.m']]],
+  ['bflag',['bflag',['../a00260.html#a6ed9b87a33f15ce1044a3dac5ed64c23',1,'foo::bflag()'],['../a00236.html#a3ae52850c5599fbb0af6b0dbf49b63a1',1,'BFLAG():&#160;gambitFileIn20.m'],['../a00236.html#a2631e3df74fb2c7ff87a8ab5c4dabd4b',1,'BFLAG(ctr,:):&#160;gambitFileIn20.m']]],
+  ['bidg_5fconstants',['bidg_constants',['../a00155.html#a45390a77c9093b8b1144623da67508c8',1,'bidg_constants(double *vert, double *tuples, double *fact_i, double *du_dxi):&#160;bidg_constants.cpp'],['../a00197.html#a45390a77c9093b8b1144623da67508c8',1,'bidg_constants(double *vert, double *tuples, double *fact_i, double *du_dxi):&#160;bidg_constants.cpp']]],
+  ['bidg_5fconstants_2ecpp',['bidg_constants.cpp',['../a00197.html',1,'']]],
+  ['bike_2eneu',['bike.neu',['../a00230.html',1,'']]],
+  ['blaslapack_2eh',['blaslapack.h',['../a00077.html',1,'']]],
+  ['blended',['blended',['../a00260.html#afffe0eef49bf522cb61782f657e5d543',1,'foo']]],
+  ['bq',['Bq',['../a00260.html#a315544367ecec95d37ba752e1ba7fa73',1,'foo']]],
+  ['bqs',['Bqs',['../a00260.html#add539e70d78a387c1ab6bcaec4c6b3cc',1,'foo']]],
+  ['bsize',['BSIZE',['../a00158.html#a403cf3149c084cea115b85c90721039a',1,'Mesh.h']]],
+  ['build3tensor',['Build3Tensor',['../a00155.html#a6031ee45d6b3d95665a885b7128c311c',1,'Build3Tensor(int Nrows, int Ncols, int IDX):&#160;Utils.cpp'],['../a00227.html#a6031ee45d6b3d95665a885b7128c311c',1,'Build3Tensor(int Nrows, int Ncols, int IDX):&#160;Utils.cpp']]],
+  ['build4tensor',['Build4Tensor',['../a00002.html#aff625505c4d622f25ca1ff559149e2a5',1,'Build4Tensor(int Nrows, int Ncols, int IDX1, int IDX2):&#160;test.c'],['../a00155.html#a745a480f3faf250c87406ddb1d8d0e4f',1,'Build4Tensor(int Nrows, int Ncols, int IDX1, int IDX2):&#160;test.c'],['../a00227.html#a745a480f3faf250c87406ddb1d8d0e4f',1,'Build4Tensor(int Nrows, int Ncols, int IDX1, int IDX2):&#160;Utils.cpp']]],
+  ['buildintmatrix',['BuildIntMatrix',['../a00155.html#a77f751d54b396015520a882d7a318e57',1,'BuildIntMatrix(int Nrows, int Ncols):&#160;Utils.cpp'],['../a00227.html#a77f751d54b396015520a882d7a318e57',1,'BuildIntMatrix(int Nrows, int Ncols):&#160;Utils.cpp']]],
+  ['buildintvector',['BuildIntVector',['../a00155.html#a0f24d8056fa979af4888469ea90576ff',1,'BuildIntVector(int Nrows):&#160;Utils.cpp'],['../a00227.html#a0f24d8056fa979af4888469ea90576ff',1,'BuildIntVector(int Nrows):&#160;Utils.cpp']]],
+  ['buildmaps2d',['BuildMaps2d',['../a00155.html#ac0114aa8a9d094bad20943e1b79ba473',1,'BuildMaps2d(Mesh *mesh):&#160;StartUp2d.cpp'],['../a00221.html#ac0114aa8a9d094bad20943e1b79ba473',1,'BuildMaps2d(Mesh *mesh):&#160;StartUp2d.cpp']]],
+  ['buildmaps3d',['BuildMaps3d',['../a00155.html#a0b7218104d1df7fc4acbe306edf10f98',1,'fem.h']]],
+  ['buildmatrix',['BuildMatrix',['../a00155.html#a4bf6e503687187059ced10b812beaab3',1,'BuildMatrix(int Nrows, int Ncols):&#160;Utils.cpp'],['../a00227.html#a4bf6e503687187059ced10b812beaab3',1,'BuildMatrix(int Nrows, int Ncols):&#160;Utils.cpp']]],
+  ['buildsource',['buildsource',['../a00200.html#a39d26c9ec5258e8eb8c2fa79f9d0f5d2',1,'buildsource.m']]],
+  ['buildsource_2em',['buildsource.m',['../a00200.html',1,'']]],
+  ['buildvector',['BuildVector',['../a00155.html#a990278305dbeaf8e4441cf4146bfdc62',1,'BuildVector(int Nrows):&#160;Utils.cpp'],['../a00227.html#a990278305dbeaf8e4441cf4146bfdc62',1,'BuildVector(int Nrows):&#160;Utils.cpp']]]
+];

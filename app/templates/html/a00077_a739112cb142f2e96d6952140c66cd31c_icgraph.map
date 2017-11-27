@@ -1,0 +1,10 @@
+<map id="gk_getfilestats" name="gk_getfilestats">
+<area shape="rect" id="node2" href="$a00077.html#a8ebc19fe9a291bdf67677ebdaae56592" title="gk_csr_Read" alt="" coords="206,5,306,32"/>
+<area shape="rect" id="node4" href="$a00858.html#ad13e689608e193482a6f30b1ade87814" title="gk_readfile" alt="" coords="213,56,299,83"/>
+<area shape="rect" id="node5" href="$a00858.html#a201c46a9a2bf9c06a917f259d109b7ee" title="gk_i32readfile" alt="" coords="203,107,309,133"/>
+<area shape="rect" id="node6" href="$a00858.html#a8cb19aa95a831aa745f6e04e1cc0b204" title="gk_i64readfile" alt="" coords="203,157,309,184"/>
+<area shape="rect" id="node7" href="$a00951.html#aef01a8b2c6432d21be77abeabeeeced8" title="ReadMesh" alt="" coords="213,208,299,235"/>
+<area shape="rect" id="node9" href="$a00137.html#ad44124c9b40b8ffda2276f877526a261" title="This function reads a pssm in the format of gkmod pssm. " alt="" coords="160,259,352,285"/>
+<area shape="rect" id="node3" href="$a00867.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="400,5,451,32"/>
+<area shape="rect" id="node8" href="$a00317.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="400,208,451,235"/>
+</map>

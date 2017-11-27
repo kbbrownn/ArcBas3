@@ -1,0 +1,7 @@
+<map id="ctrl_t" name="ctrl_t">
+<area shape="rect" id="node2" href="$a00685.html" title="{gk_mcore_t\n|+ coresize\l+ corecpos\l+ core\l+ nmops\l+ cmop\l+ num_callocs\l+ num_hallocs\l+ size_callocs\l+ size_hallocs\l+ cur_callocs\l+ cur_hallocs\l+ max_callocs\l+ max_hallocs\l|}" alt="" coords="5,176,112,429"/>
+<area shape="rect" id="node3" href="$a00681.html" title="{gk_mop_t\n|+ type\l+ nbytes\l+ ptr\l|}" alt="" coords="19,5,99,112"/>
+<area shape="rect" id="node4" href="$a00725.html" title="{vnbr_t\n|+ pid\l+ ned\l+ gv\l|}" alt="" coords="137,249,196,356"/>
+<area shape="rect" id="node5" href="$a00717.html" title="{cnbr_t\n|+ pid\l+ ed\l|}" alt="" coords="231,257,289,349"/>
+<area shape="rect" id="node6" href="$a00757.html" title="{matrix_t\n|+ nrows\l+ nnzs\l+ rowptr\l+ colind\l+ values\l+ transfer\l|}" alt="" coords="314,227,392,378"/>
+</map>

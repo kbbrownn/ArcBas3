@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['gambitfilein20_2em',['gambitFileIn20.m',['../a00236.html',1,'']]],
+  ['geometricfactors2d',['GeometricFactors2d',['../a00155.html#a17dce51b6f44350809fb0f67f41bf80a',1,'GeometricFactors2d(Mesh *mesh, int k, double *drdx, double *dsdx, double *drdy, double *dsdy, double *J):&#160;Mesh2d.cpp'],['../a00206.html#a17dce51b6f44350809fb0f67f41bf80a',1,'GeometricFactors2d(Mesh *mesh, int k, double *drdx, double *dsdx, double *drdy, double *dsdy, double *J):&#160;Mesh2d.cpp']]],
+  ['geometricfactors3d',['GeometricFactors3d',['../a00155.html#a962817a1e01d941ede2d0a7e31f136d7',1,'GeometricFactors3d(Mesh *mesh, int k, double *drdx, double *dsdx, double *dtdx, double *drdy, double *dsdy, double *dtdy, double *drdz, double *dsdz, double *dtdz, double *J):&#160;Mesh3d.cpp'],['../a00215.html#a962817a1e01d941ede2d0a7e31f136d7',1,'GeometricFactors3d(Mesh *mesh, int k, double *drdx, double *dsdx, double *dtdx, double *drdy, double *dsdy, double *dtdy, double *drdz, double *dsdz, double *dtdz, double *J):&#160;Mesh3d.cpp']]],
+  ['glift',['glift',['../a00260.html#aa75d8f6ec957be5cafe1de886d093f18',1,'foo']]],
+  ['glift0',['glift0',['../a00260.html#a3f7c33690f6aa7c343553518bb797ffb',1,'foo']]],
+  ['glift_5ftemp',['glift_temp',['../a00260.html#a76bb77d6b3b5d70cf90801bf56351adc',1,'foo']]],
+  ['gnx',['gnx',['../a00260.html#aca8717d385d22f28e6de2f6a5786458f',1,'foo']]],
+  ['gny',['gny',['../a00260.html#a1b4057739b966cf5c66ba1f719532af9',1,'foo']]],
+  ['gpu_5fget_5fdata2d',['gpu_get_data2d',['../a00155.html#a9a91b5a9124c99d834ef1283492fe734',1,'fem.h']]],
+  ['gpu_5fget_5fdata3d',['gpu_get_data3d',['../a00155.html#aa1ecfe5bfbcdb9a59cb6c3c39f62f744',1,'fem.h']]],
+  ['gpu_5fset_5fdata2d',['gpu_set_data2d',['../a00155.html#a47b4375211682db69a53012631fb2ee7',1,'fem.h']]],
+  ['gpu_5fset_5fdata3d',['gpu_set_data3d',['../a00155.html#ad512c37561b25c93d8d7c7717a500df4',1,'fem.h']]],
+  ['gr',['gR',['../a00074.html#acbf1a23eea93c85cd113589566865e49',1,'make_bidg_headers.m']]],
+  ['group',['group',['../a00236.html#a13dcc74bebe8895ff73eeb1234135704',1,'gambitFileIn20.m']]],
+  ['gs',['gS',['../a00074.html#a51eed178703fb32c103fbb5565b564f1',1,'make_bidg_headers.m']]],
+  ['gv',['gV',['../a00074.html#a2a3aaeecb452e864ff43bf3a5050191a',1,'gV():&#160;make_bidg_headers.m'],['../a00074.html#a1e95c512464cc7b20598dcb3f6eaffe3',1,'gV(:,:, 2):&#160;make_bidg_headers.m'],['../a00074.html#ab16464170b2d4f6a6b117aae1d91f963',1,'gV(:,:, 3)]:&#160;make_bidg_headers.m']]],
+  ['gvm',['gVM',['../a00260.html#a77cc69fd4a1af1666e87f584e749643c',1,'foo']]],
+  ['gvp',['gVP',['../a00260.html#a234264d6653f229dbaf1ddee0b17075a',1,'foo']]],
+  ['gw',['GW',['../a00260.html#a974e9971d455d9b25e9391bf44455ac9',1,'foo']]],
+  ['gx',['GX',['../a00260.html#aa07263ecc9482976da0b8fa81f13f947',1,'foo']]],
+  ['gxl',['GXl',['../a00260.html#ae225ab13bab989d11aaee70c3d2aa142',1,'foo']]],
+  ['gy',['GY',['../a00260.html#a6a97cbfdd559cb3f2403f4266d5f1fd0',1,'foo']]],
+  ['gyl',['GYl',['../a00260.html#a9113047281531eb51817f83fe6c69dcc',1,'foo']]],
+  ['gz',['GZ',['../a00260.html#a8a5336c81cde1e0e138509bf3a72bf67',1,'foo']]]
+];

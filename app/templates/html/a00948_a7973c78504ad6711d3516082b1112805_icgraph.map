@@ -1,0 +1,12 @@
+<map id="MlevelKWayPartitioning" name="MlevelKWayPartitioning">
+<area shape="rect" id="node2" href="$a00912.html#af89851458c047aba436b36ed567441e4" title="METIS_PartGraphKway" alt="" coords="217,183,381,209"/>
+<area shape="rect" id="node3" href="$a00846.html#a6df93293cf3d1ccb4659bd1b3091623d" title="ParMETIS_V3_PartGeomKway" alt="" coords="429,5,637,32"/>
+<area shape="rect" id="node4" href="$a00954.html#aa24ead3c2c8fb3e58110f1f79453ce29" title="Balance_Partition" alt="" coords="470,56,597,83"/>
+<area shape="rect" id="node5" href="$a00416.html#af4fae82dc1fc688ae704c61e647d33e4" title="PartitionSmallGraph" alt="" coords="463,107,604,133"/>
+<area shape="rect" id="node6" href="$a00954.html#a5358042c354702d9e8128f7cc342a322" title="InitPartition" alt="" coords="489,157,578,184"/>
+<area shape="rect" id="node7" href="$a00846.html#af418d1e76eaf4f80116da4caf51bd54e" title="ParMETIS_V3_PartKway" alt="" coords="447,208,619,235"/>
+<area shape="rect" id="node8" href="$a00236.html#ade1e7e23ad687989a6343b4fb8d61ba7" title="METIS_PartMeshNodal" alt="" coords="452,259,615,285"/>
+<area shape="rect" id="node10" href="$a00236.html#a8f496ac1cd2246b124da246b5c6f9193" title="METIS_PartMeshDual" alt="" coords="456,309,611,336"/>
+<area shape="rect" id="node11" href="$a00311.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="508,360,559,387"/>
+<area shape="rect" id="node9" href="$a00323.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="685,284,736,311"/>
+</map>
